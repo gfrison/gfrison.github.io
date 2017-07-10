@@ -6,7 +6,7 @@ permalink:           pretty
 
 # Setup
 title:               gfrison
-tagline:             'Signal from the Noise'
+tagline:             'Signals from the Noise'
 description:         'Made by <a href="https://twitter.com/gfrison" target="_blank">@gfrison</a>.'
 url:                 'https://gfrison.com'
 baseurl:             ''
@@ -19,6 +19,7 @@ author:
   twitter: gfrison
 
 social:
+  title: Signals from the Noise
   name: Giancarlo Frison
   links:
     - https://twitter.com/gfrison
