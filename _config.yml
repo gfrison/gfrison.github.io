@@ -6,17 +6,16 @@ permalink:           pretty
 
 # Setup
 title:               gfrison
-tagline:             'My github page'
+tagline:             ''
 description:         'Made by <a href="https://twitter.com/gfrison" target="_blank">@gfrison</a>.'
-url:                 https://gfrison.com
-enforce_ssl: gfrison.com
-baseurl:             gfrison.com
+url:                 'https://gfrison.com'
+baseurl:             ''
 paginate:            5
 
 # About/contact
 author:
-  name:              Giancarlo F
-  url:               https://twitter.com/gfrison
+  name:              'Giancarlo F'
+  url:               'https://twitter.com/gfrison'
 
 # Custom vars
 version:             1.0.0
