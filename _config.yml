@@ -6,7 +6,7 @@ permalink:           pretty
 
 # Setup
 title:               gfrison
-tagline:             ''
+tagline:             'Signal from the Noise'
 description:         'Made by <a href="https://twitter.com/gfrison" target="_blank">@gfrison</a>.'
 url:                 'https://gfrison.com'
 baseurl:             ''
@@ -16,9 +16,18 @@ paginate:            5
 author:
   name:              'Giancarlo F'
   url:               'https://twitter.com/gfrison'
+  twitter: gfrison
 
+social:
+  name: Giancarlo Frison
+  links:
+    - https://twitter.com/gfrison
+    - https://www.linkedin.com/in/gfrison
+    - https://github.com/gfrison
+    - https://keybase.io/gfrison
+    - https://www.flickr.com/photos/gfrison/
 # Custom vars
 version:             1.0.0
 
 # Gems
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-seo-tag]
