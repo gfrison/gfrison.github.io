@@ -7,14 +7,15 @@ permalink:           pretty
 # Setup
 title:               gfrison
 tagline:             'My github page'
-description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:                 http://gfrison.github.io
-baseurl:             ''
+description:         'Made by <a href="https://twitter.com/gfrison" target="_blank">@gfrison</a>.'
+url:                 https://gfrison.com
+enforce_ssl: gfrison.com
+baseurl:             gfrison.com
 paginate:            5
 
 # About/contact
 author:
-  name:              Giancarlo Frison
+  name:              Giancarlo F
   url:               https://twitter.com/gfrison
 
 # Custom vars
