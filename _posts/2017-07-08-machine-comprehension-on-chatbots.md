@@ -16,9 +16,9 @@ Stanford NLP group created [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/) 
 
 *Answer*:   gravity
 
-Understand text is hard. It requires the knowledge of the language and the contextual knowledge of the topic. Those challenges could be compared to language or cultural barriers among people. For example, I can hardly understand a paper written in chinese about Panda’s immune system, essentially because I don’t know the chinese language and I don’t know anything about immunology. Similarly, a program can’t do better than me on understanding that paper, unless it masters these two aspects: language and contextual knowledge.
+Understand text is hard. It requires the knowledge of the language and a representation of the topic. Those challenges could be easily compared with the linguistic and  cultural barrier among people. For example, I can hardly understand a paper written in chinese about Panda’s immune system, essentially because I don’t know the chinese language and I don’t know anything about immunology. Similarly, a program can’t do better on unless it masters these two aspects: language on one hand, and high-level concepts on the another.
 
-For running an automatic FAQ responder I adopted one of the top-ten reading comprehension system available, the [BiDAF](https://arxiv.org/abs/1611.01603) (Bi-Directional Attention Flow). It doesn’t perform badly (81,5% F1 accuracy) compared to human precision, which is 86,8%.
+For running an automatic FAQ responder I used one of the top-ten reading comprehension system available, the [BiDAF](https://arxiv.org/abs/1611.01603) (Bi-Directional Attention Flow). It doesn’t perform badly (81,5% F1 accuracy) compared to human precision, which is 86,8%.
 I applied BiDAF on [Charly](http://m.me/charlygrocery), a chatbot for conversational commerce, for serving informations extracted from given text like this:
 >My phone number is +4911002233. I live in Munich, Germany.
 You can pay with your credit card, we accept: Visa, Mastercard, American Express, Maestro, Visa Debit.
