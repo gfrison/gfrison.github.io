@@ -11,7 +11,7 @@ This simple technique requires a sequence of manual tasks for every conversation
 
 A second more intriguing and sophisticated approach leverages the advances in machine comprehension, which is the ability to read text and then answer questions about it, automatically.
 Stanford NLP group created [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/) a dataset consisting of 107.785 questions pairs on 536 articles, for training and evaluate machine comprehension models. One example of article and question and expected answer is:
->In meteorology, precipitation is any product of the condensation of atmospheric water vapor that falls under gravity. The main forms of precipitation include >drizzle, rain, sleet, snow, graupel and hail…
+>In meteorology, precipitation is any product of the condensation of atmospheric water vapor that falls under gravity. The main forms of precipitation include drizzle, rain, sleet, snow, graupel and hail…
 
 *Question*: What causes precipitation to fall?
 
