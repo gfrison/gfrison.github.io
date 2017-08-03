@@ -1,6 +1,6 @@
 ---
 layout: post
-description: Prototype that combines NLP analysis and semantic data sources for answering simple generic questions, by learning how to get the informations given a fairly small amount of question/answer pairs. 
+description: Prototype that combines NLP analysis and semantic data sources for answering simple generic questions, by learning how to get the informations given a fairly small amount of question/answer pairs.
 title: Automated Question Answering using Semantic Networks
 image: /assets/conceptnetQA.png
 ---
@@ -26,7 +26,8 @@ rather than the training corpora; the conversational analyzer *(1)*  and the kno
 ### Split language and knowledge domains
 The approach I’m going to describe will allow the model to be versatile and applicable to different domains
 since it can clearly distinguish *(1)* and *(2)* as interoperable components of a QA system.
-The goal of the prototype is to obtain meaningful answers out of simple questions,
+
+>The goal of the prototype is to obtain meaningful answers out of simple questions,
 by learning *how to get* the information instead of learning *the information*.
 Basically, the machine learning system won’t be instructed merely on which is the right answer, but rather how to find it in a given datasource.
 
@@ -45,22 +46,20 @@ Within the entities extracted from the utterance and the expected answer (or a l
 
 *Expected answer*: `blue`
 
-*Result*: `[{nsubj}:/r/IsA] and [{nmod}:/r/RelatedTo]`
+*Compiled model*: `[{nsubj}:/r/IsA] and [{nmod}:/r/RelatedTo]`
 
 The outcome is correlated to the logic of the sentence, and different types of sentences are classified accordingly.
 However, similar grammar structures can also have different semantics and they should be treated differently. In the case of
 
 *Question*:`what is the capital of germany?`
 
-the crawler will output a different path:
-
-`{nmod}:/r/dbpedia/capital`
+the crawler will find the query with the least number of joins required to get the expected results. It outputs a different model: `{nmod}:/r/dbpedia/capital`
 
 In this case, a direct relation (*dbpedia/capital*) univocally describes the expected relation, and it is selected as the best alternative for answering that specific class of questions.
 
 ### Run the model
 Now let's run the model asking: `what is the color of the sun?`. The inference component will first classify the sentence and it will associate it with the first model have been previously compiled.
-The crawler will search entities that fulfill (`and`) both relations, and gets the result: `yellow`.
+The crawler will search entities that fulfill both relations (`X IsA color and X RelatedTo sea`), and gets the result: `yellow`.
 
 These are some of possible outcomes:
 
