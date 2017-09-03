@@ -16,7 +16,7 @@ In the realm of conversational commerce, the examined sentence could be:
 
 The system recognizes the intention `search` and presents the results.
 
-Intention prediction is not an untackled problem and the market offers plenty of intention recognition services
+Intention prediction is not an untackled problem and the market offers plenty of services.
 There are many players such as Google (Api.ai), Facebook (Wit.ai), Microsoft (Luis.ai) just for mentioning some of them,
 but this shouldn't prevent further explorations in the topic, sometimes with unexpected positive surprises, as shows in the graph.
 
@@ -24,7 +24,7 @@ but this shouldn't prevent further explorations in the topic, sometimes with une
 
 The test was performed against real data used for training the deployed model of the Chatbot system and the results are relevant for the real working scenario, so no _cherry picking_ in this case. 300 training samples, 56 test samples for 25 classes, these are the dataset's numbers.
 
-Minos, the text classifier, uses an ensemble of mascine learning models. It combines multiple classifiers for getting a good prediction on utterances submitted to [Charly](https://www.facebook.com/charlygrocery/) even though it is still experimental and not well tuned, leaving open doors for future improvements.
+Minos, the text classifier, uses an ensemble of mascine learning models. It combines multiple classifiers for getting a good prediction on utterances submitted to [Charly](https://www.facebook.com/charlygrocery/). Minos is still experimental and not well tuned, leaving open doors for future improvements.
 One of the models is based on Convolutional Neural Networks (CNN).
 
 ## CNN in NLP
