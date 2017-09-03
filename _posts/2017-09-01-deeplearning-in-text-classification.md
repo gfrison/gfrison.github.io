@@ -8,7 +8,7 @@ image: /assets/minos-chart.png
 In the Divine Comedy, Minos is a daemon appointed to guard the entrance of the hell. He listens to the sins of souls
 and indicates them their destinations by wrapping his tail as many times as the assigned circle.
 The figure is emblematic of the machine learning classification, where an entity is identified as belonging to
-a category or to another.
+a category or to another. Rather than condaming souls to endless pains, the harmless tool I am describing can judge whether an user's utterance belongs to a specific intention, or to a limited range of emotions. Namely, it can serve intention recognition and sentimental analisys.
 
 In the realm of conversational applications, the examined utterance could be:
 
