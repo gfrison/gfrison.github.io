@@ -10,16 +10,15 @@ and indicates them their destinations by wrapping his tail as many times as the 
 The figure is emblematic of the machine learning classification, where an entity is identified as belonging to
 a category or to another. Rather than condaming souls to endless pains, the harmless tool I am describing can judge whether an user's utterance belongs to a specific intention, or to a limited range of emotions. Namely, it can serve intention recognition and sentimental analisys.
 
-In the realm of conversational applications, the examined utterance could be:
+In the realm of conversational commerce, the examined sentence could be:
 
-_input:_ `I want to buy some apples and pears`
+`I want to buy some apples and pears`
 
-_class:_ `search`
+The system recognizes the intention `search` and presents the results.
 
-In this case the system recognizes the intention `search` and presents the results.
-
-The market offers plenty of intention recognition services,
-there are: Google (Api.ai), Facebook (Wit.ai), Microsoft (Luis.ai) just for mentioning some of them.
+Intention prediction is not an untackled problem and the market offers plenty of intention recognition services
+There are many players such as Google (Api.ai), Facebook (Wit.ai), Microsoft (Luis.ai) just for mentioning some of them,
+but this shouldn't prevent further explorations in the topic, sometimes with unexpected positive surprises, as shows in the graph.
 
 Recently I created a solution using an ensemble of machine learning models which performs well even though it is not yet well tuned,
 opening rooms for future improvements. The test was performed with relevant data used for training the deployed model of the Chatbot system,
