@@ -1,7 +1,7 @@
 ---
 layout: post
 description: Convolutional Neural Networks for Text Classification outperforms Api.ai. Read what does it means for your Chatbot
-title: Deeplearning in Text Classification
+title: Deeplearning in Text Classification #NLProc #chatbots @gfrison
 image: /assets/minos-chart.png
 ---
 
