@@ -31,33 +31,33 @@ One of the models is based on Convolutional Neural Networks (CNN).
 
 CNN is mostly applied to image recognition thanks to the tollerance on translations
 (rotations, distortions) and the compositionality principle (entities are composed by its constituents).
-Admittedly, CNN appeared to me counter-intuitive at a first approach because text looks very different from images:
+Admittedly, CNN might appear counter-intuitive at a first approach because text looks very different from images:
   1. The order of the words in text is not as important as the order of the pixel in an image.
   2. Humans percept text sequentially, not in convolutions.
 
 ### Invariance
 
-The _(1)_ assumption is biased, since one should compare characters (rather than words) with pixels. The proportion is more like:
+Entities like images and texts, should be compared differently. The smallest atomic element in text is the single charater, rather than the word, like the pixel in images. The proportion is more like:
 
 `text : char = image : pixel`
 
 By this angle of view, the order of characters in sentences is fundamental. Convolutions in text come in form of:
 
-`single word => bi-grams (two adjacent words) => and so on (n-grams)`
+`single word` => `bi-grams (two adjacent words)` => `n-grams`
 
 like graphical features
 
-`lines , corners => mouths, eyes => faces`
+`lines , corners` => `mouths, eyes` => `faces`
 
-come out of portrait images.
+come out of portraits.
 
 In CNN the pair `adjective + object` for example,
-could be at the begin or at the end of a sentence, exactly like a face is recognized wherever it is located in the whole picture.
+could be recognized invariantly of its position, at the begin or at the end of a sentence, exactly like a face is recognized wherever it is located in the whole picture.
 
 ### Sequentiality
 
 It might seem more intuitive to apply Recurrent Neural Networks (like LSTM, Attention or Seq2seq) for text classification,
-due to the sequential nature of RNNs algorithms. I didn't run any test on them so far, but I would promptly play with [TreeLSTM](http://arxiv.org/abs/1503.00075). CNN performs well, and one might say: _Essentially, all models are wrong, but some are useful_.
+due to the sequential nature of RNNs algorithms. I didn't run any test on them so far, but I would promptly play with [TreeLSTM](http://arxiv.org/abs/1503.00075). CNN performs well, and one might say that _Essentially, all models are wrong, but some are useful_, an essay the fit with the idea that final outcome drives the decisions, and experimental results play an important role.
 
 ### Word Embeddings
 
