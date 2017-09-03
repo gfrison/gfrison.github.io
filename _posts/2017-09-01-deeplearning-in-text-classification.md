@@ -1,6 +1,6 @@
 ---
 layout: post
-description: An ensemble based on Convolutional Neural Networks for Text Classification in Chatbots could outperform big players like Api.ai
+description: Convolutional Neural Networks for Text Classification outperforms Api.ai. Read what does it means for your Chatbot
 title: Deeplearning in Text Classification
 image: /assets/minos-chart.png
 ---
@@ -24,7 +24,7 @@ but this shouldn't prevent further explorations in the topic, sometimes with une
 
 The test was performed against real data used for training the deployed model of the Chatbot system and the results are relevant for the real working scenario, so no _cherry picking_ in this case. 300 training samples, 56 test samples for 25 classes, these are the dataset's numbers.
 
-Minos, the text classifier, uses an ensemble of machine learning models. It combines multiple classifiers for getting a good prediction out of utterances submitted to [Charly](https://www.facebook.com/charlygrocery/). Minos is still experimental and not well tuned, doors are open for future improvements.
+Minos, the text classifier, uses an ensemble of machine learning models. It combines multiple classifiers for getting a good prediction out of utterances submitted to [Charly](https://www.facebook.com/charlygrocery/).
 One of the models is based on Convolutional Neural Networks (CNN).
 
 ## CNN in NLP
@@ -65,3 +65,5 @@ Alike any NLP, in CNN words are replaced by their correspective semantic vector.
 I decided to make use of [ConceptNet Numberbatch](https://arxiv.org/abs/1704.03560)
 that took first place in both subtasks at [SemEval 2017 task 2](http://alt.qcri.org/semeval2017/task2/).
 Moreover, the vector file is very small (~250M) compared to Google News word2vec (~1.5G) and from an engeneering point of view, those numbers matter.
+
+Minos is still experimental and not well tuned, doors are open for improvements. An aspect shouldn't be ignored on working with CNN is the [Catastrofic Forgetting](https://arxiv.org/abs/1612.00796), an annoying phenomenon that ruins irrevocably the entire training. 
