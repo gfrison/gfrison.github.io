@@ -24,7 +24,7 @@ but this shouldn't prevent further explorations in the topic, sometimes with une
 
 The test was performed against real data used for training the deployed model of the Chatbot system and the results are relevant for the real working scenario, so no _cherry picking_ in this case. 300 training samples, 56 test samples for 25 classes, these are the dataset's numbers.
 
-Minos, the text classifier, uses an ensemble of mascine learning models. It combines multiple classifiers for getting a good prediction on utterances submitted to [Charly](https://www.facebook.com/charlygrocery/). Minos is still experimental and not well tuned, leaving open doors for future improvements.
+Minos, the text classifier, uses an ensemble of machine learning models. It combines multiple classifiers for getting a good prediction out of utterances submitted to [Charly](https://www.facebook.com/charlygrocery/). Minos is still experimental and not well tuned, doors are open for future improvements.
 One of the models is based on Convolutional Neural Networks (CNN).
 
 ## CNN in NLP
