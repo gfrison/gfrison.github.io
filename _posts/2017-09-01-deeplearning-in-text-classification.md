@@ -20,14 +20,12 @@ Intention prediction is not an untackled problem and the market offers plenty of
 There are many players such as Google (Api.ai), Facebook (Wit.ai), Microsoft (Luis.ai) just for mentioning some of them,
 but this shouldn't prevent further explorations in the topic, sometimes with unexpected positive surprises, as shows in the graph.
 
-Recently I created a solution using an ensemble of machine learning models which performs well even though it is not yet well tuned,
-opening rooms for future improvements. The test was performed with relevant data used for training the deployed model of the Chatbot system,
-with those results:
-
 ![Minos Accuracy]({{ site.url }}/assets/minos-chart.png)
 
-Minos, the intention recognizer, combines multiple classifiers for getting a good prediction on intentions submitted to [Charly](https://www.facebook.com/charlygrocery/).
-One of them is based on Convolutional Neural Networks (CNN).
+The test was performed against real data used for training the deployed model of the Chatbot system and the results are relevant for the real working scenario, so no _cherry picking_ in this case. 300 training samples, 56 test samples for 25 classes, these are the dataset's numbers.
+
+Minos, the text classifier, uses an ensemble of mascine learning models. It combines multiple classifiers for getting a good prediction on utterances submitted to [Charly](https://www.facebook.com/charlygrocery/) even though it is still experimental and not well tuned, leaving open doors for future improvements.
+One of the models is based on Convolutional Neural Networks (CNN).
 
 ## CNN in NLP
 
