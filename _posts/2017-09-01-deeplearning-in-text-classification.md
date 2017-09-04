@@ -1,6 +1,6 @@
 ---
 layout: post
-description: Convolutional Neural Networks for Text Classification outperforms Api.ai. 
+description: Convolutional Neural Networks for Text Classification outperforms Api.ai.
 title: Deeplearning in Text Classification #NLProc #chatbots @gfrison
 image: /assets/minos-chart.png
 ---
@@ -8,7 +8,7 @@ image: /assets/minos-chart.png
 In the Divine Comedy, Minos is a daemon appointed to guard the entrance of the hell. He listens to the sins of souls
 and indicates them their destinations by wrapping his tail as many times as the assigned circle.
 The figure is emblematic of the machine learning classification, where an entity is identified as belonging to
-a category or to another. Rather than condaming souls to endless pains, the harmless tool I am describing can judge whether an user's utterance belongs to a specific intention, or to a limited range of emotions. Namely, it can serve intention recognition and sentimental analisys.
+a category or to another. Rather than condemning souls to endless pains, the harmless tool I am describing can judge whether an user's utterance belongs to a specific intention, or to a limited range of emotions. Namely, it can serve intention recognition and sentimental analysis.
 
 In the realm of conversational commerce, the examined sentence could be:
 
@@ -66,4 +66,4 @@ I decided to make use of [ConceptNet Numberbatch](https://arxiv.org/abs/1704.035
 that took first place in both subtasks at [SemEval 2017 task 2](http://alt.qcri.org/semeval2017/task2/).
 Moreover, the vector file is very small (~250M) compared to Google News word2vec (~1.5G) and from an engeneering point of view, those numbers matter.
 
-Minos is still experimental and not well tuned, doors are open for improvements. An aspect shouldn't be ignored on working with CNN is the [Catastrofic Forgetting](https://arxiv.org/abs/1612.00796), an annoying phenomenon that ruins irrevocably the entire training. 
+Minos is still experimental and not well tuned, doors are open for improvements. An aspect shouldn't be ignored on working with CNN is the [Catastrofic Forgetting](https://arxiv.org/abs/1612.00796), an annoying phenomenon that ruins irrevocably the entire training.
