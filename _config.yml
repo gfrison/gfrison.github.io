@@ -5,16 +5,16 @@ permalink:           pretty
 #relative_permalinks: true
 
 # Setup
-title:               gfrison
+title:               Giancarlo Frison
 tagline:             'Signals from the Noise'
-description:         'Made by <a href="https://twitter.com/gfrison" target="_blank">@gfrison</a>.'
+description:         'Made by <a href="https://twitter.com/gfrison" target="_blank">@gfrison</a>. Munich, Germany'
 url:                 'https://gfrison.com'
 baseurl:             ''
 paginate:            5
 
 # About/contact
 author:
-  name:              'Giancarlo F'
+  name:              'Giancarlo Frison'
   url:               'https://twitter.com/gfrison'
   twitter: gfrison
 
