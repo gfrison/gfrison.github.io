@@ -28,13 +28,13 @@ It is very plausible to give straights result when the query is really pertinent
 The desirable features are:
 
 - _Query entities selection_. When in the query there are more than one entity cluster, the conversational agent will be able to detect it and to ask the user to choose with entity will search first. For example, in query above there 2 terms: _pale ale beers_ and _ice creams_. For example the Chatbot could answer:
-> Are you searching for **pale ale beer** or **ice cream**?
+> _Are you searching for **pale ale beer** or **ice cream**?_
 
 - _Partial term matching_. The user is prompted that the exact criteria does not match, but a less ranking one is provided. _Pale ale beers_ is not in catalog, but _ale beer_ yes.
 > _We don't have **pale ale beer**, but just **ale beer**. These are our suggestions:..._
 
 - _Term out of market segment_. Prompt the user that the inquired item is not sold by this shopping website.
-> We do not sell **insurance**, sorry.
+> _We do not sell **insurance**, sorry._
 
 ## Indexing and searching tasks
 
