@@ -3,31 +3,41 @@ layout: post
 description: Simple and effective way to get relevant entities from user utterance and rank them by their relevance from unstructured catalog
 title: Catalog Entity Extraction for Search
 #image: /assets/minos-chart.png
-published: false
-permlink: /2018/02/06/catalog-entity-extraction-search
+published: true
+permlink: /2018/02/12/catalog-entity-extraction-search
 ---
 
-Keyword extraction from queries is a fundamental aspect of conversational commerce. In this article I illustrate
-a simple but effective way to get relevant entities from users' utterances and rank them by their relevance and their
-presence in unstructured product catalog.
+Keyword extraction from search queries is a fundamental aspect of conversational commerce. In this article I illustrate
+a simple but effective way to get relevant entities from user's utterances and rank them by their relevance and their
+presence in a unstructured product catalog.
 
 The primary purpose of a conversational application is to serve user demands, and when an user search in a e-commerce context, he is mostly
-looking for products. There are several distinctions that characterize a query when it is performed in the website text form rather than
-a messaging application. In the website users when they submit a query to a search form they already express their search intention, therefore
-the terms are quite concise and descriptive of what they are searching for. Conversely, when inquiring a chatbot, users use a more expressive form
-such as,
-- `Could you suggest me pale ale beers and ice creams for my party`
-- `Can you give me some lactose free yogurt`
-- `I'm looking for a car insurance`
+looking for products. There are several distinctions that characterize a query when it is performed in the website rather than
+a messaging application. In the website users when they submit a query they already express their search intention, therefore
+the terms are quite concise and descriptive. Conversely, when inquiring a chatbot, users use a more expressive form
+such as: `Could you suggest me pale ale beers and ice creams for my party?`.
+While the intention is deducted by a classification task, relevant terms are just a subset of the entire sentence.
 
-While the intention is deducted by a classification task, the words relevant for the query are just a subset of the entire phrase.
 Baseline approach would be to use all the text as query, returning innumerable hits of everything even remotely relevant and providing little help
-for the customers. What instead I want to achieve is to determine:
-- Distinct entities. For example, in (1) there 2 terms: _pale ale beers_ and _ice creams_
+for the customers.
+Another solution regards Named Entity Recognition, a class of algorithms  that seeks and classify entities, also by means of [neural networks](http://nlp.town/blog/ner-and-the-road-to-deep-learning/).
+ While applying machine learning techniques can reach high levels of accuracy, they requires training data that might not be available. Moreover, what will work for a specific product segment won't work for another. This is why this following approach could be easily plugged in any market scopes without any particular adaptation.
+ This method is very simple. It takes in account only products names, even though not considering structured product schemas is really not feasible in an usua e-commerce system.
+
+>I want to extract the features that might affect the chatbot answer, based on the _quality_ of the search query.
+
+For example, it is very plausible to give the straight result when the query is really pertinent to returned item list, as well as informing the user whenever the query terms don't match with actually been in catalog, or even the query terms search for something completely out of scope.
+The desirable features are:
+- Distinct entities. For example, in query above there 2 terms: _pale ale beers_ and _ice creams_
 - Exact or partial query match. Determine if a query search exist in catalog as requested or only partially. _Lactose free yogurt_ is not in catalog, but just _yogurt_.
 - Entities not in catalog.
 
-## Entities clusterization
+## Indexing and searching tasks
+
+The two fundamental tasks in information retrieval are the one for collecting and storing product informations and on the other side, the task for obtaining them. It is all about elaborating text: indexing phase collect features from the products' name, while searching phase extract matches from the text query. Both task manipulate text in the following ways:
+
+
+### Entities clusterization
 
 The object is to isolate every entity within their search space or 'features' that refine the query.
 For doing that, I use _stop words_ (irrelevant terms such as articles, prepositions, adverbs) and some punctuations (full stops, semicolon, exclamation and question marks) to split the entire sentence into
@@ -37,30 +47,17 @@ _word clusters_
 
 This rainbowed sentence assume *me, and, for* as stop words for tokenizing the possible entities clusters.
 
-## Part Of Speech filtering
+### Part Of Speech filtering
 
 The clusters previously obtained are filter by their Part of Speech (POS) classification. The POS tagging assigns to each word their definition as noun, verb, adjective, adverb. I explicitly exclude verbs, adverbs and pronouns. The filtered clusters exclude *could you suggest* since it is entirely formed by ignored words, and they are represented as:
 
 ~~could you suggest~~ / pale ale beers / ice creams / party
 
-## Lemmatization
+### Lemmatization
 
 Lemmatization refers to the process of returning the root form of inflected words, in order to facilitate the analysis and the information  retrieval of terms. For example, _"Finds"_ and _"found"_ are grouped toghether as _"find"_. In this way, the cluster entities are turned into:
 
 pale ale beer~~(s)~~ / ice cream~~(s)~~ / party
-
-## N-gram generation
-
-An n-gram is a contiguous sequence of _n_ words. [I generate all possible combination of n-grams](https://gist.github.com/gfrison/3e130efeb0f17c7da59d78b520c34e96)  out of word clusters. The emphasized words are the result of this generation:
-
-| Beer | Ice cream | Party |
-| ---  | ---   | ---   |
-| pale ale beer | ice cream | party |
-| pale ale | ice | |
-| ale beer | cream | |
-| pale  | | |
-| ale  | | |
-| beer  | | | |
 
 ## Catalog indexing
 
@@ -73,14 +70,28 @@ In the indexing phase, when all catalog is scanned, parsed and tokenized, all n-
 How to check if a n-gram is present in the product list? Bloom filters solve the problem on storing large _Set_ in a fixed and pre-defined sized vector.
 By the algorithm, an element is converted in some numeric values (_h_) and  set **true** in a bit vector, at the _h_ position. How could be validated the presence of the element in the bit array? Just checking if the vector is true/false in the _h_ position. That gives the certainty whether the element is _not_ present, or, if vector checking is positive, the element presence with a determined _confidence degree_. The _true positive_ probability depends on the vector length and the number of hashes. This technique allows to compress a large amount of source data, negotiating a grade of uncertainty.
 
-## Information retrieval
+## Search
+
+### N-gram generation
+
+An n-gram is a contiguous sequence of _n_ words. [I generate all possible combination of n-grams](https://gist.github.com/gfrison/3e130efeb0f17c7da59d78b520c34e96)  out of word clusters. The emphasized words are the result of this generation:
+
+| Beer | Ice cream | Party |
+| ---  | ---   | ---   |
+| pale ale beer | ice cream | party |
+| pale ale | ice | |
+| ale beer | cream | |
+| pale  | | |
+| ale  | | |
+| beer  | | | |
 
 Once the n-grams are generated, it is fast to check if one of them is present in the products by inquiring the catalog bloom filter. For each entity cluster, we can check n-grams starting from the longest, in order to prioritize what exactly the user wants. We want to know also if the exact entity cluster is _not_ present but only an its sub-gram. For example we may write back:
 > _We don't have **pale ale beer**, but just **ale beer**. These are our suggestions:..._
 
 Moreover, we need to deal with such queries that asks products or services not offered by the given catalog market segment.
 
-#### Ontology database
+
+### Ontology database
 
 How can we check whether in the query there are valid terms but they are not treated by us? [ConceptNet](http://conceptnet.io) would be an answer. For this purpose more than **400K** terms have been collected among several categories and indexed as the catalog terms in a separate database.
 
