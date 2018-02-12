@@ -1,6 +1,8 @@
 ---
 layout: post
-description: Simple and effective way to get relevant entities from user utterance and rank them by their relevance from unstructured catalog
+description: Keyword extraction from search queries is a fundamental aspect of conversational commerce. In this article I illustrate
+a simple but effective way to get relevant entities from user's utterances and rank them by their relevance and their
+presence in a unstructured product catalog.
 title: Catalog Entity Extraction for Search
 #image: /assets/minos-chart.png
 published: true
@@ -14,11 +16,11 @@ presence in a unstructured product catalog.
 The primary purpose of a conversational application is to serve user demands, and when an user search in a e-commerce context, he is mostly
 looking for products. There is one main distinction that characterize a query when it is performed in the website rather than
 a messaging application. In the website users when they submit a query they already express their search intention, therefore
-the terms are quite concise and descriptive. Conversely, when inquiring a chatbot, users use a more expressive form
+the terms are concise and descriptive. Conversely, when inquiring a chatbot, users use a more expressive form
 such as: `Could you suggest me pale ale beers and ice creams for my party?`.
 While the intention is deducted by a classification task, relevant terms are just a subset of the entire sentence.
 
-Baseline approach would be to use all the text as query, returning innumerable hits of everything even remotely relevant and providing little help for the customers.
+Baseline approach would be to use all the text as query, returning innumerable hits of everything even remotely relevant and providing little help for customers.
 Another solution regards Named Entity Recognition, a class of algorithms  that seeks and classify entities, also by means of [neural networks](http://nlp.town/blog/ner-and-the-road-to-deep-learning/).
 
 While applying machine learning techniques can reach high levels of accuracy, they requires training data that might not be available. Moreover, what will work for a specific product segment won't work for another. This is why the following approach could be easily plugged in any market scopes without any particular adaptation.
@@ -83,7 +85,7 @@ An n-gram is a contiguous sequence of _n_ words. [I generate all possible combin
 | ale beer | cream | |
 | pale  | | |
 | ale  | | |
-| beer  | | | |
+| beer  | | |
 
 Once the n-grams are generated, it is fast to check if one of them is present by inquiring the catalog bloom filter. For each entity cluster, we can check n-grams starting from the longest, in order to prioritize what exactly the user wants. We want to know also if the exact entity cluster is _not_ present but only an its sub-gram. For example we may write back:
 > _We don't have **pale ale beer**, but just **ale beer**. These are our suggestions:..._
