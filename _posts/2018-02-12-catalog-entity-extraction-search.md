@@ -1,6 +1,6 @@
 ---
 layout: post
-description: Simple but effective way to search for relevant entities from user's utterances and rank them against an unstructured product catalog and an ontology database.
+description: Simple but effective way to extract relevant entities from user's queries and rank them against an product catalog and an ontology database.
 title: Catalog Entity Extraction for Search
 published: true
 permlink: /2018/02/12/catalog-entity-extraction-search
