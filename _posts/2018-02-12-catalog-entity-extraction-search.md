@@ -18,15 +18,14 @@ the terms are quite concise and descriptive. Conversely, when inquiring a chatbo
 such as: `Could you suggest me pale ale beers and ice creams for my party?`.
 While the intention is deducted by a classification task, relevant terms are just a subset of the entire sentence.
 
-Baseline approach would be to use all the text as query, returning innumerable hits of everything even remotely relevant and providing little help
-for the customers.
+Baseline approach would be to use all the text as query, returning innumerable hits of everything even remotely relevant and providing little help for the customers.
 Another solution regards Named Entity Recognition, a class of algorithms  that seeks and classify entities, also by means of [neural networks](http://nlp.town/blog/ner-and-the-road-to-deep-learning/).
- While applying machine learning techniques can reach high levels of accuracy, they requires training data that might not be available. Moreover, what will work for a specific product segment won't work for another. This is why this following approach could be easily plugged in any market scopes without any particular adaptation.
+ While applying machine learning techniques can reach high levels of accuracy, they requires training data that might not be available. Moreover, what will work for a specific product segment won't work for another. This is why the following approach could be easily plugged in any market scopes without any particular adaptation.
  This method is very simple. It takes in account only products names, even though not considering structured product schemas is really not feasible in an usua e-commerce system.
 
 >I want to extract the features that might affect the chatbot answer, based on the _quality_ of the search query.
 
-For example, it is very plausible to give the straight result when the query is really pertinent to returned item list, as well as informing the user whenever the query terms don't match with actually been in catalog, or even the query terms search for something completely out of scope.
+It is very plausible to give the straight result when the query is really pertinent to returned item list, as well as informing the user whenever the query terms don't match exactly with what we can offer him, or even when the query terms demand for something we can't provide.
 The desirable features are:
 - Distinct entities. For example, in query above there 2 terms: _pale ale beers_ and _ice creams_
 - Exact or partial query match. Determine if a query search exist in catalog as requested or only partially. _Lactose free yogurt_ is not in catalog, but just _yogurt_.
@@ -34,7 +33,7 @@ The desirable features are:
 
 ## Indexing and searching tasks
 
-The two fundamental tasks in information retrieval are the one for collecting and storing product informations and on the other side, the task for obtaining them. It is all about elaborating text: indexing phase collect features from the products' name, while searching phase extract matches from the text query. Both task manipulate text in the following ways:
+The two fundamental tasks in information retrieval are the one for collecting and storing product informations, and on the other side, the task for obtaining them. It is all about elaborating text, indexing phase collects features from the products' name, while the search phase extracts matches from text query. Both tasks manipulate text in the following ways:
 
 
 ### Entities clusterization
@@ -85,7 +84,7 @@ An n-gram is a contiguous sequence of _n_ words. [I generate all possible combin
 | ale  | | |
 | beer  | | | |
 
-Once the n-grams are generated, it is fast to check if one of them is present in the products by inquiring the catalog bloom filter. For each entity cluster, we can check n-grams starting from the longest, in order to prioritize what exactly the user wants. We want to know also if the exact entity cluster is _not_ present but only an its sub-gram. For example we may write back:
+Once the n-grams are generated, it is fast to check if one of them is present by inquiring the catalog bloom filter. For each entity cluster, we can check n-grams starting from the longest, in order to prioritize what exactly the user wants. We want to know also if the exact entity cluster is _not_ present but only an its sub-gram. For example we may write back:
 > _We don't have **pale ale beer**, but just **ale beer**. These are our suggestions:..._
 
 Moreover, we need to deal with such queries that asks products or services not offered by the given catalog market segment.
