@@ -16,21 +16,21 @@ the terms are usually concise and descriptive. Conversely, when inquiring a Chat
 such as: `Could you suggest me pale ale beers and ice creams for my party?`.
 While the intention is deducted by a classification task, relevant terms for search, are just a subset of the entire sentence.
 
-Baseline approach for searching, would be by taking all text as query, returning innumerable hits of everything even remotely relevant, providing little help for customers.
+Baseline approach for searching, would be to take all text as query, returning innumerable hits of everything even remotely relevant, providing little help for customers.
 Another solution regards Named Entity Recognition, a class of algorithms  that seeks and classify entities, also by means of [neural networks](http://nlp.town/blog/ner-and-the-road-to-deep-learning/).
 
-While machine learning techniques can reach high levels of accuracy, they might not be the favorite solution for production usage: they require hardly available training data, and  what will work for a specific product segment will not work for another. That is why the following approach could offer the flexibility demanded for real use case scenarios. It is easily plugged in any e-commerce without any particular adaptation.
+While machine learning techniques can reach high levels of accuracy, they might not be the favorite solution for production usage. They require hardly available training data, and  what will work for a specific product segment will not work for another. That is why the following approach could offer the flexibility demanded for real use case scenarios. It is easily plugged in any e-commerce without any particular adaptation.
 This method is very simple. I don't consider structured product features, rather I take in account only simple and concise information that is obtained just by the product name.
 
 >I want to extract the features that might affect the Chatbot's answer, based on the _quality_ of the search query.
 
-It is very plausible to give the straight result when the query is really pertinent to returned item list, as well as informing the users whenever the query terms don't match _exactly_ with what we can offer them, or even when the query terms demand for something we can't provide.
+It is very plausible to give straights result when the query is really pertinent to returned item list, as well as informing the users whenever the query terms do not match _exactly_ with what we can offer them, or even when the query terms demand for something we cannot provide.
 The desirable features are:
 
 - _Query entities selection_. When in the query there are more than one entity cluster, the conversational agent will be able to detect it and to ask the user to choose with entity will search first. For example, in query above there 2 terms: _pale ale beers_ and _ice creams_. For example the Chatbot could answer:
 > Are you searching for **pale ale beer** or **ice cream**?
 
-- _Partial term matching_. The user is prompted that the exact criteria doesn't match, but a less ranking one is provided. _pale ale beers_ is not in catalog, but _ale beer_ yes.
+- _Partial term matching_. The user is prompted that the exact criteria does not match, but a less ranking one is provided. _Pale ale beers_ is not in catalog, but _ale beer_ yes.
 > _We don't have **pale ale beer**, but just **ale beer**. These are our suggestions:..._
 
 - _Term out of market segment_. Prompt the user that the inquired item is not sold by this shopping website.
@@ -38,7 +38,7 @@ The desirable features are:
 
 ## Indexing and searching tasks
 
-The two fundamental tasks in information retrieval are the one for collecting and storing product informations, and on the other side, the task for obtaining them. It is all about elaborating text. Index phase collects features from the products' name, while the search phase extracts matches from text query. Both tasks manipulate text in the following ways:
+The two fundamental tasks in information retrieval are the one for collecting and storing product informations, and on the other side, the task for obtaining them. Index phase collects features from the products' name, while the search phase extracts matches from text query. Both tasks manipulate text in the following ways: _Entities clusterization_, _Part Of Speech filtering_, _Lemmatization_.
 
 
 ### Entities clusterization
@@ -53,7 +53,7 @@ This rainbowed sentence assume *me, and, for* as stop words for tokenizing the p
 
 ### Part Of Speech filtering
 
-The clusters previously obtained are filter by their Part of Speech (POS) classification. The POS tagging assigns to each word their definition as noun, verb, adjective, adverb. I explicitly exclude verbs, adverbs and pronouns. The filtered clusters exclude *could you suggest* since it is entirely formed by ignored words. They are represented as:
+Clusters previously obtained are filter by their Part Of Speech (POS) classification. The POS tagging assigns to each word their definition as noun, verb, adjective, adverb. I explicitly exclude verbs, adverbs and pronouns. This is why *could you suggest* is excluded since it is entirely formed by ignored words. The output is represented as:
 
 ~~could you suggest~~ / pale ale beers / ice creams / party
 
