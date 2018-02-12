@@ -12,7 +12,7 @@ a simple but effective way to get relevant entities from user's utterances and r
 presence in a unstructured product catalog.
 
 The primary purpose of a conversational application is to serve user demands, and when an user search in a e-commerce context, he is mostly
-looking for products. There are several distinctions that characterize a query when it is performed in the website rather than
+looking for products. There is one main distinction that characterize a query when it is performed in the website rather than
 a messaging application. In the website users when they submit a query they already express their search intention, therefore
 the terms are quite concise and descriptive. Conversely, when inquiring a chatbot, users use a more expressive form
 such as: `Could you suggest me pale ale beers and ice creams for my party?`.
@@ -20,12 +20,13 @@ While the intention is deducted by a classification task, relevant terms are jus
 
 Baseline approach would be to use all the text as query, returning innumerable hits of everything even remotely relevant and providing little help for the customers.
 Another solution regards Named Entity Recognition, a class of algorithms  that seeks and classify entities, also by means of [neural networks](http://nlp.town/blog/ner-and-the-road-to-deep-learning/).
- While applying machine learning techniques can reach high levels of accuracy, they requires training data that might not be available. Moreover, what will work for a specific product segment won't work for another. This is why the following approach could be easily plugged in any market scopes without any particular adaptation.
- This method is very simple. It takes in account only products names, even though not considering structured product schemas is really not feasible in an usua e-commerce system.
+
+While applying machine learning techniques can reach high levels of accuracy, they requires training data that might not be available. Moreover, what will work for a specific product segment won't work for another. This is why the following approach could be easily plugged in any market scopes without any particular adaptation.
+This method is very simple. I don't consider structured product features, rather I take in account only simple and concise information that is obtained just by the product name.
 
 >I want to extract the features that might affect the chatbot answer, based on the _quality_ of the search query.
 
-It is very plausible to give the straight result when the query is really pertinent to returned item list, as well as informing the user whenever the query terms don't match exactly with what we can offer him, or even when the query terms demand for something we can't provide.
+It is very plausible to give the straight result when the query is really pertinent to returned item list, as well as informing the users whenever the query terms don't match _exactly_ with what we can offer them, or even when the query terms demand for something we can't provide.
 The desirable features are:
 - Distinct entities. For example, in query above there 2 terms: _pale ale beers_ and _ice creams_
 - Exact or partial query match. Determine if a query search exist in catalog as requested or only partially. _Lactose free yogurt_ is not in catalog, but just _yogurt_.
@@ -60,14 +61,14 @@ pale ale beer~~(s)~~ / ice cream~~(s)~~ / party
 
 ## Catalog indexing
 
-Text manipulation, as above described, occurs both for storing the catalog data and for querying. As already mentioned, I don't consider structured product features, rather I take in account only simple and concise information that is obtained just by the product name.
+Text manipulation, as above described, occurs both for storing the catalog data and for querying.
 
 In the indexing phase, when all catalog is scanned, parsed and tokenized, all n-grams will composed into a _Set_. A _Set_ is a collection of distinct items. For efficiently storing the presence of a particular n-gram, bloom filters play a fundamental role.
 
 #### Bloom Filters
 
 How to check if a n-gram is present in the product list? Bloom filters solve the problem on storing large _Set_ in a fixed and pre-defined sized vector.
-By the algorithm, an element is converted in some numeric values (_h_) and  set **true** in a bit vector, at the _h_ position. How could be validated the presence of the element in the bit array? Just checking if the vector is true/false in the _h_ position. That gives the certainty whether the element is _not_ present, or, if vector checking is positive, the element presence with a determined _confidence degree_. The _true positive_ probability depends on the vector length and the number of hashes. This technique allows to compress a large amount of source data, negotiating a grade of uncertainty.
+By the algorithm, an element is converted in some numeric values (_h_) and  set **true** in a bit vector, at the _h_ position. How could be validated the presence of the element in the bit array? Just checking if the vector is true/false in the _h_ position. That gives the certainty whether the element is _not_ present, or, if vector checking is positive, whether the element is  present with a determined _confidence degree_. The _true positive_ probability depends on the vector length and the number of hashes. This technique allows to compress a large amount of source data, negotiating a grade of uncertainty.
 
 ## Search
 
@@ -92,7 +93,7 @@ Moreover, we need to deal with such queries that asks products or services not o
 
 ### Ontology database
 
-How can we check whether in the query there are valid terms but they are not treated by us? [ConceptNet](http://conceptnet.io) would be an answer. For this purpose more than **400K** terms have been collected among several categories and indexed as the catalog terms in a separate database.
+How can we check whether in the query there are valid terms but they are not treated by us? [ConceptNet](http://conceptnet.io) could be the answer. For this purpose more than **400K** terms have been collected among several categories and indexed as the catalog terms in a separate database.
 
 
 ## Conclusion
@@ -116,4 +117,4 @@ I have described a simple way for extracting query terms from a raw sentence, th
 - Partially term matching. The user is prompted that the exact criteria doesn't match, but a less ranking one is provided.
 - Terms out of scope. Point the user the online shop doesn't sell such products.
 
-Conversely, this model doesn't handle with misspellings, which represent alone about 15% of online search failures. Another missing point is the term relatedness matching, or semantic matching that can satisfy the search with relevant and pertinent results whenever customers use different terms from those in the website. This is already solved by mean of neural networks, I will describe it in another article, soon.
+Conversely, this model doesn't handle with misspellings, which represent alone about 15% of online search failures. This technique doesn't deal with relatedness matching, or semantic matching. That means we can't satisfy the search with relevant and pertinent results whenever customers use different terms from those in the website. I have already solved this problem by means of neural networks, and I will describe it in another article.
