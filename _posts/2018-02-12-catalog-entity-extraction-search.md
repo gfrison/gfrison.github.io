@@ -1,8 +1,6 @@
 ---
 layout: post
-description: Keyword extraction from search queries is a fundamental aspect of conversational commerce. In this article I illustrate
-a simple but effective way to get relevant entities from user's utterances and rank them by their relevance and their
-presence in a unstructured product catalog.
+description: Keyword extraction from search queries is a fundamental aspect of conversational commerce. In this article I illustrate a simple but effective way to get relevant entities from user's utterances and rank them by their relevance and their presence in a unstructured product catalog.
 title: Catalog Entity Extraction for Search
 #image: /assets/minos-chart.png
 published: true
