@@ -1,15 +1,13 @@
 ---
 layout: post
-description: Keyword extraction from search queries is a fundamental aspect of conversational commerce. In this article I illustrate a simple but effective way to get relevant entities from user's utterances and rank them by their relevance and their presence in a unstructured product catalog.
+description: Keyword extraction from search queries is a fundamental aspect of conversational commerce. In this article I illustrate a simple but effective way to get relevant entities from user's utterances and rank them against an unstructured product catalog and an ontology database.
 title: Catalog Entity Extraction for Search
 #image: /assets/minos-chart.png
 published: true
 permlink: /2018/02/12/catalog-entity-extraction-search
 ---
 
-Keyword extraction from search queries is a fundamental aspect of conversational commerce. In this article I illustrate
-a simple but effective way to get relevant entities from user's utterances and rank them by their relevance and their
-presence in a unstructured product catalog.
+Keyword extraction from search queries is a fundamental aspect of conversational commerce. In this article I illustrate a simple but effective way to get relevant entities from user's utterances and rank them against an unstructured product catalog and an ontology database.
 
 The primary purpose of a conversational application is to serve user demands, and when an user search in a e-commerce context, he is mostly
 looking for products. There is one main distinction that characterize a query when it is performed in the website rather than
@@ -21,7 +19,7 @@ While the intention is deducted by a classification task, relevant terms are jus
 Baseline approach would be to use all the text as query, returning innumerable hits of everything even remotely relevant and providing little help for customers.
 Another solution regards Named Entity Recognition, a class of algorithms  that seeks and classify entities, also by means of [neural networks](http://nlp.town/blog/ner-and-the-road-to-deep-learning/).
 
-While applying machine learning techniques can reach high levels of accuracy, they requires training data that might not be available. Moreover, what will work for a specific product segment won't work for another. This is why the following approach could be easily plugged in any market scopes without any particular adaptation.
+While applying machine learning techniques can reach high levels of accuracy, they requires training data that might not be available. Moreover, what will work for a specific product segment won't work for another. This is why the following approach offers the flexibility demanded for real use case scenarios. It could be easily plugged in any market scopes without any particular adaptation.
 This method is very simple. I don't consider structured product features, rather I take in account only simple and concise information that is obtained just by the product name.
 
 >I want to extract the features that might affect the chatbot answer, based on the _quality_ of the search query.
@@ -29,17 +27,17 @@ This method is very simple. I don't consider structured product features, rather
 It is very plausible to give the straight result when the query is really pertinent to returned item list, as well as informing the users whenever the query terms don't match _exactly_ with what we can offer them, or even when the query terms demand for something we can't provide.
 The desirable features are:
 - Distinct entities. For example, in query above there 2 terms: _pale ale beers_ and _ice creams_
-- Exact or partial query match. Determine if a query search exist in catalog as requested or only partially. _Lactose free yogurt_ is not in catalog, but just _yogurt_.
+- Exact or partial query match. Determine if a query search exists in catalog as requested or only partially. _Lactose free yogurt_ is not in catalog, but just _yogurt_.
 - Entities not in catalog.
 
 ## Indexing and searching tasks
 
-The two fundamental tasks in information retrieval are the one for collecting and storing product informations, and on the other side, the task for obtaining them. It is all about elaborating text, indexing phase collects features from the products' name, while the search phase extracts matches from text query. Both tasks manipulate text in the following ways:
+The two fundamental tasks in information retrieval are the one for collecting and storing product informations, and on the other side, the task for obtaining them. It is all about elaborating text. Index phase collects features from the products' name, while the search phase extracts matches from text query. Both tasks manipulate text in the following ways:
 
 
 ### Entities clusterization
 
-The object is to isolate every entity within their search space or 'features' that refine the query.
+The objective is to isolate every entity within their search space (or _features_) that refines the query.
 For doing that, I use _stop words_ (irrelevant terms such as articles, prepositions, adverbs) and some punctuations (full stops, semicolon, exclamation and question marks) to split the entire sentence into
 _word clusters_
 
@@ -49,13 +47,13 @@ This rainbowed sentence assume *me, and, for* as stop words for tokenizing the p
 
 ### Part Of Speech filtering
 
-The clusters previously obtained are filter by their Part of Speech (POS) classification. The POS tagging assigns to each word their definition as noun, verb, adjective, adverb. I explicitly exclude verbs, adverbs and pronouns. The filtered clusters exclude *could you suggest* since it is entirely formed by ignored words, and they are represented as:
+The clusters previously obtained are filter by their Part of Speech (POS) classification. The POS tagging assigns to each word their definition as noun, verb, adjective, adverb. I explicitly exclude verbs, adverbs and pronouns. The filtered clusters exclude *could you suggest* since it is entirely formed by ignored words. They are represented as:
 
 ~~could you suggest~~ / pale ale beers / ice creams / party
 
 ### Lemmatization
 
-Lemmatization refers to the process of returning the root form of inflected words, in order to facilitate the analysis and the information  retrieval of terms. For example, _"Finds"_ and _"found"_ are grouped toghether as _"find"_. In this way, the cluster entities are turned into:
+Lemmatization refers to the process of returning the root form of inflected words, in order to facilitate the analysis and the search of those terms. For example, _"Finds"_ and _"found"_ are grouped together as _"find"_. In this way, cluster entities are turned into:
 
 pale ale beer~~(s)~~ / ice cream~~(s)~~ / party
 
@@ -63,12 +61,14 @@ pale ale beer~~(s)~~ / ice cream~~(s)~~ / party
 
 Text manipulation, as above described, occurs both for storing the catalog data and for querying.
 
-In the indexing phase, when all catalog is scanned, parsed and tokenized, all n-grams will composed into a _Set_. A _Set_ is a collection of distinct items. For efficiently storing the presence of a particular n-gram, bloom filters play a fundamental role.
+In the indexing phase, when all catalog is scanned, parsed and tokenized, all particles will be stored into a _Set_. A _Set_ is a collection of distinct items. For efficiently storing the presence of a particular cluster, bloom filters play a fundamental role.
 
 ### Bloom Filters
 
 How to check if a n-gram is present in the product list? Bloom filters solve the problem on storing large _Set_ in a fixed and pre-defined sized vector.
-By the algorithm, an element is converted in some numeric values (_h_) and  set **true** in a bit vector, at the _h_ position. How could be validated the presence of the element in the bit array? Just checking if the vector is true/false in the _h_ position. That gives the certainty whether the element is _not_ present, or, if vector checking is positive, whether the element is  present with a determined _confidence degree_. The _true positive_ probability depends on the vector length and the number of hashes. This technique allows to compress a large amount of source data, negotiating a grade of uncertainty.
+By the algorithm, an element is converted in some numeric values (_h_) and  set **true** in a bit vector, at the _h_ position. How could be validated the presence of the element in the bit array? Just checking if the vector is true/false in the _h_ position. That gives the certainty whether the element is _not_ present, or, if vector checking is positive, whether the element is  present with a determined _confidence degree_. The _true positive_ probability depends on the vector length and the number of hashes.
+
+> Bloom filters allow to compress a large amount of source data, negotiating a grade of uncertainty.
 
 ## Search
 
@@ -112,8 +112,8 @@ entity clusters:
   term: party
   catalog: false
 ```
-I have described a simple way for extracting query terms from a raw sentence, that approach provide useful information that could be managed by an conversational engine for deal with following cases:
-- Query entities selection. The user is asked to search one entity at time.
+I have described a simple way for extracting query terms from a raw sentence. This approach provides useful information that could be managed by an conversational engine for dealing with following cases:
+- Query entities selection. When in the query there are more than one entity cluster, the conversational agent will be able to detect it and to ask the user to choose with entity will search first.
 - Partially term matching. The user is prompted that the exact criteria doesn't match, but a less ranking one is provided.
 - Terms out of scope. Point the user the online shop doesn't sell such products.
 
