@@ -65,7 +65,7 @@ Text manipulation, as above described, occurs both for storing the catalog data 
 
 In the indexing phase, when all catalog is scanned, parsed and tokenized, all n-grams will composed into a _Set_. A _Set_ is a collection of distinct items. For efficiently storing the presence of a particular n-gram, bloom filters play a fundamental role.
 
-#### Bloom Filters
+### Bloom Filters
 
 How to check if a n-gram is present in the product list? Bloom filters solve the problem on storing large _Set_ in a fixed and pre-defined sized vector.
 By the algorithm, an element is converted in some numeric values (_h_) and  set **true** in a bit vector, at the _h_ position. How could be validated the presence of the element in the bit array? Just checking if the vector is true/false in the _h_ position. That gives the certainty whether the element is _not_ present, or, if vector checking is positive, whether the element is  present with a determined _confidence degree_. The _true positive_ probability depends on the vector length and the number of hashes. This technique allows to compress a large amount of source data, negotiating a grade of uncertainty.
