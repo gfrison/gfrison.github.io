@@ -17,7 +17,8 @@ author:
   name:              'Giancarlo Frison'
   url:               'https://twitter.com/gfrison'
   twitter: gfrison
-
+twitter:
+  username: gfrison
 social:
   title: Signals from the Noise
   name: Giancarlo Frison
@@ -31,4 +32,6 @@ social:
 version:             1.0.0
 
 # Gems
-plugins: [jekyll-paginate, jekyll-seo-tag]
+plugins: 
+  - jekyll-paginate
+  - jekyll-seo-tag
