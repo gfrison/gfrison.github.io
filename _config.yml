@@ -31,4 +31,4 @@ social:
 version:             1.0.0
 
 # Gems
-gems: [jekyll-paginate, jekyll-seo-tag]
+plugins: [jekyll-paginate, jekyll-seo-tag]
