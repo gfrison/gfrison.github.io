@@ -11,24 +11,30 @@ Keyword extraction from search queries is a fundamental aspect of conversational
 
 The primary purpose of a conversational application is to serve user demands, and when an user search in a e-commerce context, he is mostly
 looking for products. There is one main distinction that characterize a query when it is performed in the website rather than
-a messaging application. In the website users when they submit a query they already express their search intention, therefore
-the terms are concise and descriptive. Conversely, when inquiring a chatbot, users use a more expressive form
+a messaging application. In the website, when users submit a query they already express their search intention, therefore
+the terms are usually concise and descriptive. Conversely, when inquiring a Chatbot, users use more expressive forms
 such as: `Could you suggest me pale ale beers and ice creams for my party?`.
-While the intention is deducted by a classification task, relevant terms are just a subset of the entire sentence.
+While the intention is deducted by a classification task, relevant terms for search, are just a subset of the entire sentence.
 
-Baseline approach would be to use all the text as query, returning innumerable hits of everything even remotely relevant and providing little help for customers.
+Baseline approach for searching, would be by taking all text as query, returning innumerable hits of everything even remotely relevant, providing little help for customers.
 Another solution regards Named Entity Recognition, a class of algorithms  that seeks and classify entities, also by means of [neural networks](http://nlp.town/blog/ner-and-the-road-to-deep-learning/).
 
-While applying machine learning techniques can reach high levels of accuracy, they requires training data that might not be available. Moreover, what will work for a specific product segment won't work for another. This is why the following approach offers the flexibility demanded for real use case scenarios. It could be easily plugged in any market scopes without any particular adaptation.
+While machine learning techniques can reach high levels of accuracy, they might not be the favorite solution for production usage: they require hardly available training data, and  what will work for a specific product segment will not work for another. That is why the following approach could offer the flexibility demanded for real use case scenarios. It is easily plugged in any e-commerce without any particular adaptation.
 This method is very simple. I don't consider structured product features, rather I take in account only simple and concise information that is obtained just by the product name.
 
->I want to extract the features that might affect the chatbot answer, based on the _quality_ of the search query.
+>I want to extract the features that might affect the Chatbot's answer, based on the _quality_ of the search query.
 
 It is very plausible to give the straight result when the query is really pertinent to returned item list, as well as informing the users whenever the query terms don't match _exactly_ with what we can offer them, or even when the query terms demand for something we can't provide.
 The desirable features are:
-- Distinct entities. For example, in query above there 2 terms: _pale ale beers_ and _ice creams_
-- Exact or partial query match. Determine if a query search exists in catalog as requested or only partially. _Lactose free yogurt_ is not in catalog, but just _yogurt_.
-- Entities not in catalog.
+
+- _Query entities selection_. When in the query there are more than one entity cluster, the conversational agent will be able to detect it and to ask the user to choose with entity will search first. For example, in query above there 2 terms: _pale ale beers_ and _ice creams_. For example the Chatbot could answer:
+> Are you searching for **pale ale beer** or **ice cream**?
+
+- _Partial term matching_. The user is prompted that the exact criteria doesn't match, but a less ranking one is provided. _pale ale beers_ is not in catalog, but _ale beer_ yes.
+> _We don't have **pale ale beer**, but just **ale beer**. These are our suggestions:..._
+
+- _Term out of market segment_. Prompt the user that the inquired item is not sold by this shopping website.
+> We do not sell **insurance**, sorry.
 
 ## Indexing and searching tasks
 
@@ -66,9 +72,10 @@ In the indexing phase, when all catalog is scanned, parsed and tokenized, all pa
 ### Bloom Filters
 
 How to check if a n-gram is present in the product list? Bloom filters solve the problem on storing large _Set_ in a fixed and pre-defined sized vector.
-By the algorithm, an element is converted in some numeric values (_h_) and  set **true** in a bit vector, at the _h_ position. How could be validated the presence of the element in the bit array? Just checking if the vector is true/false in the _h_ position. That gives the certainty whether the element is _not_ present, or, if vector checking is positive, whether the element is  present with a determined _confidence degree_. The _true positive_ probability depends on the vector length and the number of hashes.
-
+By the algorithm, an element is converted in some numeric values (_h_) and  set **true** in a bit vector, at the _h_ position.
 > Bloom filters allow to compress a large amount of source data, negotiating a grade of uncertainty.
+
+How could be validated the presence of the element in the bit array? Just checking if the vector is true/false in the _h_ position. That gives the certainty whether the element is _not_ present, or, whether vector checking is positive, a determined _confidence degree_ that such element is present. The _true positive_ probability depends on the vector length and the number of hashes.
 
 ## Search
 
@@ -85,9 +92,7 @@ An n-gram is a contiguous sequence of _n_ words. [I generate all possible combin
 | ale  | | |
 | beer  | | |
 
-Once the n-grams are generated, it is fast to check if one of them is present by inquiring the catalog bloom filter. For each entity cluster, we can check n-grams starting from the longest, in order to prioritize what exactly the user wants. We want to know also if the exact entity cluster is _not_ present but only an its sub-gram. For example we may write back:
-> _We don't have **pale ale beer**, but just **ale beer**. These are our suggestions:..._
-
+Once the n-grams are generated, it is fast to check if one of them is present by inquiring the catalog bloom filter. For each entity cluster, we can check n-grams starting from the longest, in order to prioritize what exactly the user wants. We want to know also if the exact entity cluster is _not_ present but only an its sub-gram.
 Moreover, we need to deal with such queries that asks products or services not offered by the given catalog market segment.
 
 
@@ -112,9 +117,7 @@ entity clusters:
   term: party
   catalog: false
 ```
-I have described a simple way for extracting query terms from a raw sentence. This approach provides useful information that could be managed by an conversational engine for dealing with following cases:
-- Query entities selection. When in the query there are more than one entity cluster, the conversational agent will be able to detect it and to ask the user to choose with entity will search first.
-- Partially term matching. The user is prompted that the exact criteria doesn't match, but a less ranking one is provided.
-- Terms out of scope. Point the user the online shop doesn't sell such products.
+I have described a simple way for extracting query terms from a raw sentence. This approach provides useful information that could be managed by an conversational engine for corroborating search results with meaningful answers.
+On the other hand, this model doesn't handle with misspellings, which represent alone about 15% of online search failures. This technique doesn't deal with relatedness matching, or semantic matching. That means we can't satisfy the search with relevant and pertinent results whenever customers use different terms from those in the website. I have already solved this problem by means of neural networks, and I will describe it in another article.
 
-Conversely, this model doesn't handle with misspellings, which represent alone about 15% of online search failures. This technique doesn't deal with relatedness matching, or semantic matching. That means we can't satisfy the search with relevant and pertinent results whenever customers use different terms from those in the website. I have already solved this problem by means of neural networks, and I will describe it in another article.
+**Acknowledgment** Thank you [Sidi](https://github.com/elaatifi) for the contribution.
