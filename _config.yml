@@ -32,6 +32,7 @@ social:
 version:             1.0.0
 
 # Gems
-plugins: 
+plugins:
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-sitemap
