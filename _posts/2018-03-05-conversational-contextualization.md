@@ -6,7 +6,7 @@ published: true
 permlink: /2018/03/05/conversational-context-sequence
 ---
 
-Contextual memory in conversational applications play a central role in any type of interaction between the Chatbot and the user. It is the bidirectional transfer of information where interlocutors are aware of the relational, environmental, and cultural context of the exchange. I will show some example on how a contextual based system might improve the communication on some basic scenarios.
+Contextual memory in conversational applications play a central role in any type of interaction between the Chatbot and the user. It is the bidirectional transfer of information where interlocutors are aware of the relational, environmental, and cultural context of the exchange. I will show some examples on how a contextual based system might improve the flow of the dialog.
 
 Consider the following sentence:
 
@@ -22,7 +22,9 @@ Even though the quoting is taken directly from the original sentence, it omits i
 >Context is the circumstances surroundings a message.
 
 In the realm of conversational applications, where users can dialog with Chatbots, the context is a fundamental aspect for any type of interaction that spans from goal-oriented to one-shot tasks.
-Let's consider a simple case, where the same sentence appears in different contexts with consequentially different outcomes. Taking the following sentence: `Add bread into cart` the system should react accordingly with what the user has previously entered, more precisely:
+Let's consider a simple case, where the same sentence appears in different contexts with consequentially different outcomes.
+
+Taking the following sentence: `Add bread into cart` the system should react accordingly with what the user has previously entered, more precisely:
 
 - If user has just searched for a product, the system will drive him to select the desired product and tap the button below &rarr; *Drive the user to tap the related 'Add to Cart' button*.
 - In all other cases &rarr; *Search for bread*.
