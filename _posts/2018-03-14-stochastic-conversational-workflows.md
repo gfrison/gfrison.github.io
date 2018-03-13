@@ -58,7 +58,6 @@ That means, a particular meaning of an user's utterance is not considered alone 
 the current state of the art of Chatbot classifiers, but it is evaluated in the context
 of the conversation.
 Fully-connected neural network means that the different layers of the network (CNN, LSTM) are affected by the sames feed-forward and back-propagation iterations.
-
 ![Stochastic Conversational Workflows]({{ site.url }}/assets/stochastic-conversational-workflows.png)
 
 While CNN extracts a relevant representation of the user's input, other type of inputs can be feed into the LSTM layer as illustrated. In this way, the meaning of the user's sentence is evaluated within a set a additional parameters that can affect the decision outcome of a particular conversational step.
