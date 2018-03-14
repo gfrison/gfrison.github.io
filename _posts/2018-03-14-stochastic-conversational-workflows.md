@@ -2,7 +2,7 @@
 layout: post
 description: A novel approach for improving conversational fluency in Chatbots by employing neural networks based on convolutions and long-short memory units.
 title: Stochastic Conversational Workflows
-published: false
+published: true
 permlink: /2018/03/14/stochastic-conversational-workflows
 image: /assets/stochastic-conversational-workflows.png
 ---
@@ -13,10 +13,12 @@ Chatbots shift UX towards _conversational hypertext_ that produces the appearanc
 The casualness of the medium contrasts with the complexity of the structured, and sometimes cumbersome, functions for achieving a specific goal, but while web-users can easily switch to a new goal-oriented scenario with a click, in the messaging application this could be mainly done by texting.
 Conversational applications usually implement workflows not by screens or forms but by piling new dialog scenarios into the conversational stack. Technically, it is something like packing [finite state machines](https://en.wikipedia.org/wiki/Finite-state_machine), on which every layer represents a particular task. When the current one is accomplished, the dialog state closes and it is removed from the stack.
 Conversational workflows may be managed by state-machine engines implemented directly in the chatbot or alternatively by existing flow managers such as Dialogflow (former API.AI), Wit.ai, LUIS.ai (Language Understanding Intelligent Service) by which designers can setup conversation processes in their web dashboards.
+
 ![Conventional Dialog Stack]({{ site.url }}/assets/dialog-stack.png)
 
 Even though it might be tempting to assume users will follow the exact logical sequence of steps defined by the bot's designer, it rarely occurs.
 The austere interface of a Chatbot does not constraint users in pre-defined schema, it does not prevent nor discourage them to behave like they naturally do with other people: express a demand, ask information, change search criteria for a product, ask maybe again, and eventually pay or just abort the process.
+
 ![Rule-base vs stochastic workflow process]({{ site.url }}/assets/checkout-workflows.png)
 
 People do not communicate in _stacks_. They tend to jump from a subject to another almost in a random way. Users may decide to do something entirely different, no matter how the process flow has been structured. They may ask for questions unrelated to the current procedure, or cancel it and then start over again. It
@@ -58,6 +60,7 @@ That means, a particular meaning of an user's utterance is not considered alone 
 the current state of the art of Chatbot classifiers, but it is evaluated in the context
 of the conversation.
 Fully-connected neural network means that the different layers of the network (CNN, LSTM) are affected by the sames feed-forward and back-propagation iterations.
+
 ![Stochastic Conversational Workflows]({{ site.url }}/assets/stochastic-conversational-workflows.png)
 
 While CNN extracts a relevant representation of the user's input, other type of inputs can be feed into the LSTM layer as illustrated. In this way, the meaning of the user's sentence is evaluated within a set a additional parameters that can affect the decision outcome of a particular conversational step.
