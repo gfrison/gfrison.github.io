@@ -2,7 +2,7 @@
 layout: post
 description: Reducing user frustration by presenting related products, when searched items are not available in catalog in order to improve search in e-commerce websites.
 title: Concept Search by Word Embeddings
-published: true
+published: false
 permlink: /2018/06/16/concept-search-by-word-embeddings
 image: /assets/concept-search-word-embeddings.png
 ---
