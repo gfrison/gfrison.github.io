@@ -1,33 +1,33 @@
 ---
 layout: post
-description: A novel approach for improving conversational fluency in Chatbots by employing neural networks based on convolutions and long-short memory units.
+description: Reducing user frustration by presenting related products, when searched items are not available in catalog in order to improve search in e-commerce websites.
 title: Concept Search by Word Embeddings
-published: false
-permlink: /2018/05/16/concept-search-by-word-embeddings
+published: true
+permlink: /2018/06/16/concept-search-by-word-embeddings
 image: /assets/concept-search-word-embeddings.png
 ---
 ![Semantic Search]({{ site.url }}/assets/semantic-search-wines.png)
 Catalog search is one of the most important factor to the success of e-commerce sites and accurate and relevant results are critical to successful conversion.  
-The central hypothesis behind this proposal is that a user might be willing to accept alternative products with similar characteristics to what they are looking for. The following approach I illustrate from now on, aims to reduce user frustration by presenting products similar or related, when searched items are not available in catalog. The user get the option to select similar products and finalize the purchase rather than not having this option at all.
+The following approach I illustrate from now on, aims to reduce user frustration by presenting related products, when searched items are not available in catalog. The central hypothesis is that an user might buy products with similar characteristics of a product originally searched, leading the successful search into a purchase.
 
-Search engines help to find relevant matches against a query according to various information retrieval algorithms. Those systems find occurrences of a term and classify documents into topics, but regardless their effectiveness, they are unequivocally related to the provided catalog and vocabulary. Therefore, it is not possible to retrieve products by searching terms that are not already present in the inventory.
+Search engines help to find relevant matches against a query according to various information-retrieval algorithms. Those systems find occurrences of queries, but regardless their effectiveness, they are unequivocally related to the terms provided by the catalog. Therefore, products cannot be retrieved by words that are not already present in the inventory.
 
-Concept matching (a sub-domain of semantic search) refers to the quality of retrieved instances based on significance, instead of lexicographic, similarity. Associating terms by an acceptable grade of relatedness, pivots around those key points:
-1. Acquire the knowledge where it is possible to extract semantic relations.
-2. Elaborate the data in order to calculate word relatedness.  
+Concept matching (a sub-domain of semantic search) refers to the quality of retrieved instances based on significance. The association of terms by an acceptable grade of relatedness, pivots around those key points:
+1. Knowledge detection. From where is it possible to identify semantic relations among words?
+2. Concept extraction. How relations could be extracted and then predicted?
 
 The elaboration applied to the data for obtaining our demanded features is called word embedding.
 
-Word embedding is a very popular term undoubtedly because of the contribution of the deep learning community. It is associate to the research of distributional semantics, the branch of studies for elaborating semantic similarities between words based on their distributional properties.
+[Word embedding](https://en.wikipedia.org/wiki/Word_embedding) is a very popular term undoubtedly because of the contribution of the deep learning community. It is associate to the research of [distributional semantics](https://en.wikipedia.org/wiki/Distributional_semantics), the branch of studies for elaborating semantic similarities between words based on their distributional properties.
 > "a word is characterized by the company it keeps".  cit *R. Firth*
 
-Algorithms (like the well-known skip-gram, cbow, glove) train models to predict words as they sequentially appears in a given text corpora.  As result the models associate a word with a vector representation with the peculiarity that similar word show highest cosine similarity. Cosine distance measure the cosine of the angle between vectors, thus detecting the relatedness between two words.
+Algorithms (like the well-known [skip-gram](https://en.wikipedia.org/wiki/N-gram#Skip-gram), [cbow](https://en.wikipedia.org/wiki/Bag-of-words_model#CBOW), [glove](https://www.aclweb.org/anthology/D14-1162)) train models to predict words as they sequentially appears in a given text corpora.  As result, the word embedding model associates a word with list of similar terms, therefore similar words are represented by similar lists. Cosine similarity measures the cosine of the angle between word lists, thus detecting the relatedness between two words.
 
 ## Concept Matching Algorithm
 
 ![Concept Search Diagram]({{ site.url }}/assets/semantic-search-word-embeddings.png)
 
-In the example above the user submit the unknown search query _Chardonnay_ which has some similar terms retrieved in the word embeddings. Some of them exist in catalog and they are presented to the user sorted by the product of embedding similarity and search score.
+In the example above the user submit the unknown search query _Chardonnay_ which has some similar terms retrieved in the word embeddings. Some of them might exist in catalog and they are returned to the user.
 
 <small>
 **algorithm** *retrieve_alternatives* **is**
