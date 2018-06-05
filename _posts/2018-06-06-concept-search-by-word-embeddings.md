@@ -23,7 +23,7 @@ The elaboration applied to the data for obtaining our demanded features is calle
 
 Algorithms (like the well-known [skip-gram](https://en.wikipedia.org/wiki/N-gram#Skip-gram), [cbow](https://en.wikipedia.org/wiki/Bag-of-words_model#CBOW), [glove](https://www.aclweb.org/anthology/D14-1162)) are employed to train models for predict words as they sequentially appears in a given text corpora.  As result, the word embedding model converts a single word into a list of similarities, a vector. Analogous words are represented by similar vectors and [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) measures the cosine of the angle between word vectors, thus scoring the relatedness between two words.
 
-## Concept Matching Algorithmlowering user frustration during search
+## Concept Matching Algorithm
 
 ![Concept Search Diagram]({{ site.url }}/assets/semantic-search-word-embeddings.png)
 
