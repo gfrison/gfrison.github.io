@@ -11,7 +11,7 @@ description:         'Made by <a href="https://twitter.com/gfrison" target="_bla
 url:                 'https://gfrison.com'
 baseurl:             ''
 paginate:            5
-
+markdown: kramdown
 # About/contact
 author:
   name:              'Giancarlo Frison'
@@ -37,4 +37,3 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-
