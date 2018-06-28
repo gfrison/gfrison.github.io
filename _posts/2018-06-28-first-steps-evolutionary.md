@@ -1,6 +1,6 @@
 ---
 layout: post
-description: Basic principles on the foundations of languages. How language is directly linked to the real world and its human representation.
+description: Using evolutionary system based on Genetic Programming for complex strategies planning: first steps with multi-objective problems.
 title: First Steps on Evolutionary Systems
 published: true
 permlink: /2018/06/28/first-steps-evolutionary
@@ -47,7 +47,7 @@ As GP is inspired by biological nature of evolution, it [often surprises researc
 Back to the subject of this post, a generic and flexible environment for training agents on reaching some goals must deal with what is defined as multi-objective optimization. The final outcome should solve several goals which might be in conflict with each other, like for example growing profit for a business and rise salary to its employees. Multi-objective optimization give rise to a set of [Pareto-optimal](https://en.wikipedia.org/wiki/Pareto_efficiency) solutions. The purpose of training is to create agents that can find as many such solutions as possible. The aggregated fitness function (AFF) has minimal knowledge on how a goal is achieved and evaluates only _what_ is actually achieved. Therefore, the procedure of how an agent accomplishes a task is irrelevant. The drawback is obviously that there is no guidance for evolution through immediate solutions.
 
 ## Simple experiment
-A GP system has been instructed to model as many ASTs as the number of digit of a randomly generated set of numbers. Those programs should find the respective digit out of the given number, like units, tens and so on. The fitness function measure the square of the sum of the distance between the predicted and real digit. Assuming $$P$$ as a set of $$n$$ programs, and $$D$$ the the digits of the input number, the fitness function returns the sum of the squared error between the calculated digit $$P(D)$$ and the correct ones $$d$$. In doing so, the feedback for the single program is lost, only the aggregated one is considered by the genetic algorithm.
+A GP system has been instructed to model as many ASTs as the number of digit of a randomly generated set of numbers. Those programs should find the respective digit out of the given number, like units, tens and so on. Assuming $$P$$ as a set of $$n$$ programs, and $$D$$ the the digits of the input number when $$D=46$$ the output will be $$P_1(D)=4$$ and $$P_2(D)=6$$, just as simple as that. The fitness function measure the square of the sum of the distance between the predicted and real digit. The fitness function returns the sum of the squared error between the calculated digit $$P(D)$$ and the correct ones $$d$$. In doing so, the feedback for the single program is lost, only the aggregated one is considered by the genetic algorithm.
 
 $$err = \frac{\sum_{i=1}^n (D_i - P_i(D))^2}{\sum_{i=1}^n D_i} $$
 
