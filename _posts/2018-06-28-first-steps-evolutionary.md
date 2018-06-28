@@ -1,6 +1,6 @@
 ---
 layout: post
-description: Using evolutionary system based on Genetic Programming for complex strategies planning: first steps with multi-objective problems.
+description: Using evolutionary system based on Genetic Programming for complex strategies planning. First steps with multi-objective problems.
 title: First Steps on Evolutionary Systems
 published: true
 permlink: /2018/06/28/first-steps-evolutionary
