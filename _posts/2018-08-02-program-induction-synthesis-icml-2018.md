@@ -4,7 +4,7 @@ description: Can we teach computers to write code? In the ICML 2018 an workshop 
 title: Program Induction and Synthesis on ICML 2018
 published: true
 permlink: /2018/08/02/program-induction-synthesis-icml-2018
-image: /assets/pinduction-schema.png
+image: /assets/dreamcoder.png
 comments: true
 tags: program induction, icml, machine learning
 ---
