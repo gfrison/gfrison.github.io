@@ -31,6 +31,9 @@ social:
 # Custom vars
 version:             1.0.0
 
+disqus:
+    shortname: gfrison
+
 # Gems
 plugins:
   - jekyll-paginate

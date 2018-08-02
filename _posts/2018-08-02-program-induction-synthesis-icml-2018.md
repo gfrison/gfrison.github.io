@@ -5,6 +5,8 @@ title: Program Induction and Synthesis on ICML 2018
 published: true
 permlink: /2018/08/02/program-induction-synthesis-icml-2018
 image: /assets/pinduction-schema.png
+comments: true
+tags: program induction, icml, machine learning
 ---
 
 ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2018/06/images.jpeg)
