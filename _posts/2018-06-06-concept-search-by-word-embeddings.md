@@ -5,6 +5,7 @@ title: Concept Search by Word Embeddings
 published: true
 permlink: /2018/06/06/concept-search-by-word-embeddings
 image: /assets/concept-search-word-embeddings.png
+comments: true
 ---
 ![Semantic Search]({{ site.url }}/assets/semantic-search-wines.png)
 Catalog search is one of the most important factor to the success of e-commerce sites and accurate and relevant results are critical to successful conversion.  

@@ -2,6 +2,7 @@
 layout: post
 title: Machine Comprehension on Chatbots
 image: /assets/bidaf.png
+comments: true
 ---
 
 One of the most demanded feature in chatbots is the ability to automatically provide helpful informations. Users might ask about how to pay the purchases online, how to return an defected item, when the purchase could be delivered or just about the opening hours of a shop.

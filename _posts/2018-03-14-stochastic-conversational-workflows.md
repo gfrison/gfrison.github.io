@@ -5,6 +5,7 @@ title: Stochastic Conversational Workflows
 published: true
 permlink: /2018/03/14/stochastic-conversational-workflows
 image: /assets/stochastic-conversational-workflows.png
+comments: true
 ---
 
 Traditionally, user interfaces are a series of screens and forms for exchanging informations with the user. Most of the applications start with a main screen from which users can navigate using breadcrumbs, menus, buttons like back and forward. This paradigm remained almost unaltered with the coming of hypertext where one may jump from a page or dialog into another by visual links, that are immediately accessible.

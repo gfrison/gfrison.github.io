@@ -5,6 +5,7 @@ title: The Basic Principles of Language
 published: true
 permlink: /2018/06/13/basic-principles-language
 image: /assets/hand.jpg
+comments: true
 ---
 
 What is this exhilarating noise come out of my mouth when I talk? Not surely because that precise sequence of sounds, pops and squeezes are particularly melodic, but thanks to that palace of sophistications erected in favor of language, we can talk and afford a wide range of expressions. Since I began erratically to explore natural language processing I have been wondering how it comes out so natural for us, while it is extremely complicated from a computational perspective. What has caught my curiosity is the nature of language and its fundamental aspects that might have shaped the rudimentary _‘Me Tarzan, you Jane’_, the sentence that paraphrases the earliest and the simplest level of language.

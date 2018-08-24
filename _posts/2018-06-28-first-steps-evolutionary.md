@@ -6,6 +6,7 @@ published: true
 permlink: /2018/06/28/first-steps-evolutionary
 image: /assets/evolution-graph.png
 mathjax: true
+comments: true
 ---
 ![Nick Youngson CC BY-SA 3.0 Alpha Stock Images]({{ site.url }}/assets/evolution.jpg)
 

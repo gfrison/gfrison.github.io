@@ -3,6 +3,7 @@ layout: post
 description: Convolutional Neural Networks for Text Classification outperforms Api.ai.
 title: Deeplearning in Text Classification #NLProc #chatbots @gfrison
 image: /assets/minos-chart.png
+comments: true
 ---
 
 In the Divine Comedy, Minos is a daemon appointed to guard the entrance of the hell. He listens to the sins of souls
