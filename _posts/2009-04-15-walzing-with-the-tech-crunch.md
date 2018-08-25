@@ -7,6 +7,7 @@ comments: true
 image: /assets/reservoirdogs.jpg
 tags: consultant, credit, crunch, debt, development, improve, re-build, re-factoring, rebuild, refactoring, software, tech, technical
 ---
+![]({{ site.url }}/assets/reservoirdogs.jpg)
 The economic crisis we’re currently going through is teaching some lessons to the Western countries, in particular to the Anglo-Saxons, that our grandparents know pretty much, although it seems we’ve forgotten the past years in this  financial bubble. The debt has several pros: allows building, buying, investing and, when properly managed, might ensure a safe return and a fair growth of the economy. However, the debt has an outstanding bad side: it must be paid back.  It might be postponed, rolled over, shifted to other (more or less conscious) subjects, and its dreadful effects would be identified as bankrupt, credit-crunch, real estate bubble and recession.
 
 With a view to the software applications, a similar observation might be rightful in terms of ‘state of health’, which point to a family of properties that the software should have to be easy changeable, so it could respond quickly to the requirements evolution. A software that doesn’t enjoy good health is the one that has become fossilised to the original architecture, keeping it as is as possible, never revisited in the light of technological innovations and functional updates, but just patched with improvised and unconvincing surgery.

@@ -5,6 +5,7 @@ title: Gradle archetype for Spring applications
 published: true
 permlink: /2012/01/16/gradle-archetype-for-spring-applications
 comments: true
+tags: archetype, build, continuous integration, development integration, gradle, groovy, integration production, inversion of control, maven, proper plugin, prototype, swiss army knife
 ---
 
 I am [releasing](https://github.com/gfrison/proto-app) a Gradle archetype useful for creating Java/Groovy applications based on Springframework. Of course, it is not a real archetype because such a creation [is not possible](http://issues.gradle.org/browse/GRADLE-1387). However, with very few steps you can create, edit and deploy an application server. It would be a most accommodating starting point for deployable software projects.
