@@ -2,7 +2,7 @@
 layout: post
 description: Contextual memory in conversational applications play a central role in any type of interaction between two parties, the Chatbot and the user. Here some example on how a contextual based system might improve the communication on some basic scenarios.
 title: Context and Sequentiality in Conversational Applications
-published: false
+published: true
 permlink: /2018/03/05/conversational-context-sequence
 image: /assets/charly-context4.png
 comments: true
@@ -10,6 +10,9 @@ comments: true
 
 Contextual memory in conversational applications plays a central role in any type of interaction between the Chatbot and the user. It is the bidirectional transfer of information where interlocutors are aware of the relational, environmental, and cultural context of the exchange. I will show some examples on how a contextual based system might improve the flow of the dialog.
 
+[see full article](https://labs.hybris.com/2018/03/12/context-and-sequentiality-in-conversational-applications/)
+
+<!--
 Consider the following sentence:
 
 `If you prefer salty food, tiramisù is a bad dessert to eat`.
@@ -48,3 +51,4 @@ Sequence is a collection of events that might contain repetition. Repetitive inp
 
 In this article I summarized how the ability to apply _Contextual Intelligence_ should represent an intrinsic skill for any conversational application, for any scenario. It is the proficiency at automatically adapt responses to what the user is demanding during a conversation.
 All those example cases are actually implemented in [Charly](https://charly.hybris.com). _How_ I made it, will be the subject on a following article. Stay tuned!
+-->

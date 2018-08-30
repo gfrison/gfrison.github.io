@@ -11,7 +11,7 @@ comments: true
 Catalog search is one of the most important factor to the success of e-commerce sites and accurate and relevant results are critical to successful conversion.  
 The following approach aims to reduce user frustration by presenting related products, when searched items are not available in catalog. The central hypothesis is that an user might buy products with similar characteristics of a product originally searched, leading the successful search into a purchase.
 
-[see full](https://labs.hybris.com/2018/06/11/concept-search-by-word-embeddings/)
+[see full article](https://labs.hybris.com/2018/06/11/concept-search-by-word-embeddings/)
 
 <!--
 Search engines help to find relevant matches against a query according to various information-retrieval algorithms. Those systems find text occurrences, but regardless their effectiveness, they are unequivocally related to the terms provided by the catalog. Therefore, products cannot be retrieved by words that are not already present in the inventory.
