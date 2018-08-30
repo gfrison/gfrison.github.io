@@ -2,7 +2,7 @@
 layout: post
 description: Simple but effective way to extract relevant entities from user's queries and rank them against an product catalog and an ontology database.
 title: Catalog Entity Extraction for Search
-published: true
+published: false
 permlink: /2018/02/12/catalog-entity-extraction-search
 comments: true
 ---
