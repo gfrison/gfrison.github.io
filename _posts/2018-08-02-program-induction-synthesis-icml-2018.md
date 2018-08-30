@@ -14,6 +14,9 @@ The International Conference on Machine Learning [ICML](https://icml.cc) took pl
 in the beautiful city of Stockholm from 10th to 15th of July.
 This is one of the two premiere conferences (within NIPS) on Artificial Intelligence research, and the numbers indicate the magnitude of the event: 612 accepted papers out of 2473 submissions, 9 tutorial and 67 workshop sessions on the latest advances in all disciplines of machine learning. One of the most intriguing workshop was about machine intelligence capable of writing software code for complex procedural behavior.
 
+[see full article](https://labs.hybris.com/2018/08/28/program-induction-and-synthesis-at-icml-2018/)
+
+<!--
 ## Program Induction
 
 Can we teach computers to write code? This is the question that brings out an entire branch of research specialized in program synthesis. Programming is a demanding task that requires extensive knowledge, experience and not a frivolous degree of creativity. Despite the premises that discourage any form of automation, machine learning can reshape the way software is developed. That could be seen as a giant step comparable to the transition of punch cards in the _'60s_ in favor of magnetic tapes. New programming systems could enable non-programmers to produce correct, cheap, safe and efficient software, opening new automation horizons even for not yet foreseeable purposes.
@@ -53,3 +56,4 @@ reduce the search space of transformations, allowing [PROSE](https://microsoft.g
 efficiently synthesize them.  
 
  There are large and open repository for such dataset, take for example Github as widely known repository for open-sourced projects, so uniquely for this case, the training data availability should not be a blocking issue.
+-->
