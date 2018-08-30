@@ -15,6 +15,10 @@ A natural and spontaneous QA dialogue, as every Chatbot would aim to engage, wil
 2. *Integrate* source of knowledge.
 3. *Infer* transitive semantics (e.g., reconstructing what it is implied but not written).
 
+[see full article](https://labs.hybris.com/2017/08/02/automated-question-answering-using-semantic-networks/)
+
+<!--
+
 Neural networks are particularly effective in [conversational modelling](https://arxiv.org/abs/1506.05869 "Neural Conversational Model").
 Architectures like [*seq2seq*](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)
 have demonstrated to generate sounding conversational interactions, by predicting sentences given the previous sentences in the dialogue.
@@ -77,3 +81,4 @@ Yes
 >Which lakes can you find in Italy?
 Lago como, lago garda
 ```
+-->

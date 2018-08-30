@@ -10,6 +10,10 @@ One of the most demanded feature in chatbots is the ability to automatically pro
 One way to implement this feature is to train a sentence classifier for a determined set of questions the merchant is willing to answer. The system should be instructed on some examples such as: “which credit card do you accept?”, “How do I pay?”, “which payment do you support?” and so on.
 This simple technique requires a sequence of manual tasks for every conversational agent, such as set up the training and inference pipeline for questions/answers, or reuse the Natural Language Understanding (NLU) system already adopted by the chatbot, if present.
 
+[see full article](https://labs.hybris.com/2017/07/17/machine-comprehension-charly/)
+
+<!--
+
 A second more intriguing and sophisticated approach leverages the advances in machine comprehension, which is the ability to read text and then answer questions about it, automatically.
 Stanford NLP group created [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/) a dataset consisting of 107.785 questions pairs on 536 articles, for training and evaluate machine comprehension models. One example of article and question and expected answer is:
 >In meteorology, precipitation is any product of the condensation of atmospheric water vapor that falls under gravity. The main forms of precipitation include drizzle, rain, sleet, snow, graupel and hail…
@@ -32,3 +36,4 @@ This is how Charly answers:
 ![Charly chatbot]({{ site.url }}/assets/bidaf.png)
 
 This approach is much scalable than a classical questions’ classifier. It allows automatic responses from text that could be just scanned automatically by the FAQ’s page present in the customer website, or just a plain info text submitted by e-mail or a web form.
+-->
