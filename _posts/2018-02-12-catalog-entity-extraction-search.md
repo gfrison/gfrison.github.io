@@ -18,6 +18,8 @@ While the intention is deducted by a classification task, relevant terms for sea
 
 [see full article](https://labs.hybris.com/2018/02/19/catalog-entity-extraction-search/)
 
+<!--
+
 Baseline approach for searching, would be to take all text as query, returning innumerable hits of everything even remotely relevant, providing little help for customers.
 Another solution regards Named Entity Recognition, a class of algorithms  that seeks and classify entities, also by means of [neural networks](http://nlp.town/blog/ner-and-the-road-to-deep-learning/).
 
@@ -123,3 +125,4 @@ I have described a simple way for extracting query terms from a raw sentence. Th
 On the other hand, this model doesn't handle with misspellings, which represent alone about 15% of online search failures. This technique doesn't deal with relatedness matching, or semantic matching. That means we can't satisfy the search with relevant and pertinent results whenever customers use different terms from those in the website. I have already solved this problem by means of neural networks, and I will describe it in another article.
 
 **Acknowledgment** Thank you [Sidi](https://github.com/elaatifi) for the contribution.
+-->
