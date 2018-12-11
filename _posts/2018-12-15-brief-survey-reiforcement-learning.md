@@ -42,6 +42,10 @@ in a sequence of steps, aggregated in episodes. MDP strives to find the optimal 
 <center><img title="GridWorld" src="{{ site.url }}/assets/gridworld.png"/></center>
 Among many examples I may show for explaining what does MDP stands for, this very simple _GridWorld_ conveys the idea of an agent displaced in an 2D environment. The reward drives the agent to move toward the flagged corners regardless the position where the agent is located.  
 How the agent could learn the optimal ways? I give you an hint, let's start from the end, the flagged boxes.
+In that position you don't have anymore rewards to gather, the task is brilliantly completed, so we assume the terminal's state is is equal to zero.
+Going backward till the initial position, you see all rewards on the way to the terminal state waiting for you to being picked up. This is the value of your state.
+You are in the middle of the trajectory towards the end, and the value of your state is equal of the reward in that state plus the sum of the discounted rewards thereafter.
+$$ Q_t = r_t + \sum_{n=t+1}{Q_n} $$
 <center><img title="GridWorld" src="{{ site.url }}/assets/mdp-t1.png"/></center>
 Clearly, the agent moves toward the most promising among the surrounding cells, once it has realized their value.  Let's keep going.
 <center><img title="GridWorld" src="{{ site.url }}/assets/mdp-t2.png"/></center>
