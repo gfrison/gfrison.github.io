@@ -39,16 +39,31 @@ $$NewEstimate = OldEstimate + StepSize(Target - OldEstimate) $$
 ## Markov Decision Process
 The armed bandit doesn't hold on complex tasks with multiple steps on reaching their goals. Despite in bandit, MDP formalizes the decision making (policy $$π$$)
 in a sequence of steps, aggregated in episodes. MDP strives to find the optimal $$π$$ among all possible _trajectories_ the agent can follow.
-<center><img title="GridWorld" src="{{ site.url }}/assets/gridworld.png"/></center>
+
+|:--:|
+| ![GridWorld]({{ site.url }}/assets/gridworld.png) |
+|:--:|
+| *Problem: Find all trajectories towards the flags from any cell* |
+
 Among many examples I may show for explaining what does MDP stands for, this very simple _GridWorld_ conveys the idea of an agent displaced in an 2D environment. The reward drives the agent to move toward the flagged corners regardless the position where the agent is located.  
 How the agent could learn the optimal ways? I give you an hint, let's start from the end, the flagged boxes.
-In that position you don't have anymore rewards to gather, the task is brilliantly completed, so we assume the terminal's state is is equal to zero.
+In that position you don't have anymore rewards to gather, the task is brilliantly completed, so we assume the terminal's state value is is equal to _zero_.
+
+| ![GridWorld]({{ site.url }}/assets/mdp-t1.png) |
+|:--:|
+| *Iteration 1. Terminal state value is zero* |
+
+Step back one position, you see among the actions you can do, the one moves you into the terminal state is more rewarding than others (_zero_ instead of _-1_).
+Congratulations! You already have solved a part of the puzzle. It is just the last action, you need to solve the whole grid. In that position, assign a value to the cell where you are in that particular moment. The value would not be just the reward you get in there (_-1_), but the reward plus the average of the values of the cells proximate to you.
+$$ Q_t = r_t + \sum_{n=t+1}{Q_n} $$
+
+| ![GridWorld]({{ site.url }}/assets/mdp-t2.png) |
+|:--:|
+| *Iteration 1: set the terminal state value to _zero_ * |
+
 Going backward till the initial position, you see all rewards on the way to the terminal state waiting for you to being picked up. This is the value of your state.
 You are in the middle of the trajectory towards the end, and the value of your state is equal of the reward in that state plus the sum of the discounted rewards thereafter.
-$$ Q_t = r_t + \sum_{n=t+1}{Q_n} $$
-<center><img title="GridWorld" src="{{ site.url }}/assets/mdp-t1.png"/></center>
 Clearly, the agent moves toward the most promising among the surrounding cells, once it has realized their value.  Let's keep going.
-<center><img title="GridWorld" src="{{ site.url }}/assets/mdp-t2.png"/></center>
 The grid starts to unveil the optimal trajectories by just going backward and evaluating what could be the best move, taking the cell with highest value.
 A pattern is identifiable, something that programmers knows well, the _recursion_, and simplified as:
 $$Q_t=r_t+argmax(Q_{t+1})  $$
