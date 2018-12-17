@@ -9,15 +9,15 @@ tags:
 mathjax: true
 ---
 
-reinforcement learning covers a family of algorithms with the purpose of maximize a cumulative reward an _agent_ can experience interacting with an _environment_.
-It is more like training a dog with a biscuit on complying desired tasks, or on paraphrasing an old say, it is like the carrot and stick metaphor transposed on
+reinforcement learning covers a family of algorithms with the purpose of maximize a cumulative reward that an _agent_ can obtain from an _environment_.
+It is more like training a dog with a biscuit for complying a desired task, or on paraphrasing an old say, it is like the carrot and stick metaphor transposed on
 cold algorithms instead of living creatures. The _agent_ and _environment_ have not been emphasized vainly, but they represent more concretely a vacuum cleaner
-sweeping your flat, an A/B testing engine for commerce or a driveless car in a crossroad.
+sweeping your flat, an A/B testing engine for commerce or a driveless car in a crossroad. If you have heard about latest advances with [AlphaZero](https://deepmind.com/blog/alphazero-shedding-new-light-grand-games-chess-shogi-and-go/) you would know that with an affordable set of hardware (1 TPU and few dozens of CPUs) the [best chess player](https://www.chess.com/news/view/updated-alphazero-crushes-stockfish-in-new-1-000-game-match) in the world could be trained from scratch in just 4 hours.
 
 >“Difficulties strengthen the mind, as labor does the body.”
 ― _Lucius Annaeus Seneca_
 
-Researches don't lack of challenges and this particular field don't deny none of them. The most important challenge comes from the intrinsic nature of RL which is based solely on the evaluations of its actions, all the learning is driven by just one signal, the reward. Those prizes are often very sparse, they come after hundred or thousands of steps, dramatically increasing the combination of actions the agent must explore for finding the winning sequence of them. Another source of hassle is the _non-stationary_ nature of the environment where conditions change with time and the same action in the exactly same situation can bring different outcomes. Take for example a multi agent scenario, where all parts are learning and consequently changing and adapting their behavior dynamically.
+Researches don't lack of challenges in this field. The most important one comes from the intrinsic nature of RL learning process, which rely solely on the evaluations of its actions. All improvements are driven by just one signal, the reward. Rewards are often very sparse. They come after hundred or thousands of steps, dramatically increasing the combination of actions the agent must explore for finding a barely better sequence among of them. If that does not seem arduous, consider also the _non-stationary_ nature of some environments. When the return of an action, in the precisely exact conditions of a past experience, is different from what expected, something has changed in the environment. Thus, the agent must to adapt its behavior dynamically. This is particularly deductive in the case of multi-agent scenario ([MARL](http://www.dcsc.tudelft.nl/~bdeschutter/pub/rep/10_003.pdf)), where the moving parts     does not ease the where conditions change with time and the same action in the exactly same situation can bring different outcomes. Take for example a multi agent scenario, where all parts are learning and consequently changing and adapting their behavior dynamically.
 
 RL helps on creating agents that can autonomously take decisions, this is a shared goal with other families of algorithms, but their working principles are different. Supervised learning could be easily distinguished because it ingests correct actions, but differences with mathematical optimization might appear more subtle.
 When considering the [knapsack ](https://en.wikipedia.org/wiki/Knapsack_problem) or the [traveling salesman](https://en.wikipedia.org/wiki/Travelling_salesman_problem) problems all the necessary informations for elaborating the optimal solution are readily there i.e. there is no exploration. Conversely, an RL agent is like a probe on an heavenly body, the assumptions on the environment are nearly absent, and it has t figure out the good and the bad actions only by the feedback from environment, the so called _model free_ learning approach.
@@ -53,8 +53,8 @@ In that position you don't have anymore rewards to gather, the task is brilliant
 |:--:|
 | *Iteration 1. Terminal state value is zero* |
 
-Step back one position, you see among the actions you can do, the one moves you into the terminal state is more rewarding than others (_zero_ instead of _-1_).
-Congratulations! You already have solved a part of the puzzle. It is just the last action, you need to solve the whole grid. In that position, assign a value to the cell where you are in that particular moment. The value would not be just the reward you get in there (_-1_), but the reward plus the average of the values of the cells proximate to you.
+Step back one position, among the actions you can do, the move that catapult you into the terminal state is more rewarding than others (_zero_ instead of _-1_).
+Congratulations! You already have solved a part of the puzzle. It is just the last action, you need to solve the whole grid. In that position, as in any other cell of the grid, you need to assign a value to the cell where you are in that particular moment, in order to pave the way to the final goal. That value indicates how good it is to be there. Not all cells carry the same value, some are more valuable than others. The agent, when choosing the next move, will easily move to the cell with highest value, among the surroundings. The value would not be just the reward you get in there (_-1_), but the reward plus the average of the values of the cells proximate to you.
 $$ Q_t = r_t + \sum_{n=t+1}{Q_n} $$
 
 | ![GridWorld]({{ site.url }}/assets/mdp-t2.png) |
