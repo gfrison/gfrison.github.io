@@ -31,6 +31,7 @@ Non-stationary means that the return of an action, performed in the precisely ex
 
 ### What distinguish RL from other optimization methods
 While RL helps on creating agents that can autonomously take decisions, other algorithms attain this goal too, but with different working principles.
+
 _Supervised learning_ could be easily distinguished because it is trained with correct samples instead of vague rewards, making it simpler for [loss functions](https://towardsdatascience.com/common-loss-functions-in-machine-learning-46af0ffc4d23) to converge into an useful solution.
 
 _Mathematical optimization_ differs from RL in a more subtle way. Likewise RL, the [simplex algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) find solutions by iterating on optimization loops, but it works only on perfect information problems.
@@ -40,5 +41,5 @@ When considering what it exactly means, let's look at the [knapsack](https://en.
 In other words, there is no exploration.
 Conversely, an RL agent is like a probe on an heavenly body, where the assumptions on the environment are nearly absent. The agent needs to figure out autonomously the good and the bad actions only by the feedback from environment, the so called _model free_ learning approach.
 
-[Genetic Programming]({% post_url 2018-06-28-first-steps-evolutionary %}) is an evolutionary optimization method that share most of the characteristics of RL, it is iterative, suitable for imperfect information systems due to its stochastic explorative nature. Even the terminology is somehow related. For example, what is the objective function, in _GP_ is named _fitness function_, just a polyseme.
+_Genetic Programming_ is an evolutionary optimization method that share most of the characteristics of RL, it is iterative, suitable for imperfect information systems due to its stochastic explorative nature. Even the terminology is somehow related. For example, what is the objective function, in _GP_ is named _fitness function_, just a polyseme.
 What differentiate it from RL is it's evolutionary method, I briefly explained in [this post]({% post_url 2018-06-28-first-steps-evolutionary %}).
