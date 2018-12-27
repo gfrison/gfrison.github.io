@@ -40,4 +40,5 @@ When considering what it exactly means, let's look at the [knapsack](https://en.
 In other words, there is no exploration.
 Conversely, an RL agent is like a probe on an heavenly body, where the assumptions on the environment are nearly absent. The agent needs to figure out autonomously the good and the bad actions only by the feedback from environment, the so called _model free_ learning approach.
 
-[Genetic Programming]({% post_url 2018-06-28-first-steps-evolutionary %}) is an evolutionary optimization method that share most of the characteristics of RL, it is iterative, suitable for imperfect information systems due to its stochastic explorative nature. What differentiate it from RL is it's evolutionary method, I briefly explained in [this post]({% post_url 2018-06-28-first-steps-evolutionary %}).
+[Genetic Programming]({% post_url 2018-06-28-first-steps-evolutionary %}) is an evolutionary optimization method that share most of the characteristics of RL, it is iterative, suitable for imperfect information systems due to its stochastic explorative nature. Even the terminology is somehow related. For example, what is the objective function, in _GP_ is named _fitness function_, just a polyseme.
+What differentiate it from RL is it's evolutionary method, I briefly explained in [this post]({% post_url 2018-06-28-first-steps-evolutionary %}).
