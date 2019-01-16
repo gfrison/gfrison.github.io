@@ -20,7 +20,7 @@ _DP_ describes problems that involve dynamic processes where ones need to find t
 
 The node `fib(2)` appear twice in the tree and that sub-problem value may be cached for efficiency. It shows an _overlapping_ structure, therefore it is eligible to be _DP_. Algorithms inherently recursive but _not_ overlapping are: _binary tree search_, _merge_ and _quick sort_, for example. They don't manifest the property of traversing smaller chunk of data more then once, hence they cannot join the Dynamic Programming family.
 
-Bellman also conceived the _principle of optimality_ according to which an optimal policy should always hands out the optimal decision from current state and thereafter unconditionally to any initial state and action previously done.
+Bellman also conceived the _principle of optimality_ according to which an optimal policy should always hands out the optimal decision from current state and thereafter following the existing policy unconditionally to any initial state and action previously done.
 The fragrance of recursion percolates does not stop to flow and in this case, it will go to form another property of _DP_ methods, which is the _optimal structure_.
 
 <center><img title="shortest path problem" src="{{ site.url }}/assets/shortest-path.png"/></center>
