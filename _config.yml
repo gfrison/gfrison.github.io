@@ -6,7 +6,7 @@ permalink:           pretty
 
 # Setup
 title:               Giancarlo Frison
-tagline:             'Signals from the Noise'
+tagline:             'Discontinuities'
 description:         'Made by <a href="https://twitter.com/gfrison" target="_blank">@gfrison</a>. Munich, Germany'
 url:                 'https://gfrison.com'
 baseurl:             ''
@@ -20,7 +20,7 @@ author:
 twitter:
   username: gfrison
 social:
-  title: Signals from the Noise
+  title: Discontinuities
   name: Giancarlo Frison
   links:
     - https://twitter.com/gfrison
