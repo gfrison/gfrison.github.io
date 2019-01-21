@@ -14,7 +14,7 @@ When Richard Bellman late in the 1940s were seeking for a viral definition of hi
 Likewise in marketing campaigns, where names and terms are carefully selected by means of attention teasers, Bellman coined the definition that combines the multi-staging and time-varying of _'dynamic'_ with the objective functions optimization of _'programming'_,
  Moreover, the fame of Dantzig's _linear programming_, coincidentally induced Bellman to coin the definition that combine the multi-staging and time-varying of
 
-_DP_ describes problems that involve dynamic processes where ones need to find the best decision one after another. The backbone idea rolls around splitting a problem till its atomic parts are identified, then reducing those parts - in the [functional programming](https://en.wikipedia.org/wiki/Fold_(higher-order_function) sense - from the atomic till the aggregated ones, with a function value. It is basically the core concept of _recursion_. Such sub-problems are repeated in the problem as whole, and their values are evaluated all over again unless a caching mechanism (_memoization_) is displaced for preventing such inefficiency. Considering for example the Fibonacci algorithm:
+_DP_ describes problems that involve dynamic processes where ones need to find the best decision one after another. The backbone idea rolls around splitting a problem till its atomic parts are identified, then reducing those parts - in the [functional programming](https://en.wikipedia.org/wiki/Fold_(higher-order_function)) sense - from the atomic till the aggregated ones, with a function value. It is basically the core concept of _recursion_. Such sub-problems are repeated in the problem as whole, and their values are evaluated all over again unless a caching mechanism (_memoization_) is displaced for preventing such inefficiency. Considering for example the Fibonacci algorithm:
 
 <center><img title="Fibonacci" src="{{ site.url }}/assets/fib-tree.png"/></center>
 
@@ -27,10 +27,12 @@ The fragrance of recursion percolates does not stop to flow and in this case, it
 
 For example, in the shortest path problem, the optimal decision $$A \rightarrow F$$ include the optimal solution $$C \rightarrow F$$ which also include the next one and so on. The shortest path problem has the _optimal sub-structure_ property, which claims that an optimal solution of a problem includes necessarily the optimal solutions of its sub-problems. If instead of looking for the shortest way we need the longest path, the problems turns out to not share the optimal sub-structure property. The longest way $$A \rightarrow F$$ does not include the node $$B$$.
 
-## The case of Reinforcement Learning
+## Markov decision process
 [Reinforcement learning]({% post_url 2018-12-26-first-steps-reiforcement-learning %}) is a class of methods for determining the optimal policy an agent should apply for maximize its return in a given environment. The entities with a role in _RL_ are the state $$S$$, the mutable conditions an agent experience in an environment, the action $$A$$ the agent execute in a particular state, and the reward $$R$$, if any, which score the goodness of action taken in a state. These are the pillars of the [markov decision process](https://en.wikipedia.org/wiki/Markov_decision_process), the framework that formalizes the policy $$π$$ as a sequence of steps $$(S_t, A_t, R_t)$$, aggregated in episodes.
 
 <center><img title="MDP" src="{{ site.url }}/assets/mdp-states.png"/></center>
 
 The _policy_ is a mapping from states and related actions, _RL_ tells us how the agent's policy changes as result of the experience.
-For finding good policies, we need to estimate how good it is, in terms of future rewards, to be in a particular state. Value functions $$v_\pi(s)$$ define the expected return when starting on a given state $$s$$ and following $$\pi$$ thereafter. their fundamental property is that they satisfy recursive relationships similar to what we already have seen for dynamic programming. Hence, the idea of _DP_ in _RL_ is the use of value functions to organize the search for good policies.
+For finding good policies, we need to estimate how good it is, in terms of future rewards, to be in a particular state.  Value functions $$v_\pi(s)$$ define the expected return when starting from a given state $$s$$ and following $$\pi$$ thereafter. their fundamental property is that they satisfy recursive relationships similar to what we already have seen for dynamic programming. Hence, the idea of _DP_ in _RL_ is the use of value functions to organize the search for good policies.
+
+### Dynamic programming in reinforcement learning
