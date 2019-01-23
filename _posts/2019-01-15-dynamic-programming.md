@@ -36,3 +36,4 @@ The _policy_ is a mapping from states and related actions, _RL_ tells us how the
 For finding good policies, we need to estimate how good it is, in terms of future rewards, to be in a particular state.  Value functions $$v_\pi(s)$$ define the expected return when starting from a given state $$s$$ and following $$\pi$$ thereafter. their fundamental property is that they satisfy recursive relationships similar to what we already have seen for dynamic programming. Hence, the idea of _DP_ in _RL_ is the use of value functions to organize the search for good policies.
 
 ### Dynamic programming in reinforcement learning
+The first time _DP_ and _RL_ were mentioned together was by Minsky in the 1961.
