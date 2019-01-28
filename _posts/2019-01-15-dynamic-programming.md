@@ -8,6 +8,7 @@ comments: true
 tags:
 mathjax: true
 ---
+<center><a href="https://www.flickr.com/photos/abbiateci64/32615368572"><img title="Umberto Boccioni - Rissa in Galleria(1910) by Maurizio Abbiateci (CCBY2)" src="{{ site.url }}/assets/rissa-galleria.jpg"/></a></center>
 
 The term _dynamic programming_ has a curious origin.
 When Richard Bellman late in the 1940s were seeking for a viral definition of his method, his boss was apparently not very inclined on science and in particular on mathematical research, precisely the activities that Bellman was deep into when he formulate his famous [equation](https://en.wikipedia.org/wiki/Bellman_equation).
@@ -36,4 +37,32 @@ The _policy_ is a mapping from states and related actions, _RL_ tells us how the
 For finding good policies, we need to estimate how good it is, in terms of future rewards, to be in a particular state.  Value functions $$v_\pi(s)$$ define the expected return when starting from a given state $$s$$ and following $$\pi$$ thereafter. their fundamental property is that they satisfy recursive relationships similar to what we already have seen for dynamic programming. Hence, the idea of _DP_ in _RL_ is the use of value functions to organize the search for good policies.
 
 ### Dynamic programming in reinforcement learning
-The first time _DP_ and _RL_ were mentioned together was by Minsky in the 1961.
+The first time _DP_ and _RL_ were mentioned together was by Minsky in the 1961 and it took form of the Bellman equation, because _RL_ problems have expose usually an overlapping and optimal structure, ideal for being solved by _DP_.
+
+|:--:|
+| ![GridWorld]({{ site.url }}/assets/gridworld.png) |
+|:--:|
+| *Problem: Find all trajectories towards the flags from any cell* |
+
+Among many examples I may show for explaining what does MDP stands for, this very simple _GridWorld_ conveys the idea of an agent displaced in an 2D environment. The reward drives the agent to move toward the flagged corners regardless the position where the agent is located.
+How the agent could learn the optimal ways? I give you an hint, let's start from the end, the flagged boxes.
+In that position you don't have anymore rewards to gather, the task is brilliantly completed, so we assume the terminal's state value is is equal to _zero_.
+
+| ![GridWorld]({{ site.url }}/assets/mdp-t1.png) |
+|:--:|
+| *Iteration 1. Terminal state value is zero* |
+
+Step back one position, among the actions you can do, the move that catapult you into the terminal state is more rewarding than others (_zero_ instead of _-1_).
+Congratulations! You already have solved a part of the puzzle. It is just the last action, you need to solve the whole grid. In that position, as in any other cell of the grid, you need to assign a value to the cell where you are in that particular moment, in order to pave the way to the final goal. That value indicates how good it is to be there. Not all cells carry the same value, some are more valuable than others. The agent, when choosing the next move, will easily move to the cell with highest value, among the surroundings. The value would not be just the reward you get in there (_-1_), but the reward plus the average of the values of the cells proximate to you.
+$$ Q_t = r_t + \sum_{n=t+1}{Q_n} $$
+
+| ![GridWorld]({{ site.url }}/assets/mdp-t2.png) |
+|:--:|
+| *Iteration 1: set the terminal state value to _zero_ * |
+
+Going backward till the initial position, you see all rewards on the way to the terminal state waiting for you to being picked up. This is the value of your state.
+You are in the middle of the trajectory towards the end, and the value of your state is equal of the reward in that state plus the sum of the discounted rewards thereafter.
+Clearly, the agent moves toward the most promising among the surrounding cells, once it has realized their value.  Let's keep going.
+The grid starts to unveil the optimal trajectories by just going backward and evaluating what could be the best move, taking the cell with highest value.
+A pattern is identifiable, something that programmers knows well, the _recursion_, and simplified as:
+$$Q_t=r_t+argmax(Q_{t+1})  $$
