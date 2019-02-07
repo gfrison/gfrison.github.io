@@ -21,13 +21,15 @@ _DP_ describes problems that involve dynamic processes for finding the best deci
 The node `fib(2)` appear twice in the tree, therefore Fibonacci unveils an _overlapping_ structure. It is eligible to be an _DP_ algorithm. Not all recursive algorithms are inherently overlapping, look at _binary tree search_, _merge_ and _quick sort_, for example. They don't manifest the property of traversing smaller chunk of data more then once, hence they cannot join Dynamic Programming's family. When the sub-problems are repeated in the problem as whole, and their values are evaluated all over again unless a caching mechanism (_memoization_) could be displaced for preventing such inefficiency.
 
 Bellman also conceived the _principle of optimality_ according to which an optimal policy should always hands out the optimal decision from any state or action previously done. However the chessboard pieces' are laid, or however pedestrian are crossing the road or waiting on the platform, the agent will move pieces properly in case of chess and it will skirt traversing people in case of self-driving car. The automatic actor will always follow the best strategy from the first step and thereafter.
-The fragrance of recursion percolates does not stop to flow and in this case, it will go to form another property of _DP_ methods, which is the _optimal structure_.
+This is for introducing another property of _DP_ methods, which is the _optimal structure_.
 
 <center><img title="shortest path problem" src="{{ site.url }}/assets/shortest-path.png"/></center>
 
-In the shortest path problem, the optimal decision $$A \rightarrow F$$ include the optimal solution $$C \rightarrow F$$ which also include the next one and so on. The shortest path problem has the _optimal sub-structure_ property, which claims that an optimal solution of a problem includes necessarily the optimal solutions of its sub-problems. If instead of looking for the shortest way we need the longest path, the problems turns out to not share the optimal sub-structure property. The longest way $$A \rightarrow F$$ does not include the node $$B$$.
+When a courier has to deliver a packet from $$A$$ to the destination $$F$$, he will catch the shortest way highlighted in blue. The optimal decision for completing the journey $$A \rightarrow F$$, in the shortest path problem, includes necessarily the optimal solution $$C \rightarrow F$$. As you may have noticed, The recursion sweats also out of this property where nested sub-problems are always optimal on their way to the final target. The shortest path problem present the _optimal sub-structure_, which claims that an optimal solution of a problem includes necessarily the optimal solutions of its sub-problems. Not all recursive problems are optimal even in their encapsulated structure, and the counterfactual is given by slightly different dilemma, the longest path problem. The longest way $$A \rightarrow F$$ includes the node $$C$$, but if we choose to start from $$C$$, the path is not included in the way starting from $$A$$.
 
-## Markov decision process
+## Dynamic programming in reinforcement learning
+The first time _DP_ and _RL_ were mentioned together was by Minsky in the 1961 and it took form of the Bellman equation, because _RL_ problems have expose usually an overlapping and optimal structure, ideal for being solved by _DP_.
+### Markov decision process
 [Reinforcement learning]({% post_url 2018-12-26-first-steps-reiforcement-learning %}) is a class of methods for determining the optimal policy an agent should apply for maximize its return in a given environment. The entities with a role in _RL_ are the state $$S$$, the mutable conditions an agent experience in an environment, the action $$A$$ the agent execute in a particular state, and the reward $$R$$, if any, which score the goodness of action taken in a state. These are the pillars of the [markov decision process](https://en.wikipedia.org/wiki/Markov_decision_process), the framework that formalizes the policy $$π$$ as a sequence of steps $$(S_t, A_t, R_t)$$, aggregated in episodes.
 
 <center><img title="MDP" src="{{ site.url }}/assets/mdp-states.png"/></center>
@@ -35,8 +37,7 @@ In the shortest path problem, the optimal decision $$A \rightarrow F$$ include t
 The _policy_ is a mapping from states and related actions, _RL_ tells us how the agent's policy changes as result of the experience.
 For finding good policies, we need to estimate how good it is, in terms of future rewards, to be in a particular state.  Value functions $$v_\pi(s)$$ define the expected return when starting from a given state $$s$$ and following $$\pi$$ thereafter. their fundamental property is that they satisfy recursive relationships similar to what we already have seen for dynamic programming. Hence, the idea of _DP_ in _RL_ is the use of value functions to organize the search for good policies.
 
-## Dynamic programming in reinforcement learning
-The first time _DP_ and _RL_ were mentioned together was by Minsky in the 1961 and it took form of the Bellman equation, because _RL_ problems have expose usually an overlapping and optimal structure, ideal for being solved by _DP_.
+### The Gridworld example
 
 |:--:|
 | ![GridWorld]({{ site.url }}/assets/gridworld.png) |
@@ -57,11 +58,12 @@ $$ Q_t = r_t + \sum_{n=t+1}{Q_n} $$
 
 | ![GridWorld]({{ site.url }}/assets/mdp-t2.png) |
 |:--:|
-| *Iteration 1: set the terminal state value to _zero_ * |
+| *Iteration 2: set the terminal state value to _zero_* |
 
 Going backward till the initial position, you see all rewards on the way to the terminal state waiting for you to being picked up. This is the value of your state.
 You are in the middle of the trajectory towards the end, and the value of your state is equal of the reward in that state plus the sum of the discounted rewards thereafter.
 Clearly, the agent moves toward the most promising among the surrounding cells, once it has realized their value.  Let's keep going.
 The grid starts to unveil the optimal trajectories by just going backward and evaluating what could be the best move, taking the cell with highest value.
 A pattern is identifiable, something that programmers knows well, the _recursion_, and simplified as:
+
 $$Q_t=r_t+argmax(Q_{t+1})  $$
