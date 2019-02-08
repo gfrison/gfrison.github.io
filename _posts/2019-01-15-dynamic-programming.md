@@ -52,8 +52,8 @@ In that position you don't have anymore rewards to gather, the task is brilliant
 |:--:|
 | *Iteration 1. Terminal state value is zero* |
 
-Step back one position, among the actions you can do, the move that catapult you into the terminal state is more rewarding than others (_zero_ instead of _-1_).
-Congratulations! You already have solved a part of the puzzle. It is just the last action, you need to solve the whole grid. In that position, as in any other cell of the grid, you need to assign a value to the cell where you are in that particular moment, in order to pave the way to the final goal. That value indicates how good it is to be there. Not all cells carry the same value, some are more valuable than others. The agent, when choosing the next move, will easily move to the cell with highest value, among the surroundings. The value would not be just the reward you get in there (_-1_), but the reward plus the average of the values of the cells proximate to you.
+From end position, step back and look around. Among the actions you can do, the move that catapult you into the terminal state is more rewarding than others (_zero_ instead of _-1_).
+Congratulations! You already have solved a piece of the puzzle. It is just the last action, you still have to solve the rest of the grid. In that position, as in any other cell of the grid, you need to assign a value to the cell where you are in that particular moment, in order to pave the way to the final goal. That value $$Q$$ indicates how good it is to be there. Not all cells carry the same value, some are more valuable than others. The agent, when choosing the next move, will move to the cell with highest value, among the surroundings. The value would not be just the reward you get in there (_-1_), but the reward plus the average of the values of the cells proximate to you.
 $$ Q_t = r_t + \sum_{n=t+1}{Q_n} $$
 
 | ![GridWorld]({{ site.url }}/assets/mdp-t2.png) |
@@ -67,3 +67,5 @@ The grid starts to unveil the optimal trajectories by just going backward and ev
 A pattern is identifiable, something that programmers knows well, the _recursion_, and simplified as:
 
 $$Q_t=r_t+argmax(Q_{t+1})  $$
+
+### Policy evaluation and improvement
