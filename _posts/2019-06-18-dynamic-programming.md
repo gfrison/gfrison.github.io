@@ -1,9 +1,9 @@
 ---
 layout: post
-description:
+description: Dynamic programming lays the foundation of reinforcement learning. I quote some aspects of it in the lens of the Markov decision process.
 title: Dynamic Programming
-published: false
-image:
+published: true
+image: /assets/rissa-galleria.jpg
 comments: true
 tags:
 mathjax: true
@@ -67,5 +67,3 @@ The grid starts to unveil the optimal trajectories by just going backward and ev
 A pattern is identifiable, something that programmers knows well, the _recursion_, and simplified as:
 
 $$Q_t=r_t+argmax(Q_{t+1})  $$
-
-### Policy evaluation and improvement
