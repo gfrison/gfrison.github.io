@@ -26,8 +26,8 @@ The quote reflects somehow the experiment I performed during the Faschingsdienst
 <center><img title="Giancarlo Frison - Skates" src="{{ site.url }}/assets/skate.jpg"/></center>
 
 ## Les Amis
-Along the Viale dei Martiri, a [romantic shop](https://goo.gl/maps/VuQTRVZxU3WmVoKUA) with clothing for woman is hosting 2 photos during an open
-concert 'Serenade im Park' in the Nymphemburg Park, few summers ago
+Along the Viale dei Martiri, a [romantic shop](https://goo.gl/maps/VuQTRVZxU3WmVoKUA) with clothing for woman is hosting a couple of photos taken during an open
+concert in the Nymphemburg Park (München), _Serenade im Park_, few summers ago:
 <center><img title="Giancarlo Frison - Skates" src="{{ site.url }}/assets/serenade-im-park1.jpg"/></center>
 <center><img title="Giancarlo Frison - Skates" src="{{ site.url }}/assets/serenade-impark2.jpg"/></center>
 
