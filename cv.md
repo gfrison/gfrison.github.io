@@ -3,7 +3,9 @@ layout: page
 title: Curriculum Vitae
 ---
 
-Software specialist and entrepreneur with a solid track record in the  design and implementation of systems
+_Download the [PDF version]({{ site.url }}/assets/cv.pdf)_
+
+Software specialist with a solid track record in the  design and implementation of systems
 used in banking, telecommunications, financial, e-commerce and social media networks.
 With a given domain and  goal to reach, I compare and contrast differing solutions and consistently I take
 initiative while honoring commitments. I have extensive expertise through current and past projects and I am up-and-ready
@@ -13,12 +15,16 @@ What I excel is on the ability to define strategic visions, continuously evaluat
 the overall success and providing customer valued software. My competences stretch also in the realm of machine learning,
 particularly on creating innovative and highly demanded conversational applications by mastering natural language
 processing algorithms.
+I develop computational methods based on machine learning for solving business problems in novel ways.
 
-_Download the [PDF version]({{ site.url }}/assets/cv.pdf)_
 
 # SAP
 ### SAP Hybris Labs
+#### Project Zefiro
+Implemented reinforcement learning and probabilistic programming libraries in Java/Scala. Ideated an automated negotiation system for finalizing E-Commerce deals.
 
+
+#### Project Charly
 Conversational Commerce is shopping through messaging apps, and I am making this alternative selling channel more efficient and usable than the traditional web.
 Users may search, purchase items, ask informations and leverage all other functionalities available in Hybris Commerce.
 I have covered the product management of Charly (the chatbot name) including ideation, envision strategies and
