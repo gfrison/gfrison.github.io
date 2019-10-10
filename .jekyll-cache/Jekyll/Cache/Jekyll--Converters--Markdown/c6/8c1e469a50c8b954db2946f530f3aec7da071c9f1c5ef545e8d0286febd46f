@@ -1,4 +1,6 @@
-I"í$<p>Software specialist and entrepreneur with a solid track record in the  design and implementation of systems
+I"E&<p><em>Download the <a href="http://localhost:4000/assets/cv.pdf">PDF version</a></em></p>
+
+<p>Software specialist with a solid track record in the  design and implementation of systems
 used in banking, telecommunications, financial, e-commerce and social media networks.
 With a given domain and  goal to reach, I compare and contrast differing solutions and consistently I take
 initiative while honoring commitments. I have extensive expertise through current and past projects and I am up-and-ready
@@ -7,13 +9,15 @@ be noted on my track record, I comfortably contribute on all spectrum of aspects
 What I excel is on the ability to define strategic visions, continuously evaluating how the goals fit with
 the overall success and providing customer valued software. My competences stretch also in the realm of machine learning,
 particularly on creating innovative and highly demanded conversational applications by mastering natural language
-processing algorithms.</p>
-
-<p><em>Download the <a href="http://localhost:4000/assets/cv.pdf">PDF version</a></em></p>
+processing algorithms.
+I develop computational methods based on machine learning for solving business problems in novel ways.</p>
 
 <h1 id="sap">SAP</h1>
 <h3 id="sap-hybris-labs">SAP Hybris Labs</h3>
+<h4 id="project-zefiro">Project Zefiro</h4>
+<p>Implemented reinforcement learning and probabilistic programming libraries in Java/Scala. Ideated an automated negotiation system for finalizing E-Commerce deals.</p>
 
+<h4 id="project-charly">Project Charly</h4>
 <p>Conversational Commerce is shopping through messaging apps, and I am making this alternative selling channel more efficient and usable than the traditional web.
 Users may search, purchase items, ask informations and leverage all other functionalities available in Hybris Commerce.
 I have covered the product management of Charly (the chatbot name) including ideation, envision strategies and
