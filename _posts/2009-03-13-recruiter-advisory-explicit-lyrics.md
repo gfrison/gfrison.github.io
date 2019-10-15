@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: Recruiter advisory Explicit lyrics
 published: true
 permlink: /2009/03/13/recruiter-advisory-explicit-lyrics

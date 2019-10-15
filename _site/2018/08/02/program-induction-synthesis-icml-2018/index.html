@@ -1,0 +1,1266 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.5 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Program Induction and Synthesis at ICML 2018 - Discontinuities</title>
+<meta name="description" content="Can we teach computers to write code? In ICML 2018 an workshop was dedicated on how machine intelligence and reasoning could be capable of creating software applications. Here a short summary of it and what I found interesting in the subject.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Discontinuities">
+<meta property="og:title" content="Program Induction and Synthesis at ICML 2018">
+<meta property="og:url" content="http://localhost:4000/2018/08/02/program-induction-synthesis-icml-2018/">
+
+
+  <meta property="og:description" content="Can we teach computers to write code? In ICML 2018 an workshop was dedicated on how machine intelligence and reasoning could be capable of creating software applications. Here a short summary of it and what I found interesting in the subject.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/profile-g.png">
+
+
+
+  <meta name="twitter:site" content="@gfrison">
+  <meta name="twitter:title" content="Program Induction and Synthesis at ICML 2018">
+  <meta name="twitter:description" content="Can we teach computers to write code? In ICML 2018 an workshop was dedicated on how machine intelligence and reasoning could be capable of creating software applications. Here a short summary of it and what I found interesting in the subject.">
+  <meta name="twitter:url" content="http://localhost:4000/2018/08/02/program-induction-synthesis-icml-2018/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="http://localhost:4000/assets/images/profile-g.png">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2018-08-02T00:00:00+00:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/2018/08/02/program-induction-synthesis-icml-2018/">
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "http://localhost:4000",
+      "logo": "http://localhost:4000/assets/images/profile-g.png"
+    }
+  </script>
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Giancarlo Frison",
+      "url": "http://localhost:4000",
+      "sameAs": ["https://twitter.com/gfrison","https://github.com/gfrison","https://linkedin.com/in/gfrison"]
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="https://gfrison.com/atom.xml" type="application/atom+xml" rel="alternate" title="Discontinuities Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body class="layout--posts">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Discontinuities
+          <span class="site-subtitle"> </span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/cv" >Curriculum Vitae</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/profile-g.png" alt="Giancarlo Frison" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Giancarlo Frison</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Munich, Germany</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:giancarlo@gfrison.com">
+            <meta itemprop="email" content="giancarlo@gfrison.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://twitter.com/gfrison" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/gfrison" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/gfrison" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title">Program Induction and Synthesis at ICML 2018</h1>
+    
+    <p><img src="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2018/06/images.jpeg" alt="" />
+The International Conference on Machine Learning <a href="https://icml.cc">ICML</a> took place this year in Europe,
+in the beautiful city of Stockholm from 10th to 15th of July.
+This is one of the two premiere conferences (within NIPS) on Artificial Intelligence research, and the numbers indicate the magnitude of the event: 612 accepted papers out of 2473 submissions, 9 tutorial and 67 workshop sessions on the latest advances in all disciplines of machine learning. One of the most intriguing workshop was about machine intelligence capable of writing software code for complex procedural behavior.</p>
+
+<p><a href="https://labs.hybris.com/2018/08/28/program-induction-and-synthesis-at-icml-2018/">see full article</a></p>
+
+<!--
+## Program Induction
+
+Can we teach computers to write code? This is the question that brings out an entire branch of research specialized in program synthesis. Programming is a demanding task that requires extensive knowledge, experience and not a frivolous degree of creativity. Despite the premises that discourage any form of automation, machine learning can reshape the way software is developed. That could be seen as a giant step comparable to the transition of punch cards in the _'60s_ in favor of magnetic tapes. New programming systems could enable non-programmers to produce correct, cheap, safe and efficient software, opening new automation horizons even for not yet foreseeable purposes.
+
+Curious on what does it feel like? Try to describe a problem in plain English and translate it in a routine in your favorite programming language. Let's have a look on [this sample](https://arxiv.org/abs/1807.03168):
+> You are given a number var0. You have to set var2 to 2. If var0-2 is divisible by 3 you have to set var1 to 1,
+otherwise you have to set var1 to zero. For each var3 between 1 and var0-1, if var2 is less than var0 you have to, add var3*3+2 to var2, if var0-var2 is greater than or equal to zero and var0-var2 is divisible by 3 add 1 to var1;
+otherwise you have to break from the enclosing loop. You have to return var1.
+
+As you might have noticed, this is a detailed description of an algorithm. Natural language lacks of precise semantics necessary for describing concepts with mathematic granularity, this is why the generated code looks less amusing than the original _(natural)_ code:
+<script src="https://gist.github.com/a4e43b1d6833af9c94b00ab97645f9ab.js"> </script>
+
+
+Likewise ML tasks detect patterns, a program synthesis task aims to solve problems that might be identified as a composition of basic programming primitives, such as conditional operators, loop controls and even [recursions](https://arxiv.org/abs/1704.06611) and used for generating specific program
+[trees](/2018/06/28/first-steps-evolutionary/).
+
+<center><img title="Program Induction" src="http://localhost:4000/assets/pinduction-schema.png"/></center>
+
+Generating code is a extremely challenging problem and the output's goodness is still very limited by using existing approaches.
+One discrepancy in the flow above settle in the different nature of the encoded solution (generally neural networks) and generated code.
+Neural networks lay in the differentiable realm (gradient-based training) while source code generation belongs to the discrete parish, because of its rigorous grammar and intolerance to typos.
+If you want to get hands dirty on it, it is now available a [public dataset](https://near.ai/research/naps/) for training your system on software programming.
+
+An introductory talk on this matter was hold by [Joshua Tenenbaum](https://www.csail.mit.edu/person/joshua-tenenbaum), professor at MIT and contributor of [Bayesian methods](https://www.researchgate.net/publication/2463513_A_Bayesian_Framework_for_Concept_Learning) for computational learning. He is specialized in cognitive sciences and and he strives to grasp the fundamental mechanics to human learning, in order to ultimately transfer them to computer programs. I find it useful to describe the Bayesian approach as a generic framework for every-day life decisions, where possible solutions are weighted according to our observations and past experiences flavored by doses of uncertainty.
+
+[![DreamCoder](http://localhost:4000/assets/dreamcoder.png)](http://www.youtube.com/watch?v=RB78vRUO6X8?t=3389)
+
+The [DreamCoder](https://uclmr.github.io/nampi/extended_abstracts/ellis.pdf) (Ellis 2018) rumbles on the idea of creating a repository of simple problems (and their paired solutions) for being reused on solving more complex ones. Even though the full paper is so far not publicly available, it seems inspired by the ways programmers organize their work: building shared subroutines that can be composed to develop more complex procedures. Instead of solving all problems from scratch, it tries to think flexibly and brings what it has already learned.
+
+### Program synthesis using example
+
+What I guess would be the most promising and attainable utilization of program induction is coding repairing and migration. Raise an hand 🙋 who hates repetitive, error-prone, edits due to general refactoring or library upgrading. Those tasks occurs during software evolution and they can be done only manually, since they are beyond the capabilities of IDEs. [REFAZER](http://www.dsc.ufcg.edu.br/~spg/refazer/) (rebuild in Portuguese) attempts to classify code transformations by large set of examples. It has been proven to be correct on *84%* of the transformations, which is not bad at all. The research has been published and it is available [here](https://people.eecs.berkeley.edu/~bjoern/papers/rolim-refazer-icse2017.pdf) (Rolim et.al; ICSE 2017). The technique for synthesizing programs from examples quotes:
+>Each rewrite rule matches some subtrees of the given AST and outputs modified
+versions of these subtrees. Additionally, we specify constraints
+for our DSL operators based on the input-output examples to
+reduce the search space of transformations, allowing [PROSE](https://microsoft.github.io/prose/) to
+efficiently synthesize them.  
+
+ There are large and open repository for such dataset, take for example Github as widely known repository for open-sourced projects, so uniquely for this case, the training data availability should not be a blocking issue.
+-->
+
+
+<ul class="taxonomy__index">
+  
+  
+    <li>
+      <a href="#2019">
+        <strong>2019</strong> <span class="taxonomy__count">3</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2018">
+        <strong>2018</strong> <span class="taxonomy__count">8</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2017">
+        <strong>2017</strong> <span class="taxonomy__count">3</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2012">
+        <strong>2012</strong> <span class="taxonomy__count">2</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2011">
+        <strong>2011</strong> <span class="taxonomy__count">2</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2009">
+        <strong>2009</strong> <span class="taxonomy__count">3</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2008">
+        <strong>2008</strong> <span class="taxonomy__count">4</span>
+      </a>
+    </li>
+  
+</ul>
+
+
+
+  <section id="2019" class="taxonomy__section">
+    <h2 class="archive__subtitle">2019</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2019/09/27/precision-medicine-healthcare/" rel="permalink">Machine Learning and BigData will make Precision Medicine the future of Healthcare
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">According to an article published by the British Medical Journal in 2013, medical errors are the third cause of death in the US, and  it is prudent assumptio...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2019/09/08/photo-exposition-bassano-fotografia/" rel="permalink">Photography Event in Bassano del Grappa
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I’ve been since long time fascinated by photography and its power to capture my fantasy and attention. I was pretty delighted
+to attend artistic initiatives,...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2019/06/18/dynamic-programming/" rel="permalink">Dynamic Programming
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">The term dynamic programming has a curious origin.
+When Richard Bellman late in the 1940s were seeking for a viral definition of his method, his boss was app...</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+  <section id="2018" class="taxonomy__section">
+    <h2 class="archive__subtitle">2018</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/12/26/first-steps-reiforcement-learning/" rel="permalink">First steps in Reinforcement Learning
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Reinforcement learning covers a family of algorithms with the purpose of maximize a cumulative reward that an agent can obtain from an environment.
+It seems ...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/10/26/una-stella-in-piu/" rel="permalink">Una Stella in più
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/08/02/program-induction-synthesis-icml-2018/" rel="permalink">Program Induction and Synthesis at ICML 2018
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+The International Conference on Machine Learning ICML took place this year in Europe,
+in the beautiful city of Stockholm from 10th to 15th of July.
+This is ...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/06/28/first-steps-evolutionary/" rel="permalink">First Steps on Evolutionary Systems
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/06/13/basic-principles-language/" rel="permalink">The Basic Principles of Language
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">What is this exhilarating noise come out of my mouth when I talk? Not surely because that precise sequence of sounds, pops and squeezes are particularly melo...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/06/06/concept-search-by-word-embeddings/" rel="permalink">Concept Search by Word Embeddings
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+Catalog search is one of the most important factor to the success of e-commerce sites and accurate and relevant results are critical to successful conversio...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/03/14/stochastic-conversational-workflows/" rel="permalink">Stochastic Conversational Workflows
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Traditionally, user interfaces are a series of screens and forms for exchanging informations with the user. Most of the applications start with a main screen...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/03/05/conversational-contextualization/" rel="permalink">Context and Sequentiality in Conversational Applications
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Contextual memory in conversational applications plays a central role in any type of interaction between the Chatbot and the user. It is the bidirectional tr...</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+  <section id="2017" class="taxonomy__section">
+    <h2 class="archive__subtitle">2017</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2017/09/01/deeplearning-in-text-classification/" rel="permalink">Deeplearning in Text Classification
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">In the Divine Comedy, Minos is a daemon appointed to guard the entrance of the hell. He listens to the sins of souls
+and indicates them their destinations by...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2017/08/01/automated-question-answering-using-semantic-networks/" rel="permalink">Automated Question Answering using Semantic Networks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I worked recently in a small prototype that combines NLP analysis and semantic datasources
+for answering simple generic questions, by learning how to get the...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2017/07/08/machine-comprehension-on-chatbots/" rel="permalink">Machine Comprehension on Chatbots
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">One of the most demanded feature in chatbots is the ability to automatically provide helpful informations. Users might ask about how to pay the purchases onl...</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+  <section id="2012" class="taxonomy__section">
+    <h2 class="archive__subtitle">2012</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2012/01/25/soa-example-application/" rel="permalink">SOA example application
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+  SOA describes a set of patterns for creating loosely coupled, standards-based business-aligned services that, because of the separation of concerns betwee...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2012/01/16/gradle-archetype-for-spring-applications/" rel="permalink">Gradle archetype for Spring applications
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I am releasing a Gradle archetype useful for creating Java/Groovy applications based on Springframework. Of course, it is not a real archetype because such a...</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+  <section id="2011" class="taxonomy__section">
+    <h2 class="archive__subtitle">2011</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2011/12/16/software-architect-mistakes/" rel="permalink">Software architect mistakes
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I think that to get up in the morning and brew a good cup of coffee is one of the best way to start the day. You know, the heady fragrance that emanates from...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2011/11/18/cool-dsl-with-groovy-2/" rel="permalink">Cool DSL with Groovy
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Domain model design has never been confused with ‘ease’. From the dawn of its conception, generating executable Unified Modeling Language (UML) diagrams mean...</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+  <section id="2009" class="taxonomy__section">
+    <h2 class="archive__subtitle">2009</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2009/04/24/powered-by-apache-mina/" rel="permalink">Powered by Apache Mina
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">The application being discussed has to behave as follows: performs the client authentication, accomplishes request and response operations and forwards notif...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2009/04/15/walzing-with-the-tech-crunch/" rel="permalink">Waltzing with the Tech Crunch
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+The economic crisis we’re currently going through is teaching some lessons to the Western countries, in particular to the Anglo-Saxons, that our grandparent...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2009/03/13/recruiter-advisory-explicit-lyrics/" rel="permalink">Recruiter advisory Explicit lyrics
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">“I’m a people person, very personable. I absolutely insist on enjoying life. Not so task-oriented. Not a work horse. If you’re looking for a Clydesdale I’m p...</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+  <section id="2008" class="taxonomy__section">
+    <h2 class="archive__subtitle">2008</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2008/10/23/model-driven-architecture-on-fire-off-the-shoulder-of-orion/" rel="permalink">MDA on fire off the Shoulder of Orion
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+I must admit, frustration has increased over the years. I mean, interacting with the computer in terms of boolean, long, void. I’d rather sit on a sofa and ...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2008/06/26/7-steps-to-mda-revolution/" rel="permalink">7 steps to MDA revolution
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+I didn’t believe that such a successful project was such a rare event in the IT industry, that’s why I’ve never caught another chance for applying the learn...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2008/06/11/chain-of-failures-on-blocking-threads/" rel="permalink">Chain of failures on blocking threads
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+I came back to Milano little time ago and I’ve bumped into an API implementation in this new job. This will be a library that aims to interact with a remote...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2008/02/21/lets-get-scrum/" rel="permalink">Let’s get Scrum
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+At school times the teacher used to quote an important saying:
+culture is what remains after we forget the things we studied thorougly.
+The concept is charm...</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+
+  </div>
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="https://gfrison.com/atom.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 Giancarlo Frison. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/2018/08/02/program-induction-synthesis-icml-2018/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/2018/08/02/program-induction-synthesis-icml-2018"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://gfrison.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

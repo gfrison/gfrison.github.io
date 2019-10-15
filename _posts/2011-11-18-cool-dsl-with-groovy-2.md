@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: Cool DSL with Groovy
 published: true
 permlink: /2011/11/18/cool-dsl-with-groovy-2

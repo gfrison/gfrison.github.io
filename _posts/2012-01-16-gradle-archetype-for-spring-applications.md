@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 description: Gradle archetype useful for creating Java/Groovy applications based on Springframework.
 title: Gradle archetype for Spring applications
 published: true

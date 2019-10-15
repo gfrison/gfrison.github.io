@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: Chain of failures on blocking threads
 published: true
 permlink: /2008/06/11/chain-of-failures-on-blocking-threads/

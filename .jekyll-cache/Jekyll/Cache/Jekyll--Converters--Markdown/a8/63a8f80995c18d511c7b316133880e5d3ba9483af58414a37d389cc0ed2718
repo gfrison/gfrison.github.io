@@ -1,9 +1,0 @@
-I"�<p><img src="http://localhost:4000/assets/chain-failure-effect.jpg" alt="" />
-I came back to Milano little time ago and I’ve bumped into an API implementation in this new job. This will be a library that aims to interact with a remote application through a simple text-based protocol.
-The typical process is a sequence of authorization – session initialization – commands processing – session disposing each of which enclosed in atomic request/respose interaction. The simplest and most immediate approach provides to write the protocol stubs, and manage them through simple methods that elaborate such commands at low level handling tcp sockets and the client/server handshaking with synchronous calls.
-Sometimes the simplest is the best way, but not this time, especially within multi layer structured systems, where every component depends on many others, and any of those can fail.
-This task rings as an alarm bell to me due to a recent project that looked like this one, and I can still remember the effects of hangs and missed responses in a SOA context; fortunately the event happened during a load test:</p>
-<blockquote>
-  <p>The application was a client interacting with openfire through XMPP. The investigation <a href="http://www.igniterealtime.org/community/thread/30088?tstart=0">uncovered a bug</a> that caused a dead lock in a connection pool in certain conditions, the consequences were easily predictable as the fast resource exhaustion, causing soon an application break down. The application server was over but also the client side was unrecoverable since the unresilient application’s architecture didn’t foresee hang requests.</p>
-</blockquote>
-:ET
