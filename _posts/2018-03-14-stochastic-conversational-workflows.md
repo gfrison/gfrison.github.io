@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 description: A novel approach for improving conversational fluency in Chatbots by employing neural networks based on convolutions and long-short memory units.
 title: Stochastic Conversational Workflows
 published: true

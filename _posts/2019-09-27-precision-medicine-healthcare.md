@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 description: 10% of diagnoses are wrong and 35% of adults experienced a medical mistake in the past 5 years. Machine learning and big data might offer decision-support tools to fix the faulty system.
 title: Machine Learning and BigData will make Precision Medicine the future of Healthcare
 published: true
@@ -8,10 +8,9 @@ comments: true
 tags:
 mathjax: true
 ---
-According to an [article](https://www.bmj.com/content/353/bmj.i2139) published by the British Medical Journal in 2013, medical errors are the third cause of death in the US, and  it is [prudent assumption](https://qualitysafety.bmj.com/content/22/Suppl_2/ii21) that wrong diagnosis would have a strong incidence in errors that can be harmful to patients. 10-15% of diagnoses are wrong and 35% of adults experienced a medical mistake in the past 5 years involving themselves, their family, or friends. Without considering extreme consequences, the chance to receive a false diagnosis is almost certain along the entire span of life.
-
 *originally posted on https://cxlabs.sap.com/2019/06/18/data-analytics-for-precision-medicine/*
 
+According to an [article](https://www.bmj.com/content/353/bmj.i2139) published by the British Medical Journal in 2013, medical errors are the third cause of death in the US, and  it is [prudent assumption](https://qualitysafety.bmj.com/content/22/Suppl_2/ii21) that wrong diagnosis would have a strong incidence in errors that can be harmful to patients. 10-15% of diagnoses are wrong and 35% of adults experienced a medical mistake in the past 5 years involving themselves, their family, or friends. Without considering extreme consequences, the chance to receive a false diagnosis is almost certain along the entire span of life.
 <center><img src="{{ site.url }}/assets/causes-of-death.png"/></center>
 It’s worth taking a moment to consider why these errors happen in the first place. There are more than 12.000 diseases according to the World Health Organization. Never heard of foreign accent syndrome or alien hand syndrome? Many doctors wouldn’t have either, they’re just two of the many new diseases that are constantly emerging. Among the causes of mistakes, there are the variability of how the disease might manifest. There are doctor variables such as expertise. We know also that errors occur either as a result of [physicians’ overconfidence](https://www.amjmed.com/article/S0002-9343%2808%2900040-5/fulltext). In the current era of machine learning and big data would be attainable to offer decision-support tools to fix the faulty synthesis of information? May as well be inspiring to look on how the automotive industry adopt those technologies for car maintenance.
 

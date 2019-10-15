@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: Let’s get Scrum
 published: true
 permlink: /2008/02/21/lets-get-scrum/

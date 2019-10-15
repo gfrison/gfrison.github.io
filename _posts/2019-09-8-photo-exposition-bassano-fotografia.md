@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 description: My small contribution to BassanoFotografia 2019 \#bf19 in Caffe San Marco and Les Amis
 title: Photography Event in Bassano del Grappa
 published: true

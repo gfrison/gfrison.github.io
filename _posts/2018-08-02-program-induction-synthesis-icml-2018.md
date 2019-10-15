@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 description: Can we teach computers to write code? In ICML 2018 an workshop was dedicated on how machine intelligence and reasoning could be capable of creating software applications. Here a short summary of it and what I found interesting in the subject.
 title: Program Induction and Synthesis at ICML 2018
 published: true

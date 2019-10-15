@@ -1,0 +1,43 @@
+I"�<blockquote>
+  <p>SOA describes a set of patterns for creating loosely coupled, standards-based business-aligned services that, because of the separation of concerns between description, implementation, and binding, provide a new level of flexibility.</p>
+</blockquote>
+
+<p>Service Oriented Architecture terminology has spread in recent years, at least among people who were involved in most of the Information Technology activities. The guidelines suggested by this methodology are granted as major factors to succeed in different distributable systems domains.
+Just as the definition is clear and easy to understand, so is its implementation into a real project, being intuitive, concise and elegant.</p>
+
+<p>I have released an application demonstrating how SOA’s principles can be applied into a small project making use of EIP (Enterprise Integration Pattern), IoC (Inversion of Control), and a building tool and scripting language such as Groovy.
+I analized a simple business case: an entertainment provider who wanted to dispatch rewards and bonuses to some of its customers, depending on customer service’s subscriptions.
+The process sequence is simple:</p>
+
+<center><img title="Rewards" src="http://localhost:4000/assets/soa-reward1.png" /></center>
+
+<blockquote>
+  <p>It is required to provide an implementation of a RewardsService. The service accepts as input a customer account number and a portfolio containing channels subscriptions. The Customer Status team is currently developing the EligibilityService which accepts the account number as an input.</p>
+</blockquote>
+
+<p>I set up an infrastructure to write acceptance tests for this first meaningful feature. This is what could be defined as a “walking skeleton,” a prototype with the essential aspect that it could be built, deployed and tested after being easily downloaded from <a href="https://github.com/gfrison/rewards">Github</a>.</p>
+
+<center><img title="Rewards" src="http://localhost:4000/assets/soa-reward2.png" /></center>
+
+<p><a href="https://github.com/gfrison/rewards/blob/master/src/main/groovy/com/gfrison/services/RewardService.groovy">RewardService</a> is invoked by the client and it calls, in turn, the eligibility service which however, in this case is not  implemented. As many real scenarios expect external services, this proof-of-concept refers the eligibility service to a black-box, where only request/response interface is known.</p>
+
+<p>The <a href="https://github.com/gfrison/rewards/blob/master/src/test/groovy/com/gfrison/RewardServiceTest.groovy">unit test</a> simulates the eligibility service behaviors mocking the end-point through the Camel Testing Framework. However, if you want to run the application on your local machine I set up, within a line of code, a faux eligibility service that merely returns a positive response:</p>
+
+<figure class="highlight"><pre><code class="language-groovy" data-lang="groovy"><span class="kt">def</span> <span class="n">alwaysEligible</span> <span class="o">=</span> <span class="o">{</span><span class="n">exchange</span> <span class="o">-&gt;</span>
+  <span class="k">if</span><span class="o">(</span><span class="n">exchange</span><span class="o">){</span>
+    <span class="n">exchange</span><span class="o">.</span><span class="na">getOut</span><span class="o">().</span><span class="na">setBody</span><span class="o">(</span><span class="s1">'CUSTOMER_ELIGIBLE'</span><span class="o">)</span>
+  <span class="o">}</span>
+<span class="o">}</span> <span class="k">as</span> <span class="n">Processor</span></code></pre></figure>
+
+<p>The entry point is an HTTP Restful interface built upon the Apache CXF, and is easily set up within few lines in the <a href="https://github.com/gfrison/rewards/blob/master/src/main/resources/conf/beans.groovy">configuration</a>. CXF is initialized by Spring in this following way:</p>
+
+<figure class="highlight"><pre><code class="language-groovy" data-lang="groovy"><span class="n">jaxrs</span><span class="o">.</span><span class="s1">'server'</span><span class="o">(</span><span class="nl">id:</span><span class="s1">'restService'</span><span class="o">,</span>
+  <span class="nl">address:</span><span class="s1">'http://${http.host}:${http.port}'</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">jaxrs</span><span class="o">.</span><span class="s1">'serviceBeans'</span><span class="o">{</span> <span class="n">ref</span><span class="o">(</span><span class="nl">bean:</span><span class="s1">'rewardService'</span><span class="o">)}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>Services are connected by Apache Camel. RewardService contains only the reference of the ESB context –  an instance of <a href="http://camel.apache.org/producertemplate.html">ProducerTemplate</a>. Such solution allows a complete separation between the linking system and the business services. The Camel context represents  the SOA’s wiring, and is configured through a DSL as in the example below:</p>
+
+<figure class="highlight"><pre><code class="language-groovy" data-lang="groovy"><span class="n">from</span><span class="o">(</span><span class="s1">'direct:rewards'</span><span class="o">).</span><span class="na">to</span><span class="o">(</span><span class="n">eligibilityServiceEndpoint</span><span class="o">)</span></code></pre></figure>
+
+:ET

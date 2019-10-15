@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: Una Stella in più
 published: true
 image: /assets/mamma.jpg

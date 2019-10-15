@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 description: Is an architecture design worth the time and effort invested in it? Well, you may answer this question first. Are there risks in the project that could be minimized by an early design activity?
 title: Software architect mistakes
 published: true
