@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: 7 steps to MDA revolution
 published: true
 permlink: /2008/06/26/7-steps-to-mda-revolution

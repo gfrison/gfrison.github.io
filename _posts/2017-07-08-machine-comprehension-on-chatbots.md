@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: Machine Comprehension on Chatbots
 image: /assets/bidaf.png
 comments: true

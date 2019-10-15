@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: Powered by Apache Mina
 published: true
 permlink: /2009/04/24/powered-by-apache-mina
