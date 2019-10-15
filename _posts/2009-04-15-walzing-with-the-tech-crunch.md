@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: Waltzing with the Tech Crunch
 published: true
 permlink: /2009/04/15/waltzing-with-tech-crunch

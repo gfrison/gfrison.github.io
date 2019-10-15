@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 description: Dynamic programming lays the foundation of reinforcement learning. I quote some aspects of it in the lens of the Markov decision process.
 title: Dynamic Programming
 published: true
@@ -8,11 +8,14 @@ comments: true
 tags:
 mathjax: true
 ---
-<center><a href="https://www.flickr.com/photos/abbiateci64/32615368572"><img title="Umberto Boccioni - Rissa in Galleria(1910) by Maurizio Abbiateci (CCBY2)" src="{{ site.url }}/assets/rissa-galleria.jpg"/></a></center>
-
 The term _dynamic programming_ has a curious origin.
 When Richard Bellman late in the 1940s were seeking for a viral definition of his method, his boss was apparently not very inclined on science and in particular on mathematical research, the activities that Bellman was deep into when he formulate his famous [equation](https://en.wikipedia.org/wiki/Bellman_equation).
 Likewise in marketing campaigns, where names and terms are carefully selected for attention teasing, Bellman coined the definition that combines the multi-staging and time-varying of _'dynamic'_ with the optimization archetyping of _'programming'_, coincidentally induced by the fame of Dantzig's _linear programming_ for mathematical optimization.
+<figure >
+  <a href="https://www.flickr.com/photos/abbiateci64/32615368572"><img title="Umberto Boccioni - Rissa in Galleria(1910) by Maurizio Abbiateci (CCBY2)" src="{{ site.url }}/assets/rissa-galleria.jpg"/></a>
+  <figcaption>Umberto Boccioni - Rissa in Galleria(1910) by Maurizio Abbiateci (CCBY2)</figcaption>
+</figure>
+
 
 _DP_ describes problems that involve dynamic processes for finding the best decision one after another. The backbone idea rolls around the splitting of a problem till its atomic parts are identified, then trimming those parts with a objective function. Basically, the core concept of _recursion_. Considering for example the Fibonacci algorithm:
 

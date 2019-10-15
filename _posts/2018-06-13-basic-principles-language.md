@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 description: Basic principles on the foundations of languages. How language is directly linked to the real world and its human representation.
 title: The Basic Principles of Language
 published: true
