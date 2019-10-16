@@ -95,10 +95,10 @@ og_image                 : "/assets/images/profile-g.png" # Open Graph/Twitter d
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
-  links:
-    - "https://twitter.com/gfrison"
-    - "https://github.com/gfrison"
-    - "https://linkedin.com/in/gfrison"
+#  links:
+#    - "https://twitter.com/gfrison"
+#    - "https://github.com/gfrison"
+#    - "https://linkedin.com/in/gfrison"
 
 # Analytics
 analytics:
@@ -116,15 +116,15 @@ author:
   location         : "Munich, Germany"
   email            : "giancarlo@gfrison.com"
   twitter: "gfrison"
-  github: "gfrison"
+#  github: "gfrison"
   linkedin: "gfrison"
   links:
     - label: "Photos I"
       icon: "fas fa-fw fa-camera"
-      url: "https://www.flickr.com/photos/gfrison/"
+#      url: "https://www.flickr.com/photos/gfrison/"
     - label: "Photos II"
       icon: "fas fa-fw fa-camera"
-      url: "https://gfrison.tumblr.com/"
+#      url: "https://gfrison.tumblr.com/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
