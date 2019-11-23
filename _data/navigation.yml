@@ -1,3 +1,5 @@
 main:
   - title: "Curriculum Vitae"
     url: "/cv"
+  - title: "Photos"
+    url: "/photos"
