@@ -4,7 +4,8 @@ description: I have released an application demonstrating how SOA’s principles
 title: SOA example application
 published: true
 permlink: /2012/01/25/soa-example-application
-image: /assets/soa-reward1.png
+header:
+  og_image: /assets/soa-reward1.png
 comments: true
 tags: soa, groovy, microservice
 ---

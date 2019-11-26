@@ -4,11 +4,13 @@ description: Consciousness is one of the most ancient mental faculties that has 
 title: Talking about the Caricature of Consciousness
 published: true
 permalink: /2019/caricature-consciousness
-image: /assets/venere.jpg
+header:
+  og_image: /assets/images/venere.jpg
 excerpt: Illusion. Consciousness is one of the most ancient mental faculties that has been developed in the history of evolution and yet its nature is currently incredibly debated. Why is it so important? It is what distinguishes us from a zombie or a person in a coma. I introduce the Attention Schema Theory for explaining the nature of consciousness.
+share: true
 ---
 <figure class="full">
-    <img src="/assets/venere.jpg">
+    <img src="/assets/images/venere.jpg">
     <figcaption>Warning: may cause symptoms from dizziness to heart trouble. Photograph: Alberto Pizzoli/AFP/Getty Images</figcaption>
 </figure>
 It was in 1817 when the french novelist Stendhal got sick while admiring Uffizi's masterpieces for which was coined the famous  _“Stendhal Syndrome”_.   

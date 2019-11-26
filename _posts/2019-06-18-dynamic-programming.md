@@ -3,7 +3,8 @@ layout: posts
 description: Dynamic programming lays the foundation of reinforcement learning. I quote some aspects of it in the lens of the Markov decision process.
 title: Dynamic Programming
 published: true
-image: /assets/rissa-galleria.jpg
+header:
+  og_image: /assets/rissa-galleria.jpg
 comments: true
 tags:
 mathjax: true

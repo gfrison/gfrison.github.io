@@ -3,7 +3,8 @@ layout: posts
 description: Automated Negotiation system scale you sales force and encode the knowledge of your sales representative.
 title: Automated Negotiation for your Digitized Seller
 published: true
-image: /assets/dna.jpg
+header:
+  og_image: /assets/dna.jpg
 comments: true
 ---
 How could it be if you have a system that scales your sales force, encodes the knowledge of your sales representatives, contracts deals and negotiates the best terms and conditions on your behalf, with no effort and no waste of time?

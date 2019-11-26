@@ -2,7 +2,8 @@
 layout: posts
 description: Prototype that combines NLP analysis and semantic data sources for answering simple generic questions, by learning how to get the informations given a fairly small amount of question/answer pairs.
 title: Automated Question Answering using Semantic Networks
-image: /assets/conceptnetQA.png
+header:
+  og_image: /assets/conceptnetQA.png
 comments: true
 ---
 I worked recently in a small prototype that combines NLP analysis and semantic datasources
@@ -15,9 +16,7 @@ A natural and spontaneous QA dialogue, as every Chatbot would aim to engage, wil
 2. *Integrate* source of knowledge.
 3. *Infer* transitive semantics (e.g., reconstructing what it is implied but not written).
 
-[see full article](https://labs.hybris.com/2017/08/02/automated-question-answering-using-semantic-networks/)
-
-<!--
+* https://labs.hybris.com/2017/08/02/automated-question-answering-using-semantic-networks/ *
 
 Neural networks are particularly effective in [conversational modelling](https://arxiv.org/abs/1506.05869 "Neural Conversational Model").
 Architectures like [*seq2seq*](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)
@@ -81,4 +80,3 @@ Yes
 >Which lakes can you find in Italy?
 Lago como, lago garda
 ```
--->

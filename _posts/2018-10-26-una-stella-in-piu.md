@@ -2,7 +2,8 @@
 layout: posts
 title: Una Stella in più
 published: true
-image: /assets/mamma.jpg
+header:
+  og_image: /assets/mamma.jpg
 comments: true
 ---
 <center><img title="Mirella Bobbo" src="{{ site.url }}/assets/mamma.jpg"/></center>
