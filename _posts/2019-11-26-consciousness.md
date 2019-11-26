@@ -62,5 +62,8 @@ My experience is real. As Descart said: you can’t doubt the existence of your 
 
 The definition of consciousness as “illusion” should not be interpreted as a mirage or something that does not exist, rather it is what our brain says about the model we have of our attention and it is far away from what it appears to be. it might be compared to the faces we fantasize sculptured in the clouds, they don’t exist except in our imagination. This is why the view of consciousness throughout the lens of AST is counter-intuitive. The perception of being conscious is a simplification of all electro-chemical signaling with an amazing coordination.
 
-The AST is the ancient highly simplified model of our attention that has a fundamental purpose. It is a powerful force in our mind that restlessly focus into objects, ideas, feelings. You are aware of it when you have a clear understanding of what you are doing or thinking.
+The AST is the ancient highly simplified model of our attention that has a fundamental purpose.
+>AST helps to focus attention. It directs purposeful actions towards goals.
+
+ It is a powerful force in our mind that restlessly focus into objects, ideas, feelings. You are aware of it when you have a clear understanding of what you are doing or thinking.
 Consciousness is a cartoonish effect of our attention’s model.
