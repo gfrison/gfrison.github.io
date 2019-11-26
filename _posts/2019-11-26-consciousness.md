@@ -2,7 +2,7 @@
 layout: posts
 description: Consciousness is one of the most ancient mental faculties that has been developed in the history of evolution and yet its nature is currently incredibly debated. Why is it so important? It is what distinguishes us from a zombie or a person in a coma. I introduce the Attention Schema Theory for explaining the nature of consciousness.
 title: Talking about the Caricature of Consciousness
-published: false
+published: true
 permalink: /2019/caricature-consciousness
 image: /assets/venere.jpg
 excerpt: Illusion. Consciousness is one of the most ancient mental faculties that has been developed in the history of evolution and yet its nature is currently incredibly debated. Why is it so important? It is what distinguishes us from a zombie or a person in a coma. I introduce the Attention Schema Theory for explaining the nature of consciousness.
@@ -11,7 +11,7 @@ excerpt: Illusion. Consciousness is one of the most ancient mental faculties tha
     <img src="/assets/venere.jpg">
     <figcaption>Warning: may cause symptoms from dizziness to heart trouble. Photograph: Alberto Pizzoli/AFP/Getty Images</figcaption>
 </figure>
-It was in 1817 when the french novelist Stendhal got sick in front of such beauty for which was coined the famous  _“Stendhal Syndrome”_.   
+It was in 1817 when the french novelist Stendhal got sick while admiring Uffizi's masterpieces for which was coined the famous  _“Stendhal Syndrome”_.   
 Think of that exact moment while he was watching Botticelli’s _“Nascita di Venere”_. He was standing up in front of the paint. Though there were people around him, he was completely seized by the aesthetic and the deep essence of such a masterpiece. He was scrutinizing every detail, every shade of color, every inclination of brush strokes. The crazy inner thoughts this gem suscitated in him - that we can’t ever know  - eventually brought him dizziness and heart trouble. He was experiencing the personal impact of such treasure on the very extreme consequences.
 
 Consciousness is one of the most ancient mental faculties, one of the least special to us, that has been developed in the history of evolution and yet its nature is currently incredibly debated. Why is it so important? Well, could you imagine Stendhal not having a full conscious experience? I would say not at all, rather I point that consciousness is what distinguishes us from a zombie or a person in a coma. Common sense definition from John Searle:
