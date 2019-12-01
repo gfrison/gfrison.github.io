@@ -4,7 +4,8 @@ description: Using evolutionary system based on Genetic Programming for complex 
 title: First Steps on Evolutionary Systems
 published: true
 permlink: /2018/06/28/first-steps-evolutionary
-image: /assets/evolution-graph.png
+header:
+  og_image: /assets/evolution-graph.png
 mathjax: true
 comments: true
 ---

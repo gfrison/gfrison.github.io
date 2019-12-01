@@ -4,7 +4,8 @@ description: Basic principles on the foundations of languages. How language is d
 title: The Basic Principles of Language
 published: true
 permlink: /2018/06/13/basic-principles-language
-image: /assets/hand.jpg
+header:
+  og_image: /assets/hand.jpg
 comments: true
 ---
 

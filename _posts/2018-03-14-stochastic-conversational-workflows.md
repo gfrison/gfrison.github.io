@@ -4,16 +4,15 @@ description: A novel approach for improving conversational fluency in Chatbots b
 title: Stochastic Conversational Workflows
 published: true
 permlink: /2018/03/14/stochastic-conversational-workflows
-image: /assets/stochastic-conversational-workflows.png
+header:
+  og_image: /assets/stochastic-conversational-workflows.png
 comments: true
 ---
 
 Traditionally, user interfaces are a series of screens and forms for exchanging informations with the user. Most of the applications start with a main screen from which users can navigate using breadcrumbs, menus, buttons like back and forward. This paradigm remained almost unaltered with the coming of hypertext where one may jump from a page or dialog into another by visual links, that are immediately accessible.
 Chatbots shift UX towards _conversational hypertext_ that produces the appearance of having a conversation with the computer. People can interact naturally, and since everyone already knows at least one natural language, nobody needs any training for it.
 
-[see full article](https://labs.hybris.com/2018/03/20/stochastic-conversational-workflows/)
-
-<!--
+* https://labs.hybris.com/2018/03/20/stochastic-conversational-workflows/ *
 
 The casualness of the medium contrasts with the complexity of the structured, and sometimes cumbersome, functions for achieving a specific goal, but while web-users can easily switch to a new goal-oriented scenario with a click, in the messaging application this could be mainly done by texting.
 Conversational applications usually implement workflows not by screens or forms but by piling new dialog scenarios into the conversational stack. Technically, it is something like packing [finite state machines](https://en.wikipedia.org/wiki/Finite-state_machine), on which every layer represents a particular task. When the current one is accomplished, the dialog state closes and it is removed from the stack.
@@ -69,4 +68,3 @@ Fully-connected neural network means that the different layers of the network (C
 ![Stochastic Conversational Workflows]({{ site.url }}/assets/stochastic-conversational-workflows.png)
 
 While CNN extracts a relevant representation of the user's input, other type of inputs can be feed into the LSTM layer as illustrated. In this way, the meaning of the user's sentence is evaluated within a set a additional parameters that can affect the decision outcome of a particular conversational step.
--->

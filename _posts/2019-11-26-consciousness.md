@@ -2,16 +2,18 @@
 layout: posts
 description: Consciousness is one of the most ancient mental faculties that has been developed in the history of evolution and yet its nature is currently incredibly debated. Why is it so important? It is what distinguishes us from a zombie or a person in a coma. I introduce the Attention Schema Theory for explaining the nature of consciousness.
 title: Talking about the Caricature of Consciousness
-published: false
+published: true
 permalink: /2019/caricature-consciousness
-image: /assets/venere.jpg
+header:
+  og_image: /assets/images/venere.jpg
 excerpt: Illusion. Consciousness is one of the most ancient mental faculties that has been developed in the history of evolution and yet its nature is currently incredibly debated. Why is it so important? It is what distinguishes us from a zombie or a person in a coma. I introduce the Attention Schema Theory for explaining the nature of consciousness.
+share: true
 ---
 <figure class="full">
-    <img src="/assets/venere.jpg">
+    <img src="/assets/images/venere.jpg">
     <figcaption>Warning: may cause symptoms from dizziness to heart trouble. Photograph: Alberto Pizzoli/AFP/Getty Images</figcaption>
 </figure>
-It was in 1817 when the french novelist Stendhal got sick in front of such beauty for which was coined the famous  _“Stendhal Syndrome”_.   
+It was in 1817 when the french novelist Stendhal got sick while admiring Uffizi's masterpieces for which was coined the famous  _“Stendhal Syndrome”_.   
 Think of that exact moment while he was watching Botticelli’s _“Nascita di Venere”_. He was standing up in front of the paint. Though there were people around him, he was completely seized by the aesthetic and the deep essence of such a masterpiece. He was scrutinizing every detail, every shade of color, every inclination of brush strokes. The crazy inner thoughts this gem suscitated in him - that we can’t ever know  - eventually brought him dizziness and heart trouble. He was experiencing the personal impact of such treasure on the very extreme consequences.
 
 Consciousness is one of the most ancient mental faculties, one of the least special to us, that has been developed in the history of evolution and yet its nature is currently incredibly debated. Why is it so important? Well, could you imagine Stendhal not having a full conscious experience? I would say not at all, rather I point that consciousness is what distinguishes us from a zombie or a person in a coma. Common sense definition from John Searle:
@@ -62,5 +64,8 @@ My experience is real. As Descart said: you can’t doubt the existence of your 
 
 The definition of consciousness as “illusion” should not be interpreted as a mirage or something that does not exist, rather it is what our brain says about the model we have of our attention and it is far away from what it appears to be. it might be compared to the faces we fantasize sculptured in the clouds, they don’t exist except in our imagination. This is why the view of consciousness throughout the lens of AST is counter-intuitive. The perception of being conscious is a simplification of all electro-chemical signaling with an amazing coordination.
 
-The AST is the ancient highly simplified model of our attention that has a fundamental purpose. It is a powerful force in our mind that restlessly focus into objects, ideas, feelings. You are aware of it when you have a clear understanding of what you are doing or thinking.
+The AST is the ancient highly simplified model of our attention that has a fundamental purpose.
+>AST helps to focus attention. It directs purposeful actions towards goals.
+
+ It is a powerful force in our mind that restlessly focus into objects, ideas, feelings. You are aware of it when you have a clear understanding of what you are doing or thinking.
 Consciousness is a cartoonish effect of our attention’s model.

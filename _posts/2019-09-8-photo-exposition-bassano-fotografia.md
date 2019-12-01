@@ -3,7 +3,8 @@ layout: posts
 description: My small contribution to BassanoFotografia 2019 \#bf19 in Caffe San Marco and Les Amis
 title: Photography Event in Bassano del Grappa
 published: true
-image: /assets/GiancarloFrison-bf19-1.jpg
+header:
+  og_image: /assets/GiancarloFrison-bf19-1.jpg
 comments: true
 tags:
 ---
