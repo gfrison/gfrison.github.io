@@ -17,9 +17,7 @@ An optimized plan could be blended as a program defined as an abstract syntax tr
 
 <center><img src="{{ site.url }}/assets/ast.png" title="Abstract Syntax Tree" width="300"/></center>
 
-[see full article](https://labs.hybris.com/2018/07/02/first-steps-on-evolutionary-systems/)
-
-<!--
+*I wrote it on https://labs.hybris.com/2018/07/02/first-steps-on-evolutionary-systems/*
 
 This is the tree representation of $$\frac{a}{10}+4b$$. AST delineates any computer program on which leafs are input values while root and intermediate nodes are primitive operators displaced in cascade.
 An automatic system built upon goal optimizations should develop methods for synthesizing programs by running intelligent agents that learn by them self on how to reach targets. Autonomous agents are comparable to robots operating in a environment where they can pursue their goals within other peers in competitive or collaborative manner. For the level of complexity of a multi-agent system, one of the promising technique could be found, is in the realm of evolutionary algorithms.
@@ -59,4 +57,3 @@ $$err = \frac{\sum_{i=1}^n (D_i - P_i(D))^2}{\sum_{i=1}^n D_i} $$
 <center><img src="{{ site.url }}/assets/evolution-graph.png"  title="Multi-Objective Genetic Programming"/></center>
 
 The green lines represent the output of the _units_ function, the one which has been trained to find the unit value from a given number, while the red line represents the _tens_.
--->
