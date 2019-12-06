@@ -6,7 +6,7 @@ published: true
 permalink: /2019/caricature-consciousness
 header:
   og_image: /assets/images/venere.jpg
-excerpt: Illusion. Consciousness is one of the most ancient mental faculties that has been developed in the history of evolution and yet its nature is currently incredibly debated. Why is it so important? It is what distinguishes us from a zombie or a person in a coma. I introduce the Attention Schema Theory for explaining the nature of consciousness.
+excerpt: Consciousness is one of the most ancient mental faculties that has been developed in the history of evolution and yet its nature is currently incredibly debated. Why is it so important? It is what distinguishes us from a zombie or a person in a coma. I introduce the Attention Schema Theory for explaining the nature of consciousness.
 share: true
 ---
 <figure class="full">
