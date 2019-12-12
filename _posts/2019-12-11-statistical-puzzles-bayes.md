@@ -27,41 +27,60 @@ The card on the table is white on the visible side.
 This is a hard problem if we don’t solve those problems by applying cold conditional probability. The Bayesian rule tells us to leverage what we already know for refine your knowledge about we don’t know yet.
 
 $$
- P(wish\; to\; know \;|\; known)
+ P(wish\; to\; know \mid known)
 $$
 
 In the case of the cards, we know how the different sides are distributed and we know the color of the proposed card. We wish to know the probability that the other side has the same color of the visible one.
 
 $$
-P(ww \;|\; w) = \frac{P(w \;|\; ww) \; P(ww)}{P(w)}
+P(ww \mid w) = \frac{P(w \mid ww) \; P(ww)}{P(w)}
 $$
 
-P(w) = P(w | ww)P(ww) + P(w | wb)P(wb) + P(w | bb)P(bb)
-P(w) = 1*1/3 + 1/2*1/3
-$$
-P(W) = P(WW)  \dot 1 + P(WB).5 + P(BB) * 0 = (1/3) + (1/3) 0.5 = 0.5
+This is the well known Bayes Rule applied into this problem. I introduce also the following formula, the [law of total probability](https://en.wikipedia.org/wiki/Law_of_total_probability) that helps us to find the probability of having $$w$$ when we put the card on the table:
 
-P(WW) = 1/3
+$$\begin{align}
+cards &= \{ww,\;wb,\;bb\} \\
+P(w) &= \sum_i{P(w \mid cards_i)P(cards_i)}
+\end{align}$$
 
-P(W | WW) = 1
+First, let's then solve $$P(w)$$:
 
-P(WW | W) =2/3
+$$\begin{align}
+P(w) & = P(w \mid ww)P(ww) + P(w \mid wb)P(wb) + P(w \mid bb)P(bb) \\
+&= 1*\frac{1}{3} + \frac{1}{2} \frac{1}{3} + 0\frac{1}{3} \\
+&= \frac{1}{2}
+\end{align}$$
 
-$$
+For each term we can assume the others' terms values:
+
+$$P(ww)$$ = $$P(wb)$$ = $$P(bb)$$ = $$\frac{1}{3}$$
+
+$$P(w \mid ww)$$ = 1
+
+Now we can solve the equation:
+$$\begin{align}
+P(ww \mid w) &= \frac{P(w \mid ww) \; P(ww)}{P(w)} \\
+&= \frac{1\frac{1}{3}}{\frac{1}{2}} \\
+&= \frac{2}{3}
+\end{align}$$
+
 For having the right intuition about that, the trick is to count sides not the cards themselves. There are two cards with at least one white side and only one with both white. But it is the sides and not the cards that matter.
 
 
 ## The Monty Hall Problem
-Suppose you are on a game show, and you are given the choice of three doors. Behind one door is a car, behind the others, goats. You peek a door, say #1, and the host, who knows what’s behind the doors, opens another door, say #3, which has a goat. Then he says you “would you switch your current selection (#1) with t#2?”.
+Suppose you are on a game show, and you are given the choice of three doors. Behind one door is a car, behind the others, goats. You peek a door, say #1, and the host, who knows what’s behind the doors, opens another door, say #3, which has a goat. Then he says you: _“Would you switch the door #1 with #2?”_.
 In your opinion, is it better to hold #1 or switch it to #2?
 
 The question is based on a popular televised game show called Let’s Make a Deal conducted by the host Monty Hall. In September 1990, a popular columnist in the US gave an answer to this tricky problem an it created great furor. The question was posed by a reader that asked  what to choose. Hold on #1 or switch to #2? The answer, defended by the “world’s smartest woman” - as billed by the magazine - argued that the contestant should switch doors.
-Over the following months, she received thousands of letters even from PhDs in mathematics and statistics. Most of them fervently disagree with her and one of them commented: “May I suggest that you obtain and refer to a standard textbook on probability before you try to answer a question of this type again?”. Critics stated that switching or not, have the same probability, so the decision to change door should be totally random. Let’s understand the mechanics of this problem under the lens of Bayes' rule.
 
-When the contestant choose the doore, the odds are uncontestedly ⅓ for each door
-P(Car1)=P(Car2)=P(Car3)=⅓
+Over the following months, she received thousands of letters even from PhDs in mathematics and statistics. Most of them fervently disagreed with her and one of them commented: _“May I suggest that you obtain and refer to a standard textbook on probability before you try to answer a question of this type again?”_.
+Critics stated that switching or not, have the same probability, so the decision to change door should be totally random. Let’s understand the mechanics of this problem under the lens of Bayes rule.
 
-After Monty Hall open the #3, what is the chance to have the prize behind #1?
+When the contestant choose the door, the odds to find the car behind that door is uncontestedly $$\frac{1}{3}$$:
+
+$$P(c1)$$=$$P(c2)$$=$$P(c3)$$=$$\frac{1}{3}$$
+
+If the conductor open the #3, what are the chances to have the prize behind door #1?
 P(Car1 | #3) = P(#3 | Car1)* P(Car1) / P(#3)
 
 But What is P(#3)?
