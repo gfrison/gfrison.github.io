@@ -13,11 +13,10 @@ tags:
   - machine learning
   - interview
 ---
-<figure class="full">
-    <img src="/assets/images/zefiro-interview.png">
-</figure>
+![](/assets/images/zefiro-interview.png)
+
 **Me: What it is negotiation?** \\
-[Zefiro]({% link _posts/2019-11-04-automated-negotiation.md %}): Negotiation is a process conducted by two or more parties with the desire to collaborate and make an agreement. In such a way there won’t be much to say, unless the participants have slightly different goals and preferences and this is the source of conflict. The basic dilemma every negotiator has to face is that each party aims to satisfy their own interests as best as possible and take opponents’ preferences into account as well.
+[Zefiro]({% link _posts/2019-11-04-automated-negotiation.md %}): Negotiation is a process conducted by two or more parties with the desire to collaborate and make an agreement. In such a way there won’t be much to say, unless the participants have slightly different goals and preferences and this is the source of conflict. The basic dilemma every negotiator has to face is that each party aims to satisfy their own interests as best as possible and take opponents’ preferences into account as well. 
 
 **I admit I am a really bad negotiator. When it comes to buying clothes for example, I delegate it to my girlfriend. She’s the master of discounts! Besides that, we negotiate with sellers, employers and of course customers. Is it all about arbitrating on compromises?** \\
 Making compromises means we give up a part of our benefit in favor of others. That’s the case of symmetrical preferences, i.e. the purchase’s price. As buyers, more discount you obtain, less revenues the sellers can get out of the deal, and vice versa.
@@ -55,3 +54,5 @@ Of course. Do you remind the concept of compromise? It could be vaguely quantifi
 When the agent has a grasp of the user and what s/he needs it is possible to deduct whether the user is converging to the common goal or simply moving towards selfish interests. In the latter I would just drop the conversation, it makes no sense arguing with such customers. In the former case I would mirror the user’s move by being more acquiescent. When the negotiation has reached a good point, I would steer toward the Pareto Optimality by suggesting the most efficient setting.
 
 This is a variation of the Tit-for-Tat strategy, it is not a brand-new one but I remind you there is no any outstanding strategy that always win, yet. It depends on the context. I guess this is the last question, isn’t it? In that case, I wish you a good day!
+
+*I wrote it on https://cxlabs.sap.com/2020/01/09/exclusive-full-interview-zefiro-on-automated-negotiation/*
