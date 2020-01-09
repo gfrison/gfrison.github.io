@@ -2,7 +2,7 @@
 layout: single
 description: "Today, I am pleased to have Zefiro on the blog for an exclusive interview about automated negotiation, machine learning and business. I think you will find interesting."
 title: "Exclusive (FULL) Interview: Zefiro on Automated Negotiation"
-published: false
+published: true
 permalink: /2020/interview-zefiro-automated-negotiation
 header:
   og_image: /assets/images/zefiro-interview.png
