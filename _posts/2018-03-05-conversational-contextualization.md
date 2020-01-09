@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 description: Contextual memory in conversational applications play a central role in any type of interaction between two parties, the Chatbot and the user. Here some example on how a contextual based system might improve the communication on some basic scenarios.
 title: Context and Sequentiality in Conversational Applications
 published: true

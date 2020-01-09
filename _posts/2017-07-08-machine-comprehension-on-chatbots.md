@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 title: Machine Comprehension on Chatbots
 header:
   og_image: /assets/bidaf.png

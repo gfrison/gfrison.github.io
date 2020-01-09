@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 description: Innovative method for improving information-retrieval precision in e-commerce sites by presenting related products whenever searched items are not available in catalog.
 title: Concept Search by Word Embeddings
 published: true
