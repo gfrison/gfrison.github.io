@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Photos
+permalink: /photos
 gallery:
   - url: https://flic.kr/p/yyb955
     image_path: /assets/photos/hackerbrucke.jpg
