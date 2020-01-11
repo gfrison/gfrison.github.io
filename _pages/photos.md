@@ -32,6 +32,9 @@ gallery:
   - url: https://flic.kr/p/qMYxBk
     image_path: /assets/photos/edinburg-snow.jpg
     title: Edinburgh by Snow
+categories:
+  - Photo
+
 ---
 
 {% include gallery class="full"  %}

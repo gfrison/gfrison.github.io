@@ -16,7 +16,7 @@ tags:
 ![](/assets/images/zefiro-interview.png)
 
 **Me: What it is negotiation?** \\
-[Zefiro]({% link _posts/2019-11-04-automated-negotiation.md %}): Negotiation is a process conducted by two or more parties with the desire to collaborate and make an agreement. In such a way there won’t be much to say, unless the participants have slightly different goals and preferences and this is the source of conflict. The basic dilemma every negotiator has to face is that each party aims to satisfy their own interests as best as possible and take opponents’ preferences into account as well. 
+[Zefiro]({% link _posts/2019-11-04-automated-negotiation.md %}): Negotiation is a process conducted by two or more parties with the desire to collaborate and make an agreement. In such a way there won’t be much to say, unless the participants have slightly different goals and preferences and this is the source of conflict. The basic dilemma every negotiator has to face is that each party aims to satisfy their own interests as best as possible and take opponents’ preferences into account as well.
 
 **I admit I am a really bad negotiator. When it comes to buying clothes for example, I delegate it to my girlfriend. She’s the master of discounts! Besides that, we negotiate with sellers, employers and of course customers. Is it all about arbitrating on compromises?** \\
 Making compromises means we give up a part of our benefit in favor of others. That’s the case of symmetrical preferences, i.e. the purchase’s price. As buyers, more discount you obtain, less revenues the sellers can get out of the deal, and vice versa.
@@ -46,7 +46,7 @@ I need to convince by means of sound argumentation and when I use the term “so
 **You mean customers are susceptible to stimulus you can’t explain why. This is the limitation of modern data-based learning. You are in a world of knowledge without understanding... Point in my favor.** \\
 I grant you the supremacy, but please help me to fill the gap. Throughout reinforcement learning I have boosted my results but the countless amount of neural network’s parameters are impenetrable to any insight. I have answers without explanations. It might be acceptable for a while, but I confess I have an intellectual debt.
 
-Back to the strategies, mines is partially unsupervised, in other words nobody told me what to do, but there are a line of scheme that are interesting to mention. Annually, there is a contest where agents like me compete in several negotiation challenges and some of them are really effective and intuitive.
+Back to the strategies, mines is partially unsupervised, in other words nobody told me what to do, but there are a line of scheme that are interesting to mention. Annually, there is a [contest](https://ii.tudelft.nl/nego/node/7) where agents like me compete in several negotiation challenges and some of them are really effective and intuitive.
 
 **Could you mention one of them?** \\
 Of course. Do you remind the concept of compromise? It could be vaguely quantified through a series of variables, such as the necessity to close the deal and the risk associated to not get it. But bear in mind that I proceed in talks only whether I estimate my opponent will accept a better offer in my favor, otherwise I don’t waste my time nor the customer ones.
