@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 description: Bayesian conditional probability requires sharped interpretation skills but the implications of using it are valuable and sometimes counter-intuitive, exactly like paradoxes appear when the solution is revealed. I applied Bayes rules to a couple of problems that roam around probability theory, on which most people’s impulsive intuition, including mine, falls short.
 title: Statistical paradoxes for sharping your Bayesian skills
 published: true

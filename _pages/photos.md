@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Photos
+permalink: /photos
 gallery:
   - url: https://flic.kr/p/yyb955
     image_path: /assets/photos/hackerbrucke.jpg
@@ -32,6 +33,9 @@ gallery:
   - url: https://flic.kr/p/qMYxBk
     image_path: /assets/photos/edinburg-snow.jpg
     title: Edinburgh by Snow
+categories:
+  - Photo
+
 ---
 
 {% include gallery class="full"  %}

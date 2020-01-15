@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 description: Prototype that combines NLP analysis and semantic data sources for answering simple generic questions, by learning how to get the informations given a fairly small amount of question/answer pairs.
 title: Automated Question Answering using Semantic Networks
 header:

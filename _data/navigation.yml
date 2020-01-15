@@ -1,5 +1,9 @@
 main:
-  - title: "Photos"
-    url: "/photos"
+  - title: "Follow me"
+    url: "/contact"
+  - title: Photos
+    url: "/categories/#photo"
   - title: "Curriculum Vitae"
     url: "/cv"
+  - title: "Contact"
+    url: "/contact"

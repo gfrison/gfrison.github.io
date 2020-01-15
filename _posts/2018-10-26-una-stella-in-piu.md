@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 title: Una Stella in più
 published: true
 header:
