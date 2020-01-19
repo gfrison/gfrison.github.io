@@ -14,7 +14,6 @@ tags:
   - interview
 ---
 ![](/assets/images/zefiro-interview.png)
-
 **Me: What it is negotiation?** \\
 [Zefiro]({% link _posts/2019-11-04-automated-negotiation.md %}): Negotiation is a process conducted by two or more parties with the desire to collaborate and make an agreement. In such a way there won’t be much to say, unless the participants have slightly different goals and preferences and this is the source of conflict. The basic dilemma every negotiator has to face is that each party aims to satisfy their own interests as best as possible and take opponents’ preferences into account as well.
 
