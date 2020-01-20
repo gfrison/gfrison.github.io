@@ -18,7 +18,7 @@ For the first time I get interviewed and I am very clumsy in this different guis
 
 The guys published it on [Labs Talk](https://cxlabs.sap.com/2020/01/16/labs-talk-feature-happy-new-year/) and I'm trying to introduce some fundamentals of [Automated Negotiation]({% link _posts/2019-11-04-automated-negotiation.md %}). I hope you find it interesting!
 
-This talk also inspired a [fictitious conversation]({% link _posts/2020-01-09-interview-zefiro-automated-negotiation.md %}) between me and a negotiating agent. I think it deserves a [glimpse](({% link _posts/2020-01-09-interview-zefiro-automated-negotiation.md %})) of yours.
+This talk also inspired a [fictitious conversation]({% link _posts/2020-01-09-interview-zefiro-automated-negotiation.md %}) between me and a negotiating agent. I hope it deserves a [glimpse]({% link _posts/2020-01-09-interview-zefiro-automated-negotiation.md %}) of yours.
 
 Always keep learning no matter what.
 
