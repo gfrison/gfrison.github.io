@@ -82,7 +82,7 @@ When a new user visits your store you know merely nothing about him/her. The use
   <figcaption>Posterior after new evidence</figcaption>
 </figure>
 
-## Dynamic Bayesian Networks
+## Dynamic Bayesian Networks 
 If we extend the concept of network of beliefs in a time sequenced process we get the abstract of what is named Dynamic Bayesian Network. It is a Bayesian network with a feedback loop, whereby the output of an interaction feeds the input of the subsequent step. If you are familiar with recurrent neural networks, it’s not a giant leap to identify the similar pattern with DBNs. The possibilities - and the complexity - grows exponentially by introducing this architecture. In the following example, the weather affects the humidity of the air, which (hypothetically)  has an influence on the weather of the next day. The network keeps a state of past interactions, in particular might take in account what was an input several steps ago.   
 <figure class="full">
   <img src="/assets/images/bayesian/dbn.png"/>
