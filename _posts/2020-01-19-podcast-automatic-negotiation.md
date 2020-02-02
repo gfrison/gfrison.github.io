@@ -12,7 +12,6 @@ categories:
 tags:
   - podcast
 ---
-![](/assets/images/podcast.jpg)
 I am a voracious consumer of podcasts. It is a quick way to receive informative content while commuting at work in the morning.
 For the first time I get interviewed and I am very clumsy in this different guise.
 
