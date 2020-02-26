@@ -8,6 +8,9 @@ header:
 comments: true
 tags:
 mathjax: true
+categories:
+  - Reinforcement Learning
+
 ---
 
 ## Multi-armed Bandit

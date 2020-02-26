@@ -6,6 +6,11 @@ permlink: /2008/10/23/model-driven-architecture-on-fire-off-the-shoulder-of-orio
 comments: true
 image: /assets/nirvana.gif
 tags: mda, mdd, meta-model, metamodelling, model, modelling, mof, roi, uml
+categories:
+  - Meta Programming
+tags:
+  - uml
+  - low-code no-code
 ---
 ![]({{ site.url }}/assets/nirvana.gif)
 I must admit, frustration has increased over the years. I mean, interacting with the computer in terms of boolean, long, void. I’d rather sit on a sofa and describe the program by voice, or better, get into a 3D virtual reality and cook a software like a lunch meal in the kitchen. Playing with spheres, arrows, to design all program doodles.
