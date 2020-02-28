@@ -17,8 +17,8 @@ tags:
 <figure class="full">
     <img src="/assets/images/lets-make-deal.jpg">
 </figure>
-Sometimes despite apparently valid intuitions, it is easy to convey to wrong conclusions when the solution of the problem runs contrary to our expectations. This is the case of  paradoxes that are known to have valid arguments and without a deep insight, their solutions sound counter-intuitive and illogical.
-I collected a couple of problems that circle around probability theory on which most people’s impulsive intuition, including mine, falls short. I want to demonstrate you that those puzzles don’t require great talent if we apply some basic rules. Bayesian conditional probability is not difficult, it is just counting. But to apply it you need to sharpen your interpretation skills, and this is hard. The implications of using Bayesian inference are valuable and sometimes  counter-intuitive, exactly like paradoxes appear when the solution is revealed.  
+Sometimes despite apparently valid intuitions, it is easy to convey to wrong conclusions when the solution of the problem runs contrary to our expectations. This is the case of  paradoxes that are known to have valid arguments, and without a deep insight, their solutions sound counter-intuitive and illogical. \\
+I collected a couple of problems accountable on probability theory on which most people’s impulsive intuition, including mine, falls short. I want to demonstrate you that those puzzles don’t require great talent if we apply some basic rules. Bayesian conditional probability is not difficult, it is just counting. But to apply it you need to sharpen your interpretation skills, and this is hard.   
 
 ## Bertrand’s box paradox
 A classic probability puzzle is the Bertrand’s box paradox and I prefer to narrate this slightly different version rather than the original one. Suppose I have 3 cards, the first card is white on both sides. The second card is white on one side and black on the other. The third has both sides black. Now I put one card on the table, and the visible side of this card is white. What is the probability that the other side is also white? \\
