@@ -8,6 +8,8 @@ header:
 comments: true
 tags:
 mathjax: true
+categories:
+  - Reinforcement Learning
 ---
 
 Reinforcement learning covers a family of algorithms with the purpose of maximize a cumulative reward that an _agent_ can obtain from an _environment_.

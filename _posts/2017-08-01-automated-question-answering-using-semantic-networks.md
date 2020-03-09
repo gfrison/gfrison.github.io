@@ -5,6 +5,8 @@ title: Automated Question Answering using Semantic Networks
 header:
   og_image: /assets/conceptnetQA.png
 comments: true
+categories:
+  - NLP
 ---
 I worked recently in a small prototype that combines NLP analysis and semantic datasources
 for answering simple generic questions, by learning how to get the informations given a fairly small amount of question/answer pairs.
