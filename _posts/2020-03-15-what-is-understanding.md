@@ -1,7 +1,7 @@
 ---
 layout: single
 description: "What is Understanding? How do we make sense out of what we have read or listened? I want to sketch some basic fundamental cognitive skills, as outliners for computational understanding."
-title: "What is Understanding? Principles of Comprehension for Software Programs"
+title: "What is Understanding? Principles of Comprehension for Computer Programs"
 published: true
 permalink: /2020/what-is-understanding
 header:
@@ -13,10 +13,11 @@ tags:
   - understanding
   - artificial intelligence
 ---
-Imagine that you receive an email that contains only symbols you have never seen before, and you are provided with instructions on how to relate those strange symbols. The instructions are in plain english and your task is to apply the instructions to the given symbols and reply back the unknown scribbles, the results of the transformation. We can define the documents: the incoming email is a set of questions while the instructions are the program and what you send back are the answers. For complicating the task, you are demanded to complete the following. You receive another email in english (or on your mother tongue): “A client enters a restaurant and orders a steak, but after being served he quits the restaurant, angry for the burned steak, without paying”.  You are requested to answer to the following question: “Did the client eat the steak?”. \\
-In the first task you are so practiced and the programmers so smart that your answers sound very natural and intelligent to the receiver. Although you don’t know, the strange symbols are nothing but ideograms of a dialect present in a remote region in China and it’s carrying the same meaning of the second script, which is in english and you understand perfectly. The receiver is astonished by your answers and he firmly believes you speak his local language as well as english, despite you have merely executed the given instructions without understanding anything of what you wrote in chinese.
+Imagine that you receive an email that contains only symbols you have never seen before, and you are provided with instructions on how to relate those strange symbols. The instructions are in plain english and your task is to apply the instructions to the given symbols and reply back unknown scribbles, the results of the transformation. We can define the documents: the incoming email is a set of questions, while the instructions are the program, and what you send back are the answers. For complicating the task, you are demanded to complete the following. You receive another email in english (or on your mother tongue): “A client enters a restaurant and orders a steak, but after being served he quits the restaurant, angry for the burned steak, without paying”.  You are requested to answer to the following question: “Did the client eat the steak?”. \\
+In the first task you are so practiced and the programmers so smart that your answers sound very natural and intelligent to the receiver. Although you don’t know, the strange symbols are nothing but ideograms of a dialect present in a remote region in China and they're carrying the same meaning of the second script, which is in english and you understand perfectly. The receiver is astonished by your answers and he firmly believes you speak his local language as well as english, despite you have merely executed the given instructions without understanding anything of what you wrote in Chinese.
 
-This is a variation on the “Chinese room” theme (Searle 1980), a well-known argument against the famous “imitation game” of Alan Turing, also known as Turing’s test. Likewise in the mentioned task, the Turing’s test is passed by convincing auditors that the questions are genuinely answered by a human being. The Chinese tester voted for granting you the mastery of Chinese, but you acted exactly like a computer, by executing some given instructions and ultimately, without any clue of what that actually means. Searle wanted to point out that the process of understanding is a crucial prerequisite for being considered an intelligent being, rather than an irrelevant detail as depicted in the Turing’s test. \\
+This is a variation on the “Chinese room” theme (Searle 1980), a well-known argument against the famous “imitation game” of Alan Turing, also known as Turing’s test. Likewise in the mentioned task, the Turing’s test is passed by convincing auditors that the questions are genuinely answered by a human being. The Chinese tester voted for granting you the mastery of Chinese, but you acted exactly like a computer, by executing some given instructions and ultimately, without any clue of what that actually means. \\
+Searle wanted to point out that the process of understanding is a crucial prerequisite for being considered an intelligent being, rather than an irrelevant detail as depicted in the Turing’s test. \\
 Even though the Searle’s argument appears intuitively irrefutable, I investigate what actually “understanding” is and how it can be reduced and decomposed into small units and what is necessary to get such ability. I want to convey you with me into an understanding of the understanding process.
 
 # Learn for understanding
@@ -70,3 +71,12 @@ Explanation is not a mere addictive beside the main process of understanding, it
 In this article I mentioned multiple times the essence of mental models, some kind of memory structure that the agent should be able to manipulate in elastic performances and interrogate it. The model should be “runnable” because nothing will be got from it without running it. An agent when facing a new experience is using the memory in two distinct ways, the bottom-up and the top-down approach. In the bottom-up the information from the real world are matched with past memories, in the attempt to collocate the current event in the universe of known experiences (_allegories_). After the bottom-up revival of the high-level meaning, this activation would trigger a top-down inquiry of the various possible relation with other entities in the database, for eliciting the most salient possibilities. If it finds new information confirmatory, the initial hypothesis will be maintained and further elaborated; otherwise it disconfirms the assumption and constructs another one, ultimately consistent with the input data. Agents should go beyond the specifics of what the input actually tells them. Their interpretations should include material completely unaddressed by the input data.
 Eventually, the problem facing an automatic comprehender is analogous to the dilemma a detective faces when trying to solve a crime.
 Will we be able to create an automatic Sherlock Holmes?
+
+
+## Bibliography
+- Understanding understanding. _David Rumelhart_
+- What is Understanding?  _David Perkins_
+- Constructive Interaction and the Iterative Process of Understanding. _Naomi Myake_
+- Explanation Patterns. _Roger C. Schank_
+- What is understanding? An overview of recent debates in epistemology and philosophy of science. _C. Baumberg_
+- The Limits of Reason. _Gregory Chaitin_
