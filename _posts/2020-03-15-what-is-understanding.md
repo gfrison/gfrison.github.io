@@ -5,7 +5,7 @@ title: "What is Understanding? Principles of Comprehension for Computer Programs
 published: true
 permalink: /2020/what-is-understanding
 header:
-  og_image: /assets/images/understanding/understanding.jpg
+  og_image: /assets/images/understanding/go-round-png
 share: true
 categories:
   - Mind
