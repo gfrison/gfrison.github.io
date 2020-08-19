@@ -8,7 +8,7 @@ header:
 comments: true
 tags:
 mathjax: true
-categories:
+tags:
   - Reinforcement Learning
 ---
 
