@@ -1,9 +1,8 @@
 ---
 layout: single
 published: true
-description: "What is Understanding? How do we make sense out of what we have read or listened? I want to sketch some basic fundamental cognitive skills, as outliners for computational understanding."
 permalink: /2020/graph-convolution-networks
-title: "Spectral Neural Networks for Knowledge Graphs "
+title: "Spectral Neural Networks for Knowledge Graphs (in Scala)"
 header:
   og_image: /assets/images/gcn/tourism-mountain-beach.png
 share: true
