@@ -6,7 +6,7 @@ published: true
 header:
   og_image: /assets/dna.jpg
 comments: true
-categories:
+tags:
   - Automated Negotiation
 
 ---

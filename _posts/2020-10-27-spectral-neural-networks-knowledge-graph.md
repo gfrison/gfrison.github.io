@@ -6,9 +6,8 @@ title: "Spectral Neural Networks for Knowledge Graphs (in Scala)"
 header:
   og_image: /assets/images/gcn/tourism-mountain-beach.png
 share: true
-categories:
-  - Neural Networks
 tags:
+  - Neural Networks
   - GCN
   - Knowledge Graph
   - ConceptNet

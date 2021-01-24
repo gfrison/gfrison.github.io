@@ -7,9 +7,8 @@ permalink: /2020/interview-zefiro-automated-negotiation
 header:
   og_image: /assets/images/zefiro-interview.png
 share: true
-categories:
-  - Automated Negotiation
 tags:
+  - Automated Negotiation
   - machine learning
   - interview
 ---

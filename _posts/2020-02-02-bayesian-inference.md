@@ -7,8 +7,6 @@ permalink: /2020/bayesian-inference-networks
 header:
   og_image: /assets/images/bayesian/dbn.png
 share: true
-categories:
-  - Bayes
 tags:
   - Bayesian Inference
   - Bayesian Networks

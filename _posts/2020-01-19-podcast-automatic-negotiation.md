@@ -7,9 +7,8 @@ permalink: /2020/podcast-automatic-negotiation
 header:
   og_image: /assets/images/podcast.jpg
 share: true
-categories:
-  - Automated Negotiation
 tags:
+  - Automated Negotiation
   - podcast
 ---
 I am a voracious consumer of podcasts. It is a quick way to receive informative content while commuting at work in the morning.

@@ -8,6 +8,8 @@ header:
 comments: true
 tags:
 mathjax: true
+tags:
+  - Programming
 ---
 The term _dynamic programming_ has a curious origin.
 When Richard Bellman late in the 1940s were seeking for a viral definition of his method, his boss was apparently not very inclined on science and in particular on mathematical research, the activities that Bellman was deep into when he formulate his famous [equation](https://en.wikipedia.org/wiki/Bellman_equation).

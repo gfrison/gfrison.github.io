@@ -7,7 +7,9 @@ permlink: /2018/08/02/program-induction-synthesis-icml-2018
 header:
   og_image: /assets/dreamcoder.png
 comments: true
-tags: program induction, icml, machine learning
+tags:
+  - Neural Networks
+  - Programming
 ---
 
 ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2018/06/images.jpeg)

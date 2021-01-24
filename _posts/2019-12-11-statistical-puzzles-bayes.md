@@ -7,10 +7,8 @@ permalink: /2019/statistical-puzzle-bayesian-conditioning
 header:
   og_image: /assets/images/lets-make-deal.jpg
 share: true
-categories:
-  - Bayes
 tags:
-  - bayesian
+  - Bayesian Inference
   - puzzle
   - statistic
 ---

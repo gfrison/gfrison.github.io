@@ -5,6 +5,8 @@ title: Deeplearning in Text Classification #NLProc #chatbots @gfrison
 header:
   og_image: /assets/minos-chart.png
 comments: true
+tags:
+  - Neural Networks
 ---
 
 In the Divine Comedy, Minos is a daemon appointed to guard the entrance of the hell. He listens to the sins of souls

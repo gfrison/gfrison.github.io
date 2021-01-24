@@ -7,11 +7,10 @@ permlink: /2018/03/05/conversational-context-sequence
 header:
   og_image: /assets/charly-context4.png
 comments: true
-categories:
-  - NLP
 tags:
-  - deep learning
+  - Neural Networks
   - chatbot
+  - NLP
 ---
 
 Contextual memory in conversational applications plays a central role in any type of interaction between the Chatbot and the user. It is the bidirectional transfer of information where interlocutors are aware of the relational, environmental, and cultural context of the exchange. I will show some examples on how a contextual based system might improve the flow of the dialog.

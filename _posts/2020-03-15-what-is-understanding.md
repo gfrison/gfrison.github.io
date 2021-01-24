@@ -7,10 +7,8 @@ permalink: /2020/what-is-understanding
 header:
   og_image: /assets/images/understanding/go-round-png
 share: true
-categories:
-  - Mind
 tags:
-  - understanding
+  - Cognitive Science
   - artificial intelligence
 ---
 Imagine that you receive an email that contains only symbols you have never seen before, and you are provided with instructions on how to relate those strange symbols. The instructions are in plain english and your task is to apply the instructions to the given symbols and reply back unknown scribbles, the results of the transformation. We can define the documents: the incoming email is a set of questions, while the instructions are the program, and what you send back are the answers. For complicating the task, you are demanded to complete the following. You receive another email in english (or on your mother tongue): “A client enters a restaurant and orders a steak, but after being served he quits the restaurant, angry for the burned steak, without paying”.  You are requested to answer to the following question: “Did the client eat the steak?”. \\

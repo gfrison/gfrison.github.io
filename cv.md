@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Curriculum Vitae
+toc: true
 ---
 
 _Download the [PDF version]({{ site.url }}/assets/cv.pdf)_
