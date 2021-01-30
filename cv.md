@@ -1,23 +1,27 @@
 ---
 layout: single
 title: Curriculum Vitae
-toc: true
+permlink: /cv
+#toc: true
+header:
+  og_image: /assets/images/cv.jpg
+classes: wide
 ---
-
-_Download the [PDF version]({{ site.url }}/assets/cv.pdf)_
-
-Software specialist with a solid track record in the  design and implementation of systems
+Let me introduce myself with a simple bulletpoint list of roles and activities in my present and past experiences:
+- *Software specialist* with a solid track record in the design and implementation of systems
 used in banking, telecommunications, financial, e-commerce and social media networks.
-With a given domain and  goal to reach, I compare and contrast differing solutions and consistently I take
-initiative while honoring commitments. I have extensive expertise through current and past projects and I am up-and-ready
-to lead in a variety of contexts. My professional background lay mainly on JVM based systems but as could
-be noted on my track record, I comfortably contribute on all spectrum of aspects in the product development.
-What I excel is on the ability to define strategic visions, continuously evaluating how the goals fit with
-the overall success and providing customer valued software. My competences stretch also in the realm of machine learning,
-particularly on creating innovative and highly demanded conversational applications by mastering natural language
-processing algorithms.
-I develop computational methods based on machine learning for solving business problems in novel ways.
+- *AI engineer* for converging _machine learning/artificial intelligence_ capabilities and software applications.
+- *Researcher* on innovative computational methods for technical/business improvements and pursue intellectual property rights.   
+- *Seeking opportunities* for differentiation and advocate technical choices.
+- *Ambassador* for the product with internal and external stackholders and understand customers' pain points/tacit needs. 
 
+[![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/cv.jpg){: .align-left}]({{ site.url }}/assets/cv.pdf)
+Click on the &#8592; icon and download my Curriculum in PDF format and please, share it in your organization. I will be very willing to discuss over possible collaborations. 
+{: .notice--info}
+<br>
+<br>
+<br>
+<br>
 
 # SAP
 ### SAP Hybris Labs
