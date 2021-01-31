@@ -23,6 +23,45 @@ Click on the &#8592; icon and download my Curriculum in PDF format and please, s
 <br>
 <br>
 
+
+
+|---
+| **Technology Strategist** -   _SAP Customer Experience Labs_ | 2017 - Now, Munich 
+|-|-|-
+|Research on [Logic Programming](https://cxlabs.sap.com/2020/11/16/why-logic-programming-matters/) for Automated Argumentation.
+|Built library for predicate inference from [Knowledge Graphs](https://cxlabs.sap.com/2020/08/14/what-are-knowledge-graphs-an-overview/) ([Answer Sets](https://cxlabs.sap.com/2020/11/24/rule-engines-and-knowledge-intensive-processing-with-answer-set-programming/)).
+|Prototype for [Graph Neural Networks](https://cxlabs.sap.com/2020/08/31/deep-learning-for-knowledge-graph-embeddings/) on Knowledge Graphs.
+|Technical and business related presentations at conferences and customers.
+|Released e-commerce [prototype](https://zefiro.cxlabs.sap.com) for Intelligent Digital Assistant.
+|Integrated [Bayesian Inference](https://github.com/sap/bayesian-network-builder) for [Guided Selling](https://cxlabs.sap.com/2020/09/22/bayesian-inference-for-guided-selling-sap-predictive-summit-talk/).
+|Developed library for Deep Reinforcement Learning.
+|Release prototype for [conversational commerce](https://sapvideoa35699dc5.hana.ondemand.com/?entry_id=1_kp5hbyih).
+|Created new [search algorithms](https://cxlabs.sap.com/tag/charly/) and improved [contextualization for chatbots](https://cxlabs.sap.com/2018/03/20/stochastic-conversational-workflows/).
+|Implemented [intention classification](https://gfrison.com/2017/09/01/deeplearning-in-text-classification/) for natural language processing.||
+
+[![image-left]({{ site.url }}/assets/images/psmi.png){: .align-left}]({{ site.url}}/assets/psmi.pdf) Certified professional scrum master
+{: .notice--info}
+<br>
+<br>
+<br>
+<br>
+
+|---
+| **Fellowship** - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _SAP Innovation Center_ | 2016, Munich 
+|-|-|-
+|Early drafts for the SAP machine learning platform (ex Leonardo).
+|Prototyping with Apache Mesos, Hadoop, SparkML and TensorFlow.
+
+
+|---
+| **Software Specialist** -  _SAP Hybris_ | 2014, Munich 
+|-|-|-
+|Designed and developed inter-process communication framework with Reactive/Event-Driven programming as standard tool for Hybris developers.
+|Improved core platform’s services and ORM internal framework.
+|Tuning and optimizing high throughput libraries for Hybris’ commerce system.
+
+
+
 # SAP
 ### SAP Hybris Labs
 #### Project Zefiro
