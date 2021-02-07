@@ -44,6 +44,7 @@ Click on the &#8592; icon and download my Curriculum in PDF format and please, s
 <br>
 <br>
 
+
 | **Fellowship** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _SAP Innovation Center_ | 2016, Munich 
 |-|-|-
 |Early drafts for the SAP machine learning platform (ex Leonardo) on coordinating complex machine learning pipelines for data ingestion, features extraction, training execution,
