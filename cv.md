@@ -24,11 +24,9 @@ Click on the &#8592; icon and download my Curriculum in PDF format and please, s
 <br>
 
 
-
-|---
-| **Technology Strategist** -   _SAP Customer Experience Labs_ | 2017 - Now, Munich 
+| **Technology Strategist** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   _SAP Customer Experience Labs_ | 2017 - Now, Munich 
 |-|-|-
-|Research on [Logic Programming](https://cxlabs.sap.com/2020/11/16/why-logic-programming-matters/) for Automated Argumentation.
+|Research on [Logic Programming](https://cxlabs.sap.com/2020/11/16/why-logic-programming-matters/) and [Answer Set Programming](https://blogs.sap.com/2020/11/25/rule-engines-and-knowledge-intensive-processing-with-answer-set-programming/) for introducing symbolic AI in e-commerce system by enabling automated argumentation.
 |Built library for predicate inference from [Knowledge Graphs](https://cxlabs.sap.com/2020/08/14/what-are-knowledge-graphs-an-overview/) ([Answer Sets](https://cxlabs.sap.com/2020/11/24/rule-engines-and-knowledge-intensive-processing-with-answer-set-programming/)).
 |Prototype for [Graph Neural Networks](https://cxlabs.sap.com/2020/08/31/deep-learning-for-knowledge-graph-embeddings/) on Knowledge Graphs.
 |Technical and business related presentations at conferences and customers.
@@ -46,22 +44,68 @@ Click on the &#8592; icon and download my Curriculum in PDF format and please, s
 <br>
 <br>
 
-|---
-| **Fellowship** - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _SAP Innovation Center_ | 2016, Munich 
+| **Fellowship** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _SAP Innovation Center_ | 2016, Munich 
 |-|-|-
-|Early drafts for the SAP machine learning platform (ex Leonardo).
+|Early drafts for the SAP machine learning platform (ex Leonardo) on coordinating complex machine learning pipelines for data ingestion, features extraction, training execution,
+model versioning and persistence.
 |Prototyping with Apache Mesos, Hadoop, SparkML and TensorFlow.
 
 
-|---
-| **Software Specialist** -  _SAP Hybris_ | 2014, Munich 
+| **Software Specialist** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _SAP Hybris_ | 2014, Munich 
 |-|-|-
 |Designed and developed inter-process communication framework with Reactive/Event-Driven programming as standard tool for Hybris developers.
 |Improved core platform’s services and ORM internal framework.
 |Tuning and optimizing high throughput libraries for Hybris’ commerce system.
 
+| **Selected Attendee** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _TechPeaks_ | 2013, Trento 
+|-|-|-
+|Selected for the [training program](https://www.repubblica.it/rubriche/startup-stories/2013/12/02/news/incubatore_startup-72502909/) of the startup accelerator on Lean Startupmethodologies, business planning, corporate administration and taxation.
+|Released business plan for investors and obtained financial grants.
+|Searched for synergies with commerce partners.
+|Acquired license for food management.
 
 
+| **Development Architect** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _Chelab Laboratories_ | 2011, Venice Area 
+|-|-|-
+|Analysis of business processes by interviewing stakeholders and assessing software architecture, for prototyping the company's laboratory information system (LIMS).
+|Design domain specific language (DSL) for chemical workflow management.
+|Prototype storage services based on NoSQL databases for media content.
+|Coach and train development team on rapid web building with [Grails](https://grails.org).
+|Setup configuration management and continuous integration systems.
+
+
+| **Senior Software Developer** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _Skebby_ | 2010, Milan 
+|-|-|-
+|Built and tutored the distributed micro-service system for B2C and B2B SMS delivery management.
+|Setup system architecture ascribable as EIP (Enterprise Integration Pattern) and micro-service constellation linked by ActiveMQ.
+|API definition through REST for external partners.
+
+
+| **Senior Software Developer** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _Quinary_ | 2008, Milan 
+|-|-|-
+|[Re-engineering](https://gfrison.com/2009/04/24/powered-by-apache-mina/) the SMS B2B delivery system for Vodafone based on micro-service architecture with messages broker such as FioranoMQ.
+
+| **Senior Software Developer** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _Nimbuzz_ | 2007, Rotterdam 
+|-|-|-
+|Implemented high-throughput XMPP server-to-server Java framework for chat protocols through REST API.
+
+
+| **Software Consultant** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _Ats_ | 2006, Milan 
+|-|-|-
+|Created the BrokerTec facility extension, integrated into trading application, enabling trades of REPO market government securities.
+|Designed and implemented internal framework for interfacing external API in a declarative way, solely by XML definitions.
+
+
+| **Software Consultant** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _Abla_ | 2006, Milan 
+|-|-|-
+|Developed the [VoiceXML](https://en.wikipedia.org/wiki/VoiceXML) interpreter and binded into Media Resource Control Protocol (MRCP) for automated voice assistants.
+|Audio streaming implementation in Real Time Protocol for voice automated assistants.
+
+| **Backend Developer** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _Sec Servizi_ | 2002, Padua 
+|-|-|-
+|Implemented IBM’s Rational Software Architect extensions for [Low Code/No Code](https://gfrison.com/tags/#low-code-no-code) Model Driven Architecture and enabling non-developers to design banking services by means of UML diagrams.
+
+{::comment}
 # SAP
 ### SAP Hybris Labs
 #### Project Zefiro
@@ -159,3 +203,4 @@ I joined the beta-program of IBM's RSA (Rational Software Architect) for getting
 operations and technology services to 16 banks (at that time) in Italy.
 The project aimed to revolutionize the way of building software services giving in the hands of product manager a toolset capable of building system interactions and data structure. Managers can design services by literally drag\&drop UML items
 and then just let the application generating all runnable, and ready deployable, artifacts.
+{:/comment}
