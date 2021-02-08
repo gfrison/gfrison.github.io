@@ -7,13 +7,13 @@ header:
   og_image: /assets/images/cv.jpg
 classes: wide
 ---
-Let me introduce myself with a simple bulletpoint list of roles and activities in my present and past experiences:
+Let me introduce myself with a simple bullet-point list of roles and activities in my present and past experiences:
 - *Software specialist* with a solid track record in the design and implementation of systems
 used in banking, telecommunications, financial, e-commerce and social media networks.
 - *AI engineer* for converging _machine learning/artificial intelligence_ capabilities and software applications.
 - *Researcher* on innovative computational methods for technical/business improvements and pursue intellectual property rights.   
-- *Seeking opportunities* for differentiation and advocate technical choices.
-- *Ambassador* for the product with internal and external stackholders and understand customers' pain points/tacit needs.
+- *Seeking opportunities* for differentiation and advocating technical choices.
+- *Ambassador* for the product with internal and external stakeholders and understand customers' pain points/tacit needs.
 
 [![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/cv.jpg){: .align-left}]({{ site.url }}/assets/cv.pdf)
 Click on the &#8592; icon and download my Curriculum in PDF format and please, share it in your organization. I will be very willing to discuss over possible collaborations.
@@ -23,6 +23,7 @@ Click on the &#8592; icon and download my Curriculum in PDF format and please, s
 <br>
 <br>
 
+## Experience
 
 | **Technology Strategist** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   _SAP Customer Experience Labs_ | 2017 - Now, Munich
 |-|-|-
@@ -104,6 +105,23 @@ Click on the &#8592; icon and download my Curriculum in PDF format and please, s
 | **Backend Developer** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _Sec Servizi_ | 2002, Padua
 |-|-|-
 |Implemented IBM’s Rational Software Architect extensions for [Low Code/No Code](https://gfrison.com/tags/#low-code-no-code) Model Driven Architecture and enabling non-developers to design banking services by means of UML diagrams.
+
+
+
+## Education
+
+### B.Eng, Diploma di Laurea in Ingegneria Informatica ed Automatica
+
+1995 / 1999
+
+Universita' degli Studi, Padova, Italy
+
+### Diploma Perito Industriale, Elettrotecnica
+
+1990 / 1995
+
+ITIS, Bassano del Grappa,  Italy
+
 
 {::comment}
 # SAP
