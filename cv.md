@@ -65,6 +65,9 @@ Click on the &#8592; icon and download my Curriculum in PDF format and please, s
 |Searched for synergies with commerce partners.
 |Acquired license for food management.
 
+![image-left](/assets/images/dibari.png){: .align-left}_"Working with Giancarlo has been a very interesting experience. At that time he was a very skilled and smart Java developer. He demostrated a clear understanding of a Model Driven Development approach as well as the importance of modeling in the context of complex financial applications development."_
+
+![image-left](/assets/images/cesare.png){: .align-left}_"Worked with us over 2 years as java consultant. He engaged an effective development on the department taking part in the refactoring of all java layers, also he carried out appreciative work implementing the model driven approach. He has deep knowledge in software development and setting up system architectures."_
 
 | **Development Architect** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _Chelab Laboratories_ | 2011, Venice Area
 |-|-|-
@@ -114,13 +117,13 @@ Click on the &#8592; icon and download my Curriculum in PDF format and please, s
 
 1995 / 1999
 
-Universita' degli Studi, Padova, Italy
+![image-left](/assets/images/unipd.png) Universita' degli Studi, Padova, Italy
 
 ### Diploma Perito Industriale, Elettrotecnica
 
 1990 / 1995
 
-ITIS, Bassano del Grappa,  Italy
+![image-left](/assets/images/itis.png) ITIS, Bassano del Grappa,  Italy
 
 
 {::comment}
