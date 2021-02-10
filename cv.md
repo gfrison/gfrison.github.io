@@ -23,7 +23,6 @@ used in banking, telecommunications, financial, e-commerce and social media netw
 <br>
 <br>
 
-## Experience
 
 | **Technology Strategist** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   _SAP Customer Experience Labs_ | 2017 - Now, Munich
 |-|-|-
@@ -113,13 +112,13 @@ used in banking, telecommunications, financial, e-commerce and social media netw
 
 ## Education
 
-### B.Eng, Diploma di Laurea in Ingegneria Informatica ed Automatica
+#### B.Eng, Diploma di Laurea in Ingegneria Informatica ed Automatica
 
 1995 / 1999
 
 ![image-left](/assets/images/unipd.png) Universita' degli Studi, Padova, Italy
 
-### Diploma Perito Industriale, Elettrotecnica
+#### Diploma Perito Industriale, Elettrotecnica
 
 1990 / 1995
 
