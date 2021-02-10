@@ -16,7 +16,7 @@ used in banking, telecommunications, financial, e-commerce and social media netw
 - *Ambassador* for the product with internal and external stakeholders and understand customers' pain points/tacit needs.
 
 [![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/cv.jpg){: .align-left}]({{ site.url }}/assets/cv.pdf)
-Click on the &#8592; icon and download my Curriculum in PDF format and please, share it in your organization. I will be very willing to discuss over possible collaborations.
+&#8592; Click on the icon and download my Curriculum in PDF format and please, share it in your organization. I will be very willing to discuss over possible collaborations.
 {: .notice--info}
 <br>
 <br>
