@@ -305,6 +305,20 @@ defaults:
       comments: true
       share: true
       related: true
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
 head_scripts:
   - assets/js/mathjax.js
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
