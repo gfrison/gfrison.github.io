@@ -15,6 +15,8 @@ used in banking, telecommunications, financial, e-commerce and social media netw
 - *Seeking opportunities* for differentiation and advocating technical choices.
 - *Ambassador* for the product with internal and external stakeholders and understand customers' pain points/tacit needs.
 
+Here 👉 [you can find some projects](/projects) I finalised recently.
+
 [![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/cv.jpg){: .align-left}]({{ site.url }}/assets/cv.pdf)
 &#8592; Click on the icon and download my Curriculum in PDF format and please, share it in your organization. I will be very willing to discuss over possible collaborations.
 {: .notice--info}
