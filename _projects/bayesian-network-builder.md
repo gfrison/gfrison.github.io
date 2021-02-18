@@ -47,3 +47,5 @@ println("chances burglary: " + f"${burglar.chances(true) * 100}%2.1f%%")
 posterior: true -> .005, false -> .995
 chances burglary: 0,6%
 ```
+
+Bayesian inference helps us to avoid falling into cognitive illusions, the mistakes that we normally do when we trust too much our intuitions. If you want to know more about that, I [wrote about it]({% post_url 2019-12-11-statistical-puzzles-bayes %}) and if it does not actually solve any incumbent business problem, it might be helpful for winning a car in the next TV quiz!
