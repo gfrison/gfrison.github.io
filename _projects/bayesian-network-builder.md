@@ -7,7 +7,7 @@ header:
 ---
 There are several paradigms in software development, functional programming, object oriented programming, and each of them is intended to solve a particular family of problems. Probabilistic programming is a paradigm that addresses statistical problems. [Bayesian Network Builder](https://github.com/sap/bayesian-network-builder) brings in the hands of software developers the ability to deal with probabilities without being statisticians.
 
-I like to compare the [Bayes Rule](/tags#bayes) to car driving. While we are confident in our ability to drive forward in the direction in front of us, we are a little bit reluctant to drive backward.
+I like to compare the [Bayes Rule](/tags#bayes) to car driving. While we are confident in our ability to drive forward in the direction in front of us, we are a little bit reluctant to drive backward. Let's watch it in action with the burglary example:
 
 ## Burglary Example
 
