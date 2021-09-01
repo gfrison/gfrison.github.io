@@ -50,7 +50,7 @@ Lemmatization procedure returns the root for of the inflected word. For example 
 During the product’s name parsing from the catalog, all particles are parsed, tokenized and finally stored in a _in-memory Set_ (bloom filters).
 
 ## N-Grams extraction from search query
-An n-gram is a contiguous sequence of n words[2]. In the above example could you suggest me vanilla ice cream for my party the collation vanilla ice cream will be exploded as: `vanilla ice cream`, `ice cream`, `vanilla ice`, `ice` , `cream`.
+An n-gram is a contiguous sequence of n words. In the above example could you suggest me vanilla ice cream for my party the collation vanilla ice cream will be exploded as: `vanilla ice cream`, `ice cream`, `vanilla ice`, `ice` , `cream`.
 
 The system will weight the filtered items according to their length: longer first. More consecutive collations terms’ are detected, better the search output will be. therefore, at the end the search output will look like this:
 
