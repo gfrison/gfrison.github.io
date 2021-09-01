@@ -1,5 +1,5 @@
 ---
-title: "Text Search with Collations from Opensource Databases"
+title: "Improve Answer Style in Conversational Commerce with Knowledge Graphs"
 excerpt: "This approach provides useful information that could be managed by an conversational engine for corroborating search results with meaningful answers."
 header:
   image: /assets/images/search-bar-man.jpg
