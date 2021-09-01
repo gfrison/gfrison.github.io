@@ -5,5 +5,7 @@ main:
     url: "/photos"
   - title: "Curriculum Vitae"
     url: "/cv"
+  - title: "Patents"
+    url: "/patents"
   - title: "Contact"
     url: "/contact"

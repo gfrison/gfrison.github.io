@@ -1,6 +1,6 @@
 ---
 title: "Text Search with Collations from Opensource Databases"
-excerpt: ""
+excerpt: "This approach provides useful information that could be managed by an conversational engine for corroborating search results with meaningful answers."
 header:
   image: /assets/images/search-bar-man.jpg
   teaser: /assets/images/search-bar-man.jpg
