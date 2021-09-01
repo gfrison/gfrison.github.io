@@ -11,18 +11,16 @@ tags:
   - search
 ---
 
-Keyword extraction from search queries is a fundamental aspect of conversational commerce. In this article I illustrate a simple but effective way to get relevant entities from user's utterances and rank them against an unstructured product catalog and an ontology database.
+Keyword extraction from search queries is a fundamental aspect of eCommerce. I illustrate a simple but effective way to get relevant entities from user's search queries and rank them against an product catalog with the aid of ontology databases.
 
-The primary purpose of a conversational application is to serve user demands, and when an user search in a e-commerce context, he is mostly
-looking for products. There is one main distinction that characterize a query when it is performed in the website rather than
+
+
+The primary purpose of an user search in a e-commerce context, is mostly
+for returning products. There is one main distinction that characterize a query when it is performed in the website rather than
 a messaging application. In the website, when users submit a query they already express their search intention, therefore
 the terms are usually concise and descriptive. Conversely, when inquiring a Chatbot, users use more expressive forms
 such as: `Could you suggest me pale ale beers and ice creams for my party?`.
 While the intention is deducted by a classification task, relevant terms for search, are just a subset of the entire sentence.
-
-[see full article](https://labs.hybris.com/2018/02/19/catalog-entity-extraction-search/)
-
-<!--
 
 Baseline approach for searching, would be to take all text as query, returning innumerable hits of everything even remotely relevant, providing little help for customers.
 Another solution regards Named Entity Recognition, a class of algorithms  that seeks and classify entities, also by means of [neural networks](http://nlp.town/blog/ner-and-the-road-to-deep-learning/).
@@ -128,5 +126,3 @@ entity clusters:
 I have described a simple way for extracting query terms from a raw sentence. This approach provides useful information that could be managed by an conversational engine for corroborating search results with meaningful answers.
 On the other hand, this model doesn't handle with misspellings, which represent alone about 15% of online search failures. This technique doesn't deal with relatedness matching, or semantic matching. That means we can't satisfy the search with relevant and pertinent results whenever customers use different terms from those in the website. I have already solved this problem by means of neural networks, and I will describe it in another article.
 
-**Acknowledgment** Thank you [Sidi](https://github.com/elaatifi) for the contribution.
--->
