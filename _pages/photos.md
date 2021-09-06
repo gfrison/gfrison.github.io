@@ -33,6 +33,9 @@ gallery:
   - url: https://flic.kr/p/qMYxBk
     image_path: /assets/photos/edinburg-snow.jpg
     title: Edinburgh by Snow
+  - url: /2021/09/06/a-friday-afternoon-zurich/
+    image_path: /assets/photos/zurich.jpg
+    title: A Friday Afternoon in Zurich Lindenhof
 categories:
   - Photo
 
