@@ -4,7 +4,7 @@ published: true
 title: "Argumentation in E-Commerce at SEMANTiCS 2022"
 share: true
 header:
-  og_image: /assets/images/2officeguys.svg
+  og_image: /assets/images/2officeguys.png
 tag:
   - argumentation
   - semantic technologies
