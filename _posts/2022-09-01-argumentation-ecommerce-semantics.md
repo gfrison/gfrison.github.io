@@ -10,8 +10,10 @@ tag:
   - semantic technologies
 ---
 In a behavioural test in the old seventies, people about to use a copying machine were asked to let another person, the experimenter, to use it first despite there being a line.
-“Excuse me, I have 5 pages. May I use the xerox machine?”. Within this request, 60% of the people let the experiment go first. Then experimenters changed the call into:
-“Excuse me, I have 5 pages. May I use the xerox machine *because I have to make copies*?” The justification is a clear non-sense. It is technically called ‘placebic information’ because, comparably in pharmacy, the given explanation does not contain any justification. You might be surprised that in the latter case the rate of success reaches an astonishing 93%.
+“Excuse me, I have 5 pages. May I use the xerox machine?”
+Within this request, 60% of the people let the experiment go first. Then experimenters changed the call into:
+“Excuse me, I have 5 pages. May I use the xerox machine *because I have to make copies*?”
+The justification is a clear non-sense. It is technically called ‘placebic information’ because, comparably in pharmacy, the given explanation does not contain any justification. You might be surprised that in the latter case the rate of success reaches an astonishing 93%.
  
 This experiment teaches something interesting about how we evaluate the information from the environment. Even without any significance, just the feeling of a reason can change dramatically how we behave. Most of our daily behaviour is accomplished without paying attention to the informative details. This is obviously not new - advertisers know it very well. But we are not doomed to be always fooled, we are conscious when the decisions are more important.
 
