@@ -8,6 +8,7 @@ header:
 comments: true
 tags:
   - Automated Negotiation
+  - argumentation
 
 ---
 How could it be if you have a system that scales your sales force, encodes the knowledge of your sales representatives, contracts deals and negotiates the best terms and conditions on your behalf, with no effort and no waste of time?
