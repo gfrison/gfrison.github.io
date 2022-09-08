@@ -5,9 +5,9 @@ header:
   image: /assets/images/search-bar-man.jpg
   teaser: /assets/images/search-bar-man.jpg
 ---
-|Name|Id|Status|Submission Date|Activation Date|
+|Id|Status|Submission Date|Activation Date|Authorship|
 |-|
-|Data querying system and method |[US11080288B2](https://patents.google.com/patent/US11080288B2)|Active|{{ "2019-09-26" | date_to_string }}|{{ "2021-08-03" | date_to_string }}|
+|[US11080288B2](https://patents.google.com/patent/US11080288B2)|Active|{{ "2019-09-26" | date_to_string }}|{{ "2021-08-03" | date_to_string }}|100%|
 
 Chatbots are appointed to return informations from queries or accomplish specific tasks by means of natural language. Conversational commerce apps answer from a wide variety of query types, both very detailed or generic:
 

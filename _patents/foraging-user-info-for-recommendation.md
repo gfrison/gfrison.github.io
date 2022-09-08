@@ -5,9 +5,9 @@ header:
   image: /assets/images/foraging.png
   teaser: /assets/images/foraging.png
 ---
-|Name|Id|Status|Submission Date|Activation Date|
+|Id|Status|Submission Date|Activation Date|Authorship|
 |-|
-|Converter system and computer-implemented method|[US10970241B1](https://patents.google.com/patent/US10970241B1)|Granted|{{ "2019-09-26" | date_to_string }}|{{ "2021-04-06" | date_to_string }}|
+|[US10970241B1](https://patents.google.com/patent/US10970241B1)|Granted|{{ "2019-09-26" | date_to_string }}|{{ "2021-04-06" | date_to_string }}|100%|
 
 Matching complex user needs with multi-attribute products remains a problem in the modern e-commerce. For purchasing complex products, buyers are supposed to have prerequisite knowledge of the domain of the product, in order to express exhaustively the technical terms such product should have to satisfy their needs. However, experience reveals that this is far more than what can be expected from the average customer.
 With this invention, customers are driven automatically throughout a soft questionnaire about everything might affect their preference on product’s features. Users are inquired for providing informations not only on the desired product’s features, but also about their profile as customers. Questions can spare in all directions that might provide useful hints on what they ultimately need.
