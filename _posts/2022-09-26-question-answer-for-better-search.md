@@ -30,9 +30,7 @@ Traditionally, the bulk of effort on setting up a proper search service is direc
 
 This project does not come out of nowhere, it is rather the continuation of research on semantic technologies and symbolic reasoning applied to a fairly challenging problem. Honestly, I can’t imagine something more complex than language. As in any innovative endeavor we revise what we have done in the past and we try to improve from the foundations every time we face a new kind of problem, and this time, it won’t be different.
 
->     The world has the structure of the language, and the language has the form of mind
-
-    – Eugenio Montale
+>The world has the structure of the language, and the language has the form of mind. Eugenio Montale
 
 I strongly believe that for attaining better solutions, problems should be tackled from several angles. If the symbolic approach provided by knowledge graphs and logic programming help to solve a variety of problems, a hybrid system – symbolic plus non-logic – can expand the reach of our technology. In the Prof Gärdenfors work **Geometry of Meaning** it is summarised more than 20 years of work in a fully comprehensive theory (philosophical, cognitive, neuroscientific) about Concept Spaces. They are computable geometrical representations with a lot of affinity with semantic algebra, but also with the interesting feature to be convex, which is a pillar of gradient-based algos. Basically, all modern machine learning.
 
