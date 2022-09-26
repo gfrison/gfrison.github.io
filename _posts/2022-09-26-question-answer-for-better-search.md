@@ -10,9 +10,9 @@ tag:
   - Search
   - Knowledge Graph
 ---
-![](/assets/images/search-kg.jpg)
-
 The search box is an ubiquitous widget present in almost all websites, that’s because free text searching is one of the most intuitive actions users can do online. System’s duty is to return results that are pertinent to the inquiry, while discarding what it is not. If consumers are satisfied with what you present to them, there is a good chance that they will move forward to the next step. The importance of having a good search mechanism in eCommerce is all there. It may be the architect of your eStore’s success, or the main cause of its failure.
+
+![](/assets/images/search-kg.jpg)
 
 Search text usually consists of one or more keywords in sequence that distinguish the item with increasing accuracy, and it won’t be a surprise that utterances could be in an extremely simple form. Probably similar to the structure of our old ancestors’ early attempts [me Tarzan you Jane]({% link _posts/2018-06-13-basic-principles-language.md %}), search requests might lack prepositions, adverbs, and in general they may not exhibit any kind of grammar. In an electronic eStore, a text such as **mem disk 500gb flash drive** would be then interpreted as a series of constraints that must be all simultaneously satisfied: **mem disk** AND **500gb** AND **flash drive**. As result, it would then prompt us a list of external USB memory storage devices with 500Gb of capacity.
 
