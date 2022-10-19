@@ -3,7 +3,6 @@ title: "Smoothing Conversational Contexts for Language-based Digital Agents"
 excerpt: "Neural network architecture for smoothing context switching on conversations between human and automatic agents."
 header:
   image: /assets/images/lstm.png
-  teaser: /assets/images/lstm.png
 tags:
  - NLP
  - Neural Networks

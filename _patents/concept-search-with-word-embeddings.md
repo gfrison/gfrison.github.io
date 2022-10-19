@@ -2,7 +2,6 @@
 title: "Concept Search with Word Embeddings"
 excerpt: "Return items with similar characteristics out of user's e-commerce search, though the searched product is not known in the merchant's catalog."
 header:
-  teaser: /assets/images/lens.jpg
 tags:
  - NLP
  - Neural Networks
