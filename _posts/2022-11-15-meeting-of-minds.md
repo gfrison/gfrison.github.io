@@ -1,5 +1,6 @@
 ---
 title: "The Meeting of Minds"
+description: "The semantic coordination is an iterative process where the meeting of minds ultimately converge in an alignment of meanings. This is post has been inspired by the book Geometry of Mearning written by Prof. Gärdenfors"
 share: true
 header:
   og_image: /assets/images/meeting-minds1.png
@@ -29,7 +30,7 @@ I guess everybody agrees on the importance of sharing a common background of kno
 
 
 ## Communication as Coordination
-Language and other forms of communication open the way to various types of engagement. Sophisticated collaborations can enable collective creation of value that can’t be done by single individuals; they’re fruits of communication. If we can summarise in a single word what communication stands for, I would recommend coordination. Coordination among interlocutors is a practical way to point at objects, places or actions, but also as alignment of intents, ideas, persuasion and even entertainment. More generically, coordination is a convergence of mental representations.
+Language and other forms of communication open the way to various types of engagement. Sophisticated collaborations can enable collective creation of value that can’t be done by single individuals; they’re fruits of communication. If we can summarise in a single word what communication stands for, I would recommend _coordination_. Coordination among interlocutors is a practical way to point at objects, places or actions, but also as alignment of intents, ideas, persuasion and even entertainment. More generically, coordination is a convergence of mental representations.
 
 If coordination implies a transfer of information, it is expressed in several forms where language is the most rich and expressive one. In the dawn of humanity when the communicative acts became more varied and detached from the immediate and practical purposes, the value of meanings, or semantics, turned out to be more salient in communication. The coordination among participants is an iterative process where the meeting of minds ultimately converge in an alignment of meanings. Sounds almost romantic! As borrowed from maths, the metaphorical meeting point is also named fixpoint. A fixpoint is a value for which a function returns exactly the same value. It is a value with which a specific function works as an identity function. Let’s unfold how the process occurs in our dialog.
 
