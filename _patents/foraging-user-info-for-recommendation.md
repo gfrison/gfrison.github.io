@@ -2,7 +2,7 @@
 title: "Foraging User Preference Information for E-Commerce Product Recommendation"
 excerpt: "Automatic system for maximizing user pereferences' gathering for optimizing eCommerce product offering"
 header:
-  image: /assets/images/foraging.png
+  # image: /assets/images/foraging.png
 ---
 |Id|Status|Submission Date|Activation Date|Authorship|
 |-|

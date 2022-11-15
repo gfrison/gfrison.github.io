@@ -291,6 +291,7 @@ defaults:
       type: posts
     values:
       layout: single
+      classes: wide
       author_profile: false
       read_time: true
       comments: true
@@ -301,6 +302,7 @@ defaults:
       type: projects
     values:
       layout: single
+      classes: wide
       author_profile: false
       share: true
   - scope:
@@ -308,6 +310,7 @@ defaults:
       type: patents
     values:
       layout: single
+      classes: wide
       author_profile: false
       share: true
 

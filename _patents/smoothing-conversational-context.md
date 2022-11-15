@@ -2,14 +2,14 @@
 title: "Smoothing Conversational Contexts for Language-based Digital Agents"
 excerpt: "Neural network architecture for smoothing context switching on conversations between human and automatic agents."
 header:
-  image: /assets/images/lstm.png
+  # image: /assets/images/lstm.png
 tags:
  - NLP
  - Neural Networks
 ---
-|Id|Status|Submission Date|Activation Date|Authorship|
-|-|
-|[US20190278845A1](https://patents.google.com/patent/US20190278845A1)|Granted|{{ "2018-03-06" | date_to_string }}|{{ "2021-10-19" | date_to_string }}|100%|
+| Id                                                                   | Status  | Submission Date | Activation Date   | Authorship      |
+| -------------------------------------------------------------------- |
+| [US20190278845A1](https://patents.google.com/patent/US20190278845A1) | Granted | {{ "2018-03-06" | date_to_string }} | {{ "2021-10-19" | date_to_string }} | 100% |
 
 A bit surprised for having this invention granted in a exploding sector like the one of natural language processing. The 2017, when I [implemented this idea]({% post_url 2018-03-14-stochastic-conversational-workflows %}), was still a _golden age_ for [NLP]({{ site.baseurl }}/tags/#nlp), where was possible for non-specialists like me, to have some breakthroughs via new applications of neural networks.
 
