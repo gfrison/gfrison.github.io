@@ -1,7 +1,7 @@
 ---
 title: "Concept Search with Word Embeddings"
 excerpt: "Return items with similar characteristics out of user's e-commerce search, though the searched product is not known in the merchant's catalog."
-date: 2021-1-11 
+date: 2022-1-11 
 header:
 tags:
  - NLP
