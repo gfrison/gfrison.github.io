@@ -1,6 +1,7 @@
 ---
 title: "Foraging User Preference Information for E-Commerce Product Recommendation"
 excerpt: "Automatic system for maximizing user pereferences' gathering for optimizing eCommerce product offering"
+date: 2021-04-06 
 header:
   # image: /assets/images/foraging.png
 ---

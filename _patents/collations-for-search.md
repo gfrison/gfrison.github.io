@@ -1,12 +1,13 @@
 ---
 title: "Improve Answer Style in Conversational Commerce with Knowledge Graphs"
 excerpt: "This approach provides useful information that could be managed by an conversational engine for corroborating search results with meaningful answers."
+date: 2021-08-03 
 header:
 #   image: /assets/images/search-bar-man.jpg
 ---
-|Id|Status|Submission Date|Activation Date|Authorship|
-|-|
-|[US11080288B2](https://patents.google.com/patent/US11080288B2)|Active|{{ "2019-09-26" | date_to_string }}|{{ "2021-08-03" | date_to_string }}|100%|
+| Id                                                             | Status | Submission Date | Activation Date   | Authorship      |
+| -------------------------------------------------------------- |
+| [US11080288B2](https://patents.google.com/patent/US11080288B2) | Active | {{ "2019-09-26" | date_to_string }} | {{ "2021-08-03" | date_to_string }} | 100% |
 
 Chatbots are appointed to return informations from queries or accomplish specific tasks by means of natural language. Conversational commerce apps answer from a wide variety of query types, both very detailed or generic:
 

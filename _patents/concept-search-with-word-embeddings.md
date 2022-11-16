@@ -1,15 +1,16 @@
 ---
 title: "Concept Search with Word Embeddings"
 excerpt: "Return items with similar characteristics out of user's e-commerce search, though the searched product is not known in the merchant's catalog."
+date: 2021-1-11 
 header:
 tags:
  - NLP
  - Neural Networks
  - Search
 ---
-|Id|Status|Submission Date|Activation Date|Authorship|
-|-|
-|[US11222055B2](https://patents.google.com/patent/US11222055B2)|Granted|{{ "2018-06-05" | date_to_string }}|{{ "2022-1-11" | date_to_string }}|100%|
+| Id                                                             | Status  | Submission Date | Activation Date   | Authorship     |
+| -------------------------------------------------------------- |
+| [US11222055B2](https://patents.google.com/patent/US11222055B2) | Granted | {{ "2018-06-05" | date_to_string }} | {{ "2022-1-11" | date_to_string }} | 100% |
 
 Catalog search is one of the most important factor to the success of e-commerce sites and accurate and relevant results are critical to successful conversion.
 The following approach aims to reduce user frustration by presenting related products, when searched items are not available in catalog. The central hypothesis is that an user might buy products with similar characteristics of a product originally searched, leading the successful search into a purchase.Search engines help to find relevant matches against a query according to various information-retrieval algorithms. Those systems find text occurrences, but regardless their effectiveness, they are unequivocally related to the terms provided by the catalog. Therefore, products cannot be retrieved by words that are not already present in the inventory.

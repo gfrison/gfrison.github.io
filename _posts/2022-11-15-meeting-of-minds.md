@@ -14,19 +14,21 @@ tag:
 
 “I mean I’ve broken the tip off my pen.”
 
-“…Oh.”
+“…Oh.”[^1]
 
 Reciprocal understanding is one of the important goals when we communicate and when not properly held back on track, it is a source of confusions. Though we easily recognize when the conversation goes off track, it might be less clear how those communicative processes run, because we’re hardly conscious of the mechanics of the mind working silently under the hood. This post is the first of a short serie, that attempts to shed some light on them with a distillation of ‘Geometry of Mearning’ written by Prof. Gärdenfors, an interesting set of theories that can help us to understand better what semantics is and how we process it. I have found those topics very curious and fascinating to explore, especially in the ultimate goal to build automatic systems that attempt to implement those processes in a similar way we do, for solving problems for us.
 
 ## Layers of Knowledge
 In the short dialog I used to open this post, Bob and Alice align themselves into a shared knowledge, but sometimes it is far from simple to establish apparently simple truths. Bob is ambiguous in his ‘**I’ve broken off**’; he does not specify what he has actually broken off with, and Alice, the interlocutor, wrongly infers he’s leaving his girlfriend. To create the basis of reciprocal understanding Bob pulls the communication level down and he raises Alice’s knowledge by precising that what is broken is the tip of his pen, and not his relationship. 
 
-I guess everybody agrees on the importance of sharing a common background of knowledge and Bob shows us we shift from a high semantic layer to a lower one to meet our interlocutor and restart the coordination from there. This admits that knowledge lies in [hierarchical structures](http://simonwinter.se/avhandling/intro.html) where the first rung of the ladder is populated with the fundamental and cognitively irreducible terms; they form new and more abstract concepts with increasing abstraction as long as we climb the ladder, in the upper layers. I don’t know whether there is a finite number of layers or it is open-ended, but on a high level of shared knowledge, the communication style would flow according to the ‘_the obvious goes without saying_’, where the implicit understandings are at their maximum.
+I guess everybody agrees on the importance of sharing a common background of knowledge and Bob shows us we shift from a high semantic layer to a lower one to meet our interlocutor and restart the coordination from there. This admits that knowledge lies in hierarchical structures where the first rung of the ladder is populated with the fundamental and cognitively irreducible terms; they form new and more abstract concepts with increasing abstraction as long as we climb the ladder, in the upper layers. Simon Winter [explain this idea](http://simonwinter.se/avhandling/intro.html) of layered levels of knowledge analyzing how a mastercraft teaches a novice on how to replace a violin's strings, where non-verbal communication is also part the game and lays on the top of contextualization's levels summarized with:
 
 - Level 3. Non verbal communication. People interact with minimal information exchange.
 - Level 2. Instruction. coordination of action is achieved by instruction.
 - Level 1. Coordination of the inner world. people inform each other so as to reach a richer or better coordination. It can also be achieved via questions.
 - Level 0. Meaning of words. Lowest level people negotiate the meanings of words and other basic communicative elements.
+
+I don’t know whether there is a finite number of layers or it is open-ended, but on a high level of shared knowledge, the communication style would flow according to the ‘_the obvious goes without saying_’, where the implicit understandings are at their maximum. I'm also a bit skeptical of the lower bound of this ranking. If we take as granted that meaning of words can be decomposed into a finite set of conditions that are necessary and sufficient to describe the meaning, it is clashing with the `level 0` where concepts are irreducible. If I open a vocabulary and every word - even the simplest one - is defined by means of other words, the case of circular loops in meaning references is inevitable, and inequivocal sign of inconsistency. 
 
 
 ## Communication as Coordination
@@ -41,7 +43,6 @@ More mechanically, Bob applies the function `f` into his mental idea and the res
 
 For it to be effective on how to fix Alice’s misunderstanding, the distance between Bob’s idea and what he derived from Alice’s feedback should be articulated enough to convey a rich sort of information. It should not just give a quantitative distance from the successful fixpoint, and also a qualitative account on how they differ from each other. This is why the discrepancy should be encoded as a vector in order to be also descriptive of the conversation’s status. This introduces the next topic of conceptual spaces, which poses the representation of semantic values in the between of symbolic AI and neural networks.
 
-[Giancarlo Frison](https://gfrison.com)
 
-Credits 
-http://fiftywordstories.com/2013/09/11/connell-wayne-regner-oh/ 
+{:footnotes}
+[^1]: http://fiftywordstories.com/2013/09/11/connell-wayne-regner-oh/ 
