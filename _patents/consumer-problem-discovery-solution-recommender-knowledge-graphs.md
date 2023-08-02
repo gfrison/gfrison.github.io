@@ -3,7 +3,7 @@ title: "Consumer Problem Discovery and Solution Recommender with Knowledge Graph
 excerpt: "E-Stores loose sells due to the negative biases of consumers. While salespeople give proper reasons to change consumers misbelieves, it is problematic to address those issues in an online shop. In this talk, I will present how to combine semantic graphs with logic programming and symbolic machine learning to restore consumer’s confidence. The digital agent detects what are the problems users might have and offers them explanations and valid arguments for not worry about, or why a given recommendation is more suitable than others."
 date: 2023-08-02 
 header:
-  og_image: /assets/images/gilp.png
+  og_image: /assets/images/justify-recommendation.png
 tags:
  - Machine Learning
  - ILP
