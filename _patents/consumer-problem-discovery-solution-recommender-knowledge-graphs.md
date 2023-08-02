@@ -84,6 +84,29 @@ Elements related throughout the synonym relation share the same relations.
 `X(Y,Z) :- X(W,Z), synonym(W,Y)`
 `X(Y,Z) :- X(Y,W), synonym(W,Z)`
 
+##	RULE SERVICE OVERVIEW
+
+
+![](/assets/images/consumer-discovery14.png){:width="70%"}
+
+When the frontend will trigger events (user click image, select variant, add to the cart...) or when the user clicks an element prompted by the Widget, a request is made to the API Server which forward the request to the Rule Service. It stores the info related to the user’s action (if any) and then merge the information with the KGs (domain KG, personalized KG and Labelled catalog). The total set of facts is submitted to all rules configured into the system, and if activated they will generate new facts that are added to the whole of facts already present, recursively. The process stops when stable models are reached, that means, the system stops to iterate through the rules when there are no new facts generated from the previous iteration.
+
+##	CATALOG LABELLING
+The system is intended to be integrated with the merchant’s catalog. Moreover, it is expected that items in the catalog are enriched with triples compatible with the relations listed above. This enrichment is processed by the Product Tagger. Let’s consider some items such as:
+-	Canon EOS-1D Mark II
+    *	isA: body camera
+    * hasProperty: DSLR
+-	Canon PowerShot G5
+    *	isA, compact camera
+-	Online Course Canon
+    *	isA: online course
+-	Canon RF 100-500mm F4.5-7.1
+    *	isA: zoom lens
+    *	hasProperty: telephoto focal
+-	Canon 50mm
+    *	isA: prime lens
+    *	hasProperty: standard focal
+
 # BUSINESS CASE: DETECT CONSUMER RELUCTANCY WITH AN ITEM
 When the online consumer opens an item page but lingers upon it or leaps over the buy button or somehow trigger an alarm detected by third-part services indicating the user is interested on that item but won’t proceed with the checkout, the system can search for motivations of such reluctancy. Let’s assume the user is looking to a Canon EOS-1D (which trigger the fact: details:EOS-1D) and also the so called “reluctancy” event has been triggered (fact context:reluctancy). considering we have the following KG:
 
