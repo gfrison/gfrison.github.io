@@ -1,11 +1,9 @@
 main:
-  - title: "Follow me"
-    url: "/contact"
-  - title: Photos
-    url: "/photos"
   - title: "Curriculum Vitae"
     url: "/cv"
   - title: "Patents"
     url: "/patents"
+  - title: Photos
+    url: "/photos"
   - title: "Contact"
     url: "/contact"
