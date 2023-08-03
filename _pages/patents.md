@@ -6,5 +6,3 @@ collection: patents
 entries_layout: grid
 classes: wide
 ---
-
-List of patents
