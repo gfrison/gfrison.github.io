@@ -49,6 +49,7 @@ More mechanically, Bob applies the expressive function `f` to his mental idea an
 
 For it to be effective on how to fix Alice’s misunderstanding, the distance between Bob’s idea and what he derived from Alice’s feedback should be articulated enough to convey a rich sort of information. It should not just give a quantitative distance from the successful fixpoint, and also a qualitative account on how they differ from each other. This is why the discrepancy should be encoded as a vector in order to be also descriptive of the conversation’s status. This introduces the next topic of conceptual spaces, which poses the representation of semantic values in the between of symbolic AI and neural networks.
 
+Continue the reading with [conceptual space as neurosymbolic representation]({% post_url 2023-08-04-conceptual-spaces-neuro-symbolic %})
 
 {:footnotes}
 [^1]: http://fiftywordstories.com/2013/09/11/connell-wayne-regner-oh/ 
