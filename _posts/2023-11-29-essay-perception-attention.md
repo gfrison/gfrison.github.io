@@ -1,5 +1,5 @@
 ---
-title: "a brief essay about perception and attention"
+title: "a brief account of the intersection between perception and attention"
 share: true
 header:
   og_image: /assets/images/cognitive3.jpg
