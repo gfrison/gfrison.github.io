@@ -1,4 +1,3 @@
-
 ---
 title: "Short glimpse on predicate and first order logic"
 share: true
