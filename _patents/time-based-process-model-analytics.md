@@ -9,7 +9,7 @@ tags:
  - process modelling
  - logic programming
 ---
-| Id                                                                | Status    | Submission Date | Publication Date  | Authorship      |
+| Id                                                                | Status    | Submission Date | Grant Date  | Authorship      |
 | ----------------------------------------------------------------- |
 | [18/078,558](https://patentcenter.uspto.gov/applications/18078558) | Granted | {{ "2022-09-12" | date_to_string }} | {{ "2024-12-26" | date_to_string }} | 100% |
 
