@@ -3,13 +3,14 @@ title: "GILP: Symbolic Machine Learning Over Knowledge Graphs"
 excerpt: "Inductive Logic Programming method for synthesizing logic queries to retrieve information from graph databases."
 date: 2023-06-22 
 permalink: /patents/gilp-symbolic-machine-learning-knowledge-graphs
+last_update: 2024-01-13
 header:
   og_image: /assets/images/gilp.png
 tags:
  - Machine Learning
  - ILP
 ---
-| Id                                                                | Status    | Submission Date | Publication Date  | Authorship      |
+| Id                                                                | Status    | Submission Date | Grant Date  | Authorship      |
 | ----------------------------------------------------------------- |
 | [US17/546,450](https://patents.google.com/patent/US20230153296A1) | Granted | {{ "2021-09-12" | date_to_string }} | {{ "2023-12-12" | date_to_string }} | 100% |
 
