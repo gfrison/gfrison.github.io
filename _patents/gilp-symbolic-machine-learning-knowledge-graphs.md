@@ -3,7 +3,7 @@ title: "GILP: Symbolic Machine Learning Over Knowledge Graphs"
 excerpt: "Inductive Logic Programming method for synthesizing logic queries to retrieve information from graph databases."
 date: 2023-06-22 
 permalink: /patents/gilp-symbolic-machine-learning-knowledge-graphs
-last_update: 2024-01-13
+last_modified_at: 2024-01-13
 header:
   og_image: /assets/images/gilp.png
 tags:
