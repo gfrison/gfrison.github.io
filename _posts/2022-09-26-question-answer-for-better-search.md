@@ -3,6 +3,7 @@ layout: single
 published: true
 title: "Question Answering on Knowledge Graphs for a Better Consumer Search"
 share: true
+permalink: /2022/09/26/question-answer-for-better-search
 header:
   og_image: /assets/images/search-kg.jpg
 tag:

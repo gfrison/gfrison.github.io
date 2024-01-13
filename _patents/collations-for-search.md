@@ -2,6 +2,7 @@
 title: "Improve Answer Style in Conversational Commerce with Knowledge Graphs"
 excerpt: "This approach provides useful information that could be managed by an conversational engine for corroborating search results with meaningful answers."
 date: 2021-08-03 
+permalink: /patents/collations-for-search
 header:
 #   image: /assets/images/search-bar-man.jpg
 ---

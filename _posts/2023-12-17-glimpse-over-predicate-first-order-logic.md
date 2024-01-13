@@ -1,6 +1,7 @@
 ---
 title: "Short glimpse on predicate and first order logic"
 share: true
+permalink: /2023/12/17/glimpse-over-predicate-first-order-logic
 header:
   og_image: /assets/images/tolomey.jpg
 tag:

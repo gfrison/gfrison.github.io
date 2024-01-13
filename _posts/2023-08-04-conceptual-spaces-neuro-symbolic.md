@@ -2,6 +2,7 @@
 title: "the neurosymbolic nature of Conceptual Spaces"
 description: "Conceptual spaces share similarity with neural embeddings because they are both differentiable and convex. At the same time, concepts incorporate symbolism with their multi-facets domains. They naturally enable semantic algebra and computational problem solving."
 share: true
+permalink: /2023/08/04/conceptual-spaces-neuro-symbolic
 header:
   og_image: /assets/images/cs1.png
 tag:

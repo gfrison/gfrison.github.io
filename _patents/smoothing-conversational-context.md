@@ -2,6 +2,7 @@
 title: "Smoothing Conversational Contexts for Language-based Digital Agents"
 excerpt: "Neural network architecture for smoothing context switching on conversations between human and automatic agents."
 date: 2021-10-19 
+permalink: /patents/smoothing-conversational-context
 header:
   # image: /assets/images/lstm.png
 tags:

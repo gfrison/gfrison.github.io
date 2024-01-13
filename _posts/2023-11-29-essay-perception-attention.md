@@ -3,6 +3,7 @@ title: "a brief account of the intersection between perception and attention"
 share: true
 header:
   og_image: /assets/images/cognitive3.jpg
+permalink: /2023/11/29/essay-perception-attention
 tag:
   - cognitive psychology
   - memory 

@@ -2,6 +2,7 @@
 title: "Justify Recommendations with Semantic Technologies"
 description: "E-Stores loose sells due to the negative biases of consumers. While salespeople give proper reasons to change consumers misbelieves, it is problematic to address those issues in an online shop. In this talk, I will present how to combine semantic graphs with logic programming and symbolic machine learning to restore consumer’s confidence. The digital agent detects what are the problems users might have and offers them explanations and valid arguments for not worry about, or why a given recommendation is more suitable than others."
 share: true
+permalink: /2023/08/02/argumentation-recommendation-ecommerce-knowledge-graphs
 header:
   og_image: /assets/images/justify-recommendation.png
 tag:

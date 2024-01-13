@@ -2,6 +2,7 @@
 title: "The Meeting of Minds"
 description: "The semantic coordination is an iterative process where the meeting of minds ultimately converge in an alignment of meanings. This is post has been inspired by the book Geometry of Mearning written by Prof. Gärdenfors"
 share: true
+permalink: /2022/11/15/meeting-of-minds
 header:
   og_image: /assets/images/meeting-minds1.png
 tag:
