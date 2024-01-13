@@ -33,7 +33,7 @@ Now, let’s define some rules, such as:
 availability(Supply + Inventory) ⟸ supply(Supply), <<inventory(Inventory)
 ```
 
-which means ‘Available material depends on supply, and the inventory in the previous quarter’ in plain English. The `<<` symbol stands for previous the time context, the time scale could be anything from milliseconds to ages. We have decided to reason on quarter base.
+which means _‘Available material depends on supply, and the inventory in the previous quarter’_ in plain English. The `<<` symbol stands for previous the time context, the time scale could be anything from milliseconds to ages. We have decided to reason on quarter base.
 Next step on modelling will be on defining how items change status with time. Might be an over-simplification, but nobody will complain if we remark the actual productive throughput is the minimum between the productive capacity and stockpile. Could it be that currently, pending orders are the delayed and pending ones from previous quarter plus the new submitted, minus the actual processing orders? In ACME people believes so.
 ```prolog
 processing(Processing), 
