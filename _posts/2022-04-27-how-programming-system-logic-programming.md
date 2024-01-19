@@ -1,4 +1,5 @@
 ---
+permalink: /2022/04/27/how-programming-system-logic-programming
 layout: single
 published: true
 title: "How would you make a logic programming system?"
@@ -47,4 +48,3 @@ One of the pillars of LP is recursiveness for managing data structures such as g
 Correctness and predictable results are facilitated by a compiled and strong typed system. Though it is not widely adopted in LP, nothing prevents the programming system to be backed by type-safe languages. Types are not only primitive strings, numbers or booleans but complex data types such as immutable [named tuples](https://docs.scala-lang.org/tour/case-classes.html) commonly present in all programming languages.
 
 The declarative nature of LP, combined with multi-directionality, relational algebra, homoiconicity and programming capabilities for a smooth programming experience, actually hide the complexity that resembles more a software system on its own rather than a mere programming language.
-

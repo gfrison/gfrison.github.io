@@ -1,4 +1,5 @@
 ---
+permalink: /2018/06/06/concept-search-by-word-embeddings
 layout: single
 description: Innovative method for improving information-retrieval precision in e-commerce sites by presenting related products whenever searched items are not available in catalog.
 title: Concept Search by Word Embeddings

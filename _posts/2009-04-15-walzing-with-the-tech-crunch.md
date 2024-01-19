@@ -1,4 +1,5 @@
 ---
+permalink: /2009/04/15/walzing-with-the-tech-crunch
 layout: single
 title: Waltzing with the Tech Crunch
 published: true

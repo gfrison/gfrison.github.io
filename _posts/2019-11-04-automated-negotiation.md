@@ -1,4 +1,5 @@
 ---
+permalink: /2019/11/04/automated-negotiation
 layout: single
 description: Automated Negotiation system scale you sales force and encode the knowledge of your sales representative.
 title: Automated Negotiation for your Digitized Seller

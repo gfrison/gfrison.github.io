@@ -1,4 +1,5 @@
 ---
+permalink: /2019/09/27/precision-medicine-healthcare
 layout: single
 description: 10% of diagnoses are wrong and 35% of adults experienced a medical mistake in the past 5 years. Machine learning and big data might offer decision-support tools to fix the faulty system.
 title: Machine Learning and BigData will make Precision Medicine the future of Healthcare

@@ -1,4 +1,5 @@
 ---
+permalink: /2012/01/25/soa-example-application
 layout: single
 description: I have released an application demonstrating how SOA’s principles can be applied into a small project making use of EIP (Enterprise Integration Pattern), IoC (Inversion of Control), and a building tool and scripting language such as Groovy.
 title: SOA example application

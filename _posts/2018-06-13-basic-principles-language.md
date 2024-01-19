@@ -1,4 +1,5 @@
 ---
+permalink: /2018/06/13/basic-principles-language
 layout: single
 description: Basic principles on the foundations of languages. How language is directly linked to the real world and its human representation.
 title: The Basic Principles of Language

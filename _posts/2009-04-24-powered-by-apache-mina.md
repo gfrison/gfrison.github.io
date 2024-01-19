@@ -1,4 +1,5 @@
 ---
+permalink: /2009/04/24/powered-by-apache-mina
 layout: single
 title: Powered by Apache Mina
 published: true

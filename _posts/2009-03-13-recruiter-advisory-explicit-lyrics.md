@@ -1,4 +1,5 @@
 ---
+permalink: /2009/03/13/recruiter-advisory-explicit-lyrics
 layout: single
 title: Recruiter advisory Explicit lyrics
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: /2017/07/08/machine-comprehension-on-chatbots
 layout: single
 title: Machine Comprehension on Chatbots
 header:

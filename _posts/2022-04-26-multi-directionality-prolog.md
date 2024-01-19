@@ -1,4 +1,5 @@
 ---
+permalink: /2022/04/26/multi-directionality-prolog
 layout: single
 published: true
 title: "Multi directionality in Prolog"
@@ -96,4 +97,3 @@ When the first argument is 0 only the static fact is matching, and the correspon
 When the first argument is greater than 0 the second predicate matches, and recurversely invokes itself until, as any recursive function, reaches the bottom condition. The one defined by the fact.
 
 In the beginning of this article I was comparing Ludwig with SQL. I see it as a sophisticated language for both querying systems and programming at the same time, leaving out the hurdle of having a dedicated language – SQL/SparQL on one end, Java/python on the other – in your software application.
-

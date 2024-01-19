@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Curriculum Vitae
-permlink: /cv
+permalink: /cv
 #toc: true
 header:
   og_image: /assets/images/cv.jpg

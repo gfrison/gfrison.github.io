@@ -1,4 +1,5 @@
 ---
+permalink: /2018/02/12/catalog-entity-extraction-search
 layout: single
 description: Simple but effective way to extract relevant entities from user's queries and rank them against an product catalog and an ontology database.
 title: Catalog Entity Extraction for Search
@@ -125,4 +126,3 @@ entity clusters:
 ```
 I have described a simple way for extracting query terms from a raw sentence. This approach provides useful information that could be managed by an conversational engine for corroborating search results with meaningful answers.
 On the other hand, this model doesn't handle with misspellings, which represent alone about 15% of online search failures. This technique doesn't deal with relatedness matching, or semantic matching. That means we can't satisfy the search with relevant and pertinent results whenever customers use different terms from those in the website. I have already solved this problem by means of neural networks, and I will describe it in another article.
-

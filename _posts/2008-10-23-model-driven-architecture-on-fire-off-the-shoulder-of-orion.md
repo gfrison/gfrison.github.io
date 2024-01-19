@@ -1,4 +1,5 @@
 ---
+permalink: /2008/10/23/model-driven-architecture-on-fire-off-the-shoulder-of-orion
 layout: single
 title: MDA on fire off the Shoulder of Orion
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: /2018/03/14/stochastic-conversational-workflows
 layout: single
 description: A novel approach for improving conversational fluency in Chatbots by employing neural networks based on convolutions and long-short memory units.
 title: Stochastic Conversational Workflows

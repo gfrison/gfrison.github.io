@@ -1,4 +1,5 @@
 ---
+permalink: /2021/09/06/a-friday-afternoon-zurich
 layout: single
 published: true
 title: "A Friday Afternoon in Zurich Lindenhof"

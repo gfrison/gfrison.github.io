@@ -1,4 +1,5 @@
 ---
+permalink: /2011/11/18/cool-dsl-with-groovy-2
 layout: single
 title: Cool DSL with Groovy
 published: true

@@ -1,4 +1,5 @@
 ---
+permalink: /2008/06/26/7-steps-to-mda-revolution
 layout: single
 title: 7 steps to MDA revolution
 published: true

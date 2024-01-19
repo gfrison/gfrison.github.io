@@ -1,4 +1,5 @@
 ---
+permalink: /2018/10/26/una-stella-in-piu
 layout: single
 title: Una Stella in più
 published: true

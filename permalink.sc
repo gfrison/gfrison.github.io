@@ -11,6 +11,9 @@ val files =
         val permalink = s"permalink: /$year/$month/$day/$pname"
         (lines.head +: permalink +: lines.tail, f)
       else (lines, f)
-files.foreach: (lines, f) =>
-  println(s"file: $f")
-  lines.filter(_.startsWith("permalink: ")).foreach(l => println(s"line:$l"))
+// files.foreach: (lines, f) =>
+//   println(s"file: $f")
+//   lines.filter(_.startsWith("permalink: ")).foreach(l => println(s"line:$l"))
+files.foreach: (lines, path) =>
+  os.write.over(path, lines.mkString("\n"))
+println("done")

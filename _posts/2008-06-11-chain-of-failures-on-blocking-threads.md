@@ -1,4 +1,5 @@
 ---
+permalink: /2008/06/11/chain-of-failures-on-blocking-threads
 layout: single
 title: Chain of failures on blocking threads
 published: true

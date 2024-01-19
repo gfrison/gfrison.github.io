@@ -1,4 +1,5 @@
 ---
+permalink: /2018/06/28/first-steps-evolutionary
 layout: single
 description: Using evolutionary system based on Genetic Programming for complex strategies planning. First steps with multi-objective problems.
 title: First Steps on Evolutionary Systems

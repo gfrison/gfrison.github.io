@@ -1,4 +1,5 @@
 ---
+permalink: /2018/12/26/first-steps-reiforcement-learning
 layout: single
 description: Reinforcement learning process rely solely on the evaluation of its actions. It is the carrot and stock metaphor adapted for cold algorithms, instead of living donkeys. This is the first of a short walk-through on building learning agents.  
 title: First steps in Reinforcement Learning

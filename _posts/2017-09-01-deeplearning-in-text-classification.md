@@ -1,4 +1,5 @@
 ---
+permalink: /2017/09/01/deeplearning-in-text-classification
 layout: single
 description: Convolutional Neural Networks for Text Classification outperforms Api.ai.
 title: Deeplearning in Text Classification #NLProc #chatbots @gfrison

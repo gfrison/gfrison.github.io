@@ -1,4 +1,5 @@
 ---
+permalink: /2022/09/01/argumentation-ecommerce-semantics
 layout: single
 published: true
 title: "Argumentation in E-Commerce at SEMANTiCS 2022"
@@ -44,4 +45,3 @@ We were also lucky, the arguments provided do not attack each other by forming l
  
  
  
-

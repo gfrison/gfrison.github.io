@@ -1,4 +1,5 @@
 ---
+permalink: /2008/02/21/lets-get-scrum
 layout: single
 title: Let’s get Scrum
 published: true
