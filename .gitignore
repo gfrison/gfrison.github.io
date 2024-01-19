@@ -1,2 +1,8 @@
 /_site/
 .DS_Store
+.bsp/
+.metals/
+.scala-build/
+.vscode/
+_data/.bsp/
+_data/.scala-build/

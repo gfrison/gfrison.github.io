@@ -318,9 +318,12 @@ head_scripts:
 
 # Collections
 collections:
+  # posts:
+  #   output: true
+  #   parmalink: /:year/:month/:day/:name
   patents:
     output: true
-    permalink: /:collection/:path/
+    # permalink: /:collection/:path
   projects:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:path
