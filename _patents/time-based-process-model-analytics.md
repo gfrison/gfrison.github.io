@@ -2,6 +2,7 @@
 title: "Time-based query processing in analytics"
 excerpt: "Modeling complex processes may involve representing and evaluating long chains of time-dependent data values that depend on one another, for example, as cause-and-effect. It is described a method for enhancing the robustness and resilience of process models to unfavorable events, and to improve forecasts"
 date: 2024-01-13 
+last_modified_at: 2024-01-23
 permalink: /patents/time-based-process-model-analytics
 header:
   og_image: /assets/images/system-dynamics.jpg
@@ -16,6 +17,8 @@ tags:
 Process modeling may be used to enhance the robustness and resilience of  processes to unfavorable events, and to improve forecasts. Modeling complex processes may involve representing and evaluating long chains of time-dependent data values that depend on one another, for example, as cause-and-effect. Therefore, it is desirable for enterprises to model various complex business/technical processes.
 
 One way to address these challenges is to employ analysts to generate process models using a spreadsheet or similar software tool. For example, the spreadsheet may be arranged with columns where different columns correspond to different times or different time periods. Although these techniques may generate accurate models when executed with great care, they are not user friendly and the manual creation of the models can consume considerable human resources. 
+
+Attaining expressive ergonomicity in structure representation is both crucial and challenging. The "make things simple but not simpler" principle guides all human-computer interface design, including temporal programming—a well-known concept in logic. I introduce syntactic sugar to enhance readability and express temporal context switching, a fundamental aspect in process analytics.
 
 # Case Study
 ![](/assets/images/acme.webp)
