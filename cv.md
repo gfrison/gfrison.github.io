@@ -2,6 +2,8 @@
 layout: single
 title: Curriculum Vitae
 permalink: /cv
+redirect_from:
+  - /curriculum
 #toc: true
 header:
   og_image: /assets/images/cv.jpg
