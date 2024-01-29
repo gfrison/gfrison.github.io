@@ -2,6 +2,8 @@
 layout: single
 published: true
 permalink: /2020/graph-convolution-networks
+redirect_from:
+  - /2020/spectral-neural-networks-knowledge-graph
 title: "Spectral Neural Networks for Knowledge Graphs (in Scala)"
 header:
   og_image: /assets/images/gcn/tourism-mountain-beach.png

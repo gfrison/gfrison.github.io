@@ -4,6 +4,8 @@ description: "Bayesian Networks are a scalable tool for decision making in prese
 title: "Bayesian Networks. Or: How I Learned to Stop Worrying and Love Probability"
 published: true
 permalink: /2020/bayesian-inference-networks
+redirect_from:
+  - /2020/bayesian-inference
 header:
   og_image: /assets/images/bayesian/dbn.png
 share: true

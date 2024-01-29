@@ -4,6 +4,8 @@ description: "What is Understanding? How do we make sense out of what we have re
 title: "What is Understanding? Principles of Comprehension for Computer Programs"
 published: true
 permalink: /2020/what-is-understanding
+redirect_from:
+  - /2020/what
 header:
   og_image: /assets/images/understanding/go-round-png
 share: true
