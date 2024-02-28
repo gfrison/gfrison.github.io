@@ -7,14 +7,13 @@ published: true
 header:
   og_image: /assets/dna.jpg
 comments: true
+last_modified_at: 2024-02-28
 tags:
   - Automated Negotiation
   - argumentation
 
 ---
 How could it be if you have a system that scales your sales force, encodes the knowledge of your sales representatives, contracts deals and negotiates the best terms and conditions on your behalf, with no effort and no waste of time?
-
-*I wrote it on https://cxlabs.sap.com/2019/11/04/automated-negotiation-with-zefiro/*
 
 Negotiation is ubiquitous in our lives. We negotiate with friends, employers, partners and of course car dealers, the business domain of choice for Zefiro.
 >Negotiation is a method for finding an agreement in the presence of conflicting preferences and goals.
@@ -54,6 +53,3 @@ There are many tools for helping salespeople to do their job. Analytics tools co
 The system will stimulate, persuade and convince John that the car dealer proposal is the most convenient, advantageous deal he can’t get from another competitor in the area.
 
 Zefiro could be able to meet expectations of sales even though it will be used just to relieve the sales force of the burden to serve the first line of contact, which is well known to have low conversion rate, and therefore very time wasting. The articulation of the system and the resolution of its actions might scale to a high level of negotiation management, and if properly expanded, the system would be able to handle complicated processes thanks to its unbounded optimization capabilities.
-
-I didn’t write about other business cases so far. Are you curious to know how it can fit with yours?
-[Drop me a line](mailto:giancarlo.frison@sap.com), and let’s sit down in the office…

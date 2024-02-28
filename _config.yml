@@ -313,8 +313,8 @@ defaults:
       author_profile: false
       share: true
 
-head_scripts:
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
+# head_scripts:
+#   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
 
 # Collections
 collections:

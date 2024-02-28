@@ -4,12 +4,15 @@ share: true
 permalink: /2023/12/17/glimpse-over-predicate-first-order-logic
 header:
   og_image: /assets/images/tolomey.jpg
+last_modified_at: 2024-02-28
 tag:
   - logic
   - artificial intelligence 
 ---
 Course: [Foundations of Artificial Intelligence III](https://learn.ki-campus.org/courses/foundationsofai-III-dfki2021)
 This course spares topics that can be listed in 3 main groups. Propositional logic (PL), first order logic (FOL), reasoning and satisfiability. The literature mentioned in this course refers to Chapters 7,8 and 9 of AIMA book. The example applications used in the course, is (among many other) the _wumpus world_ (inspired by the one in the AIMA book) which is applied as a _playground_ for PL and FOL explanations. **Logic** as a general class of representations to support knowledge-based agents. Such agents can combine and recombine information to suit myriad purposes. A logic must also define the semantics or meaning of sentences. The semantics defines the truth of each sentence with respect to each possible world. For example, the semantics for arithmetic specifies that the sentence “`x + y =4`” is true in a world where x is `2` and y is `2`, but false in a world where x is 1 and y is 1. 
+
+
 ## Propositional Logic
 **PL** is a simple language consisting of proposition symbols and logical connectives. Its **syntax** defines the allowable sentences while its **semantics** defines the rules for determining the truth (just `true` or `false`) of PL sentences with respect to a particular model. The **semantics** for propositional logic must specify how to compute the truth value of any sentence, given a model. This is done recursively. All sentences are constructed from atomic sentences and the five connectives.
 A *model* is a truth assignment of propositions in a knowledge base (KB) which is a set of sentences (**axioms**) when the sentence is taken as given without being derived from other sentences. Sentences can be derived from other sentences that are logically entailed. **Entailment** is the idea that a sentence follows logically from another sentence. In mathematical notation, we write α $\vDash$ β if and only if, in every model in which α is true, β is also true.   
