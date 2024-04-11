@@ -68,6 +68,8 @@ interval allows the recency value of the error to die away
 
 A curious aspect of TOTs has been found out on the ethical sphere. The sensations associated with TOT  is a kind of _warm glove_ that attributes high ethical values to _not able to remember_ memories. Curiously, when celebrities' names induce TOT states, they are judge more ethical[^3].  
 
+[Giancarlo Frison](https://gfrison.com)
+
 
 [^1]:(p. 329). R. Brown and McNeill (1966). The "tip of the tongue" phenomenon. _Journal of Verbal Learning & Verbal Behavior, 5_(4), 325–337. Doi: 10.1016/S0022-5371(66)80040-3
 [^2]: Usually correctly guessed 50% of the times. Rubin, D. C. (1975). Within word structure in the tip-of-the-tongue phenomenon. Journal of Verbal Learning and Verbal Behavior, 14, 392-397.
