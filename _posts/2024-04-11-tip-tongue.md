@@ -5,11 +5,12 @@ permalink: /2024/04/11/tip-tongue
 description: "a brief survey of the tip of the tongue phenomenon. Why it occurs? It is really because of age? Those and many other questions will be answered."
 header:
   og_image: /assets/images/tot-cenerentola.png
-#last_modified_at: 2024-02-28
+last_modified_at: 2024-04-12
 tag:
   - cognitive psycology
   - memory
   - learning
+  - language
 ---
 Stuck on a name? It's like having a word stuck right on the tip of your tongue, but you just can't remember it. Like a ghost, it is driving us toward a right direction with a sense of closeness but without never revealing us the name. Imagine trying to open a door with a bunch of keys, but none of them fit. That's the tip of the tongue feeling (TOT), and it happens to everyone sometimes.
 
