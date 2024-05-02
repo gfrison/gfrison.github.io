@@ -11,6 +11,8 @@ header:
   og_image: /assets/soa-reward1.png
 comments: true
 tags: soa, groovy, microservice
+redirect_from:
+  - /2012/01/25/soa-example-application//1000
 ---
 
 >SOA describes a set of patterns for creating loosely coupled, standards-based business-aligned services that, because of the separation of concerns between description, implementation, and binding, provide a new level of flexibility.

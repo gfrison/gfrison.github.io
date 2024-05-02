@@ -7,6 +7,7 @@ published: true
 permlink: /2018/06/13/basic-principles-language
 redirect_from:
   - /nlp/2018/06/13/basic-principles-language
+  - /2018/06/13/basic-principles-language//1000
 header:
   og_image: /assets/hand.jpg
 comments: true

@@ -4,6 +4,8 @@ description: Bayesian conditional probability requires sharped interpretation sk
 title: Statistical paradoxes for sharping your Bayesian skills
 published: true
 permalink: /2019/statistical-puzzle-bayesian-conditioning
+redirect_from:
+  - /2019/statistical-puzzles-bayes
 header:
   og_image: /assets/images/lets-make-deal.jpg
 share: true

@@ -1,5 +1,7 @@
 ---
-permalink: /2019/09/8/photo-exposition-bassano-fotografia
+permalink: /2019/09/08/photo-exposition-bassano-fotografia
+redirect_from:
+  - /2019/09/8/photo-exposition-bassano-fotografia
 layout: single
 description: My small contribution to BassanoFotografia 2019 \#bf19 in Caffe San Marco and Les Amis
 title: Photography Event in Bassano del Grappa
