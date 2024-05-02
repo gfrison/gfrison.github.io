@@ -14,6 +14,7 @@ tags:
   - Bayesian Inference
   - puzzle
   - statistic
+last_modified_at: 2024-05-02
 ---
 <figure class="full">
     <img src="/assets/images/lets-make-deal.jpg">

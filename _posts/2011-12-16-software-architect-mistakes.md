@@ -9,6 +9,7 @@ comments: true
 tags: architect, architecture, architecture design, design, risk, software, software project development, stakeholder
 redirect_from:
   - /post/14311599806/software-architect-mistakes
+last_modified_at: 2024-05-02
 ---
 
 I think that to get up in the morning and brew a good cup of coffee is one of the best way to start the day. You know, the heady fragrance that emanates from the machine-pot, it’s delicious. When it’s ready, pour the coffee into a cup, add some sugar, and finally you got it – end of the coffee making process.

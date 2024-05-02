@@ -10,6 +10,8 @@ header:
   og_image: /assets/GiancarloFrison-bf19-1.jpg
 comments: true
 tags:
+  - photo
+last_modified_at: 2024-05-02
 ---
 I've been since long time fascinated by photography and its power to capture my fantasy and attention. I was pretty delighted
 to attend artistic initiatives, that by crossing the boundaries of museums and ateliers, they can reach unforeseen spectators in very unconventional settings.
