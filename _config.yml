@@ -9,7 +9,7 @@
 #
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+remote_theme: "mmistakes/minimal-mistakes@4.26.1"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
@@ -83,7 +83,7 @@ yandex_site_verification:
 naver_site_verification:
 
 # Social Sharing
-twitter:
+x:
   username: "gfrison"
 facebook:
   username: "gfrison"
@@ -114,37 +114,25 @@ author:
   bio: ""
   location: "Munich, Germany"
   #  email            : "giancarlo@gfrison.com"
-  twitter: "gfrison"
+  # twitter: "gfrison"
   #  github: "gfrison"
   linkedin: "gfrison"
   links:
-    - label: "Contact"
+    - label: "[my first name] @ [this domain]"
       icon: "fas fa-fw fa-envelope"
-      url: "/contact"
+      url: "mailto:"
     - label: "Photos I"
       icon: "fas fa-fw fa-camera"
     #      url: "https://www.flickr.com/photos/gfrison/"
-    - label: "Photos II"
-      icon: "fas fa-fw fa-camera"
-    #      url: "https://gfrison.tumblr.com/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    - label: "X"
+      icon: "fab fa-fw fa-brands fa-square-x-twitter"
+      url: "https://x.com/gfrison"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+    - label: "X"
+      icon: "fab fa-fw fa-x-square"
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"

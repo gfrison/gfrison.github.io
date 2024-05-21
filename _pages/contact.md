@@ -4,7 +4,7 @@ layout: single
 permalink: /contact
 author_profile: false
 ---
-<i class="fab fa-fw fa-twitter-square"></i> [Twitter](https://twitter.com/gfrison)
+<i class="fab fa-fw fa-x-square"></i> [X](https://x.com/gfrison)
 
 <i class="fab fa-fw fa-linkedin"></i> [Linkedin](https://linkedin.com/in/gfrison)
 
