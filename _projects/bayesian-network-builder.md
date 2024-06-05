@@ -4,8 +4,9 @@ excerpt: "Tools such as BnB brings in the hands of developers the ability to inf
 header:
   image: /assets/images/bnb.png
   teaser: /assets/images/bnb.png
+last_modified_at: 2024-06-04
 ---
-There are several paradigms in software development, functional programming, object oriented programming, and each of them is intended to solve a particular family of problems. Probabilistic programming is a paradigm that addresses statistical problems. [Bayesian Network Builder](https://github.com/sap/bayesian-network-builder) brings in the hands of software developers the ability to deal with probabilities without being statisticians.
+There are several paradigms in software development, functional programming, object oriented programming, and each of them is intended to solve a particular family of problems. Probabilistic programming is a paradigm that addresses statistical problems. [Bayesian Network Builder](https://github.com/gfrison/bayesian-network-builder) brings in the hands of software developers the ability to deal with probabilities without being statisticians.
 
 I like to compare the [Bayes Rule](/tags#bayes) to car driving. While we are confident in our ability to drive forward in the direction in front of us, we are a little bit reluctant to drive backward. Let's watch it in action with the burglary example:
 
