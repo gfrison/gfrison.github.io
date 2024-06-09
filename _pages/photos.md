@@ -3,6 +3,15 @@ layout: single
 title: Photos
 permalink: /photos
 gallery:
+  - url: /photos/mirror
+    image_path: /assets/photos/mirror.jpg
+    title: Mirror
+  - url: /photos/glencoe
+    image_path: /assets/photos/glencoe.jpg
+    title: Awaiting Life
+  - url: /photos/airport
+    image_path: /assets/photos/aeroporto.jpg
+    title: At the Airport
   - url: https://flic.kr/p/yyb955
     image_path: /assets/photos/hackerbrucke.jpg
     title: Hacker Brucke
@@ -36,6 +45,12 @@ gallery:
   - url: /2021/09/06/a-friday-afternoon-zurich/
     image_path: /assets/photos/zurich.jpg
     title: A Friday Afternoon in Zurich Lindenhof
+  - url: /photos/tango
+    image_path: /assets/photos/tango.jpg
+    title: Tango
+  - url: /photos/burlesque
+    image_path: /assets/photos/burlesque.jpg
+    title: Burlesque
 categories:
   - Photo
 

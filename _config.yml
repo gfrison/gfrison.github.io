@@ -118,9 +118,9 @@ author:
   #  github: "gfrison"
   linkedin: "gfrison"
   links:
-    - label: "[my first name] @ [this domain]"
+    - label: "giancarlo@gfrison.com"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:"
+      url: "mailto:giancarlo@gfrison.com"
     - label: "Photos I"
       icon: "fas fa-fw fa-camera"
     #      url: "https://www.flickr.com/photos/gfrison/"
@@ -300,6 +300,14 @@ defaults:
       classes: wide
       author_profile: false
       share: true
+  - scope:
+      path: ""
+      type: photos 
+    values:
+      layout: single
+      classes: wide
+      author_profile: false
+      share: true
 
 # head_scripts:
 #   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
@@ -309,7 +317,10 @@ collections:
   # posts:
   #   output: true
   #   parmalink: /:year/:month/:day/:name
-  patents:
+  photos:
+    output: true
+    # permalink: /:collection/:path
+  patents:  
     output: true
     # permalink: /:collection/:path
   projects:

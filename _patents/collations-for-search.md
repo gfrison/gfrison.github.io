@@ -4,7 +4,7 @@ excerpt: "This approach provides useful information that could be managed by an 
 date: 2021-08-03 
 permalink: /patents/collations-for-search
 redirect_from:
-	- /2018/02/12/catalog-entity-extraction-search
+- /2018/02/12/catalog-entity-extraction-search
 last_modified_at: 2024-06-05
 # header:
 #   image: /assets/images/search-bar-man.jpg
