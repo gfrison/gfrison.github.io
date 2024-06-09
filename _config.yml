@@ -319,7 +319,7 @@ collections:
   #   parmalink: /:year/:month/:day/:name
   photos:
     output: true
-    # permalink: /:collection/:path
+    permalink: /:collection/:path.html
   patents:  
     output: true
     # permalink: /:collection/:path

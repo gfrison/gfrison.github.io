@@ -2,7 +2,6 @@
 date: 22-11-2011
 last_modified_at: 2024-06-09
 title: At the Airport
-permlink: /photos/airport
 header:
   og_image: /assets/photos/aeroporto.jpg
 ---

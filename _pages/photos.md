@@ -3,13 +3,13 @@ layout: single
 title: Photos
 permalink: /photos
 gallery:
-  - url: /photos/mirror
+  - url: /photos/mirror.html
     image_path: /assets/photos/mirror.jpg
     title: Mirror
-  - url: /photos/glencoe
+  - url: /photos/glencoe.html
     image_path: /assets/photos/glencoe.jpg
     title: Awaiting Life
-  - url: /photos/airport
+  - url: /photos/airport.html
     image_path: /assets/photos/aeroporto.jpg
     title: At the Airport
   - url: https://flic.kr/p/yyb955
@@ -45,10 +45,10 @@ gallery:
   - url: /2021/09/06/a-friday-afternoon-zurich/
     image_path: /assets/photos/zurich.jpg
     title: A Friday Afternoon in Zurich Lindenhof
-  - url: /photos/tango
+  - url: /photos/tango.html
     image_path: /assets/photos/tango.jpg
     title: Tango
-  - url: /photos/burlesque
+  - url: /photos/burlesque.html
     image_path: /assets/photos/burlesque.jpg
     title: Burlesque
 categories:
