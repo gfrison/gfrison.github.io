@@ -1,7 +1,7 @@
 ---
 title: "Cognitive Architectures for Business Decision Making in Supply Chain Management"
 permalink: /2024/06/13/cognitive-architecture-decision-making-supply-chain
-description: "Short dissertation on how supply chain management might benefit from the adoption of a cognitive system, how the architecture might be modelled and the main challenges on pursuing the projects"
+description: "Short dissertation on how supply chain management might benefit from the adoption of a cognitive system, how the architecture might be modeled and the main challenges on pursuing the projects"
 header:
   og_image: /assets/images/soar-cos623.jpg
 tag:
