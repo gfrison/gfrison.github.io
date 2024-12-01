@@ -67,14 +67,14 @@ Rhetoric is the study of effective speaking and writing for what it relates to p
 ### _content_: topics of invention
 The topics of invention (TI) are categories of thought that can be used to generate arguments. They are like lenses through which you can view the claim, the baking and even the evidence. They are used in combination to create a strong and persuasive argument. For example, you might start by defining the problem, then explore its **causes and effects**. You could then propose a solution, **compare** and **contrast** it to other solutions, make **analogies** with other arguments and cite expert **testimony** to support your claims. Finally, you could address potential objections and refute them using counterarguments[^elephant].
 
-**Cause and Effect:** This involves exploring the causes of a problem or the effects of a proposed solution.
-**Comparison and Contrast:** This involves comparing and contrasting different ideas, arguments, or proposals.
-**Definition:** This involves defining key terms and concepts in the argument.
-**Testimony:** This involves citing the opinions of experts or authorities to support your argument.
-**Analogy:** This involves drawing comparisons between different things to illustrate a point.
-**Generalization:** This involves making broad statements based on specific examples or evidence.
-**Division and Partition:** This involves breaking down a complex issue into smaller, more manageable parts.
-**Concession and Refutation:** This involves acknowledging the opposing side's arguments and then refuting them.
+- **Cause and Effect:** This involves exploring the causes of a problem or the effects of a proposed solution.
+- **Comparison and Contrast:** This involves comparing and contrasting different ideas, arguments, or proposals.
+- **Definition:** This involves defining key terms and concepts in the argument.
+- **Testimony:** This involves citing the opinions of experts or authorities to support your argument.
+- **Analogy:** This involves drawing comparisons between different things to illustrate a point.
+- **Generalization:** This involves making broad statements based on specific examples or evidence.
+- **Division and Partition:** This involves breaking down a complex issue into smaller, more manageable parts.
+- **Concession and Refutation:** This involves acknowledging the opposing side's arguments and then refuting them.
 
 ### _form_: figures of speech
 It is subset of rhetorical devices that specifically use language in creative ways to convey meaning and evoke emotions. Rhetorical devices are techniques used to enhance communication and persuasion, and figures of speech are specific tools within this broader category. 
