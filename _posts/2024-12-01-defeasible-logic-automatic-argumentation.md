@@ -5,7 +5,7 @@ permalink: /2024/12/01/defeasible-logic-automatic-argumentation
 description: "Computational argumentation uses strict and defeasible rules to model the logical structure of arguments and evaluate their validity by considering facts, counterarguments, and preferences. Let's figure it out..."
 header:
   og_image: /assets/images/argumentation-clinic.png
-last_modified_at: 2024-12-01
+last_modified_at: 2024-12-02
 tag:
   - argumentation
   - logic
@@ -147,7 +147,7 @@ The argumentation is the process of deciding the status of all arguments in a pr
 An argument can be directly attacked to its core claim, or indirectly by attacking warrant's backing. Indirect attack happens when an argument attack  a sub-argument (which is a smaller argument, with its own premises, within a larger argument). As previously mentioned for defeasible logic, argumentation suffers from conditions of stalemate among arguments. The Nixon Diamond provides the proverbial example of blocking defeaters. Considering the following argument structure:$$
 \begin{aligned}
 \langle A_1, L_1\rangle &=& \langle pacifist(nixon) &\Leftarrow quacker(nixon), pacifist(nixon)\rangle \\  
-\langle A_2,L_2 \rangle &=& \langle \neg pacifist(nixon) &\Leftarrow replubblican(nixon), \neg pacifist(nixon)\rangle
+\langle A_2,L_2 \rangle &=& \langle \neg pacifist(nixon) &\Leftarrow republican(nixon), \neg pacifist(nixon)\rangle
 \end{aligned}$$
 
 The two arguments defeat each other, therefore the answer to $pacifist(nixon)$ will be $UNDECIDED$. Whether an attack from $\langle A_1, L_1 \rangle$  to $\langle A_2, L_2 \rangle$ succeeds as a defeat, may depend on the relative strength of $A_1$ and $A_2$ , i.e. whether $A_2$ is strictly stronger than, or strictly preferred to $A_1$. Where do these preferences come from? 
