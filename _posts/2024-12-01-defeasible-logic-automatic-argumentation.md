@@ -22,7 +22,7 @@ Which is not so different from:
 [Argumentation]({% post_url 2022-09-01-argumentation-ecommerce-semantics %}) is inherently _linguistic_ - in spoken or in written form - and it is a _social_ activity as an interaction within two or more participants with different opinions. Without contested idea, argumentation would not take place. Having an "argument" implies responding to one's another claim for supporting, attacking or defending positions. Argumentation is mainly a _rational_ activity as an exchange of reasonable arguments, though **rhetoric** tactics can significantly influence the persuasive power of an arguer. 
 The nuanced spectrum of rhetoric can hardly be caught by reasoning and logical processes, but they could be resorted by other means. I'm referring in particular to large language models that they can tailor an argument for a particular audience.
 
-Want to read more about it? Take a look into a glimpse over [LLMs rhetorical skills]({% post_url 2024-12-01-argumentation-llms-rhetoric %})
+Want to read more about it? Take a look into [LLMs rhetorical skills]({% post_url 2024-12-01-argumentation-llms-rhetoric %})
 {: .notice--primary}
 
 The latter point is crucial for depicting argumentation. Argumentation investigates the communicative aspects of reasoning and can be described as an interplay between logic and rhetoric. While rhetoric is a communication exercise to make an argument more or less appealing to the recipient, logic is a philosophical seek that concern that _soundness_ of a proposition rather than championing persuasion as primary goal. 
