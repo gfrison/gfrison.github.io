@@ -5,7 +5,7 @@ permalink: /2024/12/01/defeasible-logic-automatic-argumentation
 description: "Computational argumentation uses strict and defeasible rules to model the logical structure of arguments and evaluate their validity by considering facts, counterarguments, and preferences. Let's figure it out..."
 header:
   og_image: /assets/images/argumentation-clinic.png
-last_modified_at: 2024-12-02
+last_modified_at: 2024-12-07
 tag:
   - argumentation
   - logic
