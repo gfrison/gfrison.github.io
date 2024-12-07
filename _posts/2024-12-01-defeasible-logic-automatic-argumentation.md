@@ -9,6 +9,7 @@ last_modified_at: 2024-12-07
 tag:
   - argumentation
   - logic
+
 ---
 You can't escape arguments. They represent the fabric of world understanding at any level of resolution you want to interpreter the reality. There is no choice or decision we make without supporting or confuting other choices advanced from others or even from ourselves. Arguments are everywhere. 
 <figure style="width: 400px" class="align-center">
