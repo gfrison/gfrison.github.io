@@ -10,7 +10,7 @@ tags:
  - process modelling
  - logic programming
 ---
-| Id                                                                | Status    | Publish Date | Grant Date  | Authorship      |
+| Id                                                                | Status    | Submission Date | Publish Date  | Authorship      |
 | ----------------------------------------------------------------- |
 | [US18/078,566](https://patents.google.com/patent/US20240193164A1) | Pending | {{ "2022-09-12" | date_to_string }} | {{ "2024-06-13" | date_to_string }} | 100% |
 
