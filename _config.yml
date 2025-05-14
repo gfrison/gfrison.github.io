@@ -112,7 +112,7 @@ author:
   name: "Giancarlo Frison"
   avatar: "/assets/images/profile-g.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: ""
-  location: "Munich, Germany"
+  # location: "Munich, Germany"
   #  email            : "giancarlo@gfrison.com"
   # twitter: "gfrison"
   #  github: "gfrison"
