@@ -2,16 +2,18 @@
 title: "Consumer Problem Discovery and Solution Recommender with Knowledge Graphs"
 excerpt: "E-Stores loose sells due to the negative biases of consumers. While salespeople give proper reasons to change consumers misbelieves, it is problematic to address those issues in an online shop. In this talk, I will present how to combine semantic graphs with logic programming and symbolic machine learning to restore consumer’s confidence. The digital agent detects what are the problems users might have and offers them explanations and valid arguments for not worry about, or why a given recommendation is more suitable than others."
 date: 2023-08-02 
+last_modified_at: 2025-07-24
 permalink: /patents/consumer-problem-discovery-solution-recommender-knowledge-graphs
 header:
   og_image: /assets/images/justify-recommendation.png
 tags:
  - Machine Learning
+ - knowledge graph
  - ILP
 ---
-| Id                                                                | Status    | Submission Date | Publication Date  | Authorship      |
+| Id                                                                | Status    | Submission Date | Grant Date  | Authorship      |
 | ----------------------------------------------------------------- |
-| [US17/546,426](https://patents.google.com/patent/US20230153645A1) | Published | {{ "2021-12-09" | date_to_string }} | {{ "2023-05-18" | date_to_string }} | 100% |
+| [EP4181030B1](https://data.epo.org/publication-server/document/pdf/4181030/B1) | Granted | {{ "2021-12-09" | date_to_string }} | {{ "2025-07-24" | date_to_string }} | 100% |
 
 While browsing e-commerce stores in search of suitable items to purchase, consumers consider miriads of factors regarding the objective quality of the product offered by the website (price and features) and subjective characteristics like the social value (how the product is valued by others) and emotional value. Not only influenced by the single product, online consumers also evaluate the trustiness of the e-store in delivering what they promise for avoiding delays, missing consignments or anything related to bad customer service. Some factors are consciously scrutinized and other are driven by sub-conscious mechanisms that are that might be in various degree predicted. There are statistical mechanisms employed to predict whether the user is likely to abandon the purchase process (churn) based on tracked behaviors, but they lack the mechanisms to:
 1.	understand the reasons why users don’t finalize the purchase

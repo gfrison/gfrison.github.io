@@ -124,9 +124,9 @@ author:
     - label: "Photos I"
       icon: "fas fa-fw fa-camera"
     #      url: "https://www.flickr.com/photos/gfrison/"
-    - label: "X"
-      icon: "fab fa-fw fa-brands fa-square-x-twitter"
-      url: "https://x.com/gfrison"
+    # - label: "X"
+    #   icon: "fab fa-fw fa-brands fa-square-x-twitter"
+    #   url: "https://x.com/gfrison"
 
 # Site Footer
 footer:
