@@ -1,7 +1,7 @@
 ---
 title: "Scarlatti: In-memory Hypergraph Machine Learning"
-excerpt: ""
-date: 2025-08-12 
+excerpt: "a method to efficiently synthesise queries for extracting information from an in-memory hypergraph Knowledge Base. It uses positive and negative samples to guarantee that the query returns all positive samples while excluding all negative ones"
+date: 2025-08-12
 last_modified_at: 2025-08-12
 permalink: /patents/hypergraph-machine-learning
 header:
