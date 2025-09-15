@@ -6,7 +6,7 @@ description: "Computational argumentation uses strict and defeasible rules to mo
 header:
   og_image: /assets/images/argumentation-clinic.png
 last_modified_at: 2024-12-07
-tag:
+tags:
   - argumentation
   - logic
 

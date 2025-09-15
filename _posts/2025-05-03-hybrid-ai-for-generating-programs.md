@@ -6,7 +6,7 @@ description: "Computer programming is a specialized activity that requires long 
 header:
   og_image: /assets/images/hybrid-ai-generating-programs-media/poster.jpg
 last_modified_at: 2025-05-03
-tag:
+tags:
   - hybrid-ai
   - program-synthesis
   - programming
