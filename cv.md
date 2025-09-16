@@ -19,7 +19,7 @@ Let me introduce myself with a simple bullet-point list of roles and activities 
 - **Thought Leadership**: Communicating complex ideas to stakeholders and advocating for innovative initiatives.
 <br>
 [![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/cv.jpg){: .align-left}]({{ site.url }}/assets/cv.pdf)
-&#8592; Click on the icon and download my Curriculum in PDF format and please, share it in your organization. I will be very willing to discuss over possible collaborations.
+&#8592; Click on the icon and download my Curriculum in PDF format and please, share it in your organization. 
 {: .notice--info}
 <br>
 <br>
