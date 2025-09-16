@@ -6,6 +6,7 @@ title: "How would you make a logic programming system?"
 share: true
 tag:
   - logic programming
+  - low-code
 ---
 I tried to investigate alternative ways to improve the programming experience (PX) considering several aspects of how users interact with the system. Those aspects include mode of interactions, language notation, data integration, function composability, service externability. Why don't answer questions such as: how can we simplify the interaction with the system in order to build programs with desired behaviour? How can we share knowledge with stakeholders with different attitudes, other than pure technicals?
 

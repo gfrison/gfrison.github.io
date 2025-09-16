@@ -8,38 +8,45 @@ redirect_from:
 header:
   og_image: /assets/images/cv.jpg
 classes: wide
+last_modified_at: 2025-09-16
 ---
 Let me introduce myself with a simple bullet-point list of roles and activities in my present and past experiences:
-- *Software specialist* with a solid track record in the design and implementation of systems
-used in banking, telecommunications, financial, e-commerce and social media networks.
-- *AI engineer* for converging _machine learning/artificial intelligence_ capabilities and software applications.
-- *Researcher* on innovative computational methods for technical/business improvements and pursue intellectual property rights.   
-- *Seeking opportunities* for differentiation and advocating technical choices.
-- *Ambassador* for the product with internal and external stakeholders and understand customers' pain points/tacit needs.
 
-Here 👉 [you can find some projects](/projects) I finalised recently.
-
+- **Full-Stack Development**: Expertise in end-to-end software development, web frameworks, Scala, and JavaScript.
+- **Technical Architecture**: Aligning stakeholder vision with practical implementation, bridging high-level design with hands-on development.
+- **AI**: Natural language processing (NLP), deep learning, hybrid probabilistic/symbolic AI.
+- **Research & Innovation**: Developing cutting-edge computational solutions to drive technical and business improvements, including intellectual property (IP) development.
+- **Thought Leadership**: Communicating complex ideas to stakeholders and advocating for innovative initiatives.
+<br>
 [![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/cv.jpg){: .align-left}]({{ site.url }}/assets/cv.pdf)
 &#8592; Click on the icon and download my Curriculum in PDF format and please, share it in your organization. I will be very willing to discuss over possible collaborations.
 {: .notice--info}
 <br>
 <br>
-<br>
-<br>
 
+<table>
+  <tr>
+    <th><b>Software Research Engineer</b></th>
+    <th><i>SAP</i></th>
+    <th>2017 - Now, Munich</th>
+  </tr>
+  <tr>
+    <td colspan="3"><b>Declarative Optimization Language</b>: Designed and implemented a functional-logic programming system integrating relational algebra and combinatorial primitives, enabling efficient resolution of complex optimization challenges through a simple syntax.</td>
+  </tr>
+  <tr>
+    <td colspan="3"><b>Hybrid AI for Retail Q&A</b>: Developed an advanced <a href="https://epiqa.cxai.dev.sap/">question-answering system</a> combining symbolic AI and LLMs to interpret nuanced customer queries, outperforming traditional RAG methods in precision and granularity.</td>
+  </tr>
+  <tr>
+    <td colspan="3"><b>Knowledge-Driven Recommender Engine</b>: Built a <a href="https://community.sap.com/t5/crm-and-cx-blogs-by-sap/argumentation-for-e-commerce-at-semantics-22/ba-p/13534345">dynamic recommendation system</a> leveraging knowledge graphs to generate <a href="https://gfrison.com/2024/12/01/defeasible-logic-automatic-argumentation">logically justified</a> product suggestions. Incorporated interactive preference elicitation to refine results and reasoning.</td>
+  </tr>
+  <tr>
+    <td colspan="3"><b>AI-Powered Sales Automation</b>: Engineered an <a href="https://community.sap.com/t5/tag/zefiro/tg-p/">    adaptive sales assistant</a> using Bayesian networks and reinforcement learning. The system personalizes offers and sales strategies by inferring customer preferences and behavioral traits through interactive dialogues.</td>
+  </tr>
+  <tr>
+    <td colspan="3"><a href="https://gfrison.com/projects/conversational-commerce"><b>Conversational Commerce Platform</b></a>: Pioneered a <a href="https://gfrison.com/patents/smoothing-conversational-context">neural network architecture</a> (2017) for e-commerce interactions via Facebook Messenger and SAP. Enabled natural language <a href="https://gfrison.com/patents/concept-search-with-word-embeddings">product searches</a>, order placement, FAQ navigation, and ticket creation.</td>
+  </tr>
+</table>
 
-| **Technology Strategist** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   _SAP Customer Experience Labs_ | 2017 - Now, Munich
-|-|-|-
-|Research on [Logic Programming](https://cxlabs.sap.com/2020/11/16/why-logic-programming-matters/) and [Answer Set Programming](https://blogs.sap.com/2020/11/25/rule-engines-and-knowledge-intensive-processing-with-answer-set-programming/) for introducing symbolic AI in e-commerce system by enabling automated argumentation.
-|Built library for predicate inference from [Knowledge Graphs](https://cxlabs.sap.com/2020/08/14/what-are-knowledge-graphs-an-overview/) ([Answer Sets](https://cxlabs.sap.com/2020/11/24/rule-engines-and-knowledge-intensive-processing-with-answer-set-programming/)).
-|Prototype for [Graph Neural Networks](https://cxlabs.sap.com/2020/08/31/deep-learning-for-knowledge-graph-embeddings/) on Knowledge Graphs.
-|Technical and business related presentations at conferences and customers.
-|Released e-commerce [prototype](https://zefiro.cxlabs.sap.com) for Intelligent Digital Assistant.
-|Integrated [Bayesian Inference](https://github.com/sap/bayesian-network-builder) for [Guided Selling](https://cxlabs.sap.com/2020/09/22/bayesian-inference-for-guided-selling-sap-predictive-summit-talk/).
-|Developed library for Deep Reinforcement Learning.
-|Release prototype for [conversational commerce](https://sapvideoa35699dc5.hana.ondemand.com/?entry_id=1_kp5hbyih).
-|Created new [search algorithms](https://cxlabs.sap.com/tag/charly/) and improved [contextualization for chatbots](https://cxlabs.sap.com/2018/03/20/stochastic-conversational-workflows/).
-|Implemented [intention classification](https://gfrison.com/2017/09/01/deeplearning-in-text-classification/) for natural language processing.||
 
 [![image-left]({{ site.url }}/assets/images/psmi.png){: .align-left}]({{ site.url}}/assets/psmi.pdf) Certified professional scrum master
 {: .notice--info}
@@ -47,75 +54,180 @@ Here 👉 [you can find some projects](/projects) I finalised recently.
 <br>
 <br>
 <br>
-
-
-| **Fellowship**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _SAP Innovation Center_ | 2016, Munich
-|-|-|-
-|Early drafts for the SAP machine learning platform (ex Leonardo) on coordinating complex machine learning pipelines for data ingestion, features extraction, training execution, model versioning and persistence.
-|Prototyping with Apache Mesos, Hadoop, SparkML and TensorFlow.
-
-
-| **Software Specialist** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _SAP Hybris_ | 2014, Munich
-|-|-|-
-|Designed and developed inter-process communication framework with Reactive/Event-Driven programming as standard tool for Hybris developers.
-|Improved core platform’s services and ORM internal framework.
-|Tuning and optimizing high throughput libraries for Hybris’ commerce system.
-
-| **Selected Attendee** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _TechPeaks_ | 2013, Trento
-|-|-|-
-|Selected for the [training program](https://www.repubblica.it/rubriche/startup-stories/2013/12/02/news/incubatore_startup-72502909/) of the startup accelerator on Lean Startupmethodologies, business planning, corporate administration and taxation.
-|Released business plan for investors and obtained financial grants.
-|Searched for synergies with commerce partners.
-|Acquired license for food management.
+<table>
+  <tr><th><b>Development Architect</b></th>
+    <th><i>SAP</i></th>
+    <th>2014 - 2017, Munich</th>
+  </tr>
+  <tr>
+    <td colspan="3">
+    Designed and developed an inter-process software library for <b>SAP Commerce Cloud</b>, enabling seamless remote service access for developers. This standardized solution, now part of the SAP Commerce Toolkit, utilized <b>event-driven programming</b> to optimize resource efficiency.
+</td>
+  </tr>
+  <tr>
+    <td colspan="3">
+    Enhanced the core platform’s service layer and <b>ORM framework</b>, improving performance and scalability.
+</td>
+  </tr>
+  <tr>
+    <td colspan="3">
+    Optimized <b>high-throughput libraries</b> within the SAP Commerce Toolkit to maximize efficiency and reduce latency.
+</td>
+  </tr>
+</table>
+<br>
+<table>
+  <tr><th><b>Attendee</b></th>
+    <th><i>TechPeaks</i></th>
+    <th>2013 - 2014, Trento</th>
+  </tr>
+  <tr>
+    <td colspan="3">Chosen for a competitive <a href="https://www.repubblica.it/rubriche/startup-stories/2013/12/02/news/incubatore_startup-72502909/">training program</a> focused on <b>Lean Startup</b> methodologies, business planning, and corporate administration.
+    </td></tr>
+  <tr>
+    <td colspan="3">Developed and pitched a comprehensive <b>business plan</b> for securing (successfully) financial grants.</td>
+  </tr>
+  <tr>
+    <td colspan="3">Strategic partnerships with key stakeholders to drive business growth.</td>
+  </tr>
+  <tr>
+    <td colspan="3">Obtained a food management business license, ensuring regulatory compliance.</td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
 
 ![image-left](/assets/images/dibari.png){: .align-left}_"Working with Giancarlo has been a very interesting experience. At that time he was a very skilled and smart Java developer. He demostrated a clear understanding of a Model Driven Development approach as well as the importance of modeling in the context of complex financial applications development."_
 
 ![image-left](/assets/images/cesare.png){: .align-left}_"Worked with us over 2 years as java consultant. He engaged an effective development on the department taking part in the refactoring of all java layers, also he carried out appreciative work implementing the model driven approach. He has deep knowledge in software development and setting up system architectures."_
 
-| **Development Architect** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _Chelab Laboratories_ | 2011, Venice Area
-|-|-|-
-|Analysis of business processes by interviewing stakeholders and assessing software architecture, for prototyping the company's laboratory information system (LIMS).
-|Design domain specific language (DSL) for chemical workflow management.
-|Prototype storage services based on NoSQL databases for media content.
-|Coach and train development team on rapid web building with [Grails](https://grails.org).
-|Setup configuration management and continuous integration systems.
+<br>
+<br>
+<br>
+<br>
+<table>
+  <tr><th><b>Development Architect</b></th>
+    <th><i>Mérieux NutriSciences Chelab, Italy</i></th>
+    <th>2011 - 2013, Venice Area</th>
+  </tr>
+  <tr>
+    <td colspan="3">Conducted stakeholder interviews and analyzed business processes to assess software architecture needs, leading to the prototyping of the company’s Laboratory Information Management System (LIMS).
+    </td></tr>
+  <tr>
+    <td colspan="3">Designed a domain-specific language (DSL) to optimize chemical workflow management.
+    </td></tr>
+  <tr>
+    <td colspan="3">Mentored the development team in rapid web application development using Grails.
+    </td></tr>
+  <tr>
+    <td colspan="3">Established a delivery pipeline to streamline development and deployment processes.
+    </td></tr>
+</table>
+<br>
+<table>
+  <tr><th><b>Senior Software Developer</b></th>
+    <th><i>Skebby, Italy</i></th> 
+    <th>2010 - 2011, Milan</th>
+  </tr>
+  <tr>
+    <td colspan="3">Designed and developed a distributed microservices architecture for high-volume B2C and B2B SMS delivery management.
+    </td></tr>
+  <tr>
+    <td colspan="3">Mentored team members on best practices for scalable and resilient system design.</td>
+  </tr>
+  <tr>
+    <td colspan="3">Implemented an Enterprise Integration Pattern (EIP)-based architecture, leveraging ActiveMQ for inter-service communication.
+    </td></tr>
+  <tr>
+    <td colspan="3">Optimized system performance and reliability through microservices orchestration and message-driven workflows.
+</td></tr>
+</table>
 
+<br>
+<br>
 
-| **Senior Software Developer** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _Skebby_ | 2010, Milan
-|-|-|-
-|Built and tutored the distributed micro-service system for B2C and B2B SMS delivery management.
-|Setup system architecture ascribable as EIP (Enterprise Integration Pattern) and micro-service constellation linked by ActiveMQ.
-|API definition through REST for external partners.
+[![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/patent.png){: .align-left}]({{ site.url }}/patents)
+&#8592; Click on the icon and browse my innovative contributions
+{: .notice--info}
 
-
-| **Senior Software Developer** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _Quinary_ | 2008, Milan
-|-|-|-
-|[Re-engineering](https://gfrison.com/2009/04/24/powered-by-apache-mina/) the SMS B2B delivery system for Vodafone based on micro-service architecture with messages broker such as FioranoMQ.
-
-| **Senior Software Developer** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _Nimbuzz_ | 2007, Rotterdam
-|-|-|-
-|Implemented high-throughput XMPP server-to-server Java framework for chat protocols through REST API.
-
-
-| **Software Consultant** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _Ats_ | 2006, Milan
-|-|-|-
-|Created the BrokerTec facility extension, integrated into trading application, enabling trades of REPO market government securities.
-|Designed and implemented internal framework for interfacing external API in a declarative way, solely by XML definitions.
-
-
-| **Software Consultant** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _Abla_ | 2006, Milan
-|-|-|-
-|Developed the [VoiceXML](https://en.wikipedia.org/wiki/VoiceXML) interpreter and binded into Media Resource Control Protocol (MRCP) for automated voice assistants.
-|Audio streaming implementation in Real Time Protocol for voice automated assistants.
-
-| **Backend Developer** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  _Sec Servizi_ | 2002, Padua
-|-|-|-
-|Implemented IBM’s Rational Software Architect extensions for [Low Code/No Code](https://gfrison.com/tags/#low-code-no-code) Model Driven Architecture and enabling non-developers to design banking services by means of UML diagrams.
+<br>
+<br>
+<br>
+<br>
+<br>
+<table>
+  <tr><th><b>Senior Software Developer</b></th>
+    <th><i>Quinary, Italy</i></th>
+    <th>2008 - 2010, Milan</th>
+  </tr>
+  <tr>
+    <td colspan="3"><a href="https://gfrison.com/2009/04/24/powered-by-apache-mina/">Re-engineering</a> the SMS B2B delivery system for Vodafone based on micro-service architecture with messages broker (FioranoMQ).</td>
+  </tr>
+</table>
+<br>
+<table>
+  <tr><th><b>Senior Software Developer</b></th>
+    <th><i>Nimbuzz, The Netherlands</i></th>
+    <th>2007 - 2008, Rotterdam</th>
+  </tr>
+  <tr>
+    <td colspan="3">Implemented high-throughput XMPP server-to-server Java framework for chat protocols through REST API.
+</td>
+  </tr>
+</table>
+<br>
+<table>
+  <tr><th><b>Software Developer</b></th>
+    <th><i>ATS, Italy</i></th>
+    <th>2006 - 2007, Milan</th>
+  </tr>
+  <tr>
+    <td colspan="3">Created the BrokerTec financial market extension, integrated into the trading application, enabling trades of REPO market government securities.
+</td>
+  </tr>
+  <tr>
+    <td colspan="3">Designed and implemented internal framework for interfacing external API in a declarative way, solely by XML definitions.
+</td>
+  </tr>
+</table>
+<br>
+<table>
+  <tr><th><b>Software Developer</b></th>
+    <th><i>Abla, Italy</i></th>
+    <th>2006, Milan</th>
+  </tr>
+  <tr>
+    <td colspan="3">Designed and implemented an internal framework to streamline external API interactions using a declarative XML-based approach, eliminating the need for manual coding.</td>
+  </tr>
+</table>
+<br>
+<table>
+  <tr><th><b>Software Developer</b></th>
+    <th><i>SEC Servizi, Italy</i></th>
+    <th>2002 - 2006, Padua</th>
+  </tr>
+  <tr>
+    <td colspan="3">Developed custom extensions for IBM Rational Software Architect to support <a href="https://gfrison.com/tags/#low-code">Low-Code</a> Model-Driven Architecture (MDA).</td>
+  </tr>
+  <tr>
+    <td colspan="3">Empowered business analysts and non-developers to design banking services through intuitive UML-based modeling tools.</td>
+  </tr>
+  <tr>
+    <td colspan="3">Streamlined software development processes, reducing dependency on manual coding for critical financial applications.
+</td>  </tr>
+</table>
+<br>
 
 
 
 ## Education
 
+#### Master of Science (M.Sc.), Cognitive Systems
+
+2023 / 2025
+
+![image-left](https://www.ouc.ac.cy/images/stories/joomlart/OUC_Logo_transparency_EN_96.png#joomlaImage://local-images/stories/joomlart/OUC_Logo_transparency_EN_96.png?width=216&height=96) Open University, Cyprus
 #### B.Eng, Diploma di Laurea in Ingegneria Informatica ed Automatica
 
 1995 / 1999
@@ -128,6 +240,29 @@ Here 👉 [you can find some projects](/projects) I finalised recently.
 
 ![image-left](/assets/images/itis.png) ITIS, Bassano del Grappa,  Italy
 
+# Conferences
+
+## SEMANTiCS 
+
+_2022, Vienna, Austria_
+
+### The Socratic Digital Agent: persuasion in eCommerce with knowledge, logic, and machine learning
+
+E-Stores lose sales due to the negative biases of consumers. While salespeople give proper reasons to change consumers' misbeliefs, it is problematic to address those issues in an online shop. In this talk, I will present how to combine semantic graphs with logic programming and symbolic machine learning to restore consumer confidence. The digital agent detects what problems users might have and offers them explanations and valid arguments for not worrying about, or why a given recommendation is more suitable than others.
+
+# Certifications
+
+## [SAP Architect Curriculum](https://gfrison.com/assets/certs/Certificate-2021EU1-Giancarlo.pdf)
+
+_2022_
+
+## [Professional Scrum Master I (PSM I)](https://www.scrum.org/certificates/583260)
+
+_2021_
+
+## [ITIL® Foundation Certificate in IT Service Management](https://gfrison.com/assets/certs/itil.pdf)
+
+_2021_
 
 {::comment}
 # SAP

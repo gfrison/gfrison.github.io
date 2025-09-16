@@ -13,6 +13,7 @@ tags:
   - programming
   - neural-symbolic
   - llm
+  - low-code
 ---
 In the BBC series "How Buildings Learn", Stewart Brand discusses how buildings evolve over time and, in particular, what distinguishes good buildings from bad ones. One way to answer that is to look for commonalities among those still standing centuries after their construction. Excluding natural disasters like earthquakes, poor quality of materials and construction techniques, or the possible decline of the locality, the longevity of buildings depends on the satisfaction of their inhabitants in maintaining them. How can a static structure satisfy generations of owners? We might be tempted to think that the initial purpose of a building should not vary much over time due to its immutability. That would be correct, but only if we do not include the human element in the equation. Unlike buildings, people move and engage in all sorts of activities. The dynamism is brought by the users, and as expected, it changes over time. It turns out the longevity of a facility is determined by **how easily it can meet new demands**, and those demands are dictated by the kinds of interactions people have with the building during their activities.
 

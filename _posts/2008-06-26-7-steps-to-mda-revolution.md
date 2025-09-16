@@ -9,7 +9,8 @@ image: /assets/supernova.jpg
 tags:
   - MDA
   - Uml
-  - low-code no-code
+  - low-code 
+  - no-code
 ---
 ![]({{ site.url }}/assets/supernova.jpg)
 I didn’t believe that such a successful project was such a rare event in the IT industry, that’s why I’ve never caught another chance for applying the learned lessons again. I thought that the experience accrued on Model Driven Architecture will be reusable in other circumstances, though I’ve never seen concepts as executable UML or MDA either applied or mentioned in the following commitments I’ve pursued into.
