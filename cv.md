@@ -253,19 +253,20 @@ E-Stores lose sales due to the negative biases of consumers. While salespeople g
 
 # Certifications
 
-## [SAP Architect Curriculum](https://gfrison.com/assets/certs/Certificate-2021EU1-Giancarlo.pdf)
+### [SAP Architect Curriculum](https://gfrison.com/assets/certs/Certificate-2021EU1-Giancarlo.pdf)
 
 _2022_
 
-## [Professional Scrum Master I (PSM I)](https://www.scrum.org/certificates/583260)
+### [Professional Scrum Master I (PSM I)](https://www.scrum.org/certificates/583260)
 
 _2021_
 
-## [ITIL® Foundation Certificate in IT Service Management](https://gfrison.com/assets/certs/itil.pdf)
+### [ITIL® Foundation Certificate in IT Service Management](https://gfrison.com/assets/certs/itil.pdf)
 
 _2021_
 
 {::comment}
+
 # SAP
 ### SAP Hybris Labs
 #### Project Zefiro
