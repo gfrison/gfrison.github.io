@@ -228,6 +228,7 @@ Let me introduce myself with a simple bullet-point list of roles and activities 
 2023 / 2025
 
 ![image-left](https://www.ouc.ac.cy/images/stories/joomlart/OUC_Logo_transparency_EN_96.png#joomlaImage://local-images/stories/joomlart/OUC_Logo_transparency_EN_96.png?width=216&height=96) Open University, Cyprus
+
 #### B.Eng, Diploma di Laurea in Ingegneria Informatica ed Automatica
 
 1995 / 1999
