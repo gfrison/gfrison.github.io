@@ -226,20 +226,20 @@ Let me introduce myself with a simple bullet-point list of roles and activities 
 #### Master of Science (M.Sc.), Cognitive Systems
 
 2023 / 2025
-
-![image-left](https://www.ouc.ac.cy/images/stories/joomlart/OUC_Logo_transparency_EN_96.png#joomlaImage://local-images/stories/joomlart/OUC_Logo_transparency_EN_96.png?width=216&height=96) Open University, Cyprus
+Open University, Cyprus
+![image-left](https://www.ouc.ac.cy/images/stories/joomlart/OUC_Logo_transparency_EN_96.png#joomlaImage://local-images/stories/joomlart/OUC_Logo_transparency_EN_96.png?width=216&height=96) 
 
 #### B.Eng, Diploma di Laurea in Ingegneria Informatica ed Automatica
 
 1995 / 1999
-
-![image-left](/assets/images/unipd.png) Universita' degli Studi, Padova, Italy
+Universita' degli Studi, Padova, Italy
+![image-left](/assets/images/unipd.png) 
 
 #### Diploma Perito Industriale, Elettrotecnica
 
 1990 / 1995
-
-![image-left](/assets/images/itis.png) ITIS, Bassano del Grappa,  Italy
+ITIS, Bassano del Grappa,  Italy
+![image-left](/assets/images/itis.png) 
 
 # Conferences
 
