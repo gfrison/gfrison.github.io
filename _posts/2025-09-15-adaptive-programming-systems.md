@@ -5,7 +5,7 @@ permalink: /2025/adaptive-programming-systems
 description: "How programming systems can adapt to evolving user and AI needs? Drawing parallels with architecture, I enphasize the importance of flexibility, open authorship, and user empowerment, and discusses challenges faced by both humans and AI in program synthesis"
 header:
   og_image: /assets/images/adaptive-programming-systems/main.png
-last_modified_at: 2025-09-16
+last_modified_at: 2025-09-19
 published: true
 tags:
   - hci
@@ -34,6 +34,11 @@ Substrates: various underlying mechanisms or interfaces that allow to interact w
 {: .notice--primary}
 
 Substrates are the layers that encapsulate different modules and environments. They could be related to data management, dominated by the database interface, for example. Mediators may be also volatile archetypes, like prescribed design patterns for software development. When a generic design is found for a recurrent problem pattern, the solution is actually an abstract template for lowering the accidental complexity of the application. That archetype could be seen as a substrate applied to the application for a common problem.
+
+<figure class="align-center" style="width: 70%">
+  <img src="/assets/images/adaptive-programming-systems/complexity.png" alt="Programming Effort and Complexity" />
+  <figcaption aria-hidden="true">How Programming Effort is related to Complexity</figcaption>
+</figure>
 
 Accidental vs Essential complexity: if you have ever faced a programming challenge like the ones you may be submitted during interviews, you may have experienced the frustration of not being able to solve it. This is the feeling the essential complexity manifests itself. On the other hand, when the programmer should update an intricated legacy system without documentation, the desperation can easily take over. The sorrow is now related to the accidental complexity, which is the kind of trouble _introduced_ into the ecosystem. The essential is not negotiable, but the accidental must be kept at the lowest level.
 {: .notice--primary}
