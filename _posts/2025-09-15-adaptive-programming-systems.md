@@ -5,7 +5,7 @@ permalink: /2025/adaptive-programming-systems
 description: "How programming systems can adapt to evolving user and AI needs? Drawing parallels with architecture, I enphasize the importance of flexibility, open authorship, and user empowerment, and discusses challenges faced by both humans and AI in program synthesis"
 header:
   og_image: /assets/images/adaptive-programming-systems/main.png
-last_modified_at: 2025-09-19
+last_modified_at: 2025-09-22
 published: true
 tags:
   - hci
@@ -55,9 +55,11 @@ Are there any live examples of open authorship out there? If you are reading thi
 
 Empowering users to modify software without the help of professional developers is a way to make it more resilient to the changes that occur over time and to extend the application's longevity. As mentioned before, this can't be achieved by eliminating the essential complexity of the problem. The user - whether programmer or _empowered_ user - necessarily needs to understand the problem first and then implement a solution. As Einstein said, _"95% of the time is spent understanding the problem; the little rest is on finding the solution"_; the essential complexity is the critical part that programming must address first.
 
-For human agents, **programming is a logical task, not a language-based one**. The brain is not just parsing text when interpreting a program. Rather, it is actively simulating the program's behavior, following its logical sense and interpreting the effects. It's quite a different cognitive process than following a text or a flow of thoughts. This may be why a fully committed programmer may exhibit contrasting language attitudes, as vague stereotypes circulating around _nerds_  may confirm. Evidence of the logical nature of programming can be seen in the tools usually offered by programming systems. Debuggers, code highlighting, code formatting, and other visualization tools are aimed at not exceeding the memory span and to focus user's attention where it really matters. Those tools are designed for lowering the cognitive load of the mental module charged with the programming task. 
+For human agents, **programming is a logical task, not a language-based one**. The brain is not just parsing text when interpreting a program. Rather, it is actively simulating the program's behavior, following its logical sense and interpreting the effects. It's quite a different cognitive process than following a text or a flow of thoughts. This may be why a fully committed programmer may exhibit contrasting language attitudes - as vague stereotypes circulating around _nerds_  may confirm. 
 
-What about AI agents? Is their path toward code generation similar to human programming?
+Evidence of the logical nature of programming can be seen in the tools usually offered by programming systems. Debuggers, code highlighting, code formatting, and other visualization tools are aimed at not exceeding the memory span and to focus user's attention where it really matters. Those tools are designed for lowering the cognitive load of the mental module charged with the programming task. 
+
+## What about AI agents? Is their path toward code generation similar to human programming?
 
 Large language/reasoning models (LLRMs) show excellent results in many different tasks, demonstrating a general intelligence, but with uneven performance. To put it simply, LLRMs are essentially next-token predictors, trained to provide a probability distribution of what comes next in a given sequence of symbols. I'm afraid, it is evident that the answer to the previous question is negative. LLRMs are not even close, in abstract terms, to the way humans program. This is not, per se, an insurmountable problem; it just helps to understand why some problems may occur when using those agents to generate code. Recurrent complaints with LLRMs are summarized as follows:
 
@@ -85,7 +87,7 @@ I began this post by stressing the importance of adaptability for software succe
 Self-sustainability refers to the extent to which a system's behavior can be changed from within itself, without having to _step outside_ to a lower implementation level. A programming system that embraces self-sustainability allows its inner workings to be accessible from the user level, usually through macros, which are snippets of code that generate other code.
 {: .notice--primary}
 
-There is no conclusion to this post, this is just the part of the journey towards understanding what programming is and how to match humans and AI in a common adaptive ecosystem. If you have any comment, please [drop me a line](mailto:giancarlo@gfrison.com). [Giancarlo Frison](https://gfrison.com)
+There is no conclusion to this post, this is just the part of the journey towards understanding what programming is and how to match humans and AI in a common adaptive ecosystem. [Giancarlo Frison](https://gfrison.com)
 
 - Basman, A., Tchernavskij, P., Bates, S., & Beaudouin-Lafon, M. (2018, April). An anatomy of interaction: co-occurrences and entanglements. In Programming’18 Companion - Conference Companion of the 2nd International Conference on Art, Science, and Engineering of Programming, Nice, France (pp. 188-196). ACM. https://doi.org/10.1145/3191697.3214328
 - Clark, C., & Basman, A. (2017). Tracing a Paradigm for Externalization: Avatars and the GPII Nexus. In Companion to the First International Conference on the Art, Science and Engineering of Programming (Programming ’17) (Article 31, 5 pages). ACM. https://doi.org/10.1145/3079368.3079410
