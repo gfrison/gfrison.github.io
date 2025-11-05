@@ -2,7 +2,7 @@
 title: "Scarlatti: In-memory Hypergraph Machine Learning"
 excerpt: "a method to efficiently synthesise queries for extracting information from an in-memory hypergraph Knowledge Base. It uses positive and negative samples to guarantee that the query returns all positive samples while excluding all negative ones"
 date: 2025-08-12
-last_modified_at: 2025-08-12
+last_modified_at: 2025-11-05
 permalink: /patents/hypergraph-machine-learning
 header:
   og_image: /assets/patents/hypergraph-machine-learning/main.jpeg
@@ -13,7 +13,7 @@ tags:
 ---
 | Id                                                                | Status    | Submission Date | Grant Date  | Authorship      |
 | ----------------------------------------------------------------- |
-| [12,386,818](https://patentcenter.uspto.gov/applications/18492418) | Granted | {{ "2023-10-23" | date_to_string }} | {{ "2025-08-12" | date_to_string }} | 100% |
+| [18/492,418](https://patents.google.com/patent/US12386818B2/) | Granted | {{ "2023-10-23" | date_to_string }} | {{ "2025-08-12" | date_to_string }} | 100% |
 
 Imagine having an enormous collection of interconnected facts, like a knowledge graph. Now, imagine you want to find very specific patterns within this data. Not just simple searches, but complex relationships. The challenge is, how do you tell a computer exactly what to look for without writing incredibly complicated instructions every single time?
 
