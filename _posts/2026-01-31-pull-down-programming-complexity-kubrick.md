@@ -23,7 +23,7 @@ I am implementing a declarative programming language that facilitates the synerg
 
 For giving you some reasoning, I will touch various aspects that includes cognitive aspects of problem-solving applied to programming and the role of AI tools such as LRMs on software development. I will provide arguments for stating that the accidental complexity of the programming system may worsening the performance of AI generators as well as it affects human developers. 
 
-Started as a _data programming_ language for pairing database queries with programming controls, [Kubrick](https://gfrison/kubrick/) may evolve in an advance integrated programming environment with the footprint of a _Jupiter notebook_ and the immediacy of a _spreadsheet_. It lets agents to focus on what they want to achieve making easy things easily without expressivity losses. 
+Started as a _data programming_ language for pairing database queries with programming controls, [Kubrick](https://gfrison.com/kubrick/) may evolve in an advance integrated programming environment with the footprint of a _Jupiter notebook_ and the immediacy of a _spreadsheet_. It lets agents to focus on what they want to achieve making easy things easily without expressivity losses. 
 
 To mitigate the lack of solution [productivity](https://www.sciencedirect.com/science/article/abs/pii/0010027788900315) in generators - the way that an optimizer generates deriving combinations of solutions from a set of given axioms - I extended the language for helping agents to cover _combinatorial problems_. Think of answer set programming (ASP) but with an eye on integration and usability.
 
