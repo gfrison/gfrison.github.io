@@ -1,0 +1,15 @@
+/* Custom font overrides */
+code,
+kbd,
+pre,
+samp,
+tt,
+.highlight {
+  font-family: 'Fira Code', Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Optional: Enable Fira Code ligatures */
+code,
+pre {
+  font-variant-ligatures: normal;
+}
