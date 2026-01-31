@@ -3,5 +3,7 @@ main:
     url: "/cv"
   - title: "Patents"
     url: "/patents"
+  - title: "Kubrick"
+    url: "/kubrick/"
   - title: Photos
     url: "/photos"
