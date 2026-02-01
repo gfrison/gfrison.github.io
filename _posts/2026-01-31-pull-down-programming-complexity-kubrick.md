@@ -6,10 +6,11 @@ description: "AI tools and programmers struggle with complexity given by the pro
 excerpt: "AI tools and programmers struggle with complexity given by the programming ecosystem itself. Kubrick is a declarative language designed to reduce accidental complexity through logic programming, functional paradigms, and relation algebra. Lower the friction, and generators work better. Make easy things easily while keeping expressiveness intact."
 header:
   og_image: /assets/pull-down/main.jpg
-last_modified_at: 2026-01-31
+last_modified_at: 2026-02-01
 published: true
 tags:
   - hci
+  - cognitive system
   - program-synthesis
   - programming
   - neural-symbolic
