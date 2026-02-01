@@ -18,6 +18,20 @@ tags:
   - low-code
   - px26
 ---
+
+<style>
+.responsive-figure {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .responsive-figure {
+    width: 70%;
+  }
+}
+</style>
+
 AI tools are now the horsepower of computer programming. They are generally great for writing glue-code and integration tasks, probably less than ideal for complex problems on complicated programming settings. What could be the reasons that prevent generators on full-scale adoption? 
 
 I am implementing a declarative programming language that facilitates the synergy between automatons and humans on software development by forcing AI tools to generate intuitive code and to allow human operators to understand what is in there. It is an attempt to lower the barriers by simplifying the programming experience. 
@@ -58,7 +72,7 @@ While increasing the complexity of a system absorbs more of the engineer's worki
 
 The programming system consists of several _substrates_ that include libraries, tools, and external systems, and when it increases the programming effort increases exponentially. While the essential complexity isn’t negotiable, the accidental one must be kept at the lower level possible.
 
-<figure style="width: 70%; margin: auto; text-align: center;">
+<figure class="responsive-figure">
   <img src="/assets/pull-down/complexity.png" alt="Essential vs Accidental Complexity"/>
   <figcaption>Essential vs Accidental Complexity</figcaption>
 </figure>
@@ -67,7 +81,7 @@ Many difficulties automatons and developers shows on generating code might be du
 
 # How to reduce complexity
 
-<figure style="width: 50%; margin: auto; text-align: center;">
+<figure class="responsive-figure">
   <img src="/assets/pull-down/plagiarism.png" alt="Plagiarism"/>
   <figcaption>For favoring AI programming, apply the opposite strategies used to prevent plagiarism</figcaption>
 </figure>
@@ -101,7 +115,7 @@ Immutability, control over side-effects, unification, pattern-matching can defin
 
 I think one of the main complexity drivers is the impedance mismatch between query and programming languages. Those idiosyncratisms are usually mediated by ORMs frameworks but their slippery slope[^orm] can trigger more problems than they solve. Relation algebra is the basic foundation of database theory and when combined with programming constrols, it provides a smooth experience for data-programming.
 
-<figure style="width: 70%; margin: auto; text-align: center;">
+<figure class="responsive-figure">
   <img src="/assets/pull-down/join.png" alt="Relation Algebra as a unifying layer"/>
   <figcaption>Relation Algebra as a unifying layer</figcaption>
 </figure>
@@ -153,7 +167,7 @@ and get the best combination of items that _maximizes_ product's ratings and _mi
 
 The prototype's interface resemble a notebook environment with cells for writing code, for AI prompting and for visualizing results. While the program generation could be delegated to external LRMs, the program execution is performed locally in the browser. This approach combines the divide/conquer of notebooks, the immediacy of spreadsheet applications and the assisted program generation.
 
-<figure style="width: 70%; margin: auto; text-align: center;">
+<figure class="responsive-figure">
   <img src="/assets/pull-down/console.png" alt="Kubrick Notebook Interface"/>
   <figcaption>Kubrick Notebook Interface</figcaption>
 </figure>
@@ -162,7 +176,7 @@ The prototype's interface resemble a notebook environment with cells for writing
 
 When the user submit the prompt, the web application (Capriccio) delegate a specialized module (Avro) that augments the user prompt with Kubrick language reference documentation and forward the enriched request to the AI service. The generated code is then executed by the web application that display the results in the notebook cell.
 
-<figure style="width: 70%; margin: auto; text-align: center;">
+<figure class="responsive-figure">
   <img src="/assets/pull-down/kubrick-sequence.drawio.png" alt="Kubrick Sequence Diagram"/>
   <figcaption>Kubrick Sequence Diagram</figcaption>
 </figure>
@@ -179,7 +193,7 @@ We can inform the generator about available functions and their interfaces (foll
 Available functions can be those imported from libraries but also those exposed through model context protocols (MCP), a revisited protocol for service discovery.
 In this way, the single components can be invoked by the symbolic runtime that execute the generated code with more fine-grained control over its execution.
 
-<figure style="width: 70%; margin: auto; text-align: center;">
+<figure class="responsive-figure">
   <img src="/assets/pull-down/mcp.png" alt="MCP Integration"/>
   <figcaption>MCP Integration</figcaption>
 </figure>
@@ -188,7 +202,7 @@ In this way, the single components can be invoked by the symbolic runtime that e
 
 This year the `<Programming> 2026` will take place in Munich, Germany on Mar 16-20, 2026. I will present this work in the _Programming Experience Workshop 2026_[^px2026]. If you are around, feel free to reach me for a chat!
 
-<figure style="width: 70%; margin: auto; text-align: center;">
+<figure class="responsive-figure">
   <a href="/kubrick/">
     <img src="/assets/pull-down/main.jpg" alt="Kubrick"/>
   </a>
