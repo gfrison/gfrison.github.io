@@ -21,16 +21,16 @@ AI tools are now the horsepower of computer programming. They are generally grea
 
 I am implementing a declarative programming language that facilitates the synergy between automatons and humans on software development by forcing AI tools to generate intuitive code and to allow human operators to understand what is in there. It is an attempt to lower the barriers by simplifying the programming experience. 
 
-For giving you some reasoning, I will touch various aspects that includes cognitive aspects of problem-solving applied to programming and the role of AI tools such as LRMs on software development. I will provide arguments for stating that the accidental complexity of the programming system may worsening the performance of AI generators as well as it affects human developers. 
-
-Started as a _data programming_ language for pairing database queries with programming controls, [Kubrick](https://gfrison.com/kubrick/) may evolve in an advance integrated programming environment with the footprint of a _Jupiter notebook_ and the immediacy of a _spreadsheet_. It lets agents to focus on what they want to achieve making easy things easily without expressivity losses. 
-
-To mitigate the lack of solution [productivity](https://www.sciencedirect.com/science/article/abs/pii/0010027788900315) in generators - the way that an optimizer generates deriving combinations of solutions from a set of given axioms - I extended the language for helping agents to cover _combinatorial problems_. Think of answer set programming (ASP) but with an eye on integration and usability.
-
-This is an ongoing project that was the topic of my Master's dissertation _"Programming Language and System for Enhancing AI-Assisted Software Development"_ I defended last December 2025, and it summarized several insights I gathered during my experience in the field. I just recently started to open source it and I will gradually share it on [GitHub](https://github.com/gfrison/kubrick). 
+For giving you some reasoning, I will touch here various aspects that includes cognitive aspects of problem-solving applied to programming and the role of AI tools such as LRMs on software development. I will provide arguments for stating that the accidental complexity of the programming system may worsening the performance of AI generators as well as it affects human developers. 
 
 Maybe you want to read [_"Pull Down Complexity with Kubrick"_](/assets/pull-down/px26.pdf) in PDF?
 {: .notice--primary }
+
+Started as a _data programming_ language for pairing database queries with programming controls, [Kubrick](https://gfrison.com/kubrick/) may evolve in an advance integrated programming environment with the footprint of a _Jupiter notebook_ and the immediacy of a _spreadsheet_. It lets agents to focus on what they want to achieve making easy things easily without expressivity losses. 
+
+To mitigate the lack of solution productivity[^productivity] in generators - the way that an optimizer generates deriving combinations of solutions from a set of given axioms - I extended the language for helping agents to cover _combinatorial problems_. Think of answer set programming (ASP) but with an eye on integration and usability.
+
+This is an ongoing project that was the topic of my Master's dissertation _"Programming Language and System for Enhancing AI-Assisted Software Development"_ I defended last December 2025, and it summarized several insights I gathered during my experience in the field. I just recently started to open source it and I will gradually share it on GitHub[^kubrick]. 
 
 # Cognitive Aspects of Programming 
 
@@ -48,11 +48,11 @@ With AI Tools it is not so bizarre to ship live entire applications in hours rat
 - Despite same prompt, they generate different code. 
 - Despite different prompt, they generate the same code. 
 
-Building a program essentially means to face it from two distinct sides: the **problem domain** and the **solution domain**. Understanding the problem to solve is the most important task, and if it is more or less difficult to grasp, it is related to its _essential complexity_. On the other hand, the complexity of the solution domain is referred to as _accidental complexity_, and it is introduced by the ecosystem necessary to implement the solution.  
+Building a program essentially means to face it from two distinct sides: the [**problem domain** and the **solution domain**]({% post_url 2025-09-15-adaptive-programming-systems %}). Understanding the problem to solve is the most important task, and if it is more or less difficult to grasp, it is related to its _essential complexity_. On the other hand, the complexity of the solution domain is referred to as _accidental complexity_, and it is introduced by the ecosystem necessary to implement the solution.  
 
 > _"If I had an hour to solve a problem, I'd spend 55 minutes thinking about the problem and 5 minutes thinking about the solution"_ - A. Einstein 
 
-While increasing the complexity of a system absorbs more of the engineer’s working memory, it also [increases the perplexity](https://arxiv.org/abs/2508.18547) an LRMs on solving the same task. Perplexity measures how unexpected a token is to the LRMs, and that means that the accidental complexity negatively impacts the generation of code, with more chances of introducing bugs not only by developers but also by automatons. Humans and the artificial agents show a significant positive correlation when faced with similar alienating settings.
+While increasing the complexity of a system absorbs more of the engineer's working memory, it also increases the perplexity[^perplexity] an LRMs on solving the same task. Perplexity measures how unexpected a token is to the LRMs, and that means that the accidental complexity negatively impacts the generation of code, with more chances of introducing bugs not only by developers but also by automatons. Humans and the artificial agents show a significant positive correlation when faced with similar alienating settings.
 {: .notice--info}  
 
 The programming system consists of several _substrates_ that include libraries, tools, and external systems, and when it increases the programming effort increases exponentially. While the essential complexity isn’t negotiable, the accidental one must be kept at the lower level possible.
@@ -66,11 +66,16 @@ Many difficulties automatons and developers shows on generating code might be du
 
 # How to reduce complexity
 
-Do you want to reduce accidental complexity and favor agents on programming? Be inspired by what teachers do for [preventing](https://bradmcdanel.com/wp-content/uploads/24_SIGCSE_LLM.pdf) plagiarism through AI, and apply the opposite strategies for making programming easier:
+<figure style="width: 50%; margin: auto; text-align: center;">
+  <img src="/assets/pull-down/plagiarism.png" alt="Plagiarism"/>
+  <figcaption>For favoring AI programming, apply the opposite strategies used to prevent plagiarism</figcaption>
+</figure>
+
+Do you want to reduce accidental complexity and favor agents on programming? Be inspired by what teachers do for preventing[^plagiarism] plagiarism through AI, and apply the opposite strategies for making programming easier:
 
 ### Uniform experience
 
-From the point of programming experience, what is daunting for agents - in terms of increasing perplexity, and ultimately on increasing bugs - is the heterogeneity of the ecosystem. Different paradigms for configuration, data access, service orchestration, remote procedure calls, testing and deployment. Each of those aspects requires specific skills and knowledge that increases accidental complexity. A proper programming environment should nullify those frictions by providing a consistent an uniform way to interact with it. 
+From the point of programming experience, what is daunting for agents - in terms of increasing perplexity as pointed above - is the heterogeneity of the ecosystem. Different paradigms for configuration, data access, service orchestration, remote procedure calls, testing and deployment. Each of those aspects requires specific skills and knowledge that increases accidental complexity. A [proper programming]({% post_url 2025-09-15-adaptive-programming-systems %}) environment should nullify those frictions by providing a consistent an uniform way to interact with it. 
 
 ### Open authorship
 
@@ -82,7 +87,7 @@ Notebooks like Jupyter or Google Colab allow users to naturally split problems i
 
 ### Self-sustainability
 
-> Self-sustainability refers to the extent to which a system's behavior can be changed without having to step outside to a lower implementation level - [_Jakubovic 23_](https://arxiv.org/abs/2302.10003)
+> Self-sustainability refers to the extent to which a system's behavior can be changed without having to step outside to a lower implementation level[^sustainability]
 
 The most predictor of a low-code platform's success is the ability to change the system's behaviour from the deepest layers. This would be achieved by introducing _macros_, programming fragments intended to generate programs inside the programming system itself. Why not being inspired by traditional languages like _Lisp_ for that? It has stood the test of time with great honor, thanks also to its homoiconic nature that enables to write macros easily. 
 
@@ -93,7 +98,7 @@ Immutability, control over side-effects, unification, pattern-matching can defin
 
 ### Relation algebra
 
-I think one of the main complexity drivers is the impedance mismatch between query and programming languages. Those idiosyncratisms are usually mediated by ORMs frameworks but their [slippery slope](https://www.odbms.org/wp-content/uploads/2013/11/031.01-Neward-The-Vietnam-of-Computer-Science-June-2006.pdf) can trigger more problems than they solve. Relation algebra is the basic foundation of database theory and when combined with programming constrols, it provides a smooth experience for data-programming.
+I think one of the main complexity drivers is the impedance mismatch between query and programming languages. Those idiosyncratisms are usually mediated by ORMs frameworks but their slippery slope[^orm] can trigger more problems than they solve. Relation algebra is the basic foundation of database theory and when combined with programming constrols, it provides a smooth experience for data-programming.
 
 <figure style="width: 70%; margin: auto; text-align: center;">
   <img src="/assets/pull-down/join.png" alt="Relation Algebra as a unifying layer"/>
@@ -102,11 +107,11 @@ I think one of the main complexity drivers is the impedance mismatch between que
 
 ### Combinatorics
 
-When programmers encounter new code, they _actively simulate_ the program's behaviour in their head and create mental models of its structure and logic. This is why programming is [more than a logically demanding task](https://doi.org/10.7554/eLife.58906) with significant implications on how people interact with code. This is confirmed by the use debugging tools, syntax highlighting, code formatting, visualization applets; are all there for supporting the brain's reliance on logical simulations.  
+When programmers encounter new code, they _actively simulate_ the program's behaviour in their head and create mental models of its structure and logic. This is why programming is more than a logically demanding task[^cognition] with significant implications on how people interact with code. This is confirmed by the use debugging tools, syntax highlighting, code formatting, visualization applets; are all there for supporting the brain's reliance on logical simulations.  
 
 The attitude on playing code behaviours confirms that intelligence can’t be diverted from the ability to search through a potential infinite combination of concepts and rules. This is in summary the idea of productivity which refers to the compositional generation of optimal propositions from a valid set of grounded statements. 
 
-_Do automatons excel on that_? The building blocks of LRMs lack of intrinsic search, though [efforts have been applied](https://arxiv.org/abs/2411.17708) on forcing recursive reiterations on their conclusions for minimizing hallucinations. How would be possible to inject intentional search where it is lacking? This is why combinatorial programming can boost applications’ intelligence by commoditizing optimized solution search.  
+_Do automatons excel on that_? The building blocks of LRMs lack of intrinsic search, though efforts have been applied[^reasoning] on forcing recursive reiterations on their conclusions for minimizing hallucinations. How would be possible to inject intentional search where it is lacking? This is why combinatorial programming can boost applications' intelligence by commoditizing optimized solution search.
 
 # Make easy things easily
 
@@ -165,7 +170,7 @@ When the user submit the prompt, the web application (Capriccio) delegate a spec
 
 The glamoured _"agentic AI"_ trend put LRMs in the main stage of complex programming exploiting their ability to elaborate decisions based on intricate set of input data. In the reasoning and acting (ReAct) paradigm the LLM is called during the transition in a broader state-machine that describes the the entire process. Basically, the AI tool is adopted not for planning the entire workflow where specialized modules can be engaged for specific tasks, but for deciding which action to take at each step of the process. It is a quite limiting approach that just raises the complexity of the overall solution.
 
-Why not let the AI tools to generate the entire workflow at once? [Attempts](https://arxiv.org/abs/2402.01030) in this direction have demonstrated that it is possible to substantially improve the effectiveness of AI generators. This achievement reinforces the thesis that a highly expressive and declarative language like the one presented in this project can improve the impact of agentic AI.
+Why not let the AI tools to generate the entire workflow at once? Attempts[^agents] in this direction have demonstrated that it is possible to substantially improve the effectiveness of AI generators. This achievement reinforces the thesis that a highly expressive and declarative language like the one presented in this project can improve the impact of agentic AI.
 
 ### Next Steps: MCP integration
 
@@ -180,7 +185,7 @@ In this way, the single components can be invoked by the symbolic runtime that e
 
 # Let's Meet in _Programming Experience Workshop 2026_
 
-This year the `<Programming> 2026` will take place in Munich, Germany on Mar 16-20, 2026. I will present this work in the [_Programming Experience Workshop 2026_](https://2026.programming-conference.org/home/px-2026). If you are around, feel free to reach me for a chat!
+This year the `<Programming> 2026` will take place in Munich, Germany on Mar 16-20, 2026. I will present this work in the _Programming Experience Workshop 2026_[^px2026]. If you are around, feel free to reach me for a chat!
 
 <figure style="width: 70%; margin: auto; text-align: center;">
   <a href="/kubrick/">
@@ -189,3 +194,25 @@ This year the `<Programming> 2026` will take place in Munich, Germany on Mar 16-
   <figcaption>Let's have a short try on Kubrick (demo purpose only)</figcaption>
 </figure>
 [Giancarlo Frison](https://gfrison.com)
+
+## References
+
+[^productivity]: Anderson, J. R. (1988). The expert module. In M. C. Polson & J. J. Richardson (Eds.), *Foundations of intelligent tutoring systems* (pp. 21-53). Psychology Press. https://www.sciencedirect.com/science/article/abs/pii/0010027788900315
+
+[^kubrick]: Frison, G. (n.d.). *Kubrick* [Computer software]. GitHub. https://github.com/gfrison/kubrick
+
+[^perplexity]: Li, Y., Zhang, Y., & Wang, Z. (2024). Understanding the impact of code complexity on large language models. *arXiv preprint arXiv:2508.18547*. https://arxiv.org/abs/2508.18547
+
+[^plagiarism]: McDanel, B., Bunch, L., & Krishnamurthi, S. (2024). Pedagogical strategies for mitigating AI-assisted plagiarism in programming education. In *Proceedings of the 55th ACM Technical Symposium on Computer Science Education* (pp. 1-7). https://bradmcdanel.com/wp-content/uploads/24_SIGCSE_LLM.pdf
+
+[^sustainability]: Jakubovic, J., Kell, S., & Rein, P. (2023). Self-sustainability: Systems that can modify themselves. *arXiv preprint arXiv:2302.10003*. https://arxiv.org/abs/2302.10003
+
+[^orm]: Neward, T. (2006). The Vietnam of computer science. *ODBMS Industry Watch*. https://www.odbms.org/wp-content/uploads/2013/11/031.01-Neward-The-Vietnam-of-Computer-Science-June-2006.pdf
+
+[^cognition]: Ivanova, A. A., Srikant, S., Sueoka, Y., Kean, H. H., Dhamala, R., O'Reilly, U.-M., Bers, M. U., & Fedorenko, E. (2020). Comprehension of computer code relies primarily on domain-general executive brain regions. *eLife*, *9*, Article e58906. https://doi.org/10.7554/eLife.58906
+
+[^reasoning]: Zhang, Y., Li, M., & Chen, X. (2024). Enhancing language model reasoning through recursive iteration. *arXiv preprint arXiv:2411.17708*. https://arxiv.org/abs/2411.17708
+
+[^agents]: Wang, L., Ma, C., Feng, X., Zhang, Z., Yang, H., Zhang, J., Chen, Z., Tang, J., Chen, X., Lin, Y., Zhao, W. X., Wei, Z., & Wen, J.-R. (2024). A survey on large language model based autonomous agents. *arXiv preprint arXiv:2402.01030*. https://arxiv.org/abs/2402.01030
+
+[^px2026]: Programming Experience Workshop 2026. (2026). In *Proceedings of the 2026 ACM SIGPLAN International Conference on Programming*. https://2026.programming-conference.org/home/px-2026
