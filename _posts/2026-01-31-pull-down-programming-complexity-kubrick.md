@@ -36,9 +36,9 @@ AI tools are now the horsepower of computer programming. They are generally grea
 
 I am implementing a declarative programming language that facilitates the synergy between automatons and humans on software development by forcing AI tools to generate intuitive code and to allow human operators to understand what is in there. It is an attempt to lower the barriers by simplifying the programming experience. 
 
-For giving you some reasoning, I will touch here various aspects that includes cognitive aspects of problem-solving applied to programming and the role of AI tools such as LRMs on software development. I will provide arguments for stating that the accidental complexity of the programming system may worsening the performance of AI generators as well as it affects human developers. 
+For a rationale, I will touch here various aspects that includes cognitive aspects of problem-solving applied to programming and the role of AI tools such as LRMs on software development. I will provide arguments for stating that the accidental complexity of the programming system may worsening the performance of AI generators as well as it affects human developers. 
 
-Maybe you want to read [_"Pull Down Complexity with Kubrick"_](/assets/pull-down/px26.pdf) in PDF?
+Maybe you want to read _"Pull Down Complexity with Kubrick"_ in [PDF](/assets/pull-down/px26.pdf)?
 {: .notice--primary }
 
 Started as a _data programming_ language for pairing database queries with programming controls, [Kubrick](https://gfrison.com/kubrick/) may evolve in an advance integrated programming environment with the footprint of a _Jupiter notebook_ and the immediacy of a _spreadsheet_. It lets agents to focus on what they want to achieve making easy things easily without expressivity losses. 
@@ -90,7 +90,7 @@ Do you want to reduce accidental complexity and favor agents on programming? Be 
 
 ### Uniform experience
 
-From the point of programming experience, what is daunting for agents - in terms of increasing perplexity as pointed above - is the heterogeneity of the ecosystem. Different paradigms for configuration, data access, service orchestration, remote procedure calls, testing and deployment. Each of those aspects requires specific skills and knowledge that increases accidental complexity. A [proper programming]({% post_url 2025-09-15-adaptive-programming-systems %}) environment should nullify those frictions by providing a consistent an uniform way to interact with it. 
+From the point of programming experience, what is daunting[^perplexity] for agents is the heterogeneity of the ecosystem. Different paradigms for configuration, data access, service orchestration, remote procedure calls, testing and deployment. Each of those aspects requires specific skills and knowledge that increases accidental complexity. A [proper programming environment]({% post_url 2025-09-15-adaptive-programming-systems %}) should nullify those frictions by providing a consistent an uniform way to interact with it. 
 
 ### Open authorship
 
@@ -206,7 +206,7 @@ This year the `<Programming> 2026` will take place in Munich, Germany on Mar 16-
   <a href="/kubrick/">
     <img src="/assets/pull-down/main.jpg" alt="Kubrick"/>
   </a>
-  <figcaption>Let's have a short try on Kubrick (demo purpose only)</figcaption>
+  <figcaption>Click for a short try on Kubrick (without LRMs). NB: still buggy, be forgiven</figcaption>
 </figure>
 [Giancarlo Frison](https://gfrison.com)
 
