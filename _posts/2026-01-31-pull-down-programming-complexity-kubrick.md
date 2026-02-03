@@ -6,7 +6,7 @@ description: "AI tools and programmers struggle with complexity given by the pro
 excerpt: "AI tools and programmers struggle with complexity given by the programming ecosystem itself. Kubrick is a declarative language designed to reduce accidental complexity through logic programming, functional paradigms, and relation algebra. Lower the friction, and generators work better. Make easy things easily while keeping expressiveness intact."
 header:
   og_image: /assets/pull-down/main.jpg
-last_modified_at: 2026-02-01
+last_modified_at: 2026-02-03
 published: true
 tags:
   - hci
@@ -67,9 +67,6 @@ Building a program essentially means to face it from two distinct sides: the [**
 
 > _"If I had an hour to solve a problem, I'd spend 55 minutes thinking about the problem and 5 minutes thinking about the solution"_ - A. Einstein 
 
-While increasing the complexity of a system absorbs more of the engineer's working memory, it also increases the perplexity[^perplexity] an LRMs on solving the same task. Perplexity measures how unexpected a token is to the LRMs, and that means that the accidental complexity negatively impacts the generation of code, with more chances of introducing bugs not only by developers but also by automatons. Humans and the artificial agents show a significant positive correlation when faced with similar alienating settings.
-{: .notice--info}  
-
 The programming system consists of several _substrates_ that include libraries, tools, and external systems, and when it increases the programming effort increases exponentially. While the essential complexity isn’t negotiable, the accidental one must be kept at the lower level possible.
 
 <figure class="responsive-figure">
@@ -78,6 +75,9 @@ The programming system consists of several _substrates_ that include libraries, 
 </figure>
 
 Many difficulties automatons and developers shows on generating code might be due to a common root: <u>the accidental complexity carried by the programming system</u>. The intuition behind this project is to address this issue from its foundations. 
+
+While increasing the complexity of a system absorbs more of the engineer's working memory, it also increases the perplexity[^perplexity] an LRMs on solving the same task. Perplexity measures how unexpected a token is to the LRMs, and that means that the accidental complexity negatively impacts the generation of code, with more chances of introducing bugs not only by developers but also by automatons. Humans and the artificial agents show a significant positive correlation when faced with similar alienating settings.
+{: .notice--info}  
 
 # How to reduce complexity
 
