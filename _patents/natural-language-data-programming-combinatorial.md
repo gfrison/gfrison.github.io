@@ -23,7 +23,7 @@ These problems can be categorized as **decision problems** (answering "Is there 
 
 An example of a decision problem is the graph coloring problem, which asks whether the vertices of a graph can be colored with a given number of colors so that no two adjacent vertices share the same color. The problem can be turned into an optimization problem by minimizing the number of colors used, or into a counting problem by asking how many solutions exist with a given number of colors.  
 
-# What is ASP?
+# Some contextualization: What is ASP?
 
 The purpose of [answer set programming (ASP)]({% post_url 2022-04-27-how-programming-system-logic-programming %}) is to generate combinatorial solutions over an initial base of facts and rules. What differs ASP from other logic programming languages like Prolog is that ASP aims to generate stable models that satisfy all generation principles and constraints. An ASP runtime will terminate only when no new solutions will be possible to generate from those already found, or when no solution exists. 
 
@@ -44,13 +44,13 @@ node(X) :- edge(X, _); edge(_, X).
 
 The third row establishes the generation of multiple solutions by indicating that each node will ramify into as many solutions as the color cardinality, and in each of those solutions, the node will have different colors. This is the generational part of the program. The last row instead will prune out all solutions on which adjacent nodes have the same color. This is defined by using the same variable `C` for both nodes, here the engine will attempt to unify the nodes with the same color, and if it occurs, the solution is discarded. 
 
-With this short contextualisation, I describe the phases of solving a combinatorial problem.
+With this short premise, I describe the phases of solving a combinatorial problem.
 
 # Grounding
 
 Grounding is the process of creating a superset of candidate solutions from the original problem space. This involves aggregating items to satisfy certain compositions. These aggregations can be defined as sets (combinations) or sequences (permutations). This pre-processing step can be extremely demanding in terms of computational resources. The term _combinatorial explosion_ describes how a small increase in problem size can cause some problems (especially counting problems) become intractable. 
 
-In [Kubrick]({% post_url 2026-01-31-pull-down-programming-complexity-kubrick %}), the grounding phase is managed by the generators. They generate a stream of facts according to a given criterion. The criteria are a set of declarations (Repetitions and Partitions) over variables. Let's assume we need to model a restaurant, where a dish is a restaurant's offering: 
+In [Kubrick]({% post_url 2026-01-31-pull-down-programming-complexity-kubrick %}), the grounding phase is managed by the generators: They stream out facts according to a given criterion. The criteria are a set of declarations (see Repetitions and Partitions) over variables. Let's assume we need to model a restaurant, where a dish is a restaurant's offering: 
 
 ```
 # Italian Dishes 
@@ -70,12 +70,12 @@ dish apfelstrudel   course -> dessert   price -> 8.00  rating -> 5 origin -> ger
 dish schwarzwälder  course -> dessert   price -> 9.00  rating -> 5 origin -> german  
 ```
 
-The restaurant needs to create different combinations of menus all consistent with their origin and with only one dish per course: 
+The restaurant needs to create different combinations of menus consistent with their origin and with only one dish per course: 
 ```
 menu dish -|1_Origin, 1#Course| dish Dish course -> Course origin -> Origin 
 ```
 
-The rule above differs from its canonical implication (syntax: `CLAIM -| PREMISE`) by injecting special information regarding the generation of possible combinations. In particular, the variables of `Origin` and `Course` are interested in this phase: the `Origin` has a Partition constraint, while the `Course` is constrained in its Repetition. This generator definition (`1_Origin, 1#Course`) could be translated as: 
+The rule above differs from its canonical implication (syntax: `CLAIM -| PREMISE`) by injecting special information regarding the generation of possible combinations. In particular, the variables of `Origin` and `Course` are interested in this phase: the `Origin` has a **Partition** constraint, while the `Course` is constrained in its **Repetition**. This generator (`1_Origin, 1#Course`) could be translated as: 
 > take only 1 origin and 1 repetition of unique courses, at time for each solution. 
 
 | Solution 1 |             | Solution 2   |             |
@@ -89,11 +89,11 @@ The rule above differs from its canonical implication (syntax: `CLAIM -| PREMISE
 
 # Partitions
 
-With the syntax `min_variable_max` it is intended that the values of variable are partitioned in way that each solution will hold at least min occurrences of variable unique values (independently by whether they are repeated or not) till a maximum of `max`. If `min` is specified but `max` isn't, then `max` is intended to be set with the `min` value, and vice-versa. In the example above, the `Origin` has minimal and maximal occurrences set to one. Therefore, a solution may contain either italian or german dishes, not both. 
+With the syntax `min_variable_max` the values of the variable are partitioned in way that each solution will hold at least min occurrences of unique values (independently by whether they are repeated or not) till a maximum of `max`. If `min` is specified but `max` isn't, then `max` is intended to be set with the `min` value, and vice-versa. In the example above, the `Origin` has minimal and maximal occurrences set to one. Therefore, a solution may contain either italian or german dishes, not both. 
 
 # Repetitions
 
-Repetitions state how many _unique instances_ of values carried by a variable must be used for each Solution. Above, the `1#Course` defines that there must be strictly one occurrence of course values. The number of repetitions is configurable `min#variable#max` where `min` is the minimum number of unique instances of a variable accepted in a Solution. The omitted `max` or `min` follows the pattern applied for Partitions.
+Repetitions state how many _unique instances_ of values carried by a variable must be used for each Solution. Above, the `1#Course` defines that there must be strictly just one occurrence in a single solution. The number of repetitions is configurable `min#variable#max` where `min` is the minimum number of unique instances of a variable accepted in a Solution. The omitted `max` or `min` follows the pattern applied for Partitions.
 
 # Combining Generators
 
@@ -115,7 +115,7 @@ team Student Project -|Student_2, Project_1| student Student Level, project Proj
 
 There will be 1 solution for the tictac project with alice and bob, and 3 solutions for the quantum project, for all combinations:  `binomial(2,3)=3`. 
 
-Generators can be concatenated one after another. In addition to the multiverse setup for menu, in cascade more versions of data could be generated. If the restaurant has wine in the cellar and what to enrich the menu offering with a bottle of wine: 
+Generators can be concatenated one after another. In addition to the multiverse setup for the restaurant example, more versions of data could be generated. If the restaurant has wine in the cellar and what to enrich the menu offering with a bottle of wine: 
 ```
 wine brunello   type -> red 
 wine lagrein    type -> red 
@@ -180,5 +180,7 @@ Pareto optimization will occur only when there are at least two Pareto optimizer
 
 # Lazy Computation
 
-Within this section we have found that each solution is basically a computation performed over a single version of the database. Less noticeable but equally important, is that the entire system is based on the solution streaming paradigm. The system applies to the concept of **call-by-need** typical of functional programming, similarly to what is discussed for [lazy stream solutions](/patents/hypergraph-machine-learning) in the hypergraph machine learning patent. Each solution is computed only when requested by the client. This does not prevent fetching the entire solution space, but it is useful when only one or few solutions are needed because the system does not have to compute all solutions in advance. Graphically, it is evident in the solution section. If a next link appears, it means that the end of the available solution has not been reached, and the next one - if any - will be elaborated. 
+Within this section we have found that each solution is basically a computation performed over a single version of the database. Less noticeable but equally important, is that the entire system is based on the solution streaming paradigm. The system applies the concept of **call-by-need** typical of functional programming, similarly to what is discussed for [lazy stream solutions](/patents/hypergraph-machine-learning) in the hypergraph machine learning patent: Each solution is computed only when requested by the client. 
+
+This does not prevent fetching the entire solution space, but it is useful when only one or few solutions are needed because the system does not have to compute all solutions in advance. Graphically, it is evident in the solution section. If a next link appears, it means that the end of the available solution has not been reached, and the next one - if any - will be elaborated. 
  
