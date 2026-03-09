@@ -2,7 +2,7 @@
 title: "Scarlatti: In-memory Hypergraph Machine Learning"
 excerpt: "a method to efficiently synthesise queries for extracting information from an in-memory hypergraph Knowledge Base. It uses positive and negative samples to guarantee that the query returns all positive samples while excluding all negative ones"
 date: 2025-08-12
-last_modified_at: 2025-11-05
+last_modified_at: 2026-03-09
 permalink: /patents/hypergraph-machine-learning
 header:
   og_image: /assets/patents/hypergraph-machine-learning/main.jpeg
@@ -44,7 +44,7 @@ partOf(X0,X1),isA(X0,capital),isA(X1,country)
 Several core ideas make this system effective:
 
 • **Built for Hypergraphs**: Unlike general graph methods, this approach is specifically tailored for hypergraph knowledge bases, giving it a much broader reach and efficiency for complex data relationships.
-• **"lazy stream" Solutions**: Solutions are delivered as a "lazy stream". This means the system only calculates parts of the solution when they are actually needed. If it finds a perfect solution right away, it doesn't waste time looking for any others.
+• **"lazy stream" Solutions**: Solutions are delivered as a "lazy stream". This means the system only calculates parts of the solution when they are actually needed. If it finds a perfect solution right away, it doesn't waste time looking for any others. The same lazy evaluation principle is applied in the [combinatorial problem solver](/patents/bridging-natural-language-with-data-programming-combinatorial), where solutions are streamed on demand.
 • **Shortest Solutions First**: The system prioritises finding the QP that involves the fewest connections or operations. Simpler queries are often better.
 • **Maximising Generalisation**: A key goal of machine learning is to synthesise solutions that not only meet your specific examples but also work broadly for new, unseen data. The method achieves this by keeping queries "open" – using general "variables" in the query whenever possible, rather than fixed values, unless a fixed value is absolutely necessary to match your requirements.
 

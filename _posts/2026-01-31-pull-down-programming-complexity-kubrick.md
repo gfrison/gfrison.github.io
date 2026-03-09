@@ -6,7 +6,7 @@ description: "AI tools and programmers struggle with complexity given by the pro
 excerpt: "AI tools and programmers struggle with complexity given by the programming ecosystem itself. Kubrick is a declarative language designed to reduce accidental complexity through logic programming, functional paradigms, and relation algebra. Lower the friction, and generators work better. Make easy things easily while keeping expressiveness intact."
 header:
   og_image: /assets/pull-down/main.jpg
-last_modified_at: 2026-02-03
+last_modified_at: 2026-03-09
 published: true
 tags:
   - hci
@@ -43,7 +43,7 @@ Maybe you want to read _"Pull Down Complexity with Kubrick"_ in [PDF](/assets/pu
 
 Started as a _data programming_ language for pairing database queries with programming controls, [Kubrick](https://gfrison.com/kubrick/) may evolve in an advance integrated programming environment with the footprint of a _Jupiter notebook_ and the immediacy of a _spreadsheet_. It lets agents to focus on what they want to achieve making easy things easily without expressivity losses. 
 
-To mitigate the lack of solution productivity[^productivity] in generators - the way that an optimizer generates deriving combinations of solutions from a set of given axioms - I extended the language for helping agents to cover _combinatorial problems_. Think of answer set programming (ASP) but with an eye on integration and usability.
+To mitigate the lack of solution productivity[^productivity] in generators - the way that an optimizer generates deriving combinations of solutions from a set of given axioms - I extended the language for helping agents to cover [_combinatorial problems_](/patents/bridging-natural-language-with-data-programming-combinatorial). Think of answer set programming (ASP) but with an eye on integration and usability.
 
 This is an ongoing project that was the topic of my Master's dissertation _"Programming Language and System for Enhancing AI-Assisted Software Development"_ I defended last December 2025, and it summarized several insights I gathered during my experience in the field. I just recently started to open source it and I will gradually share it on GitHub[^kubrick]. 
 
