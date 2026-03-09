@@ -23,12 +23,32 @@ These problems can be categorized as **decision problems** (answering "Is there 
 
 An example of a decision problem is the graph coloring problem, which asks whether the vertices of a graph can be colored with a given number of colors so that no two adjacent vertices share the same color. The problem can be turned into an optimization problem by minimizing the number of colors used, or into a counting problem by asking how many solutions exist with a given number of colors.  
 
-To describe the phases of solving a combinatorial problem, I use a taxonomy like that of [answer set programming]({% post_url 2022-04-27-how-programming-system-logic-programming %}) (ASP): 
+# What is ASP?
+
+The purpose of [answer set programming (ASP)]({% post_url 2022-04-27-how-programming-system-logic-programming %}) is to generate combinatorial solutions over an initial base of facts and rules. What differs ASP from other logic programming languages like Prolog is that ASP aims to generate stable models that satisfy all generation principles and constraints. An ASP runtime will terminate only when no new solutions will be possible to generate from those already found, or when no solution exists. 
+
+This is the crucial difference from Prolog, which computation's is initiated by a query that can be validated/invalidated or can bind proper variables to atoms in the database, rather than generating multiple instances of facts. 
+
+ASP is then suited for combinatorial problems, and its language reflects this purpose. The specific affordance is given by the choices, a syntactic feature that describes how single atoms may spark the ramification of the solutions.  
+
+Consider the following code: 
+```asp
+color(red; green; blue). 
+
+node(X) :- edge(X, _); edge(_, X). 
+
+{ hasColor(N, C) : color(C) } = 1 :- node(N). 
+
+:- edge(A,B), hasColor(A,C), hasColor(B,C).
+```
+
+The third row establishes the generation of multiple solutions by indicating that each node will ramify into as many solutions as the color cardinality, and in each of those solutions, the node will have different colors. This is the generational part of the program. The last row instead will prune out all solutions on which adjacent nodes have the same color. This is defined by using the same variable `C` for both nodes, here the engine will attempt to unify the nodes with the same color, and if it occurs, the solution is discarded. 
+
+With this short contextualisation, I describe the phases of solving a combinatorial problem.
 
 # Grounding
 
 Grounding is the process of creating a superset of candidate solutions from the original problem space. This involves aggregating items to satisfy certain compositions. These aggregations can be defined as sets (combinations) or sequences (permutations). This pre-processing step can be extremely demanding in terms of computational resources. The term _combinatorial explosion_ describes how a small increase in problem size can cause some problems (especially counting problems) become intractable. 
- 
 
 In [Kubrick]({% post_url 2026-01-31-pull-down-programming-complexity-kubrick %}), the grounding phase is managed by the generators. They generate a stream of facts according to a given criterion. The criteria are a set of declarations (Repetitions and Partitions) over variables. Let's assume we need to model a restaurant, where a dish is a restaurant's offering: 
 
