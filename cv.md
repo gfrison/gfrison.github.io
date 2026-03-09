@@ -10,13 +10,29 @@ header:
 classes: wide
 last_modified_at: 2026-03-09
 ---
-Let me introduce myself with a simple bullet-point list of roles and activities in my present and past experiences:
 
-**Technical Architecture**: Choose the right trade-offs so the software does not turn into a mess.
-**AI Builder**: NLP, hybrid deep/symbolic AI. Combine best practices that work reliably. No hype.
-**Research & Innovation**: Invent technical workarounds to solve real business problems.
-**Thought Leadership**: Explaining methods so bosses that move the needle fund the project.
-**Full-stack Development**: Long track record on software projects, I steer and check what AI is actually generating.
+<table>
+  <tr>
+    <td><b>Technical Architecture</b></td>
+    <td>Choose the right trade-offs so the software does not turn into a mess.</td>
+  </tr>
+  <tr>
+    <td><b>AI Builder</b></td>
+    <td>NLP, hybrid deep/symbolic AI. Combine best practices that work reliably. No hype.</td>
+  </tr>
+  <tr>
+    <td><b>Research &amp; Innovation</b></td>
+    <td>Invent technical workarounds to solve real business problems.</td>
+  </tr>
+  <tr>
+    <td><b>Thought Leadership</b></td>
+    <td>Explaining methods so bosses that move the needle fund the project.</td>
+  </tr>
+  <tr>
+    <td><b>Full-stack Development</b></td>
+    <td>Long track record on software projects, I steer and check what AI is actually generating.</td>
+  </tr>
+</table>
 
 <br>
 [![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/cv.jpg){: .align-left}]({{ site.url }}/assets/cv.pdf)
@@ -32,31 +48,40 @@ Let me introduce myself with a simple bullet-point list of roles and activities 
     <th>2017 - Now, Munich</th>
   </tr>
   <tr>
-    <td colspan="3"><b>Hybrid AI for ERP QA</a>Designed methods and implemented software ecosystem for answering natural language questions over a variety of information sources typical of an ERP/CRM system. It is an efficient and effective neuro-symbolic approach that minimizes customization and promotes separation of concerns between model based and deterministic modules with unpaired precision and granularity.</td>
+    <td colspan="3">
+      <b>Hybrid AI for ERP QA</b>: Designed methods and implemented software ecosystem for answering natural language questions over a variety of information sources typical of an ERP/CRM system. It is an efficient and effective neuro-symbolic approach that minimizes customization and promotes separation of concerns between model based and deterministic modules with unpaired precision and granularity.
+    </td>
   </tr>
   <tr>
-    <td colspan="3"><b>Declarative Optimization Language</b>: Designed and implemented a functional-logic programming system integrating relational algebra and combinatorial primitives, enabling efficient resolution of complex optimization challenges through a simple syntax.</td>
+    <td colspan="3">
+      <b>Declarative Optimization Language</b>: Designed and implemented a functional-logic programming system integrating relational algebra and combinatorial primitives, enabling efficient resolution of complex optimization challenges through a simple syntax.
+    </td>
   </tr>
   <tr>
-    <td colspan="3"><b>Hybrid AI for Retail Q&A</b>: Developed an advanced <a href="https://epiqa.cxai.dev.sap/">question-answering system</a> combining symbolic AI and LLMs to interpret nuanced customer queries, outperforming traditional RAG methods in precision and granularity.</td>
+    <td colspan="3">
+      <b>Hybrid AI for Retail Q&A</b>: Developed an advanced <a href="https://epiqa.cxai.dev.sap/">question-answering system</a> combining symbolic AI and LLMs to interpret nuanced customer queries, outperforming traditional RAG methods in precision and granularity.
+    </td>
   </tr>
   <tr>
-    <td colspan="3"><b>Knowledge-Driven Recommender Engine</b>: Built a <a href="https://community.sap.com/t5/crm-and-cx-blogs-by-sap/argumentation-for-e-commerce-at-semantics-22/ba-p/13534345">dynamic recommendation system</a> leveraging knowledge graphs to generate <a href="https://gfrison.com/2024/12/01/defeasible-logic-automatic-argumentation">logically justified</a> product suggestions. Incorporated interactive preference elicitation to refine results and reasoning.</td>
+    <td colspan="3">
+      <b>Knowledge-Driven Recommender Engine</b>: Built a <a href="https://community.sap.com/t5/crm-and-cx-blogs-by-sap/argumentation-for-e-commerce-at-semantics-22/ba-p/13534345">dynamic recommendation system</a> leveraging knowledge graphs to generate <a href="https://gfrison.com/2024/12/01/defeasible-logic-automatic-argumentation">logically justified</a> product suggestions. Incorporated interactive preference elicitation to refine results and reasoning.
+    </td>
   </tr>
   <tr>
-    <td colspan="3"><b>AI-Powered Sales Automation</b>: Engineered an <a href="https://community.sap.com/t5/tag/zefiro/tg-p/">    adaptive sales assistant</a> using Bayesian networks and reinforcement learning. The system personalizes offers and sales strategies by inferring customer preferences and behavioral traits through interactive dialogues.</td>
+    <td colspan="3">
+      <b>AI-Powered Sales Automation</b>: Engineered an <a href="https://community.sap.com/t5/tag/zefiro/tg-p/">adaptive sales assistant</a> using Bayesian networks and reinforcement learning. The system personalizes offers and sales strategies by inferring customer preferences and behavioral traits through interactive dialogues.
+    </td>
   </tr>
   <tr>
-    <td colspan="3"><a href="https://gfrison.com/projects/conversational-commerce"><b>Conversational Commerce Platform</b></a>: Pioneered a <a href="https://gfrison.com/patents/smoothing-conversational-context">neural network architecture</a> (2017) for e-commerce interactions via Facebook Messenger and SAP. Enabled natural language <a href="https://gfrison.com/patents/concept-search-with-word-embeddings">product searches</a>, order placement, FAQ navigation, and ticket creation.</td>
+    <td colspan="3">
+      <a href="https://gfrison.com/projects/conversational-commerce"><b>Conversational Commerce Platform</b></a>: Pioneered a <a href="https://gfrison.com/patents/smoothing-conversational-context">neural network architecture</a> (2017) for e-commerce interactions via Facebook Messenger and SAP. Enabled natural language <a href="https://gfrison.com/patents/concept-search-with-word-embeddings">product searches</a>, order placement, FAQ navigation, and ticket creation.
+    </td>
   </tr>
 </table>
 
-
+<br>
 [![image-left]({{ site.url }}/assets/images/psmi.png){: .align-left}]({{ site.url}}/assets/psmi.pdf) Certified professional scrum master
 {: .notice--info}
-<br>
-<br>
-<br>
 <br>
 <table>
   <tr><th><b>Development Architect</b></th>
@@ -81,71 +106,92 @@ Let me introduce myself with a simple bullet-point list of roles and activities 
 </table>
 <br>
 <table>
-  <tr><th><b>Attendee</b></th>
+  <tr>
+    <th><b>Attendee</b></th>
     <th><i>TechPeaks</i></th>
     <th>2013 - 2014, Trento</th>
   </tr>
   <tr>
-    <td colspan="3">Chosen for a competitive <a href="https://www.repubblica.it/rubriche/startup-stories/2013/12/02/news/incubatore_startup-72502909/">training program</a> focused on <b>Lean Startup</b> methodologies, business planning, and corporate administration.
-    </td></tr>
-  <tr>
-    <td colspan="3">Developed and pitched a comprehensive <b>business plan</b> for securing (successfully) financial grants.</td>
+    <td colspan="3">
+      Chosen for a competitive <a href="https://www.repubblica.it/rubriche/startup-stories/2013/12/02/news/incubatore_startup-72502909/">training program</a> focused on <b>Lean Startup</b> methodologies, business planning, and corporate administration.
+    </td>
   </tr>
   <tr>
-    <td colspan="3">Strategic partnerships with key stakeholders to drive business growth.</td>
+    <td colspan="3">
+      Developed and pitched a comprehensive <b>business plan</b> for securing (successfully) financial grants.
+    </td>
   </tr>
   <tr>
-    <td colspan="3">Obtained a food management business license, ensuring regulatory compliance.</td>
+    <td colspan="3">
+      Strategic partnerships with key stakeholders to drive business growth.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      Obtained a food management business license, ensuring regulatory compliance.
+    </td>
   </tr>
 </table>
-<br>
-<br>
-<br>
 
 ![image-left](/assets/images/dibari.png){: .align-left}_"Working with Giancarlo has been a very interesting experience. At that time he was a very skilled and smart Java developer. He demostrated a clear understanding of a Model Driven Development approach as well as the importance of modeling in the context of complex financial applications development."_
 
 ![image-left](/assets/images/cesare.png){: .align-left}_"Worked with us over 2 years as java consultant. He engaged an effective development on the department taking part in the refactoring of all java layers, also he carried out appreciative work implementing the model driven approach. He has deep knowledge in software development and setting up system architectures."_
 
 <br>
-<br>
-<br>
-<br>
 <table>
-  <tr><th><b>Development Architect</b></th>
+  <tr>
+    <th><b>Development Architect</b></th>
     <th><i>Mérieux NutriSciences Chelab, Italy</i></th>
     <th>2011 - 2013, Venice Area</th>
   </tr>
   <tr>
-    <td colspan="3">Conducted stakeholder interviews and analyzed business processes to assess software architecture needs, leading to the prototyping of the company’s Laboratory Information Management System (LIMS).
-    </td></tr>
+    <td colspan="3">
+      Conducted stakeholder interviews and analyzed business processes to assess software architecture needs, leading to the prototyping of the company's Laboratory Information Management System (LIMS).
+    </td>
+  </tr>
   <tr>
-    <td colspan="3">Designed a domain-specific language (DSL) to optimize chemical workflow management.
-    </td></tr>
+    <td colspan="3">
+      Designed a domain-specific language (DSL) to optimize chemical workflow management.
+    </td>
+  </tr>
   <tr>
-    <td colspan="3">Mentored the development team in rapid web application development using Grails.
-    </td></tr>
+    <td colspan="3">
+      Mentored the development team in rapid web application development using Grails.
+    </td>
+  </tr>
   <tr>
-    <td colspan="3">Established a delivery pipeline to streamline development and deployment processes.
-    </td></tr>
+    <td colspan="3">
+      Established a delivery pipeline to streamline development and deployment processes.
+    </td>
+  </tr>
 </table>
 <br>
 <table>
-  <tr><th><b>Senior Software Developer</b></th>
-    <th><i>Skebby, Italy</i></th> 
+  <tr>
+    <th><b>Senior Software Developer</b></th>
+    <th><i>Skebby, Italy</i></th>
     <th>2010 - 2011, Milan</th>
   </tr>
   <tr>
-    <td colspan="3">Designed and developed a distributed microservices architecture for high-volume B2C and B2B SMS delivery management.
-    </td></tr>
-  <tr>
-    <td colspan="3">Mentored team members on best practices for scalable and resilient system design.</td>
+    <td colspan="3">
+      Designed and developed a distributed microservices architecture for high-volume B2C and B2B SMS delivery management.
+    </td>
   </tr>
   <tr>
-    <td colspan="3">Implemented an Enterprise Integration Pattern (EIP)-based architecture, leveraging ActiveMQ for inter-service communication.
-    </td></tr>
+    <td colspan="3">
+      Mentored team members on best practices for scalable and resilient system design.
+    </td>
+  </tr>
   <tr>
-    <td colspan="3">Optimized system performance and reliability through microservices orchestration and message-driven workflows.
-</td></tr>
+    <td colspan="3">
+      Implemented an Enterprise Integration Pattern (EIP)-based architecture, leveraging ActiveMQ for inter-service communication.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      Optimized system performance and reliability through microservices orchestration and message-driven workflows.
+    </td>
+  </tr>
 </table>
 
 <br>
@@ -157,69 +203,84 @@ Let me introduce myself with a simple bullet-point list of roles and activities 
 
 <br>
 <br>
-<br>
-<br>
-<br>
 <table>
-  <tr><th><b>Senior Software Developer</b></th>
+  <tr>
+    <th><b>Senior Software Developer</b></th>
     <th><i>Quinary, Italy</i></th>
     <th>2008 - 2010, Milan</th>
   </tr>
   <tr>
-    <td colspan="3"><a href="https://gfrison.com/2009/04/24/powered-by-apache-mina/">Re-engineering</a> the SMS B2B delivery system for Vodafone based on micro-service architecture with messages broker (FioranoMQ).</td>
+    <td colspan="3">
+      <a href="https://gfrison.com/2009/04/24/powered-by-apache-mina/">Re-engineering</a> the SMS B2B delivery system for Vodafone based on micro-service architecture with messages broker (FioranoMQ).
+    </td>
   </tr>
 </table>
 <br>
 <table>
-  <tr><th><b>Senior Software Developer</b></th>
+  <tr>
+    <th><b>Senior Software Developer</b></th>
     <th><i>Nimbuzz, The Netherlands</i></th>
     <th>2007 - 2008, Rotterdam</th>
   </tr>
   <tr>
-    <td colspan="3">Implemented high-throughput XMPP server-to-server Java framework for chat protocols through REST API.
-</td>
+    <td colspan="3">
+      Implemented high-throughput XMPP server-to-server Java framework for chat protocols through REST API.
+    </td>
   </tr>
 </table>
 <br>
 <table>
-  <tr><th><b>Software Developer</b></th>
+  <tr>
+    <th><b>Software Developer</b></th>
     <th><i>ATS, Italy</i></th>
     <th>2006 - 2007, Milan</th>
   </tr>
   <tr>
-    <td colspan="3">Created the BrokerTec financial market extension, integrated into the trading application, enabling trades of REPO market government securities.
-</td>
+    <td colspan="3">
+      Created the BrokerTec financial market extension, integrated into the trading application, enabling trades of REPO market government securities.
+    </td>
   </tr>
   <tr>
-    <td colspan="3">Designed and implemented internal framework for interfacing external API in a declarative way, solely by XML definitions.
-</td>
+    <td colspan="3">
+      Designed and implemented internal framework for interfacing external API in a declarative way, solely by XML definitions.
+    </td>
   </tr>
 </table>
 <br>
 <table>
-  <tr><th><b>Software Developer</b></th>
+  <tr>
+    <th><b>Software Developer</b></th>
     <th><i>Abla, Italy</i></th>
     <th>2006, Milan</th>
   </tr>
   <tr>
-    <td colspan="3">Designed and implemented an internal framework to streamline external API interactions using a declarative XML-based approach, eliminating the need for manual coding.</td>
+    <td colspan="3">
+      Designed and implemented an internal framework to streamline external API interactions using a declarative XML-based approach, eliminating the need for manual coding.
+    </td>
   </tr>
 </table>
 <br>
 <table>
-  <tr><th><b>Software Developer</b></th>
+  <tr>
+    <th><b>Software Developer</b></th>
     <th><i>SEC Servizi, Italy</i></th>
     <th>2002 - 2006, Padua</th>
   </tr>
   <tr>
-    <td colspan="3">Developed custom extensions for IBM Rational Software Architect to support <a href="https://gfrison.com/tags/#low-code">Low-Code</a> Model-Driven Architecture (MDA).</td>
+    <td colspan="3">
+      Developed custom extensions for IBM Rational Software Architect to support <a href="https://gfrison.com/tags/#low-code">Low-Code</a> Model-Driven Architecture (MDA).
+    </td>
   </tr>
   <tr>
-    <td colspan="3">Empowered business analysts and non-developers to design banking services through intuitive UML-based modeling tools.</td>
+    <td colspan="3">
+      Empowered business analysts and non-developers to design banking services through intuitive UML-based modeling tools.
+    </td>
   </tr>
   <tr>
-    <td colspan="3">Streamlined software development processes, reducing dependency on manual coding for critical financial applications.
-</td>  </tr>
+    <td colspan="3">
+      Streamlined software development processes, reducing dependency on manual coding for critical financial applications.
+    </td>
+  </tr>
 </table>
 <br>
 
@@ -229,9 +290,11 @@ Let me introduce myself with a simple bullet-point list of roles and activities 
 
 #### Master of Science (M.Sc.), Cognitive Systems
 
-2023 / 2025
+2023 / 2026
 Open University, Cyprus
 ![image-left](https://www.ouc.ac.cy/images/stories/joomlart/OUC_Logo_transparency_EN_96.png#joomlaImage://local-images/stories/joomlart/OUC_Logo_transparency_EN_96.png?width=216&height=96) 
+
+Thesis: _Programming Language and System for Enhancing AI-Assisted Software Development_
 
 #### B.Eng, Diploma di Laurea in Ingegneria Informatica ed Automatica
 
@@ -254,6 +317,16 @@ _2022, Vienna, Austria_
 ### The Socratic Digital Agent: persuasion in eCommerce with knowledge, logic, and machine learning
 
 E-Stores lose sales due to the negative biases of consumers. While salespeople give proper reasons to change consumers' misbeliefs, it is problematic to address those issues in an online shop. In this talk, I will present how to combine semantic graphs with logic programming and symbolic machine learning to restore consumer confidence. The digital agent detects what problems users might have and offers them explanations and valid arguments for not worrying about, or why a given recommendation is more suitable than others.
+
+## Programming Experience 26
+
+_2026, Munich, Germany_
+
+### Pull Down Programming Complexity with Kubrick
+
+AI tools are now the horsepower of computer programming. They are generally great for writing glue-code and integration tasks, probably less than ideal for complex problems on complicated programming settings. What could be the reasons that prevent generators on full-scale adoption?
+I am implementing a declarative programming language that facilitates the synergy between automatons and humans in software development by forcing AI tools to generate intuitive code and to allow human operators to understand what is in there. It is an attempt to lower the barriers by simplifying the programming experience.
+In the presentation, I will touch on various aspects that include cognitive aspects of problem-solving applied to programming and the role of AI tools such as LRMs on software development. I will provide arguments for stating that the accidental complexity of the programming system may worsen the performance of AI generators as well as it affects human developers.
 
 # Certifications
 
