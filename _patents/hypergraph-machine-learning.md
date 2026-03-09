@@ -17,7 +17,7 @@ tags:
 
 Imagine having an enormous collection of interconnected facts, like a knowledge graph. Now, imagine you want to find very specific patterns within this data. Not just simple searches, but complex relationships. The challenge is, how do you tell a computer exactly what to look for without writing incredibly complicated instructions every single time?
 
-This is where the method comes in. It helps computers automatically create powerful search programs (called Query Programmes, or `QPs`) to dig out exactly the information you need from a special kind of database called an in-memory hypergraph knowledge base (`KB`).
+This is where the method comes in. It helps computers automatically create powerful search programs (called Query Programmes, or `QPs`) to dig out exactly the information you need from a special kind of database called an [in-memory hypergraph](/patents/hypergraph-store-query) knowledge base (`KB`).
 
 # Learning from Examples
 

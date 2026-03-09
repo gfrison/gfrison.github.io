@@ -132,7 +132,7 @@ _Do automatons excel on that_? The building blocks of LRMs lack of intrinsic sea
 
 ## ...and complex things doable. 
 
-Not a single artefacts comes out of the vacuum and Kubrick is not an exception. I've been inspired by a multitude of established ideas on re-arranging them and creating new ones. From **Prolog** I took the variables' unification, the automatic pattern matching on method's activation and the success/failure assertions for validating method invocations, typical of logic programming. From **Julia** I've borrowed the fundamental recursive data structures for combining choices, named tuples and sequences. From **ASP** I've taken the _stable model_ semantics for reasoning on alternative solutions and _choices_, the alternative values.   
+Not a single artefacts comes out of the vacuum and Kubrick is not an exception. I've been inspired by a multitude of established ideas on re-arranging them and creating new ones. From **Prolog** I took the variables' [unification](/patents/hypergraph-store-query), the automatic pattern matching on method's activation and the success/failure assertions for validating method invocations, typical of logic programming. From **Julia** I've borrowed the fundamental recursive data structures for combining choices, named tuples and sequences. From **ASP** I've taken the _stable model_ semantics for reasoning on alternative solutions and _choices_, the alternative values.   
 
 ### A Combinatorial use case
 

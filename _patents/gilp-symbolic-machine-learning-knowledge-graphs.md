@@ -3,7 +3,7 @@ title: "GILP: Symbolic Machine Learning Over Knowledge Graphs"
 excerpt: "Inductive Logic Programming method for synthesizing logic queries to retrieve information from graph databases."
 date: 2023-06-22 
 permalink: /patents/gilp-symbolic-machine-learning-knowledge-graphs
-last_modified_at: 2024-01-13
+last_modified_at: 2026-03-09
 header:
   og_image: /assets/images/gilp.png
 tags:
@@ -33,7 +33,7 @@ paraphrased in _“X is the capital of Y when X is a capital and Y is a country 
 ## Meta-rule
 Meta-rules represent the pattern of possible solutions in the search space. They are abstract structures isomorphic of the final program P. Meta-rules are the generic platform-independent models (PIM) to be transformed into platform-specific models (PSM).
 
-PSM are linked to a specific information system, in the example above the PSM is transformed into Datalog, a simple logic programming language. Symbols for meta-rules are defined as following:
+PSM are linked to a specific information system, in the example above the PSM is transformed into Datalog, a simple logic programming language whose predicates can be [efficiently encoded in memory](/patents/hypergraph-store-query) for fast query resolution. Symbols for meta-rules are defined as following:
 -	**R**: relation variable. They are instantiated in P.
 -	**X**: final variable name.
 -	**Z**: temporary variable. Specific for joins.

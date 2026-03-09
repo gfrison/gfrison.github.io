@@ -2,7 +2,7 @@
 title: "Consumer Problem Discovery and Solution Recommender with Knowledge Graphs"
 excerpt: "E-Stores loose sells due to the negative biases of consumers. While salespeople give proper reasons to change consumers misbelieves, it is problematic to address those issues in an online shop. In this talk, I will present how to combine semantic graphs with logic programming and symbolic machine learning to restore consumer’s confidence. The digital agent detects what are the problems users might have and offers them explanations and valid arguments for not worry about, or why a given recommendation is more suitable than others."
 date: 2023-08-02 
-last_modified_at: 2025-07-24
+last_modified_at: 2026-03-09
 permalink: /patents/consumer-problem-discovery-solution-recommender-knowledge-graphs
 header:
   og_image: /assets/images/justify-recommendation.png
@@ -34,7 +34,7 @@ It is a graph database in form of triples: subject → relation → object. It c
 3.	Self-extracted from raw corpora (specific for industrial/legal domains)
 
 # Datalog
-The data is queried and constructed in the Rule Service by a domain specific language, which is inspired by Datalog, a simple graph-oriented representation language, used also in logic-oriented system such as Prolog and Answer Set Programming (ASP). Datalog could be stored as a graph in the graph DB, or it could be stored just in files by using the DSL described in this document. In Datalog the triple is represented as records in the format relation:subject:object.   For example, if we want to express that the concept “mammal” extends the concept of “animal” we simply define: isA:mammal:animal. The rules are expressed in form of consequent ← antecedent, whereas the antecedent is matched, the consequent will be constructed, otherwise the rule does not apply. In Datalog the concepts can be substituted by variables. In the example below, the grandfather is the father of the father:
+The data is queried and constructed in the Rule Service by a domain specific language, which is inspired by Datalog, a simple graph-oriented representation language, used also in logic-oriented system such as Prolog and Answer Set Programming (ASP). Datalog could be stored as a graph in the graph DB, or it could be stored just in files by using the DSL described in this document. In Datalog the triple is represented as records in the format relation:subject:object. The underlying [in-memory encoding](/patents/hypergraph-store-query) allows efficient predicate resolution through direct access data structures.   For example, if we want to express that the concept “mammal” extends the concept of “animal” we simply define: isA:mammal:animal. The rules are expressed in form of consequent ← antecedent, whereas the antecedent is matched, the consequent will be constructed, otherwise the rule does not apply. In Datalog the concepts can be substituted by variables. In the example below, the grandfather is the father of the father:
 `(grandfather:X:Y) :- (father:X:Z, father:Z:Y)`
 
 Datalog abstract the underlying KG storage and provide a boilerplate-free language for KG and rules representation. It is implemented with the following algorithm. 

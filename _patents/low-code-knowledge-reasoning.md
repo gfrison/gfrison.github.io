@@ -2,7 +2,7 @@
 title: "Low-Code Programming for Knowledge Reasoning"
 excerpt: "Business processes are encoded in software through phases like analysis, design, implementation, and quality checking. To reduce costs and delays, systems should support diverse data integration, logic manipulation, problem-solving, reuse, recursion, and centralized business logic in serverless environments"
 date: 2024-01-13 
-last_modified_at: 2024-01-23
+last_modified_at: 2026-03-09
 permalink: /patents/low-code-programming-reasoning
 header:
   og_image: /assets/images/low-code-programming-reasoning.webp
@@ -249,6 +249,6 @@ This behavior corresponds to the following program:
 
 The data used in the supply chain example is primarily for demonstration and prototyping, not for real-world adoption. In practical applications, data should be fetched from external sources through proper configuration, taking advantage of the high abstraction between data and programs.
 
-Given the graph-based nature of predicate representation, graph databases are the most intuitive choice for interfacing with data sources. Predicates can be easily mapped to SPARQL queries, as the data is structured as relationships between nodes. With appropriate configuration, specific relations in the program can be linked to corresponding external database relations. For example, the supply chain data tuples can be retrieved from graph, relational, or key-value store databases.
+Given the graph-based nature of predicate representation, graph databases are the most intuitive choice for interfacing with data sources. Predicates can be easily mapped to SPARQL queries, as the data is structured as relationships between nodes. For in-memory processing, predicates are [encoded as hyper-graph structures](/patents/hypergraph-store-query) that enable direct access to arguments and efficient unification. With appropriate configuration, specific relations in the program can be linked to corresponding external database relations. For example, the supply chain data tuples can be retrieved from graph, relational, or key-value store databases.
 
 The internal database used in the prototype relies on general algorithms for performing logical disjunctions and conjunctions to query the required data.
