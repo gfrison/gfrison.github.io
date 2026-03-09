@@ -8,15 +8,16 @@ redirect_from:
 header:
   og_image: /assets/images/cv.jpg
 classes: wide
-last_modified_at: 2025-09-16
+last_modified_at: 2026-03-09
 ---
 Let me introduce myself with a simple bullet-point list of roles and activities in my present and past experiences:
 
-- **Full-Stack Development**: Expertise in end-to-end software development, web frameworks, Scala, and JavaScript.
-- **Technical Architecture**: Aligning stakeholder vision with practical implementation, bridging high-level design with hands-on development.
-- **AI**: Natural language processing (NLP), deep learning, hybrid probabilistic/symbolic AI.
-- **Research & Innovation**: Developing cutting-edge computational solutions to drive technical and business improvements, including intellectual property (IP) development.
-- **Thought Leadership**: Communicating complex ideas to stakeholders and advocating for innovative initiatives.
+**Technical Architecture**: Choose the right trade-offs so the software does not turn into a mess.
+**AI Builder**: NLP, hybrid deep/symbolic AI. Combine best practices that work reliably. No hype.
+**Research & Innovation**: Invent technical workarounds to solve real business problems.
+**Thought Leadership**: Explaining methods so bosses that move the needle fund the project.
+**Full-stack Development**: Long track record on software projects, I steer and check what AI is actually generating.
+
 <br>
 [![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/cv.jpg){: .align-left}]({{ site.url }}/assets/cv.pdf)
 &#8592; Click on the icon and download my Curriculum in PDF format and please, share it in your organization. 
@@ -29,6 +30,9 @@ Let me introduce myself with a simple bullet-point list of roles and activities 
     <th><b>Software Research Engineer</b></th>
     <th><i>SAP</i></th>
     <th>2017 - Now, Munich</th>
+  </tr>
+  <tr>
+    <td colspan="3"><b>Hybrid AI for ERP QA</a>Designed methods and implemented software ecosystem for answering natural language questions over a variety of information sources typical of an ERP/CRM system. It is an efficient and effective neuro-symbolic approach that minimizes customization and promotes separation of concerns between model based and deterministic modules with unpaired precision and granularity.</td>
   </tr>
   <tr>
     <td colspan="3"><b>Declarative Optimization Language</b>: Designed and implemented a functional-logic programming system integrating relational algebra and combinatorial primitives, enabling efficient resolution of complex optimization challenges through a simple syntax.</td>
