@@ -59,11 +59,6 @@ last_modified_at: 2026-03-09
   </tr>
   <tr>
     <td colspan="3">
-      <b>Hybrid AI for Retail Q&A</b>: Developed an advanced <a href="https://epiqa.cxai.dev.sap/">question-answering system</a> combining symbolic AI and LLMs to interpret nuanced customer queries, outperforming traditional RAG methods in precision and granularity.
-    </td>
-  </tr>
-  <tr>
-    <td colspan="3">
       <b>Knowledge-Driven Recommender Engine</b>: Built a <a href="https://community.sap.com/t5/crm-and-cx-blogs-by-sap/argumentation-for-e-commerce-at-semantics-22/ba-p/13534345">dynamic recommendation system</a> leveraging knowledge graphs to generate <a href="https://gfrison.com/2024/12/01/defeasible-logic-automatic-argumentation">logically justified</a> product suggestions. Incorporated interactive preference elicitation to refine results and reasoning.
     </td>
   </tr>
