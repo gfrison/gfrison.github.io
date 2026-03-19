@@ -6,7 +6,7 @@ description: "AI tools and programmers struggle with complexity given by the pro
 excerpt: "AI tools and programmers struggle with complexity given by the programming ecosystem itself. Kubrick is a declarative language designed to reduce accidental complexity through logic programming, functional paradigms, and relation algebra. Lower the friction, and generators work better. Make easy things easily while keeping expressiveness intact."
 header:
   og_image: /assets/pull-down/main.jpg
-last_modified_at: 2026-03-09
+last_modified_at: 2026-03-19
 published: true
 tags:
   - hci
@@ -16,7 +16,7 @@ tags:
   - neural-symbolic
   - llm
   - low-code
-  - px26
+  - conference
 ---
 
 <style>
@@ -46,6 +46,9 @@ Started as a _data programming_ language for pairing database queries with progr
 To mitigate the lack of solution productivity[^productivity] in generators - the way that an optimizer generates deriving combinations of solutions from a set of given axioms - I extended the language for helping agents to cover [_combinatorial problems_](/patents/bridging-natural-language-with-data-programming-combinatorial). Think of answer set programming (ASP) but with an eye on integration and usability.
 
 This is an ongoing project that was the topic of my Master's dissertation _"Programming Language and System for Enhancing AI-Assisted Software Development"_ I defended last December 2025, and it summarized several insights I gathered during my experience in the field. I just recently started to open source it and I will gradually share it on GitHub[^kubrick]. 
+
+You can download the [presentation slides](/assets/pull-down/px26.pdf)
+{: .notice--primary }
 
 # Cognitive Aspects of Programming 
 
@@ -208,6 +211,10 @@ This year the `<Programming> 2026` will take place in Munich, Germany on Mar 16-
   </a>
   <figcaption>Click for a short try on Kubrick (without LRMs). NB: still buggy, be forgiven</figcaption>
 </figure>
+
+You can download the presentation slides [here](/assets/pull-down/px26.pdf).
+
+
 [Giancarlo Frison](https://gfrison.com)
 
 ## References
