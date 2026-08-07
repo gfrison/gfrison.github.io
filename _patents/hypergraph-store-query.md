@@ -13,7 +13,7 @@ tags:
 ---
 | Id                                                                | Status    | Submission Date | Grant Date  | Authorship      |
 | ----------------------------------------------------------------- |
-| 18/972,932 | Pending | {{ "2024-12-07" | date_to_string }} |  | 100% |
+| [18/972,932](https://patentcenter.uspto.gov/applications/18972932) | Granted | {{ "2026-08-18" | date_to_string }} |  | 100% |
 
 
 Accessing data efficiently for analytics is an tacit requirement for any data service and it is critical for data-intensive applications. Graphs are a particular type of data representation on which single nodes - the minimal unit of manageable information - are connected with others through relations. Relations - or edges - in graphs may connect two nodes, or may connect a multitude of nodes. In the latter case, they are called _hyper_-edges.
