@@ -2,7 +2,7 @@
 title: "Hyper-Graph Store Representation and Query Mechanism"
 excerpt: "An in-memory hyper-graph encoding for Datalog-based programming systems. It defines data structures for direct access to predicates and their arguments, enabling efficient query resolution with unification support."
 date: 2024-12-07
-last_modified_at: 2026-03-09
+last_modified_at: 2026-08-24
 permalink: /patents/hypergraph-store-query
 header:
   og_image: /assets/patents/hypergraph-store-query.jpeg
@@ -13,7 +13,7 @@ tags:
 ---
 | Id                                                                | Status    | Submission Date | Grant Date  | Authorship      |
 | ----------------------------------------------------------------- |
-| [18/972,932](https://patentcenter.uspto.gov/applications/18972932) | Granted | {{ "2026-08-18" | date_to_string }} |  | 100% |
+| [12,711,106](/assets/patents/US12711106.pdf) | Granted |{{"2024-12-07" | date_to_string}} | {{ "2026-08-18" | date_to_string }} | 100% |
 
 
 Accessing data efficiently for analytics is an tacit requirement for any data service and it is critical for data-intensive applications. Graphs are a particular type of data representation on which single nodes - the minimal unit of manageable information - are connected with others through relations. Relations - or edges - in graphs may connect two nodes, or may connect a multitude of nodes. In the latter case, they are called _hyper_-edges.

@@ -6,7 +6,7 @@ description: "AI tools and programmers struggle with complexity given by the pro
 excerpt: "AI tools and programmers struggle with complexity given by the programming ecosystem itself. Kubrick is a declarative language designed to reduce accidental complexity through logic programming, functional paradigms, and relation algebra. Lower the friction, and generators work better. Make easy things easily while keeping expressiveness intact."
 header:
   og_image: /assets/pull-down/main.jpg
-last_modified_at: 2026-03-19
+last_modified_at: 2026-08-24
 published: true
 tags:
   - hci
@@ -32,7 +32,7 @@ tags:
 }
 </style>
 
-AI tools are now the horsepower of computer programming. They are generally great for writing glue-code and integration tasks, probably less than ideal for complex problems on complicated programming settings. What could be the reasons that prevent generators on full-scale adoption? 
+AI tools are now the horsepower of computer programming. They are generally great for writing glue-code and integration tasks, probably less than ideal for complex systems on complicated programming settings. What could be done to facilitate a full-scale adoption? 
 
 I am implementing a declarative programming language that facilitates the synergy between automatons and humans on software development by forcing AI tools to generate intuitive code and to allow human operators to understand what is in there. It is an attempt to lower the barriers by simplifying the programming experience. 
 
