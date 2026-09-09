@@ -2,8 +2,6 @@
 title: "Double Pendulum Clock"
 date: 2026-09-09 
 permalink: /rnd/double-pendulum-clock
-redirect_from:
-- /2018/02/12/catalog-entity-extraction-search
 last_modified_at: 2026-09-09
 header:
   og_image: /assets/images/rnd/og-clock-header.jpg
