@@ -308,6 +308,14 @@ defaults:
       classes: wide
       author_profile: false
       share: true
+  - scope:
+      path: ""
+      type: rnd
+    values:
+      layout: single
+      classes: wide
+      author_profile: false
+      share: true
 
 # head_scripts:
 #   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
@@ -324,5 +332,8 @@ collections:
     output: true
     # permalink: /:collection/:path
   projects:
+    output: true
+    permalink: /:collection/:path
+  rnd:
     output: true
     permalink: /:collection/:path
