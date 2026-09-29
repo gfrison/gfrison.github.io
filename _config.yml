@@ -121,8 +121,8 @@ author:
     - label: "giancarlo@gfrison.com"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:giancarlo@gfrison.com"
-    - label: "Photos I"
-      icon: "fas fa-fw fa-camera"
+    # - label: "Photos I"
+    #   icon: "fas fa-fw fa-camera"
     #      url: "https://www.flickr.com/photos/gfrison/"
     # - label: "X"
     #   icon: "fab fa-fw fa-brands fa-square-x-twitter"
@@ -300,14 +300,14 @@ defaults:
       classes: wide
       author_profile: false
       share: true
-  - scope:
-      path: ""
-      type: photos 
-    values:
-      layout: single
-      classes: wide
-      author_profile: false
-      share: true
+  # - scope:
+  #     path: ""
+  #     type: photos 
+  #   values:
+  #     layout: single
+  #     classes: wide
+  #     author_profile: false
+  #     share: true
   - scope:
       path: ""
       type: rnd
@@ -325,9 +325,9 @@ collections:
   # posts:
   #   output: true
   #   parmalink: /:year/:month/:day/:name
-  photos:
-    output: true
-    permalink: /:collection/:path.html
+  # photos:
+  #   output: true
+  #   permalink: /:collection/:path.html
   patents:  
     output: true
     # permalink: /:collection/:path
