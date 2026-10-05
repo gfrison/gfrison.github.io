@@ -32,7 +32,7 @@ layout: single
     <button id="pdf-fullscreen" type="button" class="btn btn--primary" title="Full screen" aria-label="Full screen">
       <i class="fas fa-expand" aria-hidden="true"></i>
     </button>
-    <a href="{{ page.pdf | relative_url }}" class="btn btn--primary" title="Download PDF" aria-label="Download PDF" download>
+    <a href="{{ page.pdf | relative_url }}?v={{ site.time | date: '%s' }}" class="btn btn--primary" title="Download PDF" aria-label="Download PDF" download>
       <i class="fas fa-download" aria-hidden="true"></i>
     </a>
   </div>
@@ -45,7 +45,8 @@ layout: single
     import * as pdfjsViewer from 'https://cdn.jsdelivr.net/npm/pdfjs-dist@^4/web/pdf_viewer.mjs';
 
     (async function() {
-      const pdfUrl = "{{ page.pdf | relative_url }}";
+      // Cache-bust with the site build time so an updated PDF is fetched fresh
+      const pdfUrl = "{{ page.pdf | relative_url }}?v={{ site.time | date: '%s' }}";
 
       // Set worker source via jsDelivr
       pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@^4/build/pdf.worker.min.mjs';
