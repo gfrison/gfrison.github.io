@@ -5,10 +5,30 @@ layout: single
 <!-- 1. CSS for PDF.js annotation/link overlay -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pdfjs-dist@^4/web/pdf_viewer.css" />
 
+<style>
+  /* CSS fullscreen fallback (works on mobile/iOS where the Fullscreen API can't target a div) */
+  #pdf-container.is-fullscreen {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    margin: 0;
+    padding: 60px 0 20px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  #pdf-toolbar.is-fullscreen {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 10000;
+    margin: 0;
+  }
+</style>
+
 {{ content }}
 
 {% if page.pdf %}
-  <div style="display: flex; justify-content: flex-end; align-items: center; gap: 10px; margin-bottom: 15px;">
+  <div id="pdf-toolbar" style="display: flex; justify-content: flex-end; align-items: center; gap: 10px; margin-bottom: 15px;">
     <button id="pdf-fullscreen" type="button" class="btn btn--primary" title="Full screen" aria-label="Full screen">
       <i class="fas fa-expand" aria-hidden="true"></i>
     </button>
@@ -97,15 +117,41 @@ layout: single
     (function() {
       const btn = document.getElementById('pdf-fullscreen');
       const container = document.getElementById('pdf-container');
+      const toolbar = document.getElementById('pdf-toolbar');
       if (!btn || !container) return;
+
+      const icon = btn.querySelector('i');
+      const nativeSupported = !!(container.requestFullscreen || container.webkitRequestFullscreen);
+
+      function setIcon(isFull) {
+        if (!icon) return;
+        icon.classList.toggle('fa-expand', !isFull);
+        icon.classList.toggle('fa-compress', isFull);
+      }
+
+      function toggleCssFullscreen() {
+        const isFull = container.classList.toggle('is-fullscreen');
+        toolbar.classList.toggle('is-fullscreen', isFull);
+        document.body.style.overflow = isFull ? 'hidden' : '';
+        setIcon(isFull);
+      }
+
       btn.addEventListener('click', function() {
-        if (document.fullscreenElement) {
-          document.exitFullscreen();
-        } else if (container.requestFullscreen) {
-          container.requestFullscreen();
-        } else if (container.webkitRequestFullscreen) {
-          container.webkitRequestFullscreen();
+        if (nativeSupported) {
+          if (document.fullscreenElement) {
+            document.exitFullscreen();
+          } else if (container.requestFullscreen) {
+            container.requestFullscreen();
+          } else if (container.webkitRequestFullscreen) {
+            container.webkitRequestFullscreen();
+          }
+        } else {
+          toggleCssFullscreen();
         }
+      });
+
+      document.addEventListener('fullscreenchange', function() {
+        setIcon(!!document.fullscreenElement);
       });
     })();
   </script>
