@@ -8,13 +8,16 @@ layout: single
 {{ content }}
 
 {% if page.pdf %}
-  <div style="text-align: right; margin-bottom: 15px;">
-    <a href="{{ page.pdf | relative_url }}" class="btn btn--primary" download>
-      Download PDF
+  <div style="display: flex; justify-content: flex-end; align-items: center; gap: 10px; margin-bottom: 15px;">
+    <button id="pdf-fullscreen" type="button" class="btn btn--primary" title="Full screen" aria-label="Full screen">
+      <i class="fas fa-expand" aria-hidden="true"></i>
+    </button>
+    <a href="{{ page.pdf | relative_url }}" class="btn btn--primary" title="Download PDF" aria-label="Download PDF" download>
+      <i class="fas fa-download" aria-hidden="true"></i>
     </a>
-  </div> 
+  </div>
 
-  <div id="pdf-container" style="text-align: center; margin-top: 20px;"></div>
+  <div id="pdf-container" style="text-align: center; margin-top: 20px; overflow: auto; background: #f5f5f5;"></div>
 
   <!-- 2. Core PDF.js + Annotation Viewer JS (ES modules, pinned to major v4) -->
   <script type="module">
@@ -88,6 +91,22 @@ layout: single
         document.getElementById('pdf-container').innerHTML = 
           '<p>Unable to load PDF. <a href="' + pdfUrl + '">Download document instead.</a></p>';
       }
+    })();
+
+    // Fullscreen toggle for the PDF viewer
+    (function() {
+      const btn = document.getElementById('pdf-fullscreen');
+      const container = document.getElementById('pdf-container');
+      if (!btn || !container) return;
+      btn.addEventListener('click', function() {
+        if (document.fullscreenElement) {
+          document.exitFullscreen();
+        } else if (container.requestFullscreen) {
+          container.requestFullscreen();
+        } else if (container.webkitRequestFullscreen) {
+          container.webkitRequestFullscreen();
+        }
+      });
     })();
   </script>
 {% endif %}
