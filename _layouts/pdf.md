@@ -1,49 +1,93 @@
 ---
 layout: single
 ---
-<article class="post">
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+<!-- 1. CSS for PDF.js annotation/link overlay -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pdfjs-dist@^4/web/pdf_viewer.css" />
 
-  {% if page.pdf %}
-    <div style="text-align: right; margin-bottom: 15px;">
-     <a href="{{ page.pdf | relative_url }}" class="btn btn--primary" download>
+{{ content }}
+
+{% if page.pdf %}
+  <div style="text-align: right; margin-bottom: 15px;">
+    <a href="{{ page.pdf | relative_url }}" class="btn btn--primary" download>
       Download PDF
-     </a>
-    </div> 
-    <div id="pdf-container" style="text-align: center; margin-top: 20px;"></div>
+    </a>
+  </div> 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-    <script>
+  <div id="pdf-container" style="text-align: center; margin-top: 20px;"></div>
+
+  <!-- 2. Core PDF.js + Annotation Viewer JS (ES modules, pinned to major v4) -->
+  <script type="module">
+    import * as pdfjsLib from 'https://cdn.jsdelivr.net/npm/pdfjs-dist@^4/build/pdf.min.mjs';
+    import * as pdfjsViewer from 'https://cdn.jsdelivr.net/npm/pdfjs-dist@^4/web/pdf_viewer.mjs';
+
+    (async function() {
       const pdfUrl = "{{ page.pdf | relative_url }}";
-      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
-      pdfjsLib.getDocument(pdfUrl).promise.then(pdf => {
+      // Set worker source via jsDelivr
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@^4/build/pdf.worker.min.mjs';
+
+      try {
+        const pdf = await pdfjsLib.getDocument({ url: pdfUrl }).promise;
         const container = document.getElementById('pdf-container');
+        const linkService = new pdfjsViewer.PDFLinkService({
+          externalLinkTarget: pdfjsViewer.LinkTarget.BLANK,
+          externalLinkRel: 'noopener noreferrer'
+        });
+
         for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
-          pdf.getPage(pageNum).then(page => {
-            const scale = 1.5;
-            const viewport = page.getViewport({ scale: scale });
+          const page = await pdf.getPage(pageNum);
+          const scale = 1.5;
+          const viewport = page.getViewport({ scale: scale });
 
-            const canvas = document.createElement('canvas');
-            const context = canvas.getContext('2d');
-            canvas.height = viewport.height;
-            canvas.width = viewport.width;
-            canvas.style.maxWidth = '100%';
-            canvas.style.height = 'auto';
-            canvas.style.marginBottom = '15px';
-            canvas.style.boxShadow = '0 2px 8px rgba(0,0,0,0.15)';
+          const pageWrapper = document.createElement('div');
+          pageWrapper.style.position = 'relative';
+          pageWrapper.style.display = 'inline-block';
+          pageWrapper.style.marginBottom = '20px';
+          pageWrapper.style.boxShadow = '0 2px 8px rgba(0,0,0,0.15)';
 
-            container.appendChild(canvas);
-            page.render({ canvasContext: context, viewport: viewport });
+          const canvas = document.createElement('canvas');
+          const context = canvas.getContext('2d');
+          canvas.height = viewport.height;
+          canvas.width = viewport.width;
+          canvas.style.display = 'block';
+          canvas.style.maxWidth = '100%';
+          canvas.style.height = 'auto';
+
+          pageWrapper.appendChild(canvas);
+
+          const annotationLayerDiv = document.createElement('div');
+          annotationLayerDiv.className = 'annotationLayer';
+          annotationLayerDiv.style.position = 'absolute';
+          annotationLayerDiv.style.top = '0';
+          annotationLayerDiv.style.left = '0';
+          annotationLayerDiv.style.right = '0';
+          annotationLayerDiv.style.bottom = '0';
+
+          pageWrapper.appendChild(annotationLayerDiv);
+          container.appendChild(pageWrapper);
+
+          await page.render({ canvasContext: context, viewport: viewport }).promise;
+
+          const annotations = await page.getAnnotations();
+          const annotationLayer = new pdfjsLib.AnnotationLayer({
+            div: annotationLayerDiv,
+            accessibilityManager: null,
+            annotationCanvasMap: null,
+            page: page,
+            viewport: viewport.clone({ dontFlip: true })
+          });
+          await annotationLayer.render({
+            annotations: annotations,
+            linkService: linkService,
+            renderForms: false
           });
         }
-      }).catch(err => {
+      } catch (err) {
+        console.error(err);
         document.getElementById('pdf-container').innerHTML = 
           '<p>Unable to load PDF. <a href="' + pdfUrl + '">Download document instead.</a></p>';
-      });
-    </script>
-  {% endif %}
-</article>
+      }
+    })();
+  </script>
+{% endif %}
