@@ -59,6 +59,38 @@ layout: single
           externalLinkRel: 'noopener noreferrer'
         });
 
+        // Track rendered pages so internal (named-destination) links can be navigated
+        const pageWrappers = [];
+        const pageViewports = [];
+
+        // Minimal viewer implementation: lets PDFLinkService resolve internal
+        // links (TOC, cross-references, footnotes) by scrolling to the target page.
+        const simpleViewer = {
+          get pagesCount() { return pdf.numPages; },
+          get currentPageNumber() { return 1; },
+          set currentPageNumber(_) {},
+          isInPresentationMode: false,
+          getPageView(index) { return { div: pageWrappers[index] }; },
+          scrollPageIntoView({ pageNumber, destArray }) {
+            const wrapper = pageWrappers[pageNumber - 1];
+            const vp = pageViewports[pageNumber - 1];
+            if (!wrapper) return;
+            let yInPage = 0;
+            if (destArray && vp && destArray[1] && destArray[1].name === 'XYZ' && destArray[3] != null) {
+              yInPage = vp.convertToViewportPoint(destArray[2] || 0, destArray[3])[1];
+            }
+            const inFullscreen = document.fullscreenElement === container || container.classList.contains('is-fullscreen');
+            if (inFullscreen) {
+              container.scrollTo({ top: wrapper.offsetTop + yInPage - 10, behavior: 'smooth' });
+            } else {
+              const absY = window.scrollY + wrapper.getBoundingClientRect().top + yInPage;
+              window.scrollTo({ top: absY - 10, behavior: 'smooth' });
+            }
+          }
+        };
+        linkService.setViewer(simpleViewer);
+        linkService.setDocument(pdf);
+
         for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
           const page = await pdf.getPage(pageNum);
           const scale = 1.5;
@@ -87,9 +119,13 @@ layout: single
           annotationLayerDiv.style.left = '0';
           annotationLayerDiv.style.right = '0';
           annotationLayerDiv.style.bottom = '0';
+          // PDF.js positions annotations (links) using this CSS variable; without it links are mispositioned/unclickable
+          annotationLayerDiv.style.setProperty('--scale-factor', scale);
 
           pageWrapper.appendChild(annotationLayerDiv);
           container.appendChild(pageWrapper);
+          pageWrappers[pageNum - 1] = pageWrapper;
+          pageViewports[pageNum - 1] = viewport;
 
           await page.render({ canvasContext: context, viewport: viewport }).promise;
 
